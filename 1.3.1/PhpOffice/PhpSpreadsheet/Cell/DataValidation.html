@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PhpOffice\PhpSpreadsheet\Cell\DataValidation | PhpSpreadsheet</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PhpOffice_PhpSpreadsheet_Cell_DataValidation" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../1.0.0/index.html" data-version="1.0.0">1.0.0</option>
+                                            <option value="../../../../1.1.0/index.html" data-version="1.1.0">1.1.0</option>
+                                            <option value="../../../../1.2.0/index.html" data-version="1.2.0">1.2.0</option>
+                                            <option value="../../../../1.2.1/index.html" data-version="1.2.1">1.2.1</option>
+                                            <option value="../../../../1.3.0/index.html" data-version="1.3.0">1.3.0</option>
+                                            <option value="../../../../1.3.1/index.html" data-version="1.3.1">1.3.1</option>
+                                            <option value="../../../../1.4.0/index.html" data-version="1.4.0">1.4.0</option>
+                                            <option value="../../../../1.4.1/index.html" data-version="1.4.1">1.4.1</option>
+                                            <option value="../../../../1.5.0/index.html" data-version="1.5.0">1.5.0</option>
+                                            <option value="../../../../1.5.1/index.html" data-version="1.5.1">1.5.1</option>
+                                            <option value="../../../../1.5.2/index.html" data-version="1.5.2">1.5.2</option>
+                                            <option value="../../../../1.6.0/index.html" data-version="1.6.0">1.6.0</option>
+                                            <option value="../../../../1.7.0/index.html" data-version="1.7.0">1.7.0</option>
+                                            <option value="../../../../master/index.html" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">PhpSpreadsheet</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../PhpOffice.html">PhpOffice</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet.html">PhpSpreadsheet</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet/Cell.html">Cell</a></li><li class="backslash">\</li><li>DataValidation</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            DataValidation
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>DataValidation</strong>        (<a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Cell/DataValidation.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>TYPE_NONE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TYPE_CUSTOM</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TYPE_DATE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TYPE_DECIMAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TYPE_LIST</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TYPE_TEXTLENGTH</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TYPE_TIME</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TYPE_WHOLE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>STYLE_STOP</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>STYLE_WARNING</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>STYLE_INFORMATION</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>OPERATOR_BETWEEN</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>OPERATOR_EQUAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>OPERATOR_GREATERTHAN</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>OPERATOR_GREATERTHANOREQUAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>OPERATOR_LESSTHAN</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>OPERATOR_LESSTHANOREQUAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>OPERATOR_NOTBETWEEN</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>OPERATOR_NOTEQUAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>()
+        
+                                            <p>Create a new DataValidation.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFormula1">getFormula1</a>()
+        
+                                            <p>Get Formula 1.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setFormula1">setFormula1</a>(string $value)
+        
+                                            <p>Set Formula 1.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFormula2">getFormula2</a>()
+        
+                                            <p>Get Formula 2.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setFormula2">setFormula2</a>(string $value)
+        
+                                            <p>Set Formula 2.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getType">getType</a>()
+        
+                                            <p>Get Type.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setType">setType</a>(string $value)
+        
+                                            <p>Set Type.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getErrorStyle">getErrorStyle</a>()
+        
+                                            <p>Get Error style.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setErrorStyle">setErrorStyle</a>(string $value)
+        
+                                            <p>Set Error style.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOperator">getOperator</a>()
+        
+                                            <p>Get Operator.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOperator">setOperator</a>(string $value)
+        
+                                            <p>Set Operator.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAllowBlank">getAllowBlank</a>()
+        
+                                            <p>Get Allow Blank.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAllowBlank">setAllowBlank</a>(bool $value)
+        
+                                            <p>Set Allow Blank.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getShowDropDown">getShowDropDown</a>()
+        
+                                            <p>Get Show DropDown.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setShowDropDown">setShowDropDown</a>(bool $value)
+        
+                                            <p>Set Show DropDown.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getShowInputMessage">getShowInputMessage</a>()
+        
+                                            <p>Get Show InputMessage.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setShowInputMessage">setShowInputMessage</a>(bool $value)
+        
+                                            <p>Set Show InputMessage.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getShowErrorMessage">getShowErrorMessage</a>()
+        
+                                            <p>Get Show ErrorMessage.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setShowErrorMessage">setShowErrorMessage</a>(bool $value)
+        
+                                            <p>Set Show ErrorMessage.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getErrorTitle">getErrorTitle</a>()
+        
+                                            <p>Get Error title.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setErrorTitle">setErrorTitle</a>(string $value)
+        
+                                            <p>Set Error title.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getError">getError</a>()
+        
+                                            <p>Get Error.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setError">setError</a>(string $value)
+        
+                                            <p>Set Error.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPromptTitle">getPromptTitle</a>()
+        
+                                            <p>Get Prompt title.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPromptTitle">setPromptTitle</a>(string $value)
+        
+                                            <p>Set Prompt title.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPrompt">getPrompt</a>()
+        
+                                            <p>Get Prompt.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPrompt">setPrompt</a>(string $value)
+        
+                                            <p>Set Prompt.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHashCode">getHashCode</a>()
+        
+                                            <p>Get hash code.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___clone">__clone</a>()
+        
+                                            <p>Implement PHP __clone to create a deep clone, not just a shallow copy.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Cell/DataValidation.php#L126">line 126</a></div>
+        <code>                    
+    <strong>__construct</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a new DataValidation.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFormula1">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Cell/DataValidation.php#L135">line 135</a></div>
+        <code>                    string
+    <strong>getFormula1</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Formula 1.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFormula1">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Cell/DataValidation.php#L147">line 147</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a>
+    <strong>setFormula1</strong>(string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Formula 1.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFormula2">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Cell/DataValidation.php#L159">line 159</a></div>
+        <code>                    string
+    <strong>getFormula2</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Formula 2.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFormula2">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Cell/DataValidation.php#L171">line 171</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a>
+    <strong>setFormula2</strong>(string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Formula 2.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getType">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Cell/DataValidation.php#L183">line 183</a></div>
+        <code>                    string
+    <strong>getType</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Type.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setType">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Cell/DataValidation.php#L195">line 195</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a>
+    <strong>setType</strong>(string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Type.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getErrorStyle">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Cell/DataValidation.php#L207">line 207</a></div>
+        <code>                    string
+    <strong>getErrorStyle</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Error style.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setErrorStyle">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Cell/DataValidation.php#L219">line 219</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a>
+    <strong>setErrorStyle</strong>(string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Error style.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td>see self::STYLE_*</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOperator">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Cell/DataValidation.php#L231">line 231</a></div>
+        <code>                    string
+    <strong>getOperator</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Operator.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOperator">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Cell/DataValidation.php#L243">line 243</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a>
+    <strong>setOperator</strong>(string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Operator.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAllowBlank">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Cell/DataValidation.php#L255">line 255</a></div>
+        <code>                    bool
+    <strong>getAllowBlank</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Allow Blank.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAllowBlank">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Cell/DataValidation.php#L267">line 267</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a>
+    <strong>setAllowBlank</strong>(bool $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Allow Blank.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getShowDropDown">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Cell/DataValidation.php#L279">line 279</a></div>
+        <code>                    bool
+    <strong>getShowDropDown</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Show DropDown.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setShowDropDown">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Cell/DataValidation.php#L291">line 291</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a>
+    <strong>setShowDropDown</strong>(bool $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Show DropDown.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getShowInputMessage">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Cell/DataValidation.php#L303">line 303</a></div>
+        <code>                    bool
+    <strong>getShowInputMessage</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Show InputMessage.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setShowInputMessage">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Cell/DataValidation.php#L315">line 315</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a>
+    <strong>setShowInputMessage</strong>(bool $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Show InputMessage.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getShowErrorMessage">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Cell/DataValidation.php#L327">line 327</a></div>
+        <code>                    bool
+    <strong>getShowErrorMessage</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Show ErrorMessage.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setShowErrorMessage">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Cell/DataValidation.php#L339">line 339</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a>
+    <strong>setShowErrorMessage</strong>(bool $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Show ErrorMessage.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getErrorTitle">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Cell/DataValidation.php#L351">line 351</a></div>
+        <code>                    string
+    <strong>getErrorTitle</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Error title.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setErrorTitle">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Cell/DataValidation.php#L363">line 363</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a>
+    <strong>setErrorTitle</strong>(string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Error title.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getError">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Cell/DataValidation.php#L375">line 375</a></div>
+        <code>                    string
+    <strong>getError</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Error.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setError">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Cell/DataValidation.php#L387">line 387</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a>
+    <strong>setError</strong>(string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Error.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPromptTitle">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Cell/DataValidation.php#L399">line 399</a></div>
+        <code>                    string
+    <strong>getPromptTitle</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Prompt title.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPromptTitle">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Cell/DataValidation.php#L411">line 411</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a>
+    <strong>setPromptTitle</strong>(string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Prompt title.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPrompt">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Cell/DataValidation.php#L423">line 423</a></div>
+        <code>                    string
+    <strong>getPrompt</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Prompt.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPrompt">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Cell/DataValidation.php#L435">line 435</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a>
+    <strong>setPrompt</strong>(string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Prompt.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Cell/DataValidation.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\DataValidation">DataValidation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHashCode">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Cell/DataValidation.php#L447">line 447</a></div>
+        <code>                    string
+    <strong>getHashCode</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get hash code.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Hash code</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___clone">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Cell/DataValidation.php#L470">line 470</a></div>
+        <code>                    
+    <strong>__clone</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Implement PHP __clone to create a deep clone, not just a shallow copy.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

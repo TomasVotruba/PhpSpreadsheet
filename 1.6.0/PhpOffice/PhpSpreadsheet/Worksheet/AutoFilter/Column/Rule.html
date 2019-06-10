@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule | PhpSpreadsheet</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/sami.css">
+        <script src="../../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../../js/typeahead.min.js"></script>
+        <script src="../../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PhpOffice_PhpSpreadsheet_Worksheet_AutoFilter_Column_Rule" data-root-path="../../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../../../1.0.0/index.html" data-version="1.0.0">1.0.0</option>
+                                            <option value="../../../../../../1.1.0/index.html" data-version="1.1.0">1.1.0</option>
+                                            <option value="../../../../../../1.2.0/index.html" data-version="1.2.0">1.2.0</option>
+                                            <option value="../../../../../../1.2.1/index.html" data-version="1.2.1">1.2.1</option>
+                                            <option value="../../../../../../1.3.0/index.html" data-version="1.3.0">1.3.0</option>
+                                            <option value="../../../../../../1.3.1/index.html" data-version="1.3.1">1.3.1</option>
+                                            <option value="../../../../../../1.4.0/index.html" data-version="1.4.0">1.4.0</option>
+                                            <option value="../../../../../../1.4.1/index.html" data-version="1.4.1">1.4.1</option>
+                                            <option value="../../../../../../1.5.0/index.html" data-version="1.5.0">1.5.0</option>
+                                            <option value="../../../../../../1.5.1/index.html" data-version="1.5.1">1.5.1</option>
+                                            <option value="../../../../../../1.5.2/index.html" data-version="1.5.2">1.5.2</option>
+                                            <option value="../../../../../../1.6.0/index.html" data-version="1.6.0">1.6.0</option>
+                                            <option value="../../../../../../1.7.0/index.html" data-version="1.7.0">1.7.0</option>
+                                            <option value="../../../../../../master/index.html" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../../index.html">PhpSpreadsheet</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../../PhpOffice.html">PhpOffice</a></li><li class="backslash">\</li><li><a href="../../../../../PhpOffice/PhpSpreadsheet.html">PhpSpreadsheet</a></li><li class="backslash">\</li><li><a href="../../../../../PhpOffice/PhpSpreadsheet/Worksheet.html">Worksheet</a></li><li class="backslash">\</li><li><a href="../../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter.html">AutoFilter</a></li><li class="backslash">\</li><li><a href="../../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html">Column</a></li><li class="backslash">\</li><li>Rule</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Rule
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Rule</strong>        (<a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_FILTER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DATEGROUP</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_CUSTOMFILTER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMICFILTER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_TOPTENFILTER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DATEGROUP_YEAR</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DATEGROUP_MONTH</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DATEGROUP_DAY</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DATEGROUP_HOUR</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DATEGROUP_MINUTE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DATEGROUP_SECOND</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_YESTERDAY</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_TODAY</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_TOMORROW</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_YEARTODATE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_THISYEAR</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_THISQUARTER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_THISMONTH</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_THISWEEK</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_LASTYEAR</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_LASTQUARTER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_LASTMONTH</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_LASTWEEK</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_NEXTYEAR</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_NEXTQUARTER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_NEXTMONTH</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_NEXTWEEK</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_MONTH_1</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_JANUARY</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_MONTH_2</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_FEBRUARY</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_MONTH_3</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_MARCH</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_MONTH_4</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_APRIL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_MONTH_5</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_MAY</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_MONTH_6</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_JUNE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_MONTH_7</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_JULY</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_MONTH_8</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_AUGUST</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_MONTH_9</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_SEPTEMBER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_MONTH_10</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_OCTOBER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_MONTH_11</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_NOVEMBER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_MONTH_12</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_DECEMBER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_QUARTER_1</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_QUARTER_2</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_QUARTER_3</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_QUARTER_4</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_ABOVEAVERAGE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_RULETYPE_DYNAMIC_BELOWAVERAGE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_COLUMN_RULE_EQUAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_COLUMN_RULE_NOTEQUAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_COLUMN_RULE_GREATERTHAN</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_COLUMN_RULE_GREATERTHANOREQUAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_COLUMN_RULE_LESSTHAN</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_COLUMN_RULE_LESSTHANOREQUAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_COLUMN_RULE_TOPTEN_BY_VALUE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_COLUMN_RULE_TOPTEN_PERCENT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_COLUMN_RULE_TOPTEN_TOP</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_COLUMN_RULE_TOPTEN_BOTTOM</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a> $pParent = null)
+        
+                                            <p>Create a new Rule.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRuleType">getRuleType</a>()
+        
+                                            <p>Get AutoFilter Rule Type.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule">Rule</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRuleType">setRuleType</a>(string $pRuleType)
+        
+                                            <p>Set AutoFilter Rule Type.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getValue">getValue</a>()
+        
+                                            <p>Get AutoFilter Rule Value.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule">Rule</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setValue">setValue</a>(string|string[] $pValue)
+        
+                                            <p>Set AutoFilter Rule Value.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOperator">getOperator</a>()
+        
+                                            <p>Get AutoFilter Rule Operator.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule">Rule</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOperator">setOperator</a>(string $pOperator)
+        
+                                            <p>Set AutoFilter Rule Operator.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getGrouping">getGrouping</a>()
+        
+                                            <p>Get AutoFilter Rule Grouping.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule">Rule</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setGrouping">setGrouping</a>(string $pGrouping)
+        
+                                            <p>Set AutoFilter Rule Grouping.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule">Rule</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRule">setRule</a>(string $pOperator, string|string[] $pValue, string $pGrouping = null)
+        
+                                            <p>Set AutoFilter Rule.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getParent">getParent</a>()
+        
+                                            <p>Get this Rule's AutoFilter Column Parent.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule">Rule</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setParent">setParent</a>(<a href="../../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a> $pParent = null)
+        
+                                            <p>Set this Rule's AutoFilter Column Parent.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___clone">__clone</a>()
+        
+                                            <p>Implement PHP __clone to create a deep clone, not just a shallow copy.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.php#L243">line 243</a></div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a> $pParent = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a new Rule.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a></td>
+                <td>$pParent</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRuleType">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.php#L253">line 253</a></div>
+        <code>                    string
+    <strong>getRuleType</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get AutoFilter Rule Type.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRuleType">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.php#L267">line 267</a></div>
+        <code>                    <a href="../../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule">Rule</abbr></a>
+    <strong>setRuleType</strong>(string $pRuleType)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set AutoFilter Rule Type.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pRuleType</td>
+                <td>see self::AUTOFILTER_RULETYPE_*</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule">Rule</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getValue">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.php#L283">line 283</a></div>
+        <code>                    string
+    <strong>getValue</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get AutoFilter Rule Value.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setValue">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.php#L297">line 297</a></div>
+        <code>                    <a href="../../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule">Rule</abbr></a>
+    <strong>setValue</strong>(string|string[] $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set AutoFilter Rule Value.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|string[]</td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule">Rule</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOperator">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.php#L327">line 327</a></div>
+        <code>                    string
+    <strong>getOperator</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get AutoFilter Rule Operator.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOperator">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.php#L341">line 341</a></div>
+        <code>                    <a href="../../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule">Rule</abbr></a>
+    <strong>setOperator</strong>(string $pOperator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set AutoFilter Rule Operator.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pOperator</td>
+                <td>see self::AUTOFILTER_COLUMN_RULE_*</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule">Rule</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getGrouping">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.php#L360">line 360</a></div>
+        <code>                    string
+    <strong>getGrouping</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get AutoFilter Rule Grouping.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setGrouping">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.php#L374">line 374</a></div>
+        <code>                    <a href="../../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule">Rule</abbr></a>
+    <strong>setGrouping</strong>(string $pGrouping)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set AutoFilter Rule Grouping.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pGrouping</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule">Rule</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRule">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.php#L398">line 398</a></div>
+        <code>                    <a href="../../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule">Rule</abbr></a>
+    <strong>setRule</strong>(string $pOperator, string|string[] $pValue, string $pGrouping = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set AutoFilter Rule.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pOperator</td>
+                <td>see self::AUTOFILTER_COLUMN_RULE_*</td>
+            </tr>
+                    <tr>
+                <td>string|string[]</td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$pGrouping</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule">Rule</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getParent">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.php#L417">line 417</a></div>
+        <code>                    <a href="../../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a>
+    <strong>getParent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get this Rule's AutoFilter Column Parent.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setParent">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.php#L429">line 429</a></div>
+        <code>                    <a href="../../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule">Rule</abbr></a>
+    <strong>setParent</strong>(<a href="../../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a> $pParent = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set this Rule's AutoFilter Column Parent.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a></td>
+                <td>$pParent</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule">Rule</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___clone">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.php#L439">line 439</a></div>
+        <code>                    
+    <strong>__clone</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Implement PHP __clone to create a deep clone, not just a shallow copy.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

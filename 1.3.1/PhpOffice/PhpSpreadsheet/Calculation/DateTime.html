@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PhpOffice\PhpSpreadsheet\Calculation\DateTime | PhpSpreadsheet</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PhpOffice_PhpSpreadsheet_Calculation_DateTime" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../1.0.0/index.html" data-version="1.0.0">1.0.0</option>
+                                            <option value="../../../../1.1.0/index.html" data-version="1.1.0">1.1.0</option>
+                                            <option value="../../../../1.2.0/index.html" data-version="1.2.0">1.2.0</option>
+                                            <option value="../../../../1.2.1/index.html" data-version="1.2.1">1.2.1</option>
+                                            <option value="../../../../1.3.0/index.html" data-version="1.3.0">1.3.0</option>
+                                            <option value="../../../../1.3.1/index.html" data-version="1.3.1">1.3.1</option>
+                                            <option value="../../../../1.4.0/index.html" data-version="1.4.0">1.4.0</option>
+                                            <option value="../../../../1.4.1/index.html" data-version="1.4.1">1.4.1</option>
+                                            <option value="../../../../1.5.0/index.html" data-version="1.5.0">1.5.0</option>
+                                            <option value="../../../../1.5.1/index.html" data-version="1.5.1">1.5.1</option>
+                                            <option value="../../../../1.5.2/index.html" data-version="1.5.2">1.5.2</option>
+                                            <option value="../../../../1.6.0/index.html" data-version="1.6.0">1.6.0</option>
+                                            <option value="../../../../1.7.0/index.html" data-version="1.7.0">1.7.0</option>
+                                            <option value="../../../../master/index.html" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">PhpSpreadsheet</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../PhpOffice.html">PhpOffice</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet.html">PhpSpreadsheet</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet/Calculation.html">Calculation</a></li><li class="backslash">\</li><li>DateTime</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            DateTime
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>DateTime</strong>        (<a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Calculation/DateTime.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isLeapYear">isLeapYear</a>(int $year)
+        
+                                            <p>Identify if a year is a leap year or not.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDateValue">getDateValue</a>(string $dateValue)
+        
+                                            <p>getDateValue.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DATETIMENOW">DATETIMENOW</a>()
+        
+                                            <p>DATETIMENOW.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DATENOW">DATENOW</a>()
+        
+                                            <p>DATENOW.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DATE">DATE</a>(int $year = 0, int $month = 1, int $day = 1)
+        
+                                            <p>DATE.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_TIME">TIME</a>(int $hour = 0, int $minute = 0, int $second = 0)
+        
+                                            <p>TIME.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DATEVALUE">DATEVALUE</a>(string $dateValue = 1)
+        
+                                            <p>DATEVALUE.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_TIMEVALUE">TIMEVALUE</a>(string $timeValue)
+        
+                                            <p>TIMEVALUE.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DATEDIF">DATEDIF</a>(mixed $startDate = 0, mixed $endDate = 0, string $unit = &#039;D&#039;)
+        
+                                            <p>DATEDIF.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DAYS360">DAYS360</a>(mixed $startDate = 0, mixed $endDate = 0, bool $method = false)
+        
+                                            <p>DAYS360.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_YEARFRAC">YEARFRAC</a>(mixed $startDate = 0, mixed $endDate = 0, int $method = 0)
+        
+                                            <p>YEARFRAC.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_NETWORKDAYS">NETWORKDAYS</a>($startDate, $endDate, ...$dateArgs)
+        
+                                            <p>NETWORKDAYS.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_WORKDAY">WORKDAY</a>($startDate, $endDays, ...$dateArgs)
+        
+                                            <p>WORKDAY.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DAYOFMONTH">DAYOFMONTH</a>(mixed $dateValue = 1)
+        
+                                            <p>DAYOFMONTH.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_WEEKDAY">WEEKDAY</a>(int $dateValue = 1, int $style = 1)
+        
+                                            <p>WEEKDAY.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_WEEKNUM">WEEKNUM</a>(mixed $dateValue = 1, int $method = 1)
+        
+                                            <p>WEEKNUM.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_MONTHOFYEAR">MONTHOFYEAR</a>(mixed $dateValue = 1)
+        
+                                            <p>MONTHOFYEAR.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_YEAR">YEAR</a>(mixed $dateValue = 1)
+        
+                                            <p>YEAR.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_HOUROFDAY">HOUROFDAY</a>(mixed $timeValue = 0)
+        
+                                            <p>HOUROFDAY.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_MINUTE">MINUTE</a>(mixed $timeValue = 0)
+        
+                                            <p>MINUTE.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_SECOND">SECOND</a>(mixed $timeValue = 0)
+        
+                                            <p>SECOND.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_EDATE">EDATE</a>(mixed $dateValue = 1, int $adjustmentMonths = 0)
+        
+                                            <p>EDATE.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_EOMONTH">EOMONTH</a>(mixed $dateValue = 1, int $adjustmentMonths = 0)
+        
+                                            <p>EOMONTH.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_isLeapYear">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Calculation/DateTime.php#L17">line 17</a></div>
+        <code>        static            bool
+    <strong>isLeapYear</strong>(int $year)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Identify if a year is a leap year or not.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$year</td>
+                <td>The year to test</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>TRUE if the year is a leap year, otherwise FALSE</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDateValue">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Calculation/DateTime.php#L66">line 66</a></div>
+        <code>        static            mixed
+    <strong>getDateValue</strong>(string $dateValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getDateValue.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$dateValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Excel date/time serial value, or string if error</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_DATETIMENOW">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Calculation/DateTime.php#L149">line 149</a></div>
+        <code>        static            mixed
+    <strong>DATETIMENOW</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>DATETIMENOW.</p>                    <p>Returns the current date and time.
+The NOW function is useful when you need to display the current date and time on a worksheet or
+calculate a value based on the current date and time, and have that value updated each time you
+open the worksheet.</p>
+
+<p>NOTE: When used in a Cell Formula, MS Excel changes the cell format so that it matches the date
+and time format of your regional settings. PhpSpreadsheet does not change cell formatting in this way.</p>
+
+<p>Excel Function:
+       NOW()</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Excel date/time serial value, PHP date/time serial value or PHP date/time object,
+                       depending on the value of the ReturnDateType flag</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_DATENOW">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Calculation/DateTime.php#L192">line 192</a></div>
+        <code>        static            mixed
+    <strong>DATENOW</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>DATENOW.</p>                    <p>Returns the current date.
+The NOW function is useful when you need to display the current date and time on a worksheet or
+calculate a value based on the current date and time, and have that value updated each time you
+open the worksheet.</p>
+
+<p>NOTE: When used in a Cell Formula, MS Excel changes the cell format so that it matches the date
+and time format of your regional settings. PhpSpreadsheet does not change cell formatting in this way.</p>
+
+<p>Excel Function:
+       TODAY()</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Excel date/time serial value, PHP date/time serial value or PHP date/time object,
+                       depending on the value of the ReturnDateType flag</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_DATE">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Calculation/DateTime.php#L268">line 268</a></div>
+        <code>        static            mixed
+    <strong>DATE</strong>(int $year = 0, int $month = 1, int $day = 1)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>DATE.</p>                    <p>The DATE function returns a value that represents a particular date.</p>
+
+<p>NOTE: When used in a Cell Formula, MS Excel changes the cell format so that it matches the date
+format of your regional settings. PhpSpreadsheet does not change cell formatting in this way.</p>
+
+<p>Excel Function:
+       DATE(year,month,day)</p>
+
+<p>PhpSpreadsheet is a lot more forgiving than MS Excel when passing non numeric values to this function.
+A Month name or abbreviation (English only at this point) such as 'January' or 'Jan' will still be accepted,
+    as will a day value with a suffix (e.g. '21st' rather than simply 21); again only English language.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$year</td>
+                <td>The value of the year argument can include one to four digits.
+                               Excel interprets the year argument according to the configured
+                               date system: 1900 or 1904.
+                               If year is between 0 (zero) and 1899 (inclusive), Excel adds that
+                               value to 1900 to calculate the year. For example, DATE(108,1,2)
+                               returns January 2, 2008 (1900+108).
+                               If year is between 1900 and 9999 (inclusive), Excel uses that
+                               value as the year. For example, DATE(2008,1,2) returns January 2,
+                               2008.
+                               If year is less than 0 or is 10000 or greater, Excel returns the
+                               #NUM! error value.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$month</td>
+                <td>A positive or negative integer representing the month of the year
+                               from 1 to 12 (January to December).
+                               If month is greater than 12, month adds that number of months to
+                               the first month in the year specified. For example, DATE(2008,14,2)
+                               returns the serial number representing February 2, 2009.
+                               If month is less than 1, month subtracts the magnitude of that
+                               number of months, plus 1, from the first month in the year
+                               specified. For example, DATE(2008,-3,2) returns the serial number
+                               representing September 2, 2007.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$day</td>
+                <td>A positive or negative integer representing the day of the month
+                               from 1 to 31.
+                               If day is greater than the number of days in the month specified,
+                               day adds that number of days to the first day in the month. For
+                               example, DATE(2008,1,35) returns the serial number representing
+                               February 4, 2008.
+                               If day is less than 1, day subtracts the magnitude that number of
+                               days, plus one, from the first day of the month specified. For
+                               example, DATE(2008,1,-15) returns the serial number representing
+                               December 16, 2007.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Excel date/time serial value, PHP date/time serial value or PHP date/time object,
+                       depending on the value of the ReturnDateType flag</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_TIME">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Calculation/DateTime.php#L363">line 363</a></div>
+        <code>        static            mixed
+    <strong>TIME</strong>(int $hour = 0, int $minute = 0, int $second = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>TIME.</p>                    <p>The TIME function returns a value that represents a particular time.</p>
+
+<p>NOTE: When used in a Cell Formula, MS Excel changes the cell format so that it matches the time
+format of your regional settings. PhpSpreadsheet does not change cell formatting in this way.</p>
+
+<p>Excel Function:
+       TIME(hour,minute,second)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$hour</td>
+                <td>A number from 0 (zero) to 32767 representing the hour.
+                                   Any value greater than 23 will be divided by 24 and the remainder
+                                   will be treated as the hour value. For example, TIME(27,0,0) =
+                                   TIME(3,0,0) = .125 or 3:00 AM.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$minute</td>
+                <td>A number from 0 to 32767 representing the minute.
+                                   Any value greater than 59 will be converted to hours and minutes.
+                                   For example, TIME(0,750,0) = TIME(12,30,0) = .520833 or 12:30 PM.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$second</td>
+                <td>A number from 0 to 32767 representing the second.
+                                   Any value greater than 59 will be converted to hours, minutes,
+                                   and seconds. For example, TIME(0,0,2000) = TIME(0,33,22) = .023148
+                                   or 12:33:20 AM</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Excel date/time serial value, PHP date/time serial value or PHP date/time object,
+                       depending on the value of the ReturnDateType flag</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_DATEVALUE">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Calculation/DateTime.php#L473">line 473</a></div>
+        <code>        static            mixed
+    <strong>DATEVALUE</strong>(string $dateValue = 1)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>DATEVALUE.</p>                    <p>Returns a value that represents a particular date.
+Use DATEVALUE to convert a date represented by a text string to an Excel or PHP date/time stamp
+value.</p>
+
+<p>NOTE: When used in a Cell Formula, MS Excel changes the cell format so that it matches the date
+format of your regional settings. PhpSpreadsheet does not change cell formatting in this way.</p>
+
+<p>Excel Function:
+       DATEVALUE(dateValue)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$dateValue</td>
+                <td>Text that represents a date in a Microsoft Excel date format.
+                                   For example, "1/30/2008" or "30-Jan-2008" are text strings within
+                                   quotation marks that represent dates. Using the default date
+                                   system in Excel for Windows, date_text must represent a date from
+                                   January 1, 1900, to December 31, 9999. Using the default date
+                                   system in Excel for the Macintosh, date_text must represent a date
+                                   from January 1, 1904, to December 31, 9999. DATEVALUE returns the
+                                   #VALUE! error value if date_text is out of this range.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Excel date/time serial value, PHP date/time serial value or PHP date/time object,
+                       depending on the value of the ReturnDateType flag</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_TIMEVALUE">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Calculation/DateTime.php#L605">line 605</a></div>
+        <code>        static            mixed
+    <strong>TIMEVALUE</strong>(string $timeValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>TIMEVALUE.</p>                    <p>Returns a value that represents a particular time.
+Use TIMEVALUE to convert a time represented by a text string to an Excel or PHP date/time stamp
+value.</p>
+
+<p>NOTE: When used in a Cell Formula, MS Excel changes the cell format so that it matches the time
+format of your regional settings. PhpSpreadsheet does not change cell formatting in this way.</p>
+
+<p>Excel Function:
+       TIMEVALUE(timeValue)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$timeValue</td>
+                <td>A text string that represents a time in any one of the Microsoft
+                                   Excel time formats; for example, "6:45 PM" and "18:45" text strings
+                                   within quotation marks that represent time.
+                                   Date information in time_text is ignored.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Excel date/time serial value, PHP date/time serial value or PHP date/time object,
+                       depending on the value of the ReturnDateType flag</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_DATEDIF">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Calculation/DateTime.php#L655">line 655</a></div>
+        <code>        static            int
+    <strong>DATEDIF</strong>(mixed $startDate = 0, mixed $endDate = 0, string $unit = &#039;D&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>DATEDIF.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$startDate</td>
+                <td>Excel date serial value, PHP date/time stamp, PHP DateTime object
+                                   or a standard date string</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$endDate</td>
+                <td>Excel date serial value, PHP date/time stamp, PHP DateTime object
+                                   or a standard date string</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$unit</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>Interval between the dates</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_DAYS360">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Calculation/DateTime.php#L797">line 797</a></div>
+        <code>        static            int
+    <strong>DAYS360</strong>(mixed $startDate = 0, mixed $endDate = 0, bool $method = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>DAYS360.</p>                    <p>Returns the number of days between two dates based on a 360-day year (twelve 30-day months),
+which is used in some accounting calculations. Use this function to help compute payments if
+your accounting system is based on twelve 30-day months.</p>
+
+<p>Excel Function:
+       DAYS360(startDate,endDate[,method])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$startDate</td>
+                <td>Excel date serial value (float), PHP date timestamp (integer),
+                                       PHP DateTime object, or a standard date string</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$endDate</td>
+                <td>Excel date serial value (float), PHP date timestamp (integer),
+                                       PHP DateTime object, or a standard date string</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$method</td>
+                <td>US or European Method
+                                       FALSE or omitted: U.S. (NASD) method. If the starting date is
+                                       the last day of a month, it becomes equal to the 30th of the
+                                       same month. If the ending date is the last day of a month and
+                                       the starting date is earlier than the 30th of a month, the
+                                       ending date becomes equal to the 1st of the next month;
+                                       otherwise the ending date becomes equal to the 30th of the
+                                       same month.
+                                       TRUE: European method. Starting dates and ending dates that
+                                       occur on the 31st of a month become equal to the 30th of the
+                                       same month.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>Number of days between start date and end date</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_YEARFRAC">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Calculation/DateTime.php#L853">line 853</a></div>
+        <code>        static            float
+    <strong>YEARFRAC</strong>(mixed $startDate = 0, mixed $endDate = 0, int $method = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>YEARFRAC.</p>                    <p>Calculates the fraction of the year represented by the number of whole days between two dates
+(the start_date and the end_date).
+Use the YEARFRAC worksheet function to identify the proportion of a whole year's benefits or
+obligations to assign to a specific term.</p>
+
+<p>Excel Function:
+       YEARFRAC(startDate,endDate[,method])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$startDate</td>
+                <td>Excel date serial value (float), PHP date timestamp (integer),
+                                   PHP DateTime object, or a standard date string</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$endDate</td>
+                <td>Excel date serial value (float), PHP date timestamp (integer),
+                                   PHP DateTime object, or a standard date string</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$method</td>
+                <td>Method used for the calculation
+                                       0 or omitted    US (NASD) 30/360
+                                       1                Actual/actual
+                                       2                Actual/360
+                                       3                Actual/365
+                                       4                European 30/360</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td>fraction of the year</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_NETWORKDAYS">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Calculation/DateTime.php#L947">line 947</a></div>
+        <code>        static            int
+    <strong>NETWORKDAYS</strong>($startDate, $endDate, ...$dateArgs)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>NETWORKDAYS.</p>                    <p>Returns the number of whole working days between start_date and end_date. Working days
+exclude weekends and any dates identified in holidays.
+Use NETWORKDAYS to calculate employee benefits that accrue based on the number of days
+worked during a specific term.</p>
+
+<p>Excel Function:
+       NETWORKDAYS(startDate,endDate[,holidays[,holiday[,...]]])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$startDate</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$endDate</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>...$dateArgs</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>Interval between the dates</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_WORKDAY">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Calculation/DateTime.php#L1029">line 1029</a></div>
+        <code>        static            mixed
+    <strong>WORKDAY</strong>($startDate, $endDays, ...$dateArgs)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>WORKDAY.</p>                    <p>Returns the date that is the indicated number of working days before or after a date (the
+starting date). Working days exclude weekends and any dates identified as holidays.
+Use WORKDAY to exclude weekends or holidays when you calculate invoice due dates, expected
+delivery times, or the number of days of work performed.</p>
+
+<p>Excel Function:
+       WORKDAY(startDate,endDays[,holidays[,holiday[,...]]])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$startDate</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$endDays</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>...$dateArgs</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Excel date/time serial value, PHP date/time serial value or PHP date/time object,
+                       depending on the value of the ReturnDateType flag</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_DAYOFMONTH">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Calculation/DateTime.php#L1132">line 1132</a></div>
+        <code>        static            int
+    <strong>DAYOFMONTH</strong>(mixed $dateValue = 1)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>DAYOFMONTH.</p>                    <p>Returns the day of the month, for a specified date. The day is given as an integer
+ranging from 1 to 31.</p>
+
+<p>Excel Function:
+       DAY(dateValue)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$dateValue</td>
+                <td>Excel date serial value (float), PHP date timestamp (integer),
+                                   PHP DateTime object, or a standard date string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>Day of the month</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_WEEKDAY">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Calculation/DateTime.php#L1174">line 1174</a></div>
+        <code>        static            int
+    <strong>WEEKDAY</strong>(int $dateValue = 1, int $style = 1)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>WEEKDAY.</p>                    <p>Returns the day of the week for a specified date. The day is given as an integer
+ranging from 0 to 7 (dependent on the requested style).</p>
+
+<p>Excel Function:
+       WEEKDAY(dateValue[,style])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$dateValue</td>
+                <td>Excel date serial value (float), PHP date timestamp (integer),
+                                   PHP DateTime object, or a standard date string</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$style</td>
+                <td>A number that determines the type of return value
+                                       1 or omitted    Numbers 1 (Sunday) through 7 (Saturday).
+                                       2                Numbers 1 (Monday) through 7 (Sunday).
+                                       3                Numbers 0 (Monday) through 6 (Sunday).</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>Day of the week value</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_WEEKNUM">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Calculation/DateTime.php#L1253">line 1253</a></div>
+        <code>        static            int
+    <strong>WEEKNUM</strong>(mixed $dateValue = 1, int $method = 1)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>WEEKNUM.</p>                    <p>Returns the week of the year for a specified date.
+The WEEKNUM function considers the week containing January 1 to be the first week of the year.
+However, there is a European standard that defines the first week as the one with the majority
+of days (four or more) falling in the new year. This means that for years in which there are
+three days or less in the first week of January, the WEEKNUM function returns week numbers
+that are incorrect according to the European standard.</p>
+
+<p>Excel Function:
+       WEEKNUM(dateValue[,style])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$dateValue</td>
+                <td>Excel date serial value (float), PHP date timestamp (integer),
+                                   PHP DateTime object, or a standard date string</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$method</td>
+                <td>Week begins on Sunday or Monday
+                                       1 or omitted    Week begins on Sunday.
+                                       2                Week begins on Monday.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>Week Number</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_MONTHOFYEAR">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Calculation/DateTime.php#L1303">line 1303</a></div>
+        <code>        static            int
+    <strong>MONTHOFYEAR</strong>(mixed $dateValue = 1)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>MONTHOFYEAR.</p>                    <p>Returns the month of a date represented by a serial number.
+The month is given as an integer, ranging from 1 (January) to 12 (December).</p>
+
+<p>Excel Function:
+       MONTH(dateValue)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$dateValue</td>
+                <td>Excel date serial value (float), PHP date timestamp (integer),
+                                   PHP DateTime object, or a standard date string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>Month of the year</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_YEAR">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Calculation/DateTime.php#L1336">line 1336</a></div>
+        <code>        static            int
+    <strong>YEAR</strong>(mixed $dateValue = 1)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>YEAR.</p>                    <p>Returns the year corresponding to a date.
+The year is returned as an integer in the range 1900-9999.</p>
+
+<p>Excel Function:
+       YEAR(dateValue)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$dateValue</td>
+                <td>Excel date serial value (float), PHP date timestamp (integer),
+                                   PHP DateTime object, or a standard date string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>Year</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_HOUROFDAY">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Calculation/DateTime.php#L1368">line 1368</a></div>
+        <code>        static            int
+    <strong>HOUROFDAY</strong>(mixed $timeValue = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>HOUROFDAY.</p>                    <p>Returns the hour of a time value.
+The hour is given as an integer, ranging from 0 (12:00 A.M.) to 23 (11:00 P.M.).</p>
+
+<p>Excel Function:
+       HOUR(timeValue)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$timeValue</td>
+                <td>Excel date serial value (float), PHP date timestamp (integer),
+                                   PHP DateTime object, or a standard time string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>Hour</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_MINUTE">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Calculation/DateTime.php#L1409">line 1409</a></div>
+        <code>        static            int
+    <strong>MINUTE</strong>(mixed $timeValue = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>MINUTE.</p>                    <p>Returns the minutes of a time value.
+The minute is given as an integer, ranging from 0 to 59.</p>
+
+<p>Excel Function:
+       MINUTE(timeValue)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$timeValue</td>
+                <td>Excel date serial value (float), PHP date timestamp (integer),
+                                   PHP DateTime object, or a standard time string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>Minute</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_SECOND">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Calculation/DateTime.php#L1450">line 1450</a></div>
+        <code>        static            int
+    <strong>SECOND</strong>(mixed $timeValue = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>SECOND.</p>                    <p>Returns the seconds of a time value.
+The second is given as an integer in the range 0 (zero) to 59.</p>
+
+<p>Excel Function:
+       SECOND(timeValue)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$timeValue</td>
+                <td>Excel date serial value (float), PHP date timestamp (integer),
+                                   PHP DateTime object, or a standard time string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>Second</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_EDATE">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Calculation/DateTime.php#L1497">line 1497</a></div>
+        <code>        static            mixed
+    <strong>EDATE</strong>(mixed $dateValue = 1, int $adjustmentMonths = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>EDATE.</p>                    <p>Returns the serial number that represents the date that is the indicated number of months
+before or after a specified date (the start_date).
+Use EDATE to calculate maturity dates or due dates that fall on the same day of the month
+as the date of issue.</p>
+
+<p>Excel Function:
+       EDATE(dateValue,adjustmentMonths)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$dateValue</td>
+                <td>Excel date serial value (float), PHP date timestamp (integer),
+                                       PHP DateTime object, or a standard date string</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$adjustmentMonths</td>
+                <td>The number of months before or after start_date.
+                                       A positive value for months yields a future date;
+                                       a negative value yields a past date.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Excel date/time serial value, PHP date/time serial value or PHP date/time object,
+                       depending on the value of the ReturnDateType flag</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_EOMONTH">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Calculation/DateTime.php#L1543">line 1543</a></div>
+        <code>        static            mixed
+    <strong>EOMONTH</strong>(mixed $dateValue = 1, int $adjustmentMonths = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>EOMONTH.</p>                    <p>Returns the date value for the last day of the month that is the indicated number of months
+before or after start_date.
+Use EOMONTH to calculate maturity dates or due dates that fall on the last day of the month.</p>
+
+<p>Excel Function:
+       EOMONTH(dateValue,adjustmentMonths)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$dateValue</td>
+                <td>Excel date serial value (float), PHP date timestamp (integer),
+                                       PHP DateTime object, or a standard date string</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$adjustmentMonths</td>
+                <td>The number of months before or after start_date.
+                                       A positive value for months yields a future date;
+                                       a negative value yields a past date.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Excel date/time serial value, PHP date/time serial value or PHP date/time object,
+                       depending on the value of the ReturnDateType flag</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

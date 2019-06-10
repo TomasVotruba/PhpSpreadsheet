@@ -1,0 +1,1685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PhpOffice\PhpSpreadsheet\Reader\Csv | PhpSpreadsheet</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PhpOffice_PhpSpreadsheet_Reader_Csv" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../1.0.0/index.html" data-version="1.0.0">1.0.0</option>
+                                            <option value="../../../../1.1.0/index.html" data-version="1.1.0">1.1.0</option>
+                                            <option value="../../../../1.2.0/index.html" data-version="1.2.0">1.2.0</option>
+                                            <option value="../../../../1.2.1/index.html" data-version="1.2.1">1.2.1</option>
+                                            <option value="../../../../1.3.0/index.html" data-version="1.3.0">1.3.0</option>
+                                            <option value="../../../../1.3.1/index.html" data-version="1.3.1">1.3.1</option>
+                                            <option value="../../../../1.4.0/index.html" data-version="1.4.0">1.4.0</option>
+                                            <option value="../../../../1.4.1/index.html" data-version="1.4.1">1.4.1</option>
+                                            <option value="../../../../1.5.0/index.html" data-version="1.5.0">1.5.0</option>
+                                            <option value="../../../../1.5.1/index.html" data-version="1.5.1">1.5.1</option>
+                                            <option value="../../../../1.5.2/index.html" data-version="1.5.2">1.5.2</option>
+                                            <option value="../../../../1.6.0/index.html" data-version="1.6.0">1.6.0</option>
+                                            <option value="../../../../1.7.0/index.html" data-version="1.7.0">1.7.0</option>
+                                            <option value="../../../../master/index.html" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">PhpSpreadsheet</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../PhpOffice.html">PhpOffice</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet.html">PhpSpreadsheet</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet/Reader.html">Reader</a></li><li class="backslash">\</li><li>Csv</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Csv
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Csv</strong>        extends <a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a>        (<a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/Csv.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_readDataOnly">
+                                        protected                                        bool
+                </td>
+                <td>$readDataOnly</td>
+                <td class="last">Read data only?
+Identifies whether the Reader should only read data values for cells, and ignore any formatting information;
+       or whether it should read both data and formatting.</td>
+                <td><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#property_readDataOnly"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_readEmptyCells">
+                                        protected                                        bool
+                </td>
+                <td>$readEmptyCells</td>
+                <td class="last">Read empty cells?
+Identifies whether the Reader should read data values for cells all cells, or should ignore cells containing
+        null value or empty string.</td>
+                <td><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#property_readEmptyCells"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_includeCharts">
+                                        protected                                        bool
+                </td>
+                <td>$includeCharts</td>
+                <td class="last">Read charts that are defined in the workbook?
+Identifies whether the Reader should read the definitions for any charts that exist in the workbook;.</td>
+                <td><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#property_includeCharts"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_loadSheetsOnly">
+                                        protected                                        array
+                </td>
+                <td>$loadSheetsOnly</td>
+                <td class="last">Restrict which sheets should be loaded?
+This property holds an array of worksheet names to be loaded. If null, then all worksheets will be loaded.</td>
+                <td><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#property_loadSheetsOnly"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_readFilter">
+                                        protected                                        <a href="../../../PhpOffice/PhpSpreadsheet/Reader/IReadFilter.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\IReadFilter">IReadFilter</abbr></a>
+                </td>
+                <td>$readFilter</td>
+                <td class="last">IReadFilter instance.</td>
+                <td><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#property_readFilter"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_fileHandle">
+                                        protected                                        
+                </td>
+                <td>$fileHandle</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#property_fileHandle"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_securityScanner">
+                                        protected                                        <a href="../../../PhpOffice/PhpSpreadsheet/Reader/Security/XmlScanner.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\Security\XmlScanner">XmlScanner</abbr></a>
+                </td>
+                <td>$securityScanner</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#property_securityScanner"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getReadDataOnly">getReadDataOnly</a>()
+        
+                                            <p>Read data only?
+       If this is true, then the Reader will only read data values for cells, it will not read any formatting information.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#method_getReadDataOnly"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Reader/IReader.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\IReader">IReader</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setReadDataOnly">setReadDataOnly</a>(bool $pValue)
+        
+                                            <p>Set read data only
+       Set to true, to advise the Reader only to read data values for cells, and to ignore any formatting information.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#method_setReadDataOnly"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getReadEmptyCells">getReadEmptyCells</a>()
+        
+                                            <p>Read empty cells?
+       If this is true (the default), then the Reader will read data values for all cells, irrespective of value.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#method_getReadEmptyCells"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Reader/IReader.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\IReader">IReader</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setReadEmptyCells">setReadEmptyCells</a>(bool $pValue)
+        
+                                            <p>Set read empty cells
+       Set to true (the default) to advise the Reader read data values for all cells, irrespective of value.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#method_setReadEmptyCells"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIncludeCharts">getIncludeCharts</a>()
+        
+                                            <p>Read charts in workbook?
+       If this is true, then the Reader will include any charts that exist in the workbook.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#method_getIncludeCharts"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Reader/IReader.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\IReader">IReader</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setIncludeCharts">setIncludeCharts</a>(bool $pValue)
+        
+                                            <p>Set read charts in workbook
+       Set to true, to advise the Reader to include any charts that exist in the workbook.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#method_setIncludeCharts"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLoadSheetsOnly">getLoadSheetsOnly</a>()
+        
+                                            <p>Get which sheets to load
+Returns either an array of worksheet names (the list of worksheets that should be loaded), or a null
+       indicating that all worksheets in the workbook should be loaded.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#method_getLoadSheetsOnly"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Reader/IReader.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\IReader">IReader</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLoadSheetsOnly">setLoadSheetsOnly</a>(mixed $value)
+        
+                                            <p>Set which sheets to load.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#method_setLoadSheetsOnly"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Reader/IReader.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\IReader">IReader</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLoadAllSheets">setLoadAllSheets</a>()
+        
+                                            <p>Set all sheets to load
+       Tells the Reader to load all worksheets from the workbook.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#method_setLoadAllSheets"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Reader/IReadFilter.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\IReadFilter">IReadFilter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getReadFilter">getReadFilter</a>()
+        
+                                            <p>Read filter.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#method_getReadFilter"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Reader/IReader.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\IReader">IReader</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setReadFilter">setReadFilter</a>(<a href="../../../PhpOffice/PhpSpreadsheet/Reader/IReadFilter.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\IReadFilter">IReadFilter</abbr></a> $pValue)
+        
+                                            <p>Set read filter.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#method_setReadFilter"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSecuritySCanner">getSecuritySCanner</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#method_getSecuritySCanner"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_openFile">openFile</a>(string $pFilename)
+        
+                                            <p>Open file for reading.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#method_openFile"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>()
+        
+                                            <p>Create a new CSV Reader instance.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Reader/Csv.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\Csv">Csv</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setInputEncoding">setInputEncoding</a>(string $pValue)
+        
+                                            <p>Set input encoding.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getInputEncoding">getInputEncoding</a>()
+        
+                                            <p>Get input encoding.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_skipBOM">skipBOM</a>()
+        
+                                            <p>Move filepointer past any BOM marker.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkSeparator">checkSeparator</a>()
+        
+                                            <p>Identify any separator that is explicitly set in the file.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_inferSeparator">inferSeparator</a>()
+        
+                                            <p>Infer the separator if it isn't explicitly set in the file or specified by the user.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_listWorksheetInfo">listWorksheetInfo</a>(string $pFilename)
+        
+                                            <p>Return worksheet info (Name, Last Column Letter, Last Column Index, Total Rows, Total Columns).</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_load">load</a>(string $pFilename)
+        
+                                            <p>Loads Spreadsheet from file.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadIntoExisting">loadIntoExisting</a>(string $pFilename, <a href="../../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a> $spreadsheet)
+        
+                                            <p>Loads PhpSpreadsheet from file into PhpSpreadsheet instance.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDelimiter">getDelimiter</a>()
+        
+                                            <p>Get delimiter.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="PhpOffice\PhpSpreadsheet\Reader\CSV">CSV</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDelimiter">setDelimiter</a>(string $delimiter)
+        
+                                            <p>Set delimiter.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getEnclosure">getEnclosure</a>()
+        
+                                            <p>Get enclosure.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="PhpOffice\PhpSpreadsheet\Reader\CSV">CSV</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setEnclosure">setEnclosure</a>(string $enclosure)
+        
+                                            <p>Set enclosure.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSheetIndex">getSheetIndex</a>()
+        
+                                            <p>Get sheet index.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="PhpOffice\PhpSpreadsheet\Reader\CSV">CSV</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setSheetIndex">setSheetIndex</a>(int $pValue)
+        
+                                            <p>Set sheet index.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Reader/Csv.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\Csv">Csv</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setContiguous">setContiguous</a>(bool $contiguous)
+        
+                                            <p>Set Contiguous.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getContiguous">getContiguous</a>()
+        
+                                            <p>Get Contiguous.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setEscapeCharacter">setEscapeCharacter</a>(string $escapeCharacter)
+        
+                                            <p>Set escape backslashes.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getEscapeCharacter">getEscapeCharacter</a>()
+        
+                                            <p>Get escape backslashes.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_canRead">canRead</a>(string $pFilename)
+        
+                                            <p>Can the current IReader read the file?</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getReadDataOnly">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#method_getReadDataOnly"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/BaseReader.php#L65">line 65</a></div>
+        <code>                    bool
+    <strong>getReadDataOnly</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Read data only?
+       If this is true, then the Reader will only read data values for cells, it will not read any formatting information.</p>                    <p>If false (the default) it will read data and formatting.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setReadDataOnly">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#method_setReadDataOnly"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/BaseReader.php#L79">line 79</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Reader/IReader.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\IReader">IReader</abbr></a>
+    <strong>setReadDataOnly</strong>(bool $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set read data only
+       Set to true, to advise the Reader only to read data values for cells, and to ignore any formatting information.</p>                    <p>Set to false (the default) to advise the Reader to read both data and formatting for cells.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Reader/IReader.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\IReader">IReader</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getReadEmptyCells">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#method_getReadEmptyCells"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/BaseReader.php#L93">line 93</a></div>
+        <code>                    bool
+    <strong>getReadEmptyCells</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Read empty cells?
+       If this is true (the default), then the Reader will read data values for all cells, irrespective of value.</p>                    <p>If false it will not read data for cells containing a null value or an empty string.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setReadEmptyCells">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#method_setReadEmptyCells"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/BaseReader.php#L107">line 107</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Reader/IReader.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\IReader">IReader</abbr></a>
+    <strong>setReadEmptyCells</strong>(bool $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set read empty cells
+       Set to true (the default) to advise the Reader read data values for all cells, irrespective of value.</p>                    <p>Set to false to advise the Reader to ignore cells containing a null value or an empty string.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Reader/IReader.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\IReader">IReader</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIncludeCharts">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#method_getIncludeCharts"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/BaseReader.php#L122">line 122</a></div>
+        <code>                    bool
+    <strong>getIncludeCharts</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Read charts in workbook?
+       If this is true, then the Reader will include any charts that exist in the workbook.</p>                    <p>Note that a ReadDataOnly value of false overrides, and charts won't be read regardless of the IncludeCharts value.
+       If false (the default) it will ignore any charts defined in the workbook file.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIncludeCharts">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#method_setIncludeCharts"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/BaseReader.php#L137">line 137</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Reader/IReader.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\IReader">IReader</abbr></a>
+    <strong>setIncludeCharts</strong>(bool $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set read charts in workbook
+       Set to true, to advise the Reader to include any charts that exist in the workbook.</p>                    <p>Note that a ReadDataOnly value of false overrides, and charts won't be read regardless of the IncludeCharts value.
+       Set to false (the default) to discard charts.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Reader/IReader.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\IReader">IReader</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLoadSheetsOnly">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#method_getLoadSheetsOnly"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/BaseReader.php#L151">line 151</a></div>
+        <code>                    mixed
+    <strong>getLoadSheetsOnly</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get which sheets to load
+Returns either an array of worksheet names (the list of worksheets that should be loaded), or a null
+       indicating that all worksheets in the workbook should be loaded.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLoadSheetsOnly">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#method_setLoadSheetsOnly"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/BaseReader.php#L165">line 165</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Reader/IReader.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\IReader">IReader</abbr></a>
+    <strong>setLoadSheetsOnly</strong>(mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set which sheets to load.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>This should be either an array of worksheet names to be loaded, or a string containing a single worksheet name.
+       If NULL, then it tells the Reader to read all worksheets in the workbook</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Reader/IReader.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\IReader">IReader</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLoadAllSheets">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#method_setLoadAllSheets"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/BaseReader.php#L182">line 182</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Reader/IReader.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\IReader">IReader</abbr></a>
+    <strong>setLoadAllSheets</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set all sheets to load
+       Tells the Reader to load all worksheets from the workbook.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Reader/IReader.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\IReader">IReader</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getReadFilter">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#method_getReadFilter"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/BaseReader.php#L194">line 194</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Reader/IReadFilter.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\IReadFilter">IReadFilter</abbr></a>
+    <strong>getReadFilter</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Read filter.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Reader/IReadFilter.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\IReadFilter">IReadFilter</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setReadFilter">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#method_setReadFilter"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/BaseReader.php#L206">line 206</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Reader/IReader.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\IReader">IReader</abbr></a>
+    <strong>setReadFilter</strong>(<a href="../../../PhpOffice/PhpSpreadsheet/Reader/IReadFilter.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\IReadFilter">IReadFilter</abbr></a> $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set read filter.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Reader/IReadFilter.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\IReadFilter">IReadFilter</abbr></a></td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Reader/IReader.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\IReader">IReader</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSecuritySCanner">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#method_getSecuritySCanner"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/BaseReader.php#L213">line 213</a></div>
+        <code>                    
+    <strong>getSecuritySCanner</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_openFile">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Reader/BaseReader.html#method_openFile"><abbr title="PhpOffice\PhpSpreadsheet\Reader\BaseReader">BaseReader</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/BaseReader.php#L229">line 229</a></div>
+        <code>            protected        
+    <strong>openFile</strong>(string $pFilename)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Open file for reading.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pFilename</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Reader/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/Csv.php#L63">line 63</a></div>
+        <code>                    
+    <strong>__construct</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a new CSV Reader instance.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setInputEncoding">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/Csv.php#L75">line 75</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Reader/Csv.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\Csv">Csv</abbr></a>
+    <strong>setInputEncoding</strong>(string $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set input encoding.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pValue</td>
+                <td>Input encoding, eg: 'UTF-8'</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Reader/Csv.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\Csv">Csv</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInputEncoding">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/Csv.php#L87">line 87</a></div>
+        <code>                    string
+    <strong>getInputEncoding</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get input encoding.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_skipBOM">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/Csv.php#L95">line 95</a></div>
+        <code>            protected        
+    <strong>skipBOM</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Move filepointer past any BOM marker.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkSeparator">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/Csv.php#L133">line 133</a></div>
+        <code>            protected        
+    <strong>checkSeparator</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Identify any separator that is explicitly set in the file.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_inferSeparator">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/Csv.php#L152">line 152</a></div>
+        <code>            protected        
+    <strong>inferSeparator</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Infer the separator if it isn't explicitly set in the file or specified by the user.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listWorksheetInfo">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/Csv.php#L281">line 281</a></div>
+        <code>                    array
+    <strong>listWorksheetInfo</strong>(string $pFilename)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return worksheet info (Name, Last Column Letter, Last Column Index, Total Rows, Total Columns).</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pFilename</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Reader/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_load">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/Csv.php#L326">line 326</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a>
+    <strong>load</strong>(string $pFilename)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Loads Spreadsheet from file.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pFilename</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Reader/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadIntoExisting">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/Csv.php#L345">line 345</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a>
+    <strong>loadIntoExisting</strong>(string $pFilename, <a href="../../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a> $spreadsheet)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Loads PhpSpreadsheet from file into PhpSpreadsheet instance.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pFilename</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a></td>
+                <td>$spreadsheet</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Reader/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDelimiter">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/Csv.php#L410">line 410</a></div>
+        <code>                    string
+    <strong>getDelimiter</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get delimiter.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDelimiter">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/Csv.php#L422">line 422</a></div>
+        <code>                    <abbr title="PhpOffice\PhpSpreadsheet\Reader\CSV">CSV</abbr>
+    <strong>setDelimiter</strong>(string $delimiter)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set delimiter.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$delimiter</td>
+                <td>Delimiter, eg: ','</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="PhpOffice\PhpSpreadsheet\Reader\CSV">CSV</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEnclosure">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/Csv.php#L434">line 434</a></div>
+        <code>                    string
+    <strong>getEnclosure</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get enclosure.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEnclosure">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/Csv.php#L446">line 446</a></div>
+        <code>                    <abbr title="PhpOffice\PhpSpreadsheet\Reader\CSV">CSV</abbr>
+    <strong>setEnclosure</strong>(string $enclosure)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set enclosure.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$enclosure</td>
+                <td>Enclosure, defaults to "</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="PhpOffice\PhpSpreadsheet\Reader\CSV">CSV</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSheetIndex">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/Csv.php#L461">line 461</a></div>
+        <code>                    int
+    <strong>getSheetIndex</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get sheet index.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSheetIndex">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/Csv.php#L473">line 473</a></div>
+        <code>                    <abbr title="PhpOffice\PhpSpreadsheet\Reader\CSV">CSV</abbr>
+    <strong>setSheetIndex</strong>(int $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set sheet index.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$pValue</td>
+                <td>Sheet index</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="PhpOffice\PhpSpreadsheet\Reader\CSV">CSV</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setContiguous">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/Csv.php#L487">line 487</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Reader/Csv.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\Csv">Csv</abbr></a>
+    <strong>setContiguous</strong>(bool $contiguous)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Contiguous.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$contiguous</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Reader/Csv.html"><abbr title="PhpOffice\PhpSpreadsheet\Reader\Csv">Csv</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getContiguous">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/Csv.php#L502">line 502</a></div>
+        <code>                    bool
+    <strong>getContiguous</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Contiguous.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEscapeCharacter">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/Csv.php#L514">line 514</a></div>
+        <code>                    $this
+    <strong>setEscapeCharacter</strong>(string $escapeCharacter)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set escape backslashes.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$escapeCharacter</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEscapeCharacter">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/Csv.php#L526">line 526</a></div>
+        <code>                    string
+    <strong>getEscapeCharacter</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get escape backslashes.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_canRead">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.2/src/PhpSpreadsheet/Reader/Csv.php#L538">line 538</a></div>
+        <code>                    bool
+    <strong>canRead</strong>(string $pFilename)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Can the current IReader read the file?</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pFilename</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

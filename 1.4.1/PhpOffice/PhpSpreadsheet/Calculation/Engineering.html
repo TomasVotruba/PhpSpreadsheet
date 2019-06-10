@@ -1,0 +1,3558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PhpOffice\PhpSpreadsheet\Calculation\Engineering | PhpSpreadsheet</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PhpOffice_PhpSpreadsheet_Calculation_Engineering" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../1.0.0/index.html" data-version="1.0.0">1.0.0</option>
+                                            <option value="../../../../1.1.0/index.html" data-version="1.1.0">1.1.0</option>
+                                            <option value="../../../../1.2.0/index.html" data-version="1.2.0">1.2.0</option>
+                                            <option value="../../../../1.2.1/index.html" data-version="1.2.1">1.2.1</option>
+                                            <option value="../../../../1.3.0/index.html" data-version="1.3.0">1.3.0</option>
+                                            <option value="../../../../1.3.1/index.html" data-version="1.3.1">1.3.1</option>
+                                            <option value="../../../../1.4.0/index.html" data-version="1.4.0">1.4.0</option>
+                                            <option value="../../../../1.4.1/index.html" data-version="1.4.1">1.4.1</option>
+                                            <option value="../../../../1.5.0/index.html" data-version="1.5.0">1.5.0</option>
+                                            <option value="../../../../1.5.1/index.html" data-version="1.5.1">1.5.1</option>
+                                            <option value="../../../../1.5.2/index.html" data-version="1.5.2">1.5.2</option>
+                                            <option value="../../../../1.6.0/index.html" data-version="1.6.0">1.6.0</option>
+                                            <option value="../../../../1.7.0/index.html" data-version="1.7.0">1.7.0</option>
+                                            <option value="../../../../master/index.html" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">PhpSpreadsheet</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../PhpOffice.html">PhpOffice</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet.html">PhpSpreadsheet</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet/Calculation.html">Calculation</a></li><li class="backslash">\</li><li>Engineering</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Engineering
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Engineering</strong>        (<a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>EULER</td>
+                <td class="last">
+                    <p><em>EULER.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseComplex">parseComplex</a>(string $complexNumber)
+        <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                                            <p>parseComplex.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_BESSELI">BESSELI</a>(float $x, int $ord)
+        
+                                            <p>BESSELI.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_BESSELJ">BESSELJ</a>(float $x, int $ord)
+        
+                                            <p>BESSELJ.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_BESSELK">BESSELK</a>(float $x, int $ord)
+        
+                                            <p>BESSELK.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_BESSELY">BESSELY</a>(float $x, int $ord)
+        
+                                            <p>BESSELY.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_BINTODEC">BINTODEC</a>(string $x)
+        
+                                            <p>BINTODEC.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_BINTOHEX">BINTOHEX</a>(string $x, int $places = null)
+        
+                                            <p>BINTOHEX.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_BINTOOCT">BINTOOCT</a>(string $x, int $places = null)
+        
+                                            <p>BINTOOCT.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DECTOBIN">DECTOBIN</a>(string $x, int $places = null)
+        
+                                            <p>DECTOBIN.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DECTOHEX">DECTOHEX</a>(string $x, int $places = null)
+        
+                                            <p>DECTOHEX.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DECTOOCT">DECTOOCT</a>(string $x, int $places = null)
+        
+                                            <p>DECTOOCT.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_HEXTOBIN">HEXTOBIN</a>(string $x, int $places = null)
+        
+                                            <p>HEXTOBIN.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_HEXTODEC">HEXTODEC</a>(string $x)
+        
+                                            <p>HEXTODEC.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_HEXTOOCT">HEXTOOCT</a>(string $x, int $places = null)
+        
+                                            <p>HEXTOOCT.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_OCTTOBIN">OCTTOBIN</a>(string $x, int $places = null)
+        
+                                            <p>OCTTOBIN.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_OCTTODEC">OCTTODEC</a>(string $x)
+        
+                                            <p>OCTTODEC.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_OCTTOHEX">OCTTOHEX</a>(string $x, int $places = null)
+        
+                                            <p>OCTTOHEX.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_COMPLEX">COMPLEX</a>(float $realNumber = 0.0, float $imaginary = 0.0, string $suffix = &#039;i&#039;)
+        
+                                            <p>COMPLEX.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_IMAGINARY">IMAGINARY</a>(string $complexNumber)
+        
+                                            <p>IMAGINARY.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_IMREAL">IMREAL</a>(string $complexNumber)
+        
+                                            <p>IMREAL.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_IMABS">IMABS</a>(string $complexNumber)
+        
+                                            <p>IMABS.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_IMARGUMENT">IMARGUMENT</a>(string $complexNumber)
+        
+                                            <p>IMARGUMENT.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_IMCONJUGATE">IMCONJUGATE</a>(string $complexNumber)
+        
+                                            <p>IMCONJUGATE.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_IMCOS">IMCOS</a>(string $complexNumber)
+        
+                                            <p>IMCOS.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_IMCOSH">IMCOSH</a>(string $complexNumber)
+        
+                                            <p>IMCOSH.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_IMCOT">IMCOT</a>(string $complexNumber)
+        
+                                            <p>IMCOT.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_IMCSC">IMCSC</a>(string $complexNumber)
+        
+                                            <p>IMCSC.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_IMCSCH">IMCSCH</a>(string $complexNumber)
+        
+                                            <p>IMCSCH.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_IMSIN">IMSIN</a>(string $complexNumber)
+        
+                                            <p>IMSIN.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_IMSINH">IMSINH</a>(string $complexNumber)
+        
+                                            <p>IMSINH.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_IMSEC">IMSEC</a>(string $complexNumber)
+        
+                                            <p>IMSEC.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_IMSECH">IMSECH</a>(string $complexNumber)
+        
+                                            <p>IMSECH.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_IMTAN">IMTAN</a>(string $complexNumber)
+        
+                                            <p>IMTAN.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_IMSQRT">IMSQRT</a>(string $complexNumber)
+        
+                                            <p>IMSQRT.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_IMLN">IMLN</a>(string $complexNumber)
+        
+                                            <p>IMLN.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_IMLOG10">IMLOG10</a>(string $complexNumber)
+        
+                                            <p>IMLOG10.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_IMLOG2">IMLOG2</a>(string $complexNumber)
+        
+                                            <p>IMLOG2.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_IMEXP">IMEXP</a>(string $complexNumber)
+        
+                                            <p>IMEXP.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_IMPOWER">IMPOWER</a>(string $complexNumber, float $realNumber)
+        
+                                            <p>IMPOWER.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_IMDIV">IMDIV</a>(string $complexDividend, string $complexDivisor)
+        
+                                            <p>IMDIV.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_IMSUB">IMSUB</a>(string $complexNumber1, string $complexNumber2)
+        
+                                            <p>IMSUB.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_IMSUM">IMSUM</a>(string ...$complexNumbers)
+        
+                                            <p>IMSUM.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_IMPRODUCT">IMPRODUCT</a>(string ...$complexNumbers)
+        
+                                            <p>IMPRODUCT.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DELTA">DELTA</a>(float $a, float $b = 0)
+        
+                                            <p>DELTA.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_GESTEP">GESTEP</a>(float $number, float $step = 0)
+        
+                                            <p>GESTEP.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_erfVal">erfVal</a>($x)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_BITAND">BITAND</a>(int $number1, int $number2)
+        
+                                            <p>BITAND.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_BITOR">BITOR</a>(int $number1, int $number2)
+        
+                                            <p>BITOR.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_BITXOR">BITXOR</a>(int $number1, int $number2)
+        
+                                            <p>BITXOR.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_BITLSHIFT">BITLSHIFT</a>(int $number, int $shiftAmount)
+        
+                                            <p>BITLSHIFT.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_BITRSHIFT">BITRSHIFT</a>(int $number, int $shiftAmount)
+        
+                                            <p>BITRSHIFT.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ERF">ERF</a>(float $lower, float $upper = null)
+        
+                                            <p>ERF.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ERFPRECISE">ERFPRECISE</a>(float $limit)
+        
+                                            <p>ERFPRECISE.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ERFC">ERFC</a>(float $x)
+        
+                                            <p>ERFC.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getConversionGroups">getConversionGroups</a>()
+        
+                                            <p>getConversionGroups
+Returns a list of the different conversion groups for UOM conversions.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getConversionGroupUnits">getConversionGroupUnits</a>(string $group = null)
+        
+                                            <p>getConversionGroupUnits
+Returns an array of units of measure, for a specified conversion group, or for all groups.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getConversionGroupUnitDetails">getConversionGroupUnitDetails</a>(string $group = null)
+        
+                                            <p>getConversionGroupUnitDetails.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getConversionMultipliers">getConversionMultipliers</a>()
+        
+                                            <p>getConversionMultipliers
+Returns an array of the Multiplier prefixes that can be used with Units of Measure in CONVERTUOM().</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_CONVERTUOM">CONVERTUOM</a>(float $value, string $fromUOM, string $toUOM)
+        
+                                            <p>CONVERTUOM.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_parseComplex">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L730">line 730</a></div>
+        <code>        static            mixed[]
+    <strong>parseComplex</strong>(string $complexNumber)
+        <small><sup><span class="label label-danger">deprecated</span></sup></small></code>
+    </h3>
+    <div class="details">
+            
+            <p>
+                <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                            <tr>
+                    <td>2.0.0</td>
+                    <td>No longer used by internal code. Please use the Complex\Complex class instead</td>
+                </tr>
+                    </p>
+    
+
+                    <div class="method-description">
+                                    <p>parseComplex.</p>                    <p>Parses a complex number into its real and imaginary parts, and an I or J suffix</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$complexNumber</td>
+                <td>The complex number</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed[]</td>
+            <td>Indexed on "real", "imaginary" and "suffix"</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_BESSELI">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L790">line 790</a></div>
+        <code>        static            float
+    <strong>BESSELI</strong>(float $x, int $ord)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>BESSELI.</p>                    <p>Returns the modified Bessel function In(x), which is equivalent to the Bessel function evaluated
+       for purely imaginary arguments</p>
+
+<p>Excel Function:
+       BESSELI(x,ord)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$x</td>
+                <td>The value at which to evaluate the function.
+                               If x is nonnumeric, BESSELI returns the #VALUE! error value.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$ord</td>
+                <td>The order of the Bessel function.
+                               If ord is not an integer, it is truncated.
+                               If $ord is nonnumeric, BESSELI returns the #VALUE! error value.
+                               If $ord &lt; 0, BESSELI returns the #NUM! error value.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_BESSELJ">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L844">line 844</a></div>
+        <code>        static            float
+    <strong>BESSELJ</strong>(float $x, int $ord)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>BESSELJ.</p>                    <p>Returns the Bessel function</p>
+
+<p>Excel Function:
+       BESSELJ(x,ord)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$x</td>
+                <td>The value at which to evaluate the function.
+                               If x is nonnumeric, BESSELJ returns the #VALUE! error value.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$ord</td>
+                <td>The order of the Bessel function. If n is not an integer, it is truncated.
+                               If $ord is nonnumeric, BESSELJ returns the #VALUE! error value.
+                               If $ord &lt; 0, BESSELJ returns the #NUM! error value.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_BESSELK">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L937">line 937</a></div>
+        <code>        static            float
+    <strong>BESSELK</strong>(float $x, int $ord)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>BESSELK.</p>                    <p>Returns the modified Bessel function Kn(x), which is equivalent to the Bessel functions evaluated
+       for purely imaginary arguments.</p>
+
+<p>Excel Function:
+       BESSELK(x,ord)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$x</td>
+                <td>The value at which to evaluate the function.
+                               If x is nonnumeric, BESSELK returns the #VALUE! error value.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$ord</td>
+                <td>The order of the Bessel function. If n is not an integer, it is truncated.
+                               If $ord is nonnumeric, BESSELK returns the #VALUE! error value.
+                               If $ord &lt; 0, BESSELK returns the #NUM! error value.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_BESSELY">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L1026">line 1026</a></div>
+        <code>        static            float
+    <strong>BESSELY</strong>(float $x, int $ord)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>BESSELY.</p>                    <p>Returns the Bessel function, which is also called the Weber function or the Neumann function.</p>
+
+<p>Excel Function:
+       BESSELY(x,ord)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$x</td>
+                <td>The value at which to evaluate the function.
+                               If x is nonnumeric, BESSELK returns the #VALUE! error value.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$ord</td>
+                <td>The order of the Bessel function. If n is not an integer, it is truncated.
+                               If $ord is nonnumeric, BESSELK returns the #VALUE! error value.
+                               If $ord &lt; 0, BESSELK returns the #NUM! error value.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_BINTODEC">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L1081">line 1081</a></div>
+        <code>        static            string
+    <strong>BINTODEC</strong>(string $x)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>BINTODEC.</p>                    <p>Return a binary value as decimal.</p>
+
+<p>Excel Function:
+       BIN2DEC(x)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$x</td>
+                <td>The binary number (as a string) that you want to convert. The number
+                               cannot contain more than 10 characters (10 bits). The most significant
+                               bit of number is the sign bit. The remaining 9 bits are magnitude bits.
+                               Negative numbers are represented using two's-complement notation.
+                               If number is not a valid binary number, or if number contains more than
+                               10 characters (10 bits), BIN2DEC returns the #NUM! error value.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_BINTOHEX">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L1136">line 1136</a></div>
+        <code>        static            string
+    <strong>BINTOHEX</strong>(string $x, int $places = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>BINTOHEX.</p>                    <p>Return a binary value as hex.</p>
+
+<p>Excel Function:
+       BIN2HEX(x[,places])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$x</td>
+                <td>The binary number (as a string) that you want to convert. The number
+                               cannot contain more than 10 characters (10 bits). The most significant
+                               bit of number is the sign bit. The remaining 9 bits are magnitude bits.
+                               Negative numbers are represented using two's-complement notation.
+                               If number is not a valid binary number, or if number contains more than
+                               10 characters (10 bits), BIN2HEX returns the #NUM! error value.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$places</td>
+                <td>The number of characters to use. If places is omitted, BIN2HEX uses the
+                               minimum number of characters necessary. Places is useful for padding the
+                               return value with leading 0s (zeros).
+                               If places is not an integer, it is truncated.
+                               If places is nonnumeric, BIN2HEX returns the #VALUE! error value.
+                               If places is negative, BIN2HEX returns the #NUM! error value.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_BINTOOCT">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L1192">line 1192</a></div>
+        <code>        static            string
+    <strong>BINTOOCT</strong>(string $x, int $places = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>BINTOOCT.</p>                    <p>Return a binary value as octal.</p>
+
+<p>Excel Function:
+       BIN2OCT(x[,places])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$x</td>
+                <td>The binary number (as a string) that you want to convert. The number
+                               cannot contain more than 10 characters (10 bits). The most significant
+                               bit of number is the sign bit. The remaining 9 bits are magnitude bits.
+                               Negative numbers are represented using two's-complement notation.
+                               If number is not a valid binary number, or if number contains more than
+                               10 characters (10 bits), BIN2OCT returns the #NUM! error value.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$places</td>
+                <td>The number of characters to use. If places is omitted, BIN2OCT uses the
+                               minimum number of characters necessary. Places is useful for padding the
+                               return value with leading 0s (zeros).
+                               If places is not an integer, it is truncated.
+                               If places is nonnumeric, BIN2OCT returns the #VALUE! error value.
+                               If places is negative, BIN2OCT returns the #NUM! error value.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_DECTOBIN">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L1251">line 1251</a></div>
+        <code>        static            string
+    <strong>DECTOBIN</strong>(string $x, int $places = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>DECTOBIN.</p>                    <p>Return a decimal value as binary.</p>
+
+<p>Excel Function:
+       DEC2BIN(x[,places])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$x</td>
+                <td>The decimal integer you want to convert. If number is negative,
+                               valid place values are ignored and DEC2BIN returns a 10-character
+                               (10-bit) binary number in which the most significant bit is the sign
+                               bit. The remaining 9 bits are magnitude bits. Negative numbers are
+                               represented using two's-complement notation.
+                               If number &lt; -512 or if number > 511, DEC2BIN returns the #NUM! error
+                               value.
+                               If number is nonnumeric, DEC2BIN returns the #VALUE! error value.
+                               If DEC2BIN requires more than places characters, it returns the #NUM!
+                               error value.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$places</td>
+                <td>The number of characters to use. If places is omitted, DEC2BIN uses
+                               the minimum number of characters necessary. Places is useful for
+                               padding the return value with leading 0s (zeros).
+                               If places is not an integer, it is truncated.
+                               If places is nonnumeric, DEC2BIN returns the #VALUE! error value.
+                               If places is zero or negative, DEC2BIN returns the #NUM! error value.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_DECTOHEX">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L1312">line 1312</a></div>
+        <code>        static            string
+    <strong>DECTOHEX</strong>(string $x, int $places = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>DECTOHEX.</p>                    <p>Return a decimal value as hex.</p>
+
+<p>Excel Function:
+       DEC2HEX(x[,places])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$x</td>
+                <td>The decimal integer you want to convert. If number is negative,
+                               places is ignored and DEC2HEX returns a 10-character (40-bit)
+                               hexadecimal number in which the most significant bit is the sign
+                               bit. The remaining 39 bits are magnitude bits. Negative numbers
+                               are represented using two's-complement notation.
+                               If number &lt; -549,755,813,888 or if number > 549,755,813,887,
+                               DEC2HEX returns the #NUM! error value.
+                               If number is nonnumeric, DEC2HEX returns the #VALUE! error value.
+                               If DEC2HEX requires more than places characters, it returns the
+                               #NUM! error value.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$places</td>
+                <td>The number of characters to use. If places is omitted, DEC2HEX uses
+                               the minimum number of characters necessary. Places is useful for
+                               padding the return value with leading 0s (zeros).
+                               If places is not an integer, it is truncated.
+                               If places is nonnumeric, DEC2HEX returns the #VALUE! error value.
+                               If places is zero or negative, DEC2HEX returns the #NUM! error value.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_DECTOOCT">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L1367">line 1367</a></div>
+        <code>        static            string
+    <strong>DECTOOCT</strong>(string $x, int $places = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>DECTOOCT.</p>                    <p>Return an decimal value as octal.</p>
+
+<p>Excel Function:
+       DEC2OCT(x[,places])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$x</td>
+                <td>The decimal integer you want to convert. If number is negative,
+                               places is ignored and DEC2OCT returns a 10-character (30-bit)
+                               octal number in which the most significant bit is the sign bit.
+                               The remaining 29 bits are magnitude bits. Negative numbers are
+                               represented using two's-complement notation.
+                               If number &lt; -536,870,912 or if number > 536,870,911, DEC2OCT
+                               returns the #NUM! error value.
+                               If number is nonnumeric, DEC2OCT returns the #VALUE! error value.
+                               If DEC2OCT requires more than places characters, it returns the
+                               #NUM! error value.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$places</td>
+                <td>The number of characters to use. If places is omitted, DEC2OCT uses
+                               the minimum number of characters necessary. Places is useful for
+                               padding the return value with leading 0s (zeros).
+                               If places is not an integer, it is truncated.
+                               If places is nonnumeric, DEC2OCT returns the #VALUE! error value.
+                               If places is zero or negative, DEC2OCT returns the #NUM! error value.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_HEXTOBIN">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L1423">line 1423</a></div>
+        <code>        static            string
+    <strong>HEXTOBIN</strong>(string $x, int $places = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>HEXTOBIN.</p>                    <p>Return a hex value as binary.</p>
+
+<p>Excel Function:
+       HEX2BIN(x[,places])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$x</td>
+                <td>the hexadecimal number you want to convert.
+                 Number cannot contain more than 10 characters.
+                 The most significant bit of number is the sign bit (40th bit from the right).
+                 The remaining 9 bits are magnitude bits.
+                 Negative numbers are represented using two's-complement notation.
+                 If number is negative, HEX2BIN ignores places and returns a 10-character binary number.
+                 If number is negative, it cannot be less than FFFFFFFE00,
+                     and if number is positive, it cannot be greater than 1FF.
+                 If number is not a valid hexadecimal number, HEX2BIN returns the #NUM! error value.
+                 If HEX2BIN requires more than places characters, it returns the #NUM! error value.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$places</td>
+                <td>The number of characters to use. If places is omitted,
+                                   HEX2BIN uses the minimum number of characters necessary. Places
+                                   is useful for padding the return value with leading 0s (zeros).
+                                   If places is not an integer, it is truncated.
+                                   If places is nonnumeric, HEX2BIN returns the #VALUE! error value.
+                                   If places is negative, HEX2BIN returns the #NUM! error value.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_HEXTODEC">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L1459">line 1459</a></div>
+        <code>        static            string
+    <strong>HEXTODEC</strong>(string $x)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>HEXTODEC.</p>                    <p>Return a hex value as decimal.</p>
+
+<p>Excel Function:
+       HEX2DEC(x)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$x</td>
+                <td>The hexadecimal number you want to convert. This number cannot
+                               contain more than 10 characters (40 bits). The most significant
+                               bit of number is the sign bit. The remaining 39 bits are magnitude
+                               bits. Negative numbers are represented using two's-complement
+                               notation.
+                               If number is not a valid hexadecimal number, HEX2DEC returns the
+                               #NUM! error value.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_HEXTOOCT">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L1523">line 1523</a></div>
+        <code>        static            string
+    <strong>HEXTOOCT</strong>(string $x, int $places = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>HEXTOOCT.</p>                    <p>Return a hex value as octal.</p>
+
+<p>Excel Function:
+       HEX2OCT(x[,places])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$x</td>
+                <td>The hexadecimal number you want to convert. Number cannot
+                                   contain more than 10 characters. The most significant bit of
+                                   number is the sign bit. The remaining 39 bits are magnitude
+                                   bits. Negative numbers are represented using two's-complement
+                                   notation.
+                                   If number is negative, HEX2OCT ignores places and returns a
+                                   10-character octal number.
+                                   If number is negative, it cannot be less than FFE0000000, and
+                                   if number is positive, it cannot be greater than 1FFFFFFF.
+                                   If number is not a valid hexadecimal number, HEX2OCT returns
+                                   the #NUM! error value.
+                                   If HEX2OCT requires more than places characters, it returns
+                                   the #NUM! error value.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$places</td>
+                <td>The number of characters to use. If places is omitted, HEX2OCT
+                                   uses the minimum number of characters necessary. Places is
+                                   useful for padding the return value with leading 0s (zeros).
+                                   If places is not an integer, it is truncated.
+                                   If places is nonnumeric, HEX2OCT returns the #VALUE! error
+                                   value.
+                                   If places is negative, HEX2OCT returns the #NUM! error value.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_OCTTOBIN">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L1579">line 1579</a></div>
+        <code>        static            string
+    <strong>OCTTOBIN</strong>(string $x, int $places = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>OCTTOBIN.</p>                    <p>Return an octal value as binary.</p>
+
+<p>Excel Function:
+       OCT2BIN(x[,places])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$x</td>
+                <td>The octal number you want to convert. Number may not
+                                   contain more than 10 characters. The most significant
+                                   bit of number is the sign bit. The remaining 29 bits
+                                   are magnitude bits. Negative numbers are represented
+                                   using two's-complement notation.
+                                   If number is negative, OCT2BIN ignores places and returns
+                                   a 10-character binary number.
+                                   If number is negative, it cannot be less than 7777777000,
+                                   and if number is positive, it cannot be greater than 777.
+                                   If number is not a valid octal number, OCT2BIN returns
+                                   the #NUM! error value.
+                                   If OCT2BIN requires more than places characters, it
+                                   returns the #NUM! error value.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$places</td>
+                <td>The number of characters to use. If places is omitted,
+                                   OCT2BIN uses the minimum number of characters necessary.
+                                   Places is useful for padding the return value with
+                                   leading 0s (zeros).
+                                   If places is not an integer, it is truncated.
+                                   If places is nonnumeric, OCT2BIN returns the #VALUE!
+                                   error value.
+                                   If places is negative, OCT2BIN returns the #NUM! error
+                                   value.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_OCTTODEC">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L1615">line 1615</a></div>
+        <code>        static            string
+    <strong>OCTTODEC</strong>(string $x)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>OCTTODEC.</p>                    <p>Return an octal value as decimal.</p>
+
+<p>Excel Function:
+       OCT2DEC(x)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$x</td>
+                <td>The octal number you want to convert. Number may not contain
+                               more than 10 octal characters (30 bits). The most significant
+                               bit of number is the sign bit. The remaining 29 bits are
+                               magnitude bits. Negative numbers are represented using
+                               two's-complement notation.
+                               If number is not a valid octal number, OCT2DEC returns the
+                               #NUM! error value.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_OCTTOHEX">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L1671">line 1671</a></div>
+        <code>        static            string
+    <strong>OCTTOHEX</strong>(string $x, int $places = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>OCTTOHEX.</p>                    <p>Return an octal value as hex.</p>
+
+<p>Excel Function:
+       OCT2HEX(x[,places])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$x</td>
+                <td>The octal number you want to convert. Number may not contain
+                                   more than 10 octal characters (30 bits). The most significant
+                                   bit of number is the sign bit. The remaining 29 bits are
+                                   magnitude bits. Negative numbers are represented using
+                                   two's-complement notation.
+                                   If number is negative, OCT2HEX ignores places and returns a
+                                   10-character hexadecimal number.
+                                   If number is not a valid octal number, OCT2HEX returns the
+                                   #NUM! error value.
+                                   If OCT2HEX requires more than places characters, it returns
+                                   the #NUM! error value.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$places</td>
+                <td>The number of characters to use. If places is omitted, OCT2HEX
+                                   uses the minimum number of characters necessary. Places is useful
+                                   for padding the return value with leading 0s (zeros).
+                                   If places is not an integer, it is truncated.
+                                   If places is nonnumeric, OCT2HEX returns the #VALUE! error value.
+                                   If places is negative, OCT2HEX returns the #NUM! error value.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_COMPLEX">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L1705">line 1705</a></div>
+        <code>        static            string
+    <strong>COMPLEX</strong>(float $realNumber = 0.0, float $imaginary = 0.0, string $suffix = &#039;i&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>COMPLEX.</p>                    <p>Converts real and imaginary coefficients into a complex number of the form x +/- yi or x +/- yj.</p>
+
+<p>Excel Function:
+       COMPLEX(realNumber,imaginary[,suffix])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$realNumber</td>
+                <td>the real coefficient of the complex number</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$imaginary</td>
+                <td>the imaginary coefficient of the complex number</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$suffix</td>
+                <td>The suffix for the imaginary component of the complex number.
+                                       If omitted, the suffix is assumed to be "i".</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_IMAGINARY">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L1737">line 1737</a></div>
+        <code>        static            float
+    <strong>IMAGINARY</strong>(string $complexNumber)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>IMAGINARY.</p>                    <p>Returns the imaginary coefficient of a complex number in x + yi or x + yj text format.</p>
+
+<p>Excel Function:
+       IMAGINARY(complexNumber)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$complexNumber</td>
+                <td>the complex number for which you want the imaginary
+                                        coefficient</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_IMREAL">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L1758">line 1758</a></div>
+        <code>        static            float
+    <strong>IMREAL</strong>(string $complexNumber)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>IMREAL.</p>                    <p>Returns the real coefficient of a complex number in x + yi or x + yj text format.</p>
+
+<p>Excel Function:
+       IMREAL(complexNumber)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$complexNumber</td>
+                <td>the complex number for which you want the real coefficient</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_IMABS">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L1777">line 1777</a></div>
+        <code>        static            float
+    <strong>IMABS</strong>(string $complexNumber)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>IMABS.</p>                    <p>Returns the absolute value (modulus) of a complex number in x + yi or x + yj text format.</p>
+
+<p>Excel Function:
+       IMABS(complexNumber)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$complexNumber</td>
+                <td>the complex number for which you want the absolute value</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_IMARGUMENT">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L1797">line 1797</a></div>
+        <code>        static            float|string
+    <strong>IMARGUMENT</strong>(string $complexNumber)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>IMARGUMENT.</p>                    <p>Returns the argument theta of a complex number, i.e. the angle in radians from the real
+axis to the representation of the number in polar coordinates.</p>
+
+<p>Excel Function:
+       IMARGUMENT(complexNumber)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$complexNumber</td>
+                <td>the complex number for which you want the argument theta</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_IMCONJUGATE">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L1821">line 1821</a></div>
+        <code>        static            string
+    <strong>IMCONJUGATE</strong>(string $complexNumber)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>IMCONJUGATE.</p>                    <p>Returns the complex conjugate of a complex number in x + yi or x + yj text format.</p>
+
+<p>Excel Function:
+       IMCONJUGATE(complexNumber)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$complexNumber</td>
+                <td>the complex number for which you want the conjugate</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_IMCOS">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L1840">line 1840</a></div>
+        <code>        static            float|string
+    <strong>IMCOS</strong>(string $complexNumber)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>IMCOS.</p>                    <p>Returns the cosine of a complex number in x + yi or x + yj text format.</p>
+
+<p>Excel Function:
+       IMCOS(complexNumber)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$complexNumber</td>
+                <td>the complex number for which you want the cosine</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_IMCOSH">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L1859">line 1859</a></div>
+        <code>        static            float|string
+    <strong>IMCOSH</strong>(string $complexNumber)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>IMCOSH.</p>                    <p>Returns the hyperbolic cosine of a complex number in x + yi or x + yj text format.</p>
+
+<p>Excel Function:
+       IMCOSH(complexNumber)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$complexNumber</td>
+                <td>the complex number for which you want the hyperbolic cosine</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_IMCOT">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L1878">line 1878</a></div>
+        <code>        static            float|string
+    <strong>IMCOT</strong>(string $complexNumber)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>IMCOT.</p>                    <p>Returns the cotangent of a complex number in x + yi or x + yj text format.</p>
+
+<p>Excel Function:
+       IMCOT(complexNumber)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$complexNumber</td>
+                <td>the complex number for which you want the cotangent</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_IMCSC">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L1897">line 1897</a></div>
+        <code>        static            float|string
+    <strong>IMCSC</strong>(string $complexNumber)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>IMCSC.</p>                    <p>Returns the cosecant of a complex number in x + yi or x + yj text format.</p>
+
+<p>Excel Function:
+       IMCSC(complexNumber)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$complexNumber</td>
+                <td>the complex number for which you want the cosecant</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_IMCSCH">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L1916">line 1916</a></div>
+        <code>        static            float|string
+    <strong>IMCSCH</strong>(string $complexNumber)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>IMCSCH.</p>                    <p>Returns the hyperbolic cosecant of a complex number in x + yi or x + yj text format.</p>
+
+<p>Excel Function:
+       IMCSCH(complexNumber)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$complexNumber</td>
+                <td>the complex number for which you want the hyperbolic cosecant</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_IMSIN">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L1935">line 1935</a></div>
+        <code>        static            float|string
+    <strong>IMSIN</strong>(string $complexNumber)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>IMSIN.</p>                    <p>Returns the sine of a complex number in x + yi or x + yj text format.</p>
+
+<p>Excel Function:
+       IMSIN(complexNumber)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$complexNumber</td>
+                <td>the complex number for which you want the sine</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_IMSINH">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L1954">line 1954</a></div>
+        <code>        static            float|string
+    <strong>IMSINH</strong>(string $complexNumber)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>IMSINH.</p>                    <p>Returns the hyperbolic sine of a complex number in x + yi or x + yj text format.</p>
+
+<p>Excel Function:
+       IMSINH(complexNumber)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$complexNumber</td>
+                <td>the complex number for which you want the hyperbolic sine</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_IMSEC">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L1973">line 1973</a></div>
+        <code>        static            float|string
+    <strong>IMSEC</strong>(string $complexNumber)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>IMSEC.</p>                    <p>Returns the secant of a complex number in x + yi or x + yj text format.</p>
+
+<p>Excel Function:
+       IMSEC(complexNumber)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$complexNumber</td>
+                <td>the complex number for which you want the secant</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_IMSECH">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L1992">line 1992</a></div>
+        <code>        static            float|string
+    <strong>IMSECH</strong>(string $complexNumber)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>IMSECH.</p>                    <p>Returns the hyperbolic secant of a complex number in x + yi or x + yj text format.</p>
+
+<p>Excel Function:
+       IMSECH(complexNumber)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$complexNumber</td>
+                <td>the complex number for which you want the hyperbolic secant</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_IMTAN">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L2011">line 2011</a></div>
+        <code>        static            float|string
+    <strong>IMTAN</strong>(string $complexNumber)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>IMTAN.</p>                    <p>Returns the tangent of a complex number in x + yi or x + yj text format.</p>
+
+<p>Excel Function:
+       IMTAN(complexNumber)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$complexNumber</td>
+                <td>the complex number for which you want the tangent</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_IMSQRT">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L2030">line 2030</a></div>
+        <code>        static            string
+    <strong>IMSQRT</strong>(string $complexNumber)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>IMSQRT.</p>                    <p>Returns the square root of a complex number in x + yi or x + yj text format.</p>
+
+<p>Excel Function:
+       IMSQRT(complexNumber)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$complexNumber</td>
+                <td>the complex number for which you want the square root</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_IMLN">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L2054">line 2054</a></div>
+        <code>        static            string
+    <strong>IMLN</strong>(string $complexNumber)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>IMLN.</p>                    <p>Returns the natural logarithm of a complex number in x + yi or x + yj text format.</p>
+
+<p>Excel Function:
+       IMLN(complexNumber)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$complexNumber</td>
+                <td>the complex number for which you want the natural logarithm</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_IMLOG10">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L2078">line 2078</a></div>
+        <code>        static            string
+    <strong>IMLOG10</strong>(string $complexNumber)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>IMLOG10.</p>                    <p>Returns the common logarithm (base 10) of a complex number in x + yi or x + yj text format.</p>
+
+<p>Excel Function:
+       IMLOG10(complexNumber)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$complexNumber</td>
+                <td>the complex number for which you want the common logarithm</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_IMLOG2">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L2102">line 2102</a></div>
+        <code>        static            string
+    <strong>IMLOG2</strong>(string $complexNumber)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>IMLOG2.</p>                    <p>Returns the base-2 logarithm of a complex number in x + yi or x + yj text format.</p>
+
+<p>Excel Function:
+       IMLOG2(complexNumber)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$complexNumber</td>
+                <td>the complex number for which you want the base-2 logarithm</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_IMEXP">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L2126">line 2126</a></div>
+        <code>        static            string
+    <strong>IMEXP</strong>(string $complexNumber)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>IMEXP.</p>                    <p>Returns the exponential of a complex number in x + yi or x + yj text format.</p>
+
+<p>Excel Function:
+       IMEXP(complexNumber)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$complexNumber</td>
+                <td>the complex number for which you want the exponential</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_IMPOWER">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L2146">line 2146</a></div>
+        <code>        static            string
+    <strong>IMPOWER</strong>(string $complexNumber, float $realNumber)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>IMPOWER.</p>                    <p>Returns a complex number in x + yi or x + yj text format raised to a power.</p>
+
+<p>Excel Function:
+       IMPOWER(complexNumber,realNumber)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$complexNumber</td>
+                <td>the complex number you want to raise to a power</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$realNumber</td>
+                <td>the power to which you want to raise the complex number</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_IMDIV">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L2171">line 2171</a></div>
+        <code>        static            string
+    <strong>IMDIV</strong>(string $complexDividend, string $complexDivisor)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>IMDIV.</p>                    <p>Returns the quotient of two complex numbers in x + yi or x + yj text format.</p>
+
+<p>Excel Function:
+       IMDIV(complexDividend,complexDivisor)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$complexDividend</td>
+                <td>the complex numerator or dividend</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$complexDivisor</td>
+                <td>the complex denominator or divisor</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_IMSUB">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L2196">line 2196</a></div>
+        <code>        static            string
+    <strong>IMSUB</strong>(string $complexNumber1, string $complexNumber2)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>IMSUB.</p>                    <p>Returns the difference of two complex numbers in x + yi or x + yj text format.</p>
+
+<p>Excel Function:
+       IMSUB(complexNumber1,complexNumber2)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$complexNumber1</td>
+                <td>the complex number from which to subtract complexNumber2</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$complexNumber2</td>
+                <td>the complex number to subtract from complexNumber1</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_IMSUM">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L2220">line 2220</a></div>
+        <code>        static            string
+    <strong>IMSUM</strong>(string ...$complexNumbers)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>IMSUM.</p>                    <p>Returns the sum of two or more complex numbers in x + yi or x + yj text format.</p>
+
+<p>Excel Function:
+       IMSUM(complexNumber[,complexNumber[,...]])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>...$complexNumbers</td>
+                <td>Series of complex numbers to add</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_IMPRODUCT">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L2250">line 2250</a></div>
+        <code>        static            string
+    <strong>IMPRODUCT</strong>(string ...$complexNumbers)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>IMPRODUCT.</p>                    <p>Returns the product of two or more complex numbers in x + yi or x + yj text format.</p>
+
+<p>Excel Function:
+       IMPRODUCT(complexNumber[,complexNumber[,...]])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>...$complexNumbers</td>
+                <td>Series of complex numbers to multiply</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_DELTA">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L2284">line 2284</a></div>
+        <code>        static            int
+    <strong>DELTA</strong>(float $a, float $b = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>DELTA.</p>                    <p>Tests whether two values are equal. Returns 1 if number1 = number2; returns 0 otherwise.
+   Use this function to filter a set of values. For example, by summing several DELTA
+   functions you calculate the count of equal pairs. This function is also known as the
+Kronecker Delta function.</p>
+
+<p>Excel Function:
+       DELTA(a[,b])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$a</td>
+                <td>the first number</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$b</td>
+                <td>The second number. If omitted, b is assumed to be zero.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_GESTEP">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L2308">line 2308</a></div>
+        <code>        static            int
+    <strong>GESTEP</strong>(float $number, float $step = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>GESTEP.</p>                    <p>Excel Function:
+       GESTEP(number[,step])</p>
+
+<p>Returns 1 if number >= step; returns 0 (zero) otherwise
+   Use this function to filter a set of values. For example, by summing several GESTEP
+functions you calculate the count of values that exceed a threshold.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$number</td>
+                <td>the value to test against step</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$step</td>
+                <td>The threshold value.
+                                   If you omit a value for step, GESTEP uses zero.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_erfVal">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L2321">line 2321</a></div>
+        <code>        static            
+    <strong>erfVal</strong>($x)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$x</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_BITAND">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L2390">line 2390</a></div>
+        <code>        static            int|string
+    <strong>BITAND</strong>(int $number1, int $number2)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>BITAND.</p>                    <p>Returns the bitwise AND of two integer values.</p>
+
+<p>Excel Function:
+       BITAND(number1, number2)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$number1</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$number2</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_BITOR">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L2417">line 2417</a></div>
+        <code>        static            int|string
+    <strong>BITOR</strong>(int $number1, int $number2)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>BITOR.</p>                    <p>Returns the bitwise OR of two integer values.</p>
+
+<p>Excel Function:
+       BITOR(number1, number2)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$number1</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$number2</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_BITXOR">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L2444">line 2444</a></div>
+        <code>        static            int|string
+    <strong>BITXOR</strong>(int $number1, int $number2)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>BITXOR.</p>                    <p>Returns the bitwise XOR of two integer values.</p>
+
+<p>Excel Function:
+       BITXOR(number1, number2)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$number1</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$number2</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_BITLSHIFT">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L2471">line 2471</a></div>
+        <code>        static            int|string
+    <strong>BITLSHIFT</strong>(int $number, int $shiftAmount)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>BITLSHIFT.</p>                    <p>Returns the number value shifted left by shift_amount bits.</p>
+
+<p>Excel Function:
+       BITLSHIFT(number, shift_amount)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$number</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$shiftAmount</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_BITRSHIFT">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L2504">line 2504</a></div>
+        <code>        static            int|string
+    <strong>BITRSHIFT</strong>(int $number, int $shiftAmount)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>BITRSHIFT.</p>                    <p>Returns the number value shifted right by shift_amount bits.</p>
+
+<p>Excel Function:
+       BITRSHIFT(number, shift_amount)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$number</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$shiftAmount</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ERF">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L2536">line 2536</a></div>
+        <code>        static            float|string
+    <strong>ERF</strong>(float $lower, float $upper = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>ERF.</p>                    <p>Returns the error function integrated between the lower and upper bound arguments.</p>
+
+<p>Note: In Excel 2007 or earlier, if you input a negative value for the upper or lower bound arguments,
+           the function would return a #NUM! error. However, in Excel 2010, the function algorithm was
+           improved, so that it can now calculate the function for both positive and negative ranges.
+           PhpSpreadsheet follows Excel 2010 behaviour, and accepts negative arguments.</p>
+
+<p>Excel Function:
+       ERF(lower[,upper])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$lower</td>
+                <td>lower bound for integrating ERF</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$upper</td>
+                <td>upper bound for integrating ERF.
+                               If omitted, ERF integrates between zero and lower_limit</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ERFPRECISE">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L2565">line 2565</a></div>
+        <code>        static            float|string
+    <strong>ERFPRECISE</strong>(float $limit)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>ERFPRECISE.</p>                    <p>Returns the error function integrated between the lower and upper bound arguments.</p>
+
+<p>Excel Function:
+       ERF.PRECISE(limit)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$limit</td>
+                <td>bound for integrating ERF</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ERFC">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L2622">line 2622</a></div>
+        <code>        static            float|string
+    <strong>ERFC</strong>(float $x)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>ERFC.</p>                    <p>Returns the complementary ERF function integrated between x and infinity</p>
+
+<p>Note: In Excel 2007 or earlier, if you input a negative value for the lower bound argument,
+       the function would return a #NUM! error. However, in Excel 2010, the function algorithm was
+       improved, so that it can now calculate the function for both positive and negative x values.
+           PhpSpreadsheet follows Excel 2010 behaviour, and accepts nagative arguments.</p>
+
+<p>Excel Function:
+       ERFC(x)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$x</td>
+                <td>The lower bound for integrating ERFC</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConversionGroups">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L2639">line 2639</a></div>
+        <code>        static            array
+    <strong>getConversionGroups</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getConversionGroups
+Returns a list of the different conversion groups for UOM conversions.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConversionGroupUnits">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L2657">line 2657</a></div>
+        <code>        static            array
+    <strong>getConversionGroupUnits</strong>(string $group = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getConversionGroupUnits
+Returns an array of units of measure, for a specified conversion group, or for all groups.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$group</td>
+                <td>The group whose units of measure you want to retrieve</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConversionGroupUnitDetails">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L2676">line 2676</a></div>
+        <code>        static            array
+    <strong>getConversionGroupUnitDetails</strong>(string $group = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getConversionGroupUnitDetails.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$group</td>
+                <td>The group whose units of measure you want to retrieve</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConversionMultipliers">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L2697">line 2697</a></div>
+        <code>        static            array
+    <strong>getConversionMultipliers</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getConversionMultipliers
+Returns an array of the Multiplier prefixes that can be used with Units of Measure in CONVERTUOM().</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>of mixed</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_CONVERTUOM">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Calculation/Engineering.php#L2718">line 2718</a></div>
+        <code>        static            float
+    <strong>CONVERTUOM</strong>(float $value, string $fromUOM, string $toUOM)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>CONVERTUOM.</p>                    <p>Converts a number from one measurement system to another.
+   For example, CONVERT can translate a table of distances in miles to a table of distances
+in kilometers.</p>
+
+<p>Excel Function:
+       CONVERT(value,fromUOM,toUOM)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$value</td>
+                <td>the value in fromUOM to convert</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$fromUOM</td>
+                <td>the units for value</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$toUOM</td>
+                <td>the units for the result</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

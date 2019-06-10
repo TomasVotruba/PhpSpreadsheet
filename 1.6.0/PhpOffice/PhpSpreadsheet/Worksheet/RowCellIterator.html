@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PhpOffice\PhpSpreadsheet\Worksheet\RowCellIterator | PhpSpreadsheet</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PhpOffice_PhpSpreadsheet_Worksheet_RowCellIterator" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../1.0.0/index.html" data-version="1.0.0">1.0.0</option>
+                                            <option value="../../../../1.1.0/index.html" data-version="1.1.0">1.1.0</option>
+                                            <option value="../../../../1.2.0/index.html" data-version="1.2.0">1.2.0</option>
+                                            <option value="../../../../1.2.1/index.html" data-version="1.2.1">1.2.1</option>
+                                            <option value="../../../../1.3.0/index.html" data-version="1.3.0">1.3.0</option>
+                                            <option value="../../../../1.3.1/index.html" data-version="1.3.1">1.3.1</option>
+                                            <option value="../../../../1.4.0/index.html" data-version="1.4.0">1.4.0</option>
+                                            <option value="../../../../1.4.1/index.html" data-version="1.4.1">1.4.1</option>
+                                            <option value="../../../../1.5.0/index.html" data-version="1.5.0">1.5.0</option>
+                                            <option value="../../../../1.5.1/index.html" data-version="1.5.1">1.5.1</option>
+                                            <option value="../../../../1.5.2/index.html" data-version="1.5.2">1.5.2</option>
+                                            <option value="../../../../1.6.0/index.html" data-version="1.6.0">1.6.0</option>
+                                            <option value="../../../../1.7.0/index.html" data-version="1.7.0">1.7.0</option>
+                                            <option value="../../../../master/index.html" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">PhpSpreadsheet</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../PhpOffice.html">PhpOffice</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet.html">PhpSpreadsheet</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet.html">Worksheet</a></li><li class="backslash">\</li><li>RowCellIterator</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            RowCellIterator
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>RowCellIterator</strong>        extends <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/CellIterator.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\CellIterator">CellIterator</abbr></a>        (<a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Worksheet/RowCellIterator.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_worksheet">
+                                        protected                                        <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>
+                </td>
+                <td>$worksheet</td>
+                <td class="last">Worksheet to iterate.</td>
+                <td><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/CellIterator.html#property_worksheet"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\CellIterator">CellIterator</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_onlyExistingCells">
+                                        protected                                        bool
+                </td>
+                <td>$onlyExistingCells</td>
+                <td class="last">Iterate only existing cells.</td>
+                <td><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/CellIterator.html#property_onlyExistingCells"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\CellIterator">CellIterator</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___destruct">__destruct</a>()
+        
+                                            <p>Destructor.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/CellIterator.html#method___destruct"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\CellIterator">CellIterator</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIterateOnlyExistingCells">getIterateOnlyExistingCells</a>()
+        
+                                            <p>Get loop only existing cells.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/CellIterator.html#method_getIterateOnlyExistingCells"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\CellIterator">CellIterator</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_adjustForExistingOnlyRange">adjustForExistingOnlyRange</a>()
+        
+                                            <p>Validate start/end values for "IterateOnlyExistingCells" mode, and adjust if necessary.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setIterateOnlyExistingCells">setIterateOnlyExistingCells</a>(bool $value)
+        
+                                            <p>Set the iterator to loop only existing cells.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/CellIterator.html#method_setIterateOnlyExistingCells"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\CellIterator">CellIterator</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $worksheet = null, int $rowIndex = 1, string $startColumn = &#039;A&#039;, string $endColumn = null)
+        
+                                            <p>Create a new column iterator.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/RowCellIterator.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\RowCellIterator">RowCellIterator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resetStart">resetStart</a>(string $startColumn = &#039;A&#039;)
+        
+                                            <p>(Re)Set the start column and the current column pointer.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/RowCellIterator.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\RowCellIterator">RowCellIterator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resetEnd">resetEnd</a>(string $endColumn = null)
+        
+                                            <p>(Re)Set the end column.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/RowCellIterator.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\RowCellIterator">RowCellIterator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_seek">seek</a>(string $column = &#039;A&#039;)
+        
+                                            <p>Set the column pointer to the selected column.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rewind">rewind</a>()
+        
+                                            <p>Rewind the iterator to the starting column.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Cell/Cell.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\Cell">Cell</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_current">current</a>()
+        
+                                            <p>Return the current cell in this worksheet row.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_key">key</a>()
+        
+                                            <p>Return the current iterator key.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_next">next</a>()
+        
+                                            <p>Set the iterator to its next value.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_prev">prev</a>()
+        
+                                            <p>Set the iterator to its previous value.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_valid">valid</a>()
+        
+                                            <p>Indicate if more columns exist in the worksheet range of columns that we're iterating.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___destruct">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/CellIterator.html#method___destruct"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\CellIterator">CellIterator</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Worksheet/CellIterator.php#L26">line 26</a></div>
+        <code>                    
+    <strong>__destruct</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Destructor.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIterateOnlyExistingCells">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/CellIterator.html#method_getIterateOnlyExistingCells"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\CellIterator">CellIterator</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Worksheet/CellIterator.php#L36">line 36</a></div>
+        <code>                    bool
+    <strong>getIterateOnlyExistingCells</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get loop only existing cells.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_adjustForExistingOnlyRange">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Worksheet/RowCellIterator.php#L178">line 178</a></div>
+        <code>            protected        
+    <strong>adjustForExistingOnlyRange</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Validate start/end values for "IterateOnlyExistingCells" mode, and adjust if necessary.</p>                                                </div>
+                <div class="tags">
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIterateOnlyExistingCells">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/CellIterator.html#method_setIterateOnlyExistingCells"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\CellIterator">CellIterator</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Worksheet/CellIterator.php#L55">line 55</a></div>
+        <code>                    
+    <strong>setIterateOnlyExistingCells</strong>(bool $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the iterator to loop only existing cells.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Worksheet/RowCellIterator.php#L46">line 46</a></div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $worksheet = null, int $rowIndex = 1, string $startColumn = &#039;A&#039;, string $endColumn = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a new column iterator.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+                <td>$worksheet</td>
+                <td>The worksheet to iterate over</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$rowIndex</td>
+                <td>The row that we want to iterate</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$startColumn</td>
+                <td>The column address at which to start iterating</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$endColumn</td>
+                <td>Optionally, the column address at which to stop iterating</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resetStart">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Worksheet/RowCellIterator.php#L64">line 64</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/RowCellIterator.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\RowCellIterator">RowCellIterator</abbr></a>
+    <strong>resetStart</strong>(string $startColumn = &#039;A&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>(Re)Set the start column and the current column pointer.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$startColumn</td>
+                <td>The column address at which to start iterating</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/RowCellIterator.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\RowCellIterator">RowCellIterator</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resetEnd">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Worksheet/RowCellIterator.php#L82">line 82</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/RowCellIterator.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\RowCellIterator">RowCellIterator</abbr></a>
+    <strong>resetEnd</strong>(string $endColumn = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>(Re)Set the end column.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$endColumn</td>
+                <td>The column address at which to stop iterating</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/RowCellIterator.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\RowCellIterator">RowCellIterator</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_seek">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Worksheet/RowCellIterator.php#L100">line 100</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/RowCellIterator.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\RowCellIterator">RowCellIterator</abbr></a>
+    <strong>seek</strong>(string $column = &#039;A&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the column pointer to the selected column.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>The column address to set the current pointer at</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/RowCellIterator.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\RowCellIterator">RowCellIterator</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rewind">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Worksheet/RowCellIterator.php#L116">line 116</a></div>
+        <code>                    
+    <strong>rewind</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Rewind the iterator to the starting column.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_current">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Worksheet/RowCellIterator.php#L126">line 126</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Cell/Cell.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\Cell">Cell</abbr></a>
+    <strong>current</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return the current cell in this worksheet row.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Cell/Cell.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\Cell">Cell</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_key">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Worksheet/RowCellIterator.php#L136">line 136</a></div>
+        <code>                    string
+    <strong>key</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return the current iterator key.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_next">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Worksheet/RowCellIterator.php#L144">line 144</a></div>
+        <code>                    
+    <strong>next</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the iterator to its next value.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prev">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Worksheet/RowCellIterator.php#L156">line 156</a></div>
+        <code>                    
+    <strong>prev</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the iterator to its previous value.</p>                                                </div>
+                <div class="tags">
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_valid">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Worksheet/RowCellIterator.php#L168">line 168</a></div>
+        <code>                    bool
+    <strong>valid</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Indicate if more columns exist in the worksheet range of columns that we're iterating.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PhpOffice\PhpSpreadsheet\Shared\Font | PhpSpreadsheet</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PhpOffice_PhpSpreadsheet_Shared_Font" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../1.0.0/index.html" data-version="1.0.0">1.0.0</option>
+                                            <option value="../../../../1.1.0/index.html" data-version="1.1.0">1.1.0</option>
+                                            <option value="../../../../1.2.0/index.html" data-version="1.2.0">1.2.0</option>
+                                            <option value="../../../../1.2.1/index.html" data-version="1.2.1">1.2.1</option>
+                                            <option value="../../../../1.3.0/index.html" data-version="1.3.0">1.3.0</option>
+                                            <option value="../../../../1.3.1/index.html" data-version="1.3.1">1.3.1</option>
+                                            <option value="../../../../1.4.0/index.html" data-version="1.4.0">1.4.0</option>
+                                            <option value="../../../../1.4.1/index.html" data-version="1.4.1">1.4.1</option>
+                                            <option value="../../../../1.5.0/index.html" data-version="1.5.0">1.5.0</option>
+                                            <option value="../../../../1.5.1/index.html" data-version="1.5.1">1.5.1</option>
+                                            <option value="../../../../1.5.2/index.html" data-version="1.5.2">1.5.2</option>
+                                            <option value="../../../../1.6.0/index.html" data-version="1.6.0">1.6.0</option>
+                                            <option value="../../../../1.7.0/index.html" data-version="1.7.0">1.7.0</option>
+                                            <option value="../../../../master/index.html" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">PhpSpreadsheet</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../PhpOffice.html">PhpOffice</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet.html">PhpSpreadsheet</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet/Shared.html">Shared</a></li><li class="backslash">\</li><li>Font</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Font
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Font</strong>        (<a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Shared/Font.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>AUTOSIZE_METHOD_APPROX</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOSIZE_METHOD_EXACT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CHARSET_ANSI_LATIN</td>
+                <td class="last">
+                    <p><em>Character set codes used by BIFF5-8 in Font records</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CHARSET_SYSTEM_DEFAULT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CHARSET_SYMBOL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CHARSET_APPLE_ROMAN</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CHARSET_ANSI_JAPANESE_SHIFTJIS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CHARSET_ANSI_KOREAN_HANGUL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CHARSET_ANSI_KOREAN_JOHAB</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CHARSET_ANSI_CHINESE_SIMIPLIFIED</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CHARSET_ANSI_CHINESE_TRADITIONAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CHARSET_ANSI_GREEK</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CHARSET_ANSI_TURKISH</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CHARSET_ANSI_VIETNAMESE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CHARSET_ANSI_HEBREW</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CHARSET_ANSI_ARABIC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CHARSET_ANSI_BALTIC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CHARSET_ANSI_CYRILLIC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CHARSET_ANSI_THAI</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CHARSET_ANSI_LATIN_II</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CHARSET_OEM_LATIN_I</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ARIAL</td>
+                <td class="last">
+                    <p><em>Font filenames</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ARIAL_BOLD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ARIAL_ITALIC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ARIAL_BOLD_ITALIC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CALIBRI</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CALIBRI_BOLD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CALIBRI_ITALIC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CALIBRI_BOLD_ITALIC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>COMIC_SANS_MS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>COMIC_SANS_MS_BOLD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>COURIER_NEW</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>COURIER_NEW_BOLD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>COURIER_NEW_ITALIC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>COURIER_NEW_BOLD_ITALIC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>GEORGIA</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>GEORGIA_BOLD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>GEORGIA_ITALIC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>GEORGIA_BOLD_ITALIC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>IMPACT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LIBERATION_SANS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LIBERATION_SANS_BOLD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LIBERATION_SANS_ITALIC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LIBERATION_SANS_BOLD_ITALIC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LUCIDA_CONSOLE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LUCIDA_SANS_UNICODE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>MICROSOFT_SANS_SERIF</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PALATINO_LINOTYPE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PALATINO_LINOTYPE_BOLD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PALATINO_LINOTYPE_ITALIC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PALATINO_LINOTYPE_BOLD_ITALIC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SYMBOL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TAHOMA</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TAHOMA_BOLD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TIMES_NEW_ROMAN</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TIMES_NEW_ROMAN_BOLD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TIMES_NEW_ROMAN_ITALIC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TIMES_NEW_ROMAN_BOLD_ITALIC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TREBUCHET_MS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TREBUCHET_MS_BOLD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TREBUCHET_MS_ITALIC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TREBUCHET_MS_BOLD_ITALIC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>VERDANA</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>VERDANA_BOLD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>VERDANA_ITALIC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>VERDANA_BOLD_ITALIC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_defaultColumnWidths">
+                    static                                                            array
+                </td>
+                <td>$defaultColumnWidths</td>
+                <td class="last">How wide is a default column for a given default font and size?
+Empirical data found by inspecting real Excel files and reading off the pixel width
+in Microsoft Office Excel 2007.</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAutoSizeMethod">setAutoSizeMethod</a>(string $pValue)
+        
+                                            <p>Set autoSize method.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAutoSizeMethod">getAutoSizeMethod</a>()
+        
+                                            <p>Get autoSize method.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTrueTypeFontPath">setTrueTypeFontPath</a>(string $pValue)
+        
+                                            <p>Set the path to the folder containing .ttf files. There should be a trailing slash.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTrueTypeFontPath">getTrueTypeFontPath</a>()
+        
+                                            <p>Get the path to the folder containing .ttf files.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_calculateColumnWidth">calculateColumnWidth</a>(<a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a> $font, <a href="../../../PhpOffice/PhpSpreadsheet/RichText/RichText.html"><abbr title="PhpOffice\PhpSpreadsheet\RichText\RichText">RichText</abbr></a>|string $cellText = &#039;&#039;, int $rotation = 0, <a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a> $defaultFont = null)
+        
+                                            <p>Calculate an (approximate) OpenXML column width, based on font size and text contained.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTextWidthPixelsExact">getTextWidthPixelsExact</a>(string $text, <a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a> $font, int $rotation = 0)
+        
+                                            <p>Get GD text width in pixels for a string of text in a certain font at a certain rotation angle.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTextWidthPixelsApprox">getTextWidthPixelsApprox</a>(string $columnText, <a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a> $font, int $rotation = 0)
+        
+                                            <p>Get approximate width in pixels for a string of text in a certain font at a certain rotation angle.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fontSizeToPixels">fontSizeToPixels</a>(int $fontSizeInPoints)
+        
+                                            <p>Calculate an (approximate) pixel size, based on a font points size.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_inchSizeToPixels">inchSizeToPixels</a>(int $sizeInInch)
+        
+                                            <p>Calculate an (approximate) pixel size, based on inch size.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_centimeterSizeToPixels">centimeterSizeToPixels</a>(int $sizeInCm)
+        
+                                            <p>Calculate an (approximate) pixel size, based on centimeter size.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTrueTypeFontFileFromFont">getTrueTypeFontFileFromFont</a>(<a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a> $font)
+        
+                                            <p>Returns the font path given the font.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCharsetFromFontName">getCharsetFromFontName</a>(string $name)
+        
+                                            <p>Returns the associated charset for the font name.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDefaultColumnWidthByFont">getDefaultColumnWidthByFont</a>(<a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a> $font, bool $pPixels = false)
+        
+                                            <p>Get the effective column width for columns without a column dimension or column with width -1
+For example, for Calibri 11 this is 9.140625 (64 px).</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDefaultRowHeightByFont">getDefaultRowHeightByFont</a>(<a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a> $font)
+        
+                                            <p>Get the effective row height for rows without a row dimension or rows with height -1
+For example, for Calibri 11 this is 15 points.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_setAutoSizeMethod">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Shared/Font.php#L170">line 170</a></div>
+        <code>        static            bool
+    <strong>setAutoSizeMethod</strong>(string $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set autoSize method.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pValue</td>
+                <td>see self::AUTOSIZE_METHOD_*</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>Success or failure</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAutoSizeMethod">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Shared/Font.php#L185">line 185</a></div>
+        <code>        static            string
+    <strong>getAutoSizeMethod</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get autoSize method.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTrueTypeFontPath">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Shared/Font.php#L201">line 201</a></div>
+        <code>        static            
+    <strong>setTrueTypeFontPath</strong>(string $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the path to the folder containing .ttf files. There should be a trailing slash.</p>                    <p>Typical locations on variout some platforms:</p>
+
+<ul>
+       <li>C:/Windows/Fonts/</li>
+       <li>/usr/share/fonts/truetype/</li>
+       <li>~/.fonts/</li>
+</ul>
+
+<p>.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTrueTypeFontPath">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Shared/Font.php#L211">line 211</a></div>
+        <code>        static            string
+    <strong>getTrueTypeFontPath</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the path to the folder containing .ttf files.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_calculateColumnWidth">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Shared/Font.php#L226">line 226</a></div>
+        <code>        static            int
+    <strong>calculateColumnWidth</strong>(<a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a> $font, <a href="../../../PhpOffice/PhpSpreadsheet/RichText/RichText.html"><abbr title="PhpOffice\PhpSpreadsheet\RichText\RichText">RichText</abbr></a>|string $cellText = &#039;&#039;, int $rotation = 0, <a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a> $defaultFont = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Calculate an (approximate) OpenXML column width, based on font size and text contained.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a></td>
+                <td>$font</td>
+                <td>Font object</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/RichText/RichText.html"><abbr title="PhpOffice\PhpSpreadsheet\RichText\RichText">RichText</abbr></a>|string</td>
+                <td>$cellText</td>
+                <td>Text to calculate width</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$rotation</td>
+                <td>Rotation angle</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a></td>
+                <td>$defaultFont</td>
+                <td>Font object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>Column width</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTextWidthPixelsExact">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Shared/Font.php#L283">line 283</a></div>
+        <code>        static            int
+    <strong>getTextWidthPixelsExact</strong>(string $text, <a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a> $font, int $rotation = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get GD text width in pixels for a string of text in a certain font at a certain rotation angle.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$text</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a></td>
+                <td>$font</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$rotation</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTextWidthPixelsApprox">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Shared/Font.php#L315">line 315</a></div>
+        <code>        static            int
+    <strong>getTextWidthPixelsApprox</strong>(string $columnText, <a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a> $font, int $rotation = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get approximate width in pixels for a string of text in a certain font at a certain rotation angle.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$columnText</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a></td>
+                <td>$font</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$rotation</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>Text width in pixels (no padding added)</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fontSizeToPixels">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Shared/Font.php#L367">line 367</a></div>
+        <code>        static            int
+    <strong>fontSizeToPixels</strong>(int $fontSizeInPoints)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Calculate an (approximate) pixel size, based on a font points size.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$fontSizeInPoints</td>
+                <td>Font size (in points)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>Font size (in pixels)</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_inchSizeToPixels">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Shared/Font.php#L379">line 379</a></div>
+        <code>        static            int
+    <strong>inchSizeToPixels</strong>(int $sizeInInch)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Calculate an (approximate) pixel size, based on inch size.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$sizeInInch</td>
+                <td>Font size (in inch)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>Size (in pixels)</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_centimeterSizeToPixels">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Shared/Font.php#L391">line 391</a></div>
+        <code>        static            float
+    <strong>centimeterSizeToPixels</strong>(int $sizeInCm)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Calculate an (approximate) pixel size, based on centimeter size.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$sizeInCm</td>
+                <td>Font size (in centimeters)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td>Size (in pixels)</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTrueTypeFontFileFromFont">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Shared/Font.php#L403">line 403</a></div>
+        <code>        static            string
+    <strong>getTrueTypeFontFileFromFont</strong>(<a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a> $font)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the font path given the font.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a></td>
+                <td>$font</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Path to TrueType font file</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCharsetFromFontName">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Shared/Font.php#L532">line 532</a></div>
+        <code>        static            int
+    <strong>getCharsetFromFontName</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the associated charset for the font name.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Font name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>Character set code</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDefaultColumnWidthByFont">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Shared/Font.php#L558">line 558</a></div>
+        <code>        static            mixed
+    <strong>getDefaultColumnWidthByFont</strong>(<a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a> $font, bool $pPixels = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the effective column width for columns without a column dimension or column with width -1
+For example, for Calibri 11 this is 9.140625 (64 px).</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a></td>
+                <td>$font</td>
+                <td>The workbooks default font</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$pPixels</td>
+                <td>true = return column width in pixels, false = return in OOXML units</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Column width</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDefaultRowHeightByFont">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Shared/Font.php#L590">line 590</a></div>
+        <code>        static            float
+    <strong>getDefaultRowHeightByFont</strong>(<a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a> $font)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the effective row height for rows without a row dimension or rows with height -1
+For example, for Calibri 11 this is 15 points.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a></td>
+                <td>$font</td>
+                <td>The workbooks default font</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td>Row height in points</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

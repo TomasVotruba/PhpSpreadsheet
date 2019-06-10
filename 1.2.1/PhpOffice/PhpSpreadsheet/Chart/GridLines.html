@@ -1,0 +1,1721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PhpOffice\PhpSpreadsheet\Chart\GridLines | PhpSpreadsheet</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PhpOffice_PhpSpreadsheet_Chart_GridLines" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../1.0.0/index.html" data-version="1.0.0">1.0.0</option>
+                                            <option value="../../../../1.1.0/index.html" data-version="1.1.0">1.1.0</option>
+                                            <option value="../../../../1.2.0/index.html" data-version="1.2.0">1.2.0</option>
+                                            <option value="../../../../1.2.1/index.html" data-version="1.2.1">1.2.1</option>
+                                            <option value="../../../../1.3.0/index.html" data-version="1.3.0">1.3.0</option>
+                                            <option value="../../../../1.3.1/index.html" data-version="1.3.1">1.3.1</option>
+                                            <option value="../../../../1.4.0/index.html" data-version="1.4.0">1.4.0</option>
+                                            <option value="../../../../1.4.1/index.html" data-version="1.4.1">1.4.1</option>
+                                            <option value="../../../../1.5.0/index.html" data-version="1.5.0">1.5.0</option>
+                                            <option value="../../../../1.5.1/index.html" data-version="1.5.1">1.5.1</option>
+                                            <option value="../../../../1.5.2/index.html" data-version="1.5.2">1.5.2</option>
+                                            <option value="../../../../1.6.0/index.html" data-version="1.6.0">1.6.0</option>
+                                            <option value="../../../../1.7.0/index.html" data-version="1.7.0">1.7.0</option>
+                                            <option value="../../../../master/index.html" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">PhpSpreadsheet</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../PhpOffice.html">PhpOffice</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet.html">PhpSpreadsheet</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet/Chart.html">Chart</a></li><li class="backslash">\</li><li>GridLines</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            GridLines
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>GridLines</strong>        extends <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Properties.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Properties">Properties</abbr></a>        (<a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.1/src/PhpSpreadsheet/Chart/GridLines.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Created by PhpStorm.</p>            <p>User: Wiktor Trzonkowski
+Date: 7/2/14
+Time: 2:36 PM.</p>                    </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>EXCEL_COLOR_TYPE_STANDARD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>EXCEL_COLOR_TYPE_SCHEME</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>EXCEL_COLOR_TYPE_ARGB</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AXIS_LABELS_LOW</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AXIS_LABELS_HIGH</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AXIS_LABELS_NEXT_TO</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AXIS_LABELS_NONE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TICK_MARK_NONE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TICK_MARK_INSIDE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TICK_MARK_OUTSIDE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TICK_MARK_CROSS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HORIZONTAL_CROSSES_AUTOZERO</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HORIZONTAL_CROSSES_MAXIMUM</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_CODE_GENERAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_CODE_NUMBER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_CODE_CURRENCY</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_CODE_ACCOUNTING</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_CODE_DATE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_CODE_TIME</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_CODE_PERCENTAGE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_CODE_FRACTION</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_CODE_SCIENTIFIC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_CODE_TEXT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_CODE_SPECIAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ORIENTATION_NORMAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ORIENTATION_REVERSED</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_COMPOUND_SIMPLE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_COMPOUND_DOUBLE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_COMPOUND_THICKTHIN</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_COMPOUND_THINTHICK</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_COMPOUND_TRIPLE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_DASH_SOLID</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_DASH_ROUND_DOT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_DASH_SQUERE_DOT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYPE_DASH_DASH</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_DASH_DASH_DOT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_DASH_LONG_DASH</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_DASH_LONG_DASH_DOT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_DASH_LONG_DASH_DOT_DOT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_CAP_SQUARE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_CAP_ROUND</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_CAP_FLAT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_JOIN_ROUND</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_JOIN_MITER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_JOIN_BEVEL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_ARROW_TYPE_NOARROW</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_ARROW_TYPE_ARROW</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_ARROW_TYPE_OPEN</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_ARROW_TYPE_STEALTH</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_ARROW_TYPE_DIAMOND</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_ARROW_TYPE_OVAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_ARROW_SIZE_1</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_ARROW_SIZE_2</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_ARROW_SIZE_3</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_ARROW_SIZE_4</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_ARROW_SIZE_5</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_ARROW_SIZE_6</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_ARROW_SIZE_7</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_ARROW_SIZE_8</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_ARROW_SIZE_9</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_NOSHADOW</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_OUTER_BOTTTOM_RIGHT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_OUTER_BOTTOM</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_OUTER_BOTTOM_LEFT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_OUTER_RIGHT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_OUTER_CENTER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_OUTER_LEFT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_OUTER_TOP_RIGHT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_OUTER_TOP</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_OUTER_TOP_LEFT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_INNER_BOTTTOM_RIGHT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_INNER_BOTTOM</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_INNER_BOTTOM_LEFT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_INNER_RIGHT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_INNER_CENTER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_INNER_LEFT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_INNER_TOP_RIGHT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_INNER_TOP</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_INNER_TOP_LEFT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_PERSPECTIVE_BELOW</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_PERSPECTIVE_UPPER_RIGHT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_PERSPECTIVE_UPPER_LEFT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_PERSPECTIVE_LOWER_RIGHT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_PERSPECTIVE_LOWER_LEFT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getExcelPointsWidth">getExcelPointsWidth</a>(float $width)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Chart/Properties.html#method_getExcelPointsWidth"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Properties">Properties</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getExcelPointsAngle">getExcelPointsAngle</a>(float $angle)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Chart/Properties.html#method_getExcelPointsAngle"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Properties">Properties</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTrueAlpha">getTrueAlpha</a>($alpha)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Chart/Properties.html#method_getTrueAlpha"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Properties">Properties</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setColorProperties">setColorProperties</a>($color, $alpha, $type)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Chart/Properties.html#method_setColorProperties"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Properties">Properties</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLineStyleArrowSize">getLineStyleArrowSize</a>($array_selector, $array_kay_selector)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Chart/Properties.html#method_getLineStyleArrowSize"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Properties">Properties</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getShadowPresetsMap">getShadowPresetsMap</a>($shadow_presets_option)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Chart/Properties.html#method_getShadowPresetsMap"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Properties">Properties</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getArrayElementsValue">getArrayElementsValue</a>($properties, $elements)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Chart/Properties.html#method_getArrayElementsValue"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Properties">Properties</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getObjectState">getObjectState</a>()
+        
+                                            <p>Get Object State.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLineColorProperties">setLineColorProperties</a>(string $value, int $alpha = 0, string $type = self::EXCEL_COLOR_TYPE_STANDARD)
+        
+                                            <p>Set Line Color Properties.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLineStyleProperties">setLineStyleProperties</a>(float $line_width = null, string $compound_type = null, string $dash_type = null, string $cap_type = null, string $join_type = null, string $head_arrow_type = null, string $head_arrow_size = null, string $end_arrow_type = null, string $end_arrow_size = null)
+        
+                                            <p>Set Line Color Properties.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLineColorProperty">getLineColorProperty</a>(string $parameter)
+        
+                                            <p>Get Line Color Property.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLineStyleProperty">getLineStyleProperty</a>(array|string $elements)
+        
+                                            <p>Get Line Style Property.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setGlowProperties">setGlowProperties</a>(float $size, string $color_value = null, int $color_alpha = null, string $color_type = null)
+        
+                                            <p>Set Glow Properties.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getGlowColor">getGlowColor</a>(string $property)
+        
+                                            <p>Get Glow Color Property.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getGlowSize">getGlowSize</a>()
+        
+                                            <p>Get Glow Size.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLineStyleArrowParameters">getLineStyleArrowParameters</a>(string $arrow_selector, string $property_selector)
+        
+                                            <p>Get Line Style Arrow Parameters.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setShadowProperties">setShadowProperties</a>(int $sh_presets, string $sh_color_value = null, string $sh_color_type = null, int $sh_color_alpha = null, string $sh_blur = null, int $sh_angle = null, float $sh_distance = null)
+        
+                                            <p>Set Shadow Properties.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getShadowProperty">getShadowProperty</a>(string|string[] $elements)
+        
+                                            <p>Get Shadow Property.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setSoftEdgesSize">setSoftEdgesSize</a>(float $size)
+        
+                                            <p>Set Soft Edges Size.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSoftEdgesSize">getSoftEdgesSize</a>()
+        
+                                            <p>Get Soft Edges Size.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getExcelPointsWidth">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Properties.html#method_getExcelPointsWidth"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Properties">Properties</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.1/src/PhpSpreadsheet/Chart/Properties.php#L118">line 118</a></div>
+        <code>            protected        float
+    <strong>getExcelPointsWidth</strong>(float $width)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$width</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getExcelPointsAngle">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Properties.html#method_getExcelPointsAngle"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Properties">Properties</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.1/src/PhpSpreadsheet/Chart/Properties.php#L128">line 128</a></div>
+        <code>            protected        float
+    <strong>getExcelPointsAngle</strong>(float $angle)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$angle</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTrueAlpha">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Properties.html#method_getTrueAlpha"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Properties">Properties</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.1/src/PhpSpreadsheet/Chart/Properties.php#L133">line 133</a></div>
+        <code>            protected        
+    <strong>getTrueAlpha</strong>($alpha)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$alpha</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setColorProperties">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Properties.html#method_setColorProperties"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Properties">Properties</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.1/src/PhpSpreadsheet/Chart/Properties.php#L138">line 138</a></div>
+        <code>            protected        
+    <strong>setColorProperties</strong>($color, $alpha, $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$color</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$alpha</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLineStyleArrowSize">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Properties.html#method_getLineStyleArrowSize"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Properties">Properties</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.1/src/PhpSpreadsheet/Chart/Properties.php#L147">line 147</a></div>
+        <code>            protected        
+    <strong>getLineStyleArrowSize</strong>($array_selector, $array_kay_selector)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$array_selector</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$array_kay_selector</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getShadowPresetsMap">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Properties.html#method_getShadowPresetsMap"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Properties">Properties</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.1/src/PhpSpreadsheet/Chart/Properties.php#L164">line 164</a></div>
+        <code>            protected        
+    <strong>getShadowPresetsMap</strong>($shadow_presets_option)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$shadow_presets_option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getArrayElementsValue">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Properties.html#method_getArrayElementsValue"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Properties">Properties</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.1/src/PhpSpreadsheet/Chart/Properties.php#L356">line 356</a></div>
+        <code>            protected        
+    <strong>getArrayElementsValue</strong>($properties, $elements)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$properties</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$elements</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getObjectState">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.1/src/PhpSpreadsheet/Chart/GridLines.php#L86">line 86</a></div>
+        <code>                    bool
+    <strong>getObjectState</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Object State.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLineColorProperties">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.1/src/PhpSpreadsheet/Chart/GridLines.php#L110">line 110</a></div>
+        <code>                    
+    <strong>setLineColorProperties</strong>(string $value, int $alpha = 0, string $type = self::EXCEL_COLOR_TYPE_STANDARD)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Line Color Properties.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$alpha</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLineStyleProperties">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.1/src/PhpSpreadsheet/Chart/GridLines.php#L133">line 133</a></div>
+        <code>                    
+    <strong>setLineStyleProperties</strong>(float $line_width = null, string $compound_type = null, string $dash_type = null, string $cap_type = null, string $join_type = null, string $head_arrow_type = null, string $head_arrow_size = null, string $end_arrow_type = null, string $end_arrow_size = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Line Color Properties.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$line_width</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$compound_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dash_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$cap_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$join_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$head_arrow_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$head_arrow_size</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$end_arrow_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$end_arrow_size</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLineColorProperty">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.1/src/PhpSpreadsheet/Chart/GridLines.php#L172">line 172</a></div>
+        <code>                    string
+    <strong>getLineColorProperty</strong>(string $parameter)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Line Color Property.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parameter</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLineStyleProperty">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.1/src/PhpSpreadsheet/Chart/GridLines.php#L184">line 184</a></div>
+        <code>                    string
+    <strong>getLineStyleProperty</strong>(array|string $elements)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Line Style Property.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$elements</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setGlowProperties">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.1/src/PhpSpreadsheet/Chart/GridLines.php#L197">line 197</a></div>
+        <code>                    
+    <strong>setGlowProperties</strong>(float $size, string $color_value = null, int $color_alpha = null, string $color_type = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Glow Properties.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$size</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$color_value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$color_alpha</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$color_type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getGlowColor">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.1/src/PhpSpreadsheet/Chart/GridLines.php#L212">line 212</a></div>
+        <code>                    string
+    <strong>getGlowColor</strong>(string $property)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Glow Color Property.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$property</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getGlowSize">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.1/src/PhpSpreadsheet/Chart/GridLines.php#L222">line 222</a></div>
+        <code>                    string
+    <strong>getGlowSize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Glow Size.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLineStyleArrowParameters">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.1/src/PhpSpreadsheet/Chart/GridLines.php#L273">line 273</a></div>
+        <code>                    string
+    <strong>getLineStyleArrowParameters</strong>(string $arrow_selector, string $property_selector)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Line Style Arrow Parameters.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$arrow_selector</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$property_selector</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setShadowProperties">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.1/src/PhpSpreadsheet/Chart/GridLines.php#L289">line 289</a></div>
+        <code>                    
+    <strong>setShadowProperties</strong>(int $sh_presets, string $sh_color_value = null, string $sh_color_type = null, int $sh_color_alpha = null, string $sh_blur = null, int $sh_angle = null, float $sh_distance = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Shadow Properties.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$sh_presets</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sh_color_value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sh_color_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$sh_color_alpha</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sh_blur</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$sh_angle</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$sh_distance</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getShadowProperty">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.1/src/PhpSpreadsheet/Chart/GridLines.php#L428">line 428</a></div>
+        <code>                    string
+    <strong>getShadowProperty</strong>(string|string[] $elements)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Shadow Property.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|string[]</td>
+                <td>$elements</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSoftEdgesSize">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.1/src/PhpSpreadsheet/Chart/GridLines.php#L438">line 438</a></div>
+        <code>                    
+    <strong>setSoftEdgesSize</strong>(float $size)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Soft Edges Size.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$size</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSoftEdgesSize">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.1/src/PhpSpreadsheet/Chart/GridLines.php#L451">line 451</a></div>
+        <code>                    string
+    <strong>getSoftEdgesSize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Soft Edges Size.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

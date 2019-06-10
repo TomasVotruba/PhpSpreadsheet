@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PhpOffice\PhpSpreadsheet\Writer\Html | PhpSpreadsheet</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PhpOffice_PhpSpreadsheet_Writer_Html" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../1.0.0/index.html" data-version="1.0.0">1.0.0</option>
+                                            <option value="../../../../1.1.0/index.html" data-version="1.1.0">1.1.0</option>
+                                            <option value="../../../../1.2.0/index.html" data-version="1.2.0">1.2.0</option>
+                                            <option value="../../../../1.2.1/index.html" data-version="1.2.1">1.2.1</option>
+                                            <option value="../../../../1.3.0/index.html" data-version="1.3.0">1.3.0</option>
+                                            <option value="../../../../1.3.1/index.html" data-version="1.3.1">1.3.1</option>
+                                            <option value="../../../../1.4.0/index.html" data-version="1.4.0">1.4.0</option>
+                                            <option value="../../../../1.4.1/index.html" data-version="1.4.1">1.4.1</option>
+                                            <option value="../../../../1.5.0/index.html" data-version="1.5.0">1.5.0</option>
+                                            <option value="../../../../1.5.1/index.html" data-version="1.5.1">1.5.1</option>
+                                            <option value="../../../../1.5.2/index.html" data-version="1.5.2">1.5.2</option>
+                                            <option value="../../../../1.6.0/index.html" data-version="1.6.0">1.6.0</option>
+                                            <option value="../../../../1.7.0/index.html" data-version="1.7.0">1.7.0</option>
+                                            <option value="../../../../master/index.html" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">PhpSpreadsheet</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../PhpOffice.html">PhpOffice</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet.html">PhpSpreadsheet</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet/Writer.html">Writer</a></li><li class="backslash">\</li><li>Html</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Html
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Html</strong>        extends <a href="../../../PhpOffice/PhpSpreadsheet/Writer/BaseWriter.html"><abbr title="PhpOffice\PhpSpreadsheet\Writer\BaseWriter">BaseWriter</abbr></a>        (<a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Html.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_includeCharts">
+                                        protected                                        bool
+                </td>
+                <td>$includeCharts</td>
+                <td class="last">Write charts that are defined in the workbook?
+Identifies whether the Writer should write definitions for any charts that exist in the PhpSpreadsheet object;.</td>
+                <td><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Writer/BaseWriter.html#property_includeCharts"><abbr title="PhpOffice\PhpSpreadsheet\Writer\BaseWriter">BaseWriter</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_preCalculateFormulas">
+                                        protected                                        bool
+                </td>
+                <td>$preCalculateFormulas</td>
+                <td class="last">Pre-calculate formulas
+Forces PhpSpreadsheet to recalculate all formulae in a workbook when saving, so that the pre-calculated values are
+immediately available to MS Excel or other office spreadsheet viewer when opening the file.</td>
+                <td><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Writer/BaseWriter.html#property_preCalculateFormulas"><abbr title="PhpOffice\PhpSpreadsheet\Writer\BaseWriter">BaseWriter</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_spreadsheet">
+                                        protected                                        <a href="../../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a>
+                </td>
+                <td>$spreadsheet</td>
+                <td class="last">Spreadsheet object.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_isPdf">
+                                        protected                                        bool
+                </td>
+                <td>$isPdf</td>
+                <td class="last">Is the current writer creating PDF?</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIncludeCharts">getIncludeCharts</a>()
+        
+                                            <p>Write charts in workbook?
+       If this is true, then the Writer will write definitions for any charts that exist in the PhpSpreadsheet object.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Writer/BaseWriter.html#method_getIncludeCharts"><abbr title="PhpOffice\PhpSpreadsheet\Writer\BaseWriter">BaseWriter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Writer/IWriter.html"><abbr title="PhpOffice\PhpSpreadsheet\Writer\IWriter">IWriter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setIncludeCharts">setIncludeCharts</a>(bool $pValue)
+        
+                                            <p>Set write charts in workbook
+       Set to true, to advise the Writer to include any charts that exist in the PhpSpreadsheet object.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Writer/BaseWriter.html#method_setIncludeCharts"><abbr title="PhpOffice\PhpSpreadsheet\Writer\BaseWriter">BaseWriter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPreCalculateFormulas">getPreCalculateFormulas</a>()
+        
+                                            <p>Get Pre-Calculate Formulas flag
+    If this is true (the default), then the writer will recalculate all formulae in a workbook when saving,
+       so that the pre-calculated values are immediately available to MS Excel or other office spreadsheet
+       viewer when opening the file
+    If false, then formulae are not calculated on save. This is faster for saving in PhpSpreadsheet, but slower
+       when opening the resulting file in MS Excel, because Excel has to recalculate the formulae itself.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Writer/BaseWriter.html#method_getPreCalculateFormulas"><abbr title="PhpOffice\PhpSpreadsheet\Writer\BaseWriter">BaseWriter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Writer/IWriter.html"><abbr title="PhpOffice\PhpSpreadsheet\Writer\IWriter">IWriter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPreCalculateFormulas">setPreCalculateFormulas</a>(bool $pValue)
+        
+                                            <p>Set Pre-Calculate Formulas
+       Set to true (the default) to advise the Writer to calculate all formulae on save
+       Set to false to prevent precalculation of formulae on save.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Writer/BaseWriter.html#method_setPreCalculateFormulas"><abbr title="PhpOffice\PhpSpreadsheet\Writer\BaseWriter">BaseWriter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUseDiskCaching">getUseDiskCaching</a>()
+        
+                                            <p>Get use disk caching where possible?</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Writer/BaseWriter.html#method_getUseDiskCaching"><abbr title="PhpOffice\PhpSpreadsheet\Writer\BaseWriter">BaseWriter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Writer/IWriter.html"><abbr title="PhpOffice\PhpSpreadsheet\Writer\IWriter">IWriter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setUseDiskCaching">setUseDiskCaching</a>(bool $pValue, string $pDirectory = null)
+        
+                                            <p>Set use disk caching where possible?</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Writer/BaseWriter.html#method_setUseDiskCaching"><abbr title="PhpOffice\PhpSpreadsheet\Writer\BaseWriter">BaseWriter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDiskCachingDirectory">getDiskCachingDirectory</a>()
+        
+                                            <p>Get disk caching directory.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Writer/BaseWriter.html#method_getDiskCachingDirectory"><abbr title="PhpOffice\PhpSpreadsheet\Writer\BaseWriter">BaseWriter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a> $spreadsheet)
+        
+                                            <p>Create a new HTML.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_save">save</a>(string $pFilename)
+        
+                                            <p>Save Spreadsheet to file.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSheetIndex">getSheetIndex</a>()
+        
+                                            <p>Get sheet index.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="PhpOffice\PhpSpreadsheet\Writer\HTML">HTML</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setSheetIndex">setSheetIndex</a>(int $pValue)
+        
+                                            <p>Set sheet index.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getGenerateSheetNavigationBlock">getGenerateSheetNavigationBlock</a>()
+        
+                                            <p>Get sheet index.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="PhpOffice\PhpSpreadsheet\Writer\HTML">HTML</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setGenerateSheetNavigationBlock">setGenerateSheetNavigationBlock</a>(bool $pValue)
+        
+                                            <p>Set sheet index.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_writeAllSheets">writeAllSheets</a>()
+        
+                                            <p>Write all sheets (resets sheetIndex to NULL).</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_generateHTMLHeader">generateHTMLHeader</a>(bool $pIncludeStyles = false)
+        
+                                            <p>Generate HTML header.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_generateSheetData">generateSheetData</a>()
+        
+                                            <p>Generate sheet data.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_generateNavigation">generateNavigation</a>()
+        
+                                            <p>Generate sheet tabs.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_generateStyles">generateStyles</a>(bool $generateSurroundingHTML = true)
+        
+                                            <p>Generate CSS styles.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_buildCSS">buildCSS</a>(bool $generateSurroundingHTML = true)
+        
+                                            <p>Build CSS styles.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_generateHTMLFooter">generateHTMLFooter</a>()
+        
+                                            <p>Generate HTML footer.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getImagesRoot">getImagesRoot</a>()
+        
+                                            <p>Get images root.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="PhpOffice\PhpSpreadsheet\Writer\HTML">HTML</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setImagesRoot">setImagesRoot</a>(string $pValue)
+        
+                                            <p>Set images root.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getEmbedImages">getEmbedImages</a>()
+        
+                                            <p>Get embed images.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="PhpOffice\PhpSpreadsheet\Writer\HTML">HTML</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setEmbedImages">setEmbedImages</a>(bool $pValue)
+        
+                                            <p>Set embed images.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUseInlineCss">getUseInlineCss</a>()
+        
+                                            <p>Get use inline CSS?</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="PhpOffice\PhpSpreadsheet\Writer\HTML">HTML</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setUseInlineCss">setUseInlineCss</a>(bool $pValue)
+        
+                                            <p>Set use inline CSS?</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_formatColor">formatColor</a>(string $pValue, string $pFormat)
+        
+                                            <p>Add color to formatted string as inline style.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getIncludeCharts">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Writer/BaseWriter.html#method_getIncludeCharts"><abbr title="PhpOffice\PhpSpreadsheet\Writer\BaseWriter">BaseWriter</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/BaseWriter.php#L45">line 45</a></div>
+        <code>                    bool
+    <strong>getIncludeCharts</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Write charts in workbook?
+       If this is true, then the Writer will write definitions for any charts that exist in the PhpSpreadsheet object.</p>                    <p>If false (the default) it will ignore any charts defined in the PhpSpreadsheet object.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIncludeCharts">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Writer/BaseWriter.html#method_setIncludeCharts"><abbr title="PhpOffice\PhpSpreadsheet\Writer\BaseWriter">BaseWriter</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/BaseWriter.php#L59">line 59</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Writer/IWriter.html"><abbr title="PhpOffice\PhpSpreadsheet\Writer\IWriter">IWriter</abbr></a>
+    <strong>setIncludeCharts</strong>(bool $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set write charts in workbook
+       Set to true, to advise the Writer to include any charts that exist in the PhpSpreadsheet object.</p>                    <p>Set to false (the default) to ignore charts.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Writer/IWriter.html"><abbr title="PhpOffice\PhpSpreadsheet\Writer\IWriter">IWriter</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPreCalculateFormulas">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Writer/BaseWriter.html#method_getPreCalculateFormulas"><abbr title="PhpOffice\PhpSpreadsheet\Writer\BaseWriter">BaseWriter</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/BaseWriter.php#L76">line 76</a></div>
+        <code>                    bool
+    <strong>getPreCalculateFormulas</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Pre-Calculate Formulas flag
+    If this is true (the default), then the writer will recalculate all formulae in a workbook when saving,
+       so that the pre-calculated values are immediately available to MS Excel or other office spreadsheet
+       viewer when opening the file
+    If false, then formulae are not calculated on save. This is faster for saving in PhpSpreadsheet, but slower
+       when opening the resulting file in MS Excel, because Excel has to recalculate the formulae itself.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPreCalculateFormulas">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Writer/BaseWriter.html#method_setPreCalculateFormulas"><abbr title="PhpOffice\PhpSpreadsheet\Writer\BaseWriter">BaseWriter</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/BaseWriter.php#L90">line 90</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Writer/IWriter.html"><abbr title="PhpOffice\PhpSpreadsheet\Writer\IWriter">IWriter</abbr></a>
+    <strong>setPreCalculateFormulas</strong>(bool $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Pre-Calculate Formulas
+       Set to true (the default) to advise the Writer to calculate all formulae on save
+       Set to false to prevent precalculation of formulae on save.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$pValue</td>
+                <td>Pre-Calculate Formulas?</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Writer/IWriter.html"><abbr title="PhpOffice\PhpSpreadsheet\Writer\IWriter">IWriter</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUseDiskCaching">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Writer/BaseWriter.html#method_getUseDiskCaching"><abbr title="PhpOffice\PhpSpreadsheet\Writer\BaseWriter">BaseWriter</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/BaseWriter.php#L102">line 102</a></div>
+        <code>                    bool
+    <strong>getUseDiskCaching</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get use disk caching where possible?</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUseDiskCaching">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Writer/BaseWriter.html#method_setUseDiskCaching"><abbr title="PhpOffice\PhpSpreadsheet\Writer\BaseWriter">BaseWriter</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/BaseWriter.php#L117">line 117</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Writer/IWriter.html"><abbr title="PhpOffice\PhpSpreadsheet\Writer\IWriter">IWriter</abbr></a>
+    <strong>setUseDiskCaching</strong>(bool $pValue, string $pDirectory = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set use disk caching where possible?</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$pDirectory</td>
+                <td>Disk caching directory</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Writer/IWriter.html"><abbr title="PhpOffice\PhpSpreadsheet\Writer\IWriter">IWriter</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Writer/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Writer\Exception">Exception</abbr></a></td>
+                <td>when directory does not exist</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDiskCachingDirectory">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Writer/BaseWriter.html#method_getDiskCachingDirectory"><abbr title="PhpOffice\PhpSpreadsheet\Writer\BaseWriter">BaseWriter</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/BaseWriter.php#L137">line 137</a></div>
+        <code>                    string
+    <strong>getDiskCachingDirectory</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get disk caching directory.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Html.php#L133">line 133</a></div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a> $spreadsheet)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a new HTML.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a></td>
+                <td>$spreadsheet</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_save">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Html.php#L146">line 146</a></div>
+        <code>                    
+    <strong>save</strong>(string $pFilename)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Save Spreadsheet to file.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pFilename</td>
+                <td>Name of the file to save</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Writer/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Writer\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSheetIndex">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Html.php#L283">line 283</a></div>
+        <code>                    int
+    <strong>getSheetIndex</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get sheet index.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSheetIndex">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Html.php#L295">line 295</a></div>
+        <code>                    <abbr title="PhpOffice\PhpSpreadsheet\Writer\HTML">HTML</abbr>
+    <strong>setSheetIndex</strong>(int $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set sheet index.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$pValue</td>
+                <td>Sheet index</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="PhpOffice\PhpSpreadsheet\Writer\HTML">HTML</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getGenerateSheetNavigationBlock">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Html.php#L307">line 307</a></div>
+        <code>                    bool
+    <strong>getGenerateSheetNavigationBlock</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get sheet index.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setGenerateSheetNavigationBlock">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Html.php#L319">line 319</a></div>
+        <code>                    <abbr title="PhpOffice\PhpSpreadsheet\Writer\HTML">HTML</abbr>
+    <strong>setGenerateSheetNavigationBlock</strong>(bool $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set sheet index.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$pValue</td>
+                <td>Flag indicating whether the sheet navigation block should be generated or not</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="PhpOffice\PhpSpreadsheet\Writer\HTML">HTML</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_writeAllSheets">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Html.php#L329">line 329</a></div>
+        <code>                    
+    <strong>writeAllSheets</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Write all sheets (resets sheetIndex to NULL).</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_generateHTMLHeader">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Html.php#L345">line 345</a></div>
+        <code>                    string
+    <strong>generateHTMLHeader</strong>(bool $pIncludeStyles = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Generate HTML header.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$pIncludeStyles</td>
+                <td>Include styles?</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Writer/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Writer\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_generateSheetData">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Html.php#L405">line 405</a></div>
+        <code>                    string
+    <strong>generateSheetData</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Generate sheet data.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Writer/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Writer\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_generateNavigation">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Html.php#L526">line 526</a></div>
+        <code>                    string
+    <strong>generateNavigation</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Generate sheet tabs.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Writer/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Writer\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_generateStyles">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Html.php#L761">line 761</a></div>
+        <code>                    string
+    <strong>generateStyles</strong>(bool $generateSurroundingHTML = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Generate CSS styles.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$generateSurroundingHTML</td>
+                <td>Generate surrounding HTML tags? (&lt;style&gt; and &lt;/style&gt;)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Writer/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Writer\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_buildCSS">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Html.php#L805">line 805</a></div>
+        <code>                    array
+    <strong>buildCSS</strong>(bool $generateSurroundingHTML = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Build CSS styles.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$generateSurroundingHTML</td>
+                <td>Generate surrounding HTML style? (html { })</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Writer/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Writer\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_generateHTMLFooter">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Html.php#L1092">line 1092</a></div>
+        <code>                    
+    <strong>generateHTMLFooter</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Generate HTML footer.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getImagesRoot">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Html.php#L1438">line 1438</a></div>
+        <code>                    string
+    <strong>getImagesRoot</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get images root.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setImagesRoot">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Html.php#L1450">line 1450</a></div>
+        <code>                    <abbr title="PhpOffice\PhpSpreadsheet\Writer\HTML">HTML</abbr>
+    <strong>setImagesRoot</strong>(string $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set images root.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="PhpOffice\PhpSpreadsheet\Writer\HTML">HTML</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEmbedImages">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Html.php#L1462">line 1462</a></div>
+        <code>                    bool
+    <strong>getEmbedImages</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get embed images.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEmbedImages">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Html.php#L1474">line 1474</a></div>
+        <code>                    <abbr title="PhpOffice\PhpSpreadsheet\Writer\HTML">HTML</abbr>
+    <strong>setEmbedImages</strong>(bool $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set embed images.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="PhpOffice\PhpSpreadsheet\Writer\HTML">HTML</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUseInlineCss">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Html.php#L1486">line 1486</a></div>
+        <code>                    bool
+    <strong>getUseInlineCss</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get use inline CSS?</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUseInlineCss">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Html.php#L1498">line 1498</a></div>
+        <code>                    <abbr title="PhpOffice\PhpSpreadsheet\Writer\HTML">HTML</abbr>
+    <strong>setUseInlineCss</strong>(bool $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set use inline CSS?</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="PhpOffice\PhpSpreadsheet\Writer\HTML">HTML</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_formatColor">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Html.php#L1513">line 1513</a></div>
+        <code>                    string
+    <strong>formatColor</strong>(string $pValue, string $pFormat)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add color to formatted string as inline style.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pValue</td>
+                <td>Plain formatted value without color</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$pFormat</td>
+                <td>Format code</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

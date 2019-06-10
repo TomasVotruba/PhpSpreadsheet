@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PhpOffice\PhpSpreadsheet\Shared\Xls | PhpSpreadsheet</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PhpOffice_PhpSpreadsheet_Shared_Xls" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../1.0.0/index.html" data-version="1.0.0">1.0.0</option>
+                                            <option value="../../../../1.1.0/index.html" data-version="1.1.0">1.1.0</option>
+                                            <option value="../../../../1.2.0/index.html" data-version="1.2.0">1.2.0</option>
+                                            <option value="../../../../1.2.1/index.html" data-version="1.2.1">1.2.1</option>
+                                            <option value="../../../../1.3.0/index.html" data-version="1.3.0">1.3.0</option>
+                                            <option value="../../../../1.3.1/index.html" data-version="1.3.1">1.3.1</option>
+                                            <option value="../../../../1.4.0/index.html" data-version="1.4.0">1.4.0</option>
+                                            <option value="../../../../1.4.1/index.html" data-version="1.4.1">1.4.1</option>
+                                            <option value="../../../../1.5.0/index.html" data-version="1.5.0">1.5.0</option>
+                                            <option value="../../../../1.5.1/index.html" data-version="1.5.1">1.5.1</option>
+                                            <option value="../../../../1.5.2/index.html" data-version="1.5.2">1.5.2</option>
+                                            <option value="../../../../1.6.0/index.html" data-version="1.6.0">1.6.0</option>
+                                            <option value="../../../../1.7.0/index.html" data-version="1.7.0">1.7.0</option>
+                                            <option value="../../../../master/index.html" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">PhpSpreadsheet</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../PhpOffice.html">PhpOffice</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet.html">PhpSpreadsheet</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet/Shared.html">Shared</a></li><li class="backslash">\</li><li>Xls</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Xls
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Xls</strong>        (<a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Shared/Xls.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sizeCol">sizeCol</a>(<a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $sheet, string $col = &#039;A&#039;)
+        
+                                            <p>Get the width of a column in pixels. We use the relationship y = ceil(7x) where
+x is the width in intrinsic Excel units (measuring width in number of normal characters)
+This holds for Arial 10.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sizeRow">sizeRow</a>(<a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $sheet, int $row = 1)
+        
+                                            <p>Convert the height of a cell from user's units to pixels. By interpolation
+the relationship is: y = 4/3x. If the height hasn't been set by the user we
+use the default value. If the row is hidden we use a value of zero.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDistanceX">getDistanceX</a>(<a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $sheet, string $startColumn = &#039;A&#039;, int $startOffsetX = 0, string $endColumn = &#039;A&#039;, int $endOffsetX = 0)
+        
+                                            <p>Get the horizontal distance in pixels between two anchors
+The distanceX is found as sum of all the spanning columns widths minus correction for the two offsets.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDistanceY">getDistanceY</a>(<a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $sheet, int $startRow = 1, int $startOffsetY = 0, int $endRow = 1, int $endOffsetY = 0)
+        
+                                            <p>Get the vertical distance in pixels between two anchors
+The distanceY is found as sum of all the spanning rows minus two offsets.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_oneAnchor2twoAnchor">oneAnchor2twoAnchor</a>(<a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $sheet, string $coordinates, int $offsetX, int $offsetY, int $width, int $height)
+        
+                                            <p>Convert 1-cell anchor coordinates to 2-cell anchor coordinates
+This function is ported from PEAR Spreadsheet_Writer_Excel with small modifications.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_sizeCol">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Shared/Xls.php#L20">line 20</a></div>
+        <code>        static            int
+    <strong>sizeCol</strong>(<a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $sheet, string $col = &#039;A&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the width of a column in pixels. We use the relationship y = ceil(7x) where
+x is the width in intrinsic Excel units (measuring width in number of normal characters)
+This holds for Arial 10.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+                <td>$sheet</td>
+                <td>The sheet</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$col</td>
+                <td>The column</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>The width in pixels</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sizeRow">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Shared/Xls.php#L63">line 63</a></div>
+        <code>        static            int
+    <strong>sizeRow</strong>(<a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $sheet, int $row = 1)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convert the height of a cell from user's units to pixels. By interpolation
+the relationship is: y = 4/3x. If the height hasn't been set by the user we
+use the default value. If the row is hidden we use a value of zero.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+                <td>$sheet</td>
+                <td>The sheet</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$row</td>
+                <td>The row index (1-based)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>The width in pixels</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDistanceX">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Shared/Xls.php#L109">line 109</a></div>
+        <code>        static            int
+    <strong>getDistanceX</strong>(<a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $sheet, string $startColumn = &#039;A&#039;, int $startOffsetX = 0, string $endColumn = &#039;A&#039;, int $endOffsetX = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the horizontal distance in pixels between two anchors
+The distanceX is found as sum of all the spanning columns widths minus correction for the two offsets.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+                <td>$sheet</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$startColumn</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$startOffsetX</td>
+                <td>Offset within start cell measured in 1/1024 of the cell width</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$endColumn</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$endOffsetX</td>
+                <td>Offset within end cell measured in 1/1024 of the cell width</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>Horizontal measured in pixels</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDistanceY">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Shared/Xls.php#L141">line 141</a></div>
+        <code>        static            int
+    <strong>getDistanceY</strong>(<a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $sheet, int $startRow = 1, int $startOffsetY = 0, int $endRow = 1, int $endOffsetY = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the vertical distance in pixels between two anchors
+The distanceY is found as sum of all the spanning rows minus two offsets.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+                <td>$sheet</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$startRow</td>
+                <td>(1-based)</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$startOffsetY</td>
+                <td>Offset within start cell measured in 1/256 of the cell height</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$endRow</td>
+                <td>(1-based)</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$endOffsetY</td>
+                <td>Offset within end cell measured in 1/256 of the cell height</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>Vertical distance measured in pixels</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_oneAnchor2twoAnchor">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Shared/Xls.php#L212">line 212</a></div>
+        <code>        static            array
+    <strong>oneAnchor2twoAnchor</strong>(<a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $sheet, string $coordinates, int $offsetX, int $offsetY, int $width, int $height)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convert 1-cell anchor coordinates to 2-cell anchor coordinates
+This function is ported from PEAR Spreadsheet_Writer_Excel with small modifications.</p>                    <p>Calculate the vertices that define the position of the image as required by
+the OBJ record.</p>
+
+<pre><code>    +------------+------------+
+    |     A      |      B     |
+</code></pre>
+
+<p>+-----+------------+------------+
+  |     |(x1,y1)     |            |
+  |  1  |(A1)._______|______      |
+  |     |    |              |     |
+  |     |    |              |     |
+  +-----+----|    BITMAP    |-----+
+  |     |    |              |     |
+  |  2  |    |______________.     |
+  |     |            |        (B2)|
+  |     |            |     (x2,y2)|
+  +---- +------------+------------+</p>
+
+<p>Example of a bitmap that covers some of the area from cell A1 to cell B2.</p>
+
+<p>Based on the width and height of the bitmap we need to calculate 8 vars:
+    $col_start, $row_start, $col_end, $row_end, $x1, $y1, $x2, $y2.
+The width and height of the cells are also variable and have to be taken into
+account.
+The values of $col_start and $row_start are passed in from the calling
+function. The values of $col_end and $row_end are calculated by subtracting
+the width and height of the bitmap from the width and height of the
+underlying cells.
+The vertices are expressed as a percentage of the underlying cell width as
+follows (rhs values are in pixels):</p>
+
+<pre><code>  x1 = X / W *1024
+  y1 = Y / H *256
+  x2 = (X-1) / W *1024
+  y2 = (Y-1) / H *256
+
+  Where:  X is distance from the left side of the underlying cell
+          Y is distance from the top of the underlying cell
+          W is the width of the cell
+          H is the height of the cell
+</code></pre>
+</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+                <td>$sheet</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$coordinates</td>
+                <td>E.g. 'A1'</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$offsetX</td>
+                <td>Horizontal offset in pixels</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$offsetY</td>
+                <td>Vertical offset in pixels</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$width</td>
+                <td>Width in pixels</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$height</td>
+                <td>Height in pixels</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

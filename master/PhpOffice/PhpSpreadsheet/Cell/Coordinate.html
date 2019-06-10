@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PhpOffice\PhpSpreadsheet\Cell\Coordinate | PhpSpreadsheet</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PhpOffice_PhpSpreadsheet_Cell_Coordinate" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../1.0.0/index.html" data-version="1.0.0">1.0.0</option>
+                                            <option value="../../../../1.1.0/index.html" data-version="1.1.0">1.1.0</option>
+                                            <option value="../../../../1.2.0/index.html" data-version="1.2.0">1.2.0</option>
+                                            <option value="../../../../1.2.1/index.html" data-version="1.2.1">1.2.1</option>
+                                            <option value="../../../../1.3.0/index.html" data-version="1.3.0">1.3.0</option>
+                                            <option value="../../../../1.3.1/index.html" data-version="1.3.1">1.3.1</option>
+                                            <option value="../../../../1.4.0/index.html" data-version="1.4.0">1.4.0</option>
+                                            <option value="../../../../1.4.1/index.html" data-version="1.4.1">1.4.1</option>
+                                            <option value="../../../../1.5.0/index.html" data-version="1.5.0">1.5.0</option>
+                                            <option value="../../../../1.5.1/index.html" data-version="1.5.1">1.5.1</option>
+                                            <option value="../../../../1.5.2/index.html" data-version="1.5.2">1.5.2</option>
+                                            <option value="../../../../1.6.0/index.html" data-version="1.6.0">1.6.0</option>
+                                            <option value="../../../../1.7.0/index.html" data-version="1.7.0">1.7.0</option>
+                                            <option value="../../../../master/index.html" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">PhpSpreadsheet</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../PhpOffice.html">PhpOffice</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet.html">PhpSpreadsheet</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet/Cell.html">Cell</a></li><li class="backslash">\</li><li>Coordinate</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Coordinate
+                
+        </h1>
+    </div>
+
+    <p>abstract     class
+    <strong>Coordinate</strong>        (<a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Cell/Coordinate.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Helper class to manipulate cell coordinates.</p>            <p>Columns indexes and rows are always based on 1, <strong>not</strong> on 0. This match the behavior
+that Excel users are used to, and also match the Excel functions <code>COLUMN()</code> and <code>ROW()</code>.</p>                    </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>DEFAULT_RANGE</td>
+                <td class="last">
+                    <p><em>Default range variable constant.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_coordinateFromString">coordinateFromString</a>(string $pCoordinateString)
+        
+                                            <p>Coordinate from string.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_coordinateIsRange">coordinateIsRange</a>(string $coord)
+        
+                                            <p>Checks if a coordinate represents a range of cells.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_absoluteReference">absoluteReference</a>(string $pCoordinateString)
+        
+                                            <p>Make string row, column or cell coordinate absolute.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_absoluteCoordinate">absoluteCoordinate</a>(string $pCoordinateString)
+        
+                                            <p>Make string coordinate absolute.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_splitRange">splitRange</a>(string $pRange)
+        
+                                            <p>Split range into coordinate strings.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_buildRange">buildRange</a>(array $pRange)
+        
+                                            <p>Build range from coordinate strings.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rangeBoundaries">rangeBoundaries</a>(string $pRange)
+        
+                                            <p>Calculate range boundaries.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rangeDimension">rangeDimension</a>(string $pRange)
+        
+                                            <p>Calculate range dimension.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRangeBoundaries">getRangeBoundaries</a>(string $pRange)
+        
+                                            <p>Calculate range boundaries.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_columnIndexFromString">columnIndexFromString</a>(string $pString)
+        
+                                            <p>Column index from string.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_stringFromColumnIndex">stringFromColumnIndex</a>(int $columnIndex)
+        
+                                            <p>String from column index.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_extractAllCellReferencesInRange">extractAllCellReferencesInRange</a>(string $pRange)
+        
+                                            <p>Extract all cell references in range, which may be comprised of multiple cell ranges.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mergeRangesInCollection">mergeRangesInCollection</a>(array $pCoordCollection)
+        
+                                            <p>Convert an associative array of single cell coordinates to values to an associative array
+of cell ranges to values.  Only adjacent cell coordinates with the same
+value will be merged.  If the value is an object, it must implement the method getHashCode().</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_coordinateFromString">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Cell/Coordinate.php#L32">line 32</a></div>
+        <code>        static            string[]
+    <strong>coordinateFromString</strong>(string $pCoordinateString)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Coordinate from string.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pCoordinateString</td>
+                <td>eg: 'A1'</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string[]</td>
+            <td>Array containing column and row (indexes 0 and 1)</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_coordinateIsRange">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Cell/Coordinate.php#L52">line 52</a></div>
+        <code>        static            bool
+    <strong>coordinateIsRange</strong>(string $coord)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks if a coordinate represents a range of cells.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$coord</td>
+                <td>eg: 'A1' or 'A1:A2' or 'A1:A2,C1:C2'</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>Whether the coordinate represents a range of cells</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_absoluteReference">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Cell/Coordinate.php#L67">line 67</a></div>
+        <code>        static            string
+    <strong>absoluteReference</strong>(string $pCoordinateString)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Make string row, column or cell coordinate absolute.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pCoordinateString</td>
+                <td>e.g. 'A' or '1' or 'A1'
+                   Note that this value can be a row or column reference as well as a cell reference</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Absolute coordinate        e.g. '$A' or '$1' or '$A$1'</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_absoluteCoordinate">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Cell/Coordinate.php#L98">line 98</a></div>
+        <code>        static            string
+    <strong>absoluteCoordinate</strong>(string $pCoordinateString)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Make string coordinate absolute.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pCoordinateString</td>
+                <td>e.g. 'A1'</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Absolute coordinate        e.g. '$A$1'</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_splitRange">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Cell/Coordinate.php#L127">line 127</a></div>
+        <code>        static            array
+    <strong>splitRange</strong>(string $pRange)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Split range into coordinate strings.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pRange</td>
+                <td>e.g. 'B4:D9' or 'B4:D9,H2:O11' or 'B4'</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>Array containing one or more arrays containing one or two coordinate strings
+                               e.g. ['B4','D9'] or [['B4','D9'], ['H2','O11']]
+                                       or ['B4']</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_buildRange">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Cell/Coordinate.php#L152">line 152</a></div>
+        <code>        static            string
+    <strong>buildRange</strong>(array $pRange)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Build range from coordinate strings.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$pRange</td>
+                <td>Array containg one or more arrays containing one or two coordinate strings</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>String representation of $pRange</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rangeBoundaries">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Cell/Coordinate.php#L178">line 178</a></div>
+        <code>        static            array
+    <strong>rangeBoundaries</strong>(string $pRange)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Calculate range boundaries.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pRange</td>
+                <td>Cell range (e.g. A1:A1)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>Range coordinates [Start Cell, End Cell]
+                   where Start Cell and End Cell are arrays (Column Number, Row Number)</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rangeDimension">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Cell/Coordinate.php#L213">line 213</a></div>
+        <code>        static            array
+    <strong>rangeDimension</strong>(string $pRange)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Calculate range dimension.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pRange</td>
+                <td>Cell range (e.g. A1:A1)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>Range dimension (width, height)</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRangeBoundaries">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Cell/Coordinate.php#L229">line 229</a></div>
+        <code>        static            array
+    <strong>getRangeBoundaries</strong>(string $pRange)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Calculate range boundaries.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pRange</td>
+                <td>Cell range (e.g. A1:A1)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>Range coordinates [Start Cell, End Cell]
+                   where Start Cell and End Cell are arrays [Column ID, Row Number]</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_columnIndexFromString">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Cell/Coordinate.php#L256">line 256</a></div>
+        <code>        static            int
+    <strong>columnIndexFromString</strong>(string $pString)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Column index from string.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pString</td>
+                <td>eg 'A'</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>Column index (A = 1)</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stringFromColumnIndex">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Cell/Coordinate.php#L304">line 304</a></div>
+        <code>        static            string
+    <strong>stringFromColumnIndex</strong>(int $columnIndex)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>String from column index.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$columnIndex</td>
+                <td>Column index (A = 1)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extractAllCellReferencesInRange">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Cell/Coordinate.php#L329">line 329</a></div>
+        <code>        static            array
+    <strong>extractAllCellReferencesInRange</strong>(string $pRange)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Extract all cell references in range, which may be comprised of multiple cell ranges.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pRange</td>
+                <td>Range (e.g. A1 or A1:C10 or A1:E10 A20:E25)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>Array containing single cell references</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mergeRangesInCollection">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Cell/Coordinate.php#L425">line 425</a></div>
+        <code>        static            array
+    <strong>mergeRangesInCollection</strong>(array $pCoordCollection)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convert an associative array of single cell coordinates to values to an associative array
+of cell ranges to values.  Only adjacent cell coordinates with the same
+value will be merged.  If the value is an object, it must implement the method getHashCode().</p>                    <p>For example, this function converts:</p>
+
+<p>[ 'A1' => 'x', 'A2' => 'x', 'A3' => 'x', 'A4' => 'y' ]</p>
+
+<p>to:</p>
+
+<p>[ 'A1:A3' => 'x', 'A4' => 'y' ]</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$pCoordCollection</td>
+                <td>associative array mapping coordinates to values</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>associative array mapping coordinate ranges to valuea</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

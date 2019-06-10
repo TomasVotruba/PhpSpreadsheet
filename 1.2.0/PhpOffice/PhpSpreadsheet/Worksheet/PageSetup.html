@@ -1,0 +1,2505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PhpOffice\PhpSpreadsheet\Worksheet\PageSetup | PhpSpreadsheet</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PhpOffice_PhpSpreadsheet_Worksheet_PageSetup" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../1.0.0/index.html" data-version="1.0.0">1.0.0</option>
+                                            <option value="../../../../1.1.0/index.html" data-version="1.1.0">1.1.0</option>
+                                            <option value="../../../../1.2.0/index.html" data-version="1.2.0">1.2.0</option>
+                                            <option value="../../../../1.2.1/index.html" data-version="1.2.1">1.2.1</option>
+                                            <option value="../../../../1.3.0/index.html" data-version="1.3.0">1.3.0</option>
+                                            <option value="../../../../1.3.1/index.html" data-version="1.3.1">1.3.1</option>
+                                            <option value="../../../../1.4.0/index.html" data-version="1.4.0">1.4.0</option>
+                                            <option value="../../../../1.4.1/index.html" data-version="1.4.1">1.4.1</option>
+                                            <option value="../../../../1.5.0/index.html" data-version="1.5.0">1.5.0</option>
+                                            <option value="../../../../1.5.1/index.html" data-version="1.5.1">1.5.1</option>
+                                            <option value="../../../../1.5.2/index.html" data-version="1.5.2">1.5.2</option>
+                                            <option value="../../../../1.6.0/index.html" data-version="1.6.0">1.6.0</option>
+                                            <option value="../../../../1.7.0/index.html" data-version="1.7.0">1.7.0</option>
+                                            <option value="../../../../master/index.html" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">PhpSpreadsheet</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../PhpOffice.html">PhpOffice</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet.html">PhpSpreadsheet</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet.html">Worksheet</a></li><li class="backslash">\</li><li>PageSetup</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            PageSetup
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>PageSetup</strong>        (<a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p><code>
+Paper size taken from Office Open XML Part 4 - Markup Language Reference, page 1988:.</p>            <p>1 = Letter paper (8.5 in. by 11 in.)
+2 = Letter small paper (8.5 in. by 11 in.)
+3 = Tabloid paper (11 in. by 17 in.)
+4 = Ledger paper (17 in. by 11 in.)
+5 = Legal paper (8.5 in. by 14 in.)
+6 = Statement paper (5.5 in. by 8.5 in.)
+7 = Executive paper (7.25 in. by 10.5 in.)
+8 = A3 paper (297 mm by 420 mm)
+9 = A4 paper (210 mm by 297 mm)
+10 = A4 small paper (210 mm by 297 mm)
+11 = A5 paper (148 mm by 210 mm)
+12 = B4 paper (250 mm by 353 mm)
+13 = B5 paper (176 mm by 250 mm)
+14 = Folio paper (8.5 in. by 13 in.)
+15 = Quarto paper (215 mm by 275 mm)
+16 = Standard paper (10 in. by 14 in.)
+17 = Standard paper (11 in. by 17 in.)
+18 = Note paper (8.5 in. by 11 in.)
+19 = #9 envelope (3.875 in. by 8.875 in.)
+20 = #10 envelope (4.125 in. by 9.5 in.)
+21 = #11 envelope (4.5 in. by 10.375 in.)
+22 = #12 envelope (4.75 in. by 11 in.)
+23 = #14 envelope (5 in. by 11.5 in.)
+24 = C paper (17 in. by 22 in.)
+25 = D paper (22 in. by 34 in.)
+26 = E paper (34 in. by 44 in.)
+27 = DL envelope (110 mm by 220 mm)
+28 = C5 envelope (162 mm by 229 mm)
+29 = C3 envelope (324 mm by 458 mm)
+30 = C4 envelope (229 mm by 324 mm)
+31 = C6 envelope (114 mm by 162 mm)
+32 = C65 envelope (114 mm by 229 mm)
+33 = B4 envelope (250 mm by 353 mm)
+34 = B5 envelope (176 mm by 250 mm)
+35 = B6 envelope (176 mm by 125 mm)
+36 = Italy envelope (110 mm by 230 mm)
+37 = Monarch envelope (3.875 in. by 7.5 in.).
+38 = 6 3/4 envelope (3.625 in. by 6.5 in.)
+39 = US standard fanfold (14.875 in. by 11 in.)
+40 = German standard fanfold (8.5 in. by 12 in.)
+41 = German legal fanfold (8.5 in. by 13 in.)
+42 = ISO B4 (250 mm by 353 mm)
+43 = Japanese double postcard (200 mm by 148 mm)
+44 = Standard paper (9 in. by 11 in.)
+45 = Standard paper (10 in. by 11 in.)
+46 = Standard paper (15 in. by 11 in.)
+47 = Invite envelope (220 mm by 220 mm)
+50 = Letter extra paper (9.275 in. by 12 in.)
+51 = Legal extra paper (9.275 in. by 15 in.)
+52 = Tabloid extra paper (11.69 in. by 18 in.)
+53 = A4 extra paper (236 mm by 322 mm)
+54 = Letter transverse paper (8.275 in. by 11 in.)
+55 = A4 transverse paper (210 mm by 297 mm)
+56 = Letter extra transverse paper (9.275 in. by 12 in.)
+57 = SuperA/SuperA/A4 paper (227 mm by 356 mm)
+58 = SuperB/SuperB/A3 paper (305 mm by 487 mm)
+59 = Letter plus paper (8.5 in. by 12.69 in.)
+60 = A4 plus paper (210 mm by 330 mm)
+61 = A5 transverse paper (148 mm by 210 mm)
+62 = JIS B5 transverse paper (182 mm by 257 mm)
+63 = A3 extra paper (322 mm by 445 mm)
+64 = A5 extra paper (174 mm by 235 mm)
+65 = ISO B5 extra paper (201 mm by 276 mm)
+66 = A2 paper (420 mm by 594 mm)
+67 = A3 transverse paper (297 mm by 420 mm)
+68 = A3 extra transverse paper (322 mm by 445 mm)
+</code></p>                    </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>PAPERSIZE_LETTER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_LETTER_SMALL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_TABLOID</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_LEDGER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_LEGAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_STATEMENT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_EXECUTIVE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_A3</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_A4</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_A4_SMALL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_A5</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_B4</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_B5</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_FOLIO</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_QUARTO</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_STANDARD_1</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_STANDARD_2</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_NOTE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_NO9_ENVELOPE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_NO10_ENVELOPE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_NO11_ENVELOPE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_NO12_ENVELOPE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_NO14_ENVELOPE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_C</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_D</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_E</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_DL_ENVELOPE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_C5_ENVELOPE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_C3_ENVELOPE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_C4_ENVELOPE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_C6_ENVELOPE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_C65_ENVELOPE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_B4_ENVELOPE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_B5_ENVELOPE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_B6_ENVELOPE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_ITALY_ENVELOPE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_MONARCH_ENVELOPE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_6_3_4_ENVELOPE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_US_STANDARD_FANFOLD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_GERMAN_STANDARD_FANFOLD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_GERMAN_LEGAL_FANFOLD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_ISO_B4</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_JAPANESE_DOUBLE_POSTCARD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_STANDARD_PAPER_1</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_STANDARD_PAPER_2</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_STANDARD_PAPER_3</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_INVITE_ENVELOPE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_LETTER_EXTRA_PAPER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_LEGAL_EXTRA_PAPER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_TABLOID_EXTRA_PAPER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_A4_EXTRA_PAPER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_LETTER_TRANSVERSE_PAPER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_A4_TRANSVERSE_PAPER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_LETTER_EXTRA_TRANSVERSE_PAPER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_SUPERA_SUPERA_A4_PAPER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_SUPERB_SUPERB_A3_PAPER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_LETTER_PLUS_PAPER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_A4_PLUS_PAPER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_A5_TRANSVERSE_PAPER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_JIS_B5_TRANSVERSE_PAPER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_A3_EXTRA_PAPER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_A5_EXTRA_PAPER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_ISO_B5_EXTRA_PAPER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_A2_PAPER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_A3_TRANSVERSE_PAPER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PAPERSIZE_A3_EXTRA_TRANSVERSE_PAPER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ORIENTATION_DEFAULT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ORIENTATION_LANDSCAPE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ORIENTATION_PORTRAIT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SETPRINTRANGE_OVERWRITE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SETPRINTRANGE_INSERT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>()
+        
+                                            <p>Create a new PageSetup.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPaperSize">getPaperSize</a>()
+        
+                                            <p>Get Paper Size.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPaperSize">setPaperSize</a>(int $pValue)
+        
+                                            <p>Set Paper Size.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOrientation">getOrientation</a>()
+        
+                                            <p>Get Orientation.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOrientation">setOrientation</a>(string $pValue)
+        
+                                            <p>Set Orientation.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="PhpOffice\PhpSpreadsheet\Worksheet\int?">int?</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getScale">getScale</a>()
+        
+                                            <p>Get Scale.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setScale">setScale</a>(null|int $pValue, bool $pUpdate = true)
+        
+                                            <p>Set Scale.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFitToPage">getFitToPage</a>()
+        
+                                            <p>Get Fit To Page.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setFitToPage">setFitToPage</a>(bool $pValue)
+        
+                                            <p>Set Fit To Page.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="PhpOffice\PhpSpreadsheet\Worksheet\int?">int?</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFitToHeight">getFitToHeight</a>()
+        
+                                            <p>Get Fit To Height.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setFitToHeight">setFitToHeight</a>(null|int $pValue, bool $pUpdate = true)
+        
+                                            <p>Set Fit To Height.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="PhpOffice\PhpSpreadsheet\Worksheet\int?">int?</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFitToWidth">getFitToWidth</a>()
+        
+                                            <p>Get Fit To Width.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setFitToWidth">setFitToWidth</a>(null|int $pValue, bool $pUpdate = true)
+        
+                                            <p>Set Fit To Width.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isColumnsToRepeatAtLeftSet">isColumnsToRepeatAtLeftSet</a>()
+        
+                                            <p>Is Columns to repeat at left set?</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getColumnsToRepeatAtLeft">getColumnsToRepeatAtLeft</a>()
+        
+                                            <p>Get Columns to repeat at left.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setColumnsToRepeatAtLeft">setColumnsToRepeatAtLeft</a>(array $pValue)
+        
+                                            <p>Set Columns to repeat at left.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setColumnsToRepeatAtLeftByStartAndEnd">setColumnsToRepeatAtLeftByStartAndEnd</a>(string $pStart, string $pEnd)
+        
+                                            <p>Set Columns to repeat at left by start and end.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isRowsToRepeatAtTopSet">isRowsToRepeatAtTopSet</a>()
+        
+                                            <p>Is Rows to repeat at top set?</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRowsToRepeatAtTop">getRowsToRepeatAtTop</a>()
+        
+                                            <p>Get Rows to repeat at top.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRowsToRepeatAtTop">setRowsToRepeatAtTop</a>(array $pValue)
+        
+                                            <p>Set Rows to repeat at top.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRowsToRepeatAtTopByStartAndEnd">setRowsToRepeatAtTopByStartAndEnd</a>(int $pStart, int $pEnd)
+        
+                                            <p>Set Rows to repeat at top by start and end.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHorizontalCentered">getHorizontalCentered</a>()
+        
+                                            <p>Get center page horizontally.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setHorizontalCentered">setHorizontalCentered</a>(bool $value)
+        
+                                            <p>Set center page horizontally.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getVerticalCentered">getVerticalCentered</a>()
+        
+                                            <p>Get center page vertically.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setVerticalCentered">setVerticalCentered</a>(bool $value)
+        
+                                            <p>Set center page vertically.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPrintArea">getPrintArea</a>(int $index = 0)
+        
+                                            <p>Get print area.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isPrintAreaSet">isPrintAreaSet</a>(int $index = 0)
+        
+                                            <p>Is print area set?</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearPrintArea">clearPrintArea</a>(int $index = 0)
+        
+                                            <p>Clear a print area.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPrintArea">setPrintArea</a>(string $value, int $index = 0, string $method = self::SETPRINTRANGE_OVERWRITE)
+        
+                                            <p>Set print area. e.g. 'A1:D10' or 'A1:D10,G5:M20'.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addPrintArea">addPrintArea</a>(string $value, int $index = -1)
+        
+                                            <p>Add a new print area (e.g. 'A1:D10' or 'A1:D10,G5:M20') to the list of print areas.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPrintAreaByColumnAndRow">setPrintAreaByColumnAndRow</a>(int $column1, int $row1, int $column2, int $row2, int $index = 0, string $method = self::SETPRINTRANGE_OVERWRITE)
+        
+                                            <p>Set print area.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addPrintAreaByColumnAndRow">addPrintAreaByColumnAndRow</a>(int $column1, int $row1, int $column2, int $row2, int $index = -1)
+        
+                                            <p>Add a new print area to the list of print areas.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFirstPageNumber">getFirstPageNumber</a>()
+        
+                                            <p>Get first page number.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setFirstPageNumber">setFirstPageNumber</a>(int $value)
+        
+                                            <p>Set first page number.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resetFirstPageNumber">resetFirstPageNumber</a>()
+        
+                                            <p>Reset first page number.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___clone">__clone</a>()
+        
+                                            <p>Implement PHP __clone to create a deep clone, not just a shallow copy.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L256">line 256</a></div>
+        <code>                    
+    <strong>__construct</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a new PageSetup.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPaperSize">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L265">line 265</a></div>
+        <code>                    int
+    <strong>getPaperSize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Paper Size.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPaperSize">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L277">line 277</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+    <strong>setPaperSize</strong>(int $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Paper Size.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$pValue</td>
+                <td>see self::PAPERSIZE_*</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOrientation">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L289">line 289</a></div>
+        <code>                    string
+    <strong>getOrientation</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Orientation.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOrientation">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L301">line 301</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+    <strong>setOrientation</strong>(string $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Orientation.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pValue</td>
+                <td>see self::ORIENTATION_*</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getScale">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L313">line 313</a></div>
+        <code>                    <abbr title="PhpOffice\PhpSpreadsheet\Worksheet\int?">int?</abbr>
+    <strong>getScale</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Scale.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\int?">int?</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setScale">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L330">line 330</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+    <strong>setScale</strong>(null|int $pValue, bool $pUpdate = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Scale.</p>                    <p>Print scaling. Valid values range from 10 to 400
+This setting is overridden when fitToWidth and/or fitToHeight are in use.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>null|int</td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$pUpdate</td>
+                <td>Update fitToPage so scaling applies rather than fitToHeight / fitToWidth</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFitToPage">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L351">line 351</a></div>
+        <code>                    bool
+    <strong>getFitToPage</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Fit To Page.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFitToPage">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L363">line 363</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+    <strong>setFitToPage</strong>(bool $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Fit To Page.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFitToHeight">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L375">line 375</a></div>
+        <code>                    <abbr title="PhpOffice\PhpSpreadsheet\Worksheet\int?">int?</abbr>
+    <strong>getFitToHeight</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Fit To Height.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\int?">int?</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFitToHeight">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L388">line 388</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+    <strong>setFitToHeight</strong>(null|int $pValue, bool $pUpdate = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Fit To Height.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>null|int</td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$pUpdate</td>
+                <td>Update fitToPage so it applies rather than scaling</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFitToWidth">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L403">line 403</a></div>
+        <code>                    <abbr title="PhpOffice\PhpSpreadsheet\Worksheet\int?">int?</abbr>
+    <strong>getFitToWidth</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Fit To Width.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\int?">int?</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFitToWidth">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L416">line 416</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+    <strong>setFitToWidth</strong>(null|int $pValue, bool $pUpdate = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Fit To Width.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>null|int</td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$pUpdate</td>
+                <td>Update fitToPage so it applies rather than scaling</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isColumnsToRepeatAtLeftSet">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L431">line 431</a></div>
+        <code>                    bool
+    <strong>isColumnsToRepeatAtLeftSet</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Is Columns to repeat at left set?</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getColumnsToRepeatAtLeft">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L447">line 447</a></div>
+        <code>                    array
+    <strong>getColumnsToRepeatAtLeft</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Columns to repeat at left.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>Containing start column and end column, empty array if option unset</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setColumnsToRepeatAtLeft">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L459">line 459</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+    <strong>setColumnsToRepeatAtLeft</strong>(array $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Columns to repeat at left.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$pValue</td>
+                <td>Containing start column and end column, empty array if option unset</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setColumnsToRepeatAtLeftByStartAndEnd">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L474">line 474</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+    <strong>setColumnsToRepeatAtLeftByStartAndEnd</strong>(string $pStart, string $pEnd)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Columns to repeat at left by start and end.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pStart</td>
+                <td>eg: 'A'</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$pEnd</td>
+                <td>eg: 'B'</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isRowsToRepeatAtTopSet">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L486">line 486</a></div>
+        <code>                    bool
+    <strong>isRowsToRepeatAtTopSet</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Is Rows to repeat at top set?</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRowsToRepeatAtTop">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L502">line 502</a></div>
+        <code>                    array
+    <strong>getRowsToRepeatAtTop</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Rows to repeat at top.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>Containing start column and end column, empty array if option unset</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRowsToRepeatAtTop">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L514">line 514</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+    <strong>setRowsToRepeatAtTop</strong>(array $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Rows to repeat at top.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$pValue</td>
+                <td>Containing start column and end column, empty array if option unset</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRowsToRepeatAtTopByStartAndEnd">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L529">line 529</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+    <strong>setRowsToRepeatAtTopByStartAndEnd</strong>(int $pStart, int $pEnd)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Rows to repeat at top by start and end.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$pStart</td>
+                <td>eg: 1</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pEnd</td>
+                <td>eg: 1</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHorizontalCentered">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L541">line 541</a></div>
+        <code>                    bool
+    <strong>getHorizontalCentered</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get center page horizontally.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setHorizontalCentered">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L553">line 553</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+    <strong>setHorizontalCentered</strong>(bool $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set center page horizontally.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getVerticalCentered">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L565">line 565</a></div>
+        <code>                    bool
+    <strong>getVerticalCentered</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get center page vertically.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setVerticalCentered">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L577">line 577</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+    <strong>setVerticalCentered</strong>(bool $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set center page vertically.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPrintArea">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L596">line 596</a></div>
+        <code>                    string
+    <strong>getPrintArea</strong>(int $index = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get print area.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$index</td>
+                <td>Identifier for a specific print area range if several ranges have been set
+                           Default behaviour, or a index value of 0, will return all ranges as a comma-separated string
+                           Otherwise, the specific range identified by the value of $index will be returned
+                           Print areas are numbered from 1</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isPrintAreaSet">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L619">line 619</a></div>
+        <code>                    bool
+    <strong>isPrintAreaSet</strong>(int $index = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Is print area set?</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$index</td>
+                <td>Identifier for a specific print area range if several ranges have been set
+                           Default behaviour, or an index value of 0, will identify whether any print range is set
+                           Otherwise, existence of the range identified by the value of $index will be returned
+                           Print areas are numbered from 1</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearPrintArea">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L639">line 639</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+    <strong>clearPrintArea</strong>(int $index = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear a print area.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$index</td>
+                <td>Identifier for a specific print area range if several ranges have been set
+                           Default behaviour, or an index value of 0, will clear all print ranges that are set
+                           Otherwise, the range identified by the value of $index will be removed from the series
+                           Print areas are numbered from 1</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPrintArea">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L676">line 676</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+    <strong>setPrintArea</strong>(string $value, int $index = 0, string $method = self::SETPRINTRANGE_OVERWRITE)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set print area. e.g. 'A1:D10' or 'A1:D10,G5:M20'.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$index</td>
+                <td>Identifier for a specific print area range allowing several ranges to be set
+                           When the method is "O"verwrite, then a positive integer index will overwrite that indexed
+                               entry in the print areas list; a negative index value will identify which entry to
+                               overwrite working bacward through the print area to the list, with the last entry as -1.
+                               Specifying an index value of 0, will overwrite <b>all</b> existing print ranges.
+                           When the method is "I"nsert, then a positive index will insert after that indexed entry in
+                               the print areas list, while a negative index will insert before the indexed entry.
+                               Specifying an index value of 0, will always append the new print range at the end of the
+                               list.
+                           Print areas are numbered from 1</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td>Determines the method used when setting multiple print areas
+                           Default behaviour, or the "O" method, overwrites existing print area
+                           The "I" method, inserts the new print area before any specified index, or at the end of the list</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addPrintArea">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L737">line 737</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+    <strong>addPrintArea</strong>(string $value, int $index = -1)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a new print area (e.g. 'A1:D10' or 'A1:D10,G5:M20') to the list of print areas.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$index</td>
+                <td>Identifier for a specific print area range allowing several ranges to be set
+                           A positive index will insert after that indexed entry in the print areas list, while a
+                               negative index will insert before the indexed entry.
+                               Specifying an index value of 0, will always append the new print range at the end of the
+                               list.
+                           Print areas are numbered from 1</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPrintAreaByColumnAndRow">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L767">line 767</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+    <strong>setPrintAreaByColumnAndRow</strong>(int $column1, int $row1, int $column2, int $row2, int $index = 0, string $method = self::SETPRINTRANGE_OVERWRITE)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set print area.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$column1</td>
+                <td>Column 1</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$row1</td>
+                <td>Row 1</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$column2</td>
+                <td>Column 2</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$row2</td>
+                <td>Row 2</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$index</td>
+                <td>Identifier for a specific print area range allowing several ranges to be set
+                               When the method is "O"verwrite, then a positive integer index will overwrite that indexed
+                                   entry in the print areas list; a negative index value will identify which entry to
+                                   overwrite working backward through the print area to the list, with the last entry as -1.
+                                   Specifying an index value of 0, will overwrite <b>all</b> existing print ranges.
+                               When the method is "I"nsert, then a positive index will insert after that indexed entry in
+                                   the print areas list, while a negative index will insert before the indexed entry.
+                                   Specifying an index value of 0, will always append the new print range at the end of the
+                                   list.
+                               Print areas are numbered from 1</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td>Determines the method used when setting multiple print areas
+                               Default behaviour, or the "O" method, overwrites existing print area
+                               The "I" method, inserts the new print area before any specified index, or at the end of the list</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addPrintAreaByColumnAndRow">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L794">line 794</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+    <strong>addPrintAreaByColumnAndRow</strong>(int $column1, int $row1, int $column2, int $row2, int $index = -1)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a new print area to the list of print areas.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$column1</td>
+                <td>Start Column for the print area</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$row1</td>
+                <td>Start Row for the print area</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$column2</td>
+                <td>End Column for the print area</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$row2</td>
+                <td>End Row for the print area</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$index</td>
+                <td>Identifier for a specific print area range allowing several ranges to be set
+                               A positive index will insert after that indexed entry in the print areas list, while a
+                                   negative index will insert before the indexed entry.
+                                   Specifying an index value of 0, will always append the new print range at the end of the
+                                   list.
+                               Print areas are numbered from 1</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFirstPageNumber">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L808">line 808</a></div>
+        <code>                    int
+    <strong>getFirstPageNumber</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get first page number.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFirstPageNumber">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L820">line 820</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+    <strong>setFirstPageNumber</strong>(int $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set first page number.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resetFirstPageNumber">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L832">line 832</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a>
+    <strong>resetFirstPageNumber</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Reset first page number.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/PageSetup.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\PageSetup">PageSetup</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___clone">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.2.0/src/PhpSpreadsheet/Worksheet/PageSetup.php#L840">line 840</a></div>
+        <code>                    
+    <strong>__clone</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Implement PHP __clone to create a deep clone, not just a shallow copy.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

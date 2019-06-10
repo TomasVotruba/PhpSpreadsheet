@@ -1,0 +1,3576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PhpOffice\PhpSpreadsheet\Calculation\Financial | PhpSpreadsheet</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PhpOffice_PhpSpreadsheet_Calculation_Financial" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../1.0.0/index.html" data-version="1.0.0">1.0.0</option>
+                                            <option value="../../../../1.1.0/index.html" data-version="1.1.0">1.1.0</option>
+                                            <option value="../../../../1.2.0/index.html" data-version="1.2.0">1.2.0</option>
+                                            <option value="../../../../1.2.1/index.html" data-version="1.2.1">1.2.1</option>
+                                            <option value="../../../../1.3.0/index.html" data-version="1.3.0">1.3.0</option>
+                                            <option value="../../../../1.3.1/index.html" data-version="1.3.1">1.3.1</option>
+                                            <option value="../../../../1.4.0/index.html" data-version="1.4.0">1.4.0</option>
+                                            <option value="../../../../1.4.1/index.html" data-version="1.4.1">1.4.1</option>
+                                            <option value="../../../../1.5.0/index.html" data-version="1.5.0">1.5.0</option>
+                                            <option value="../../../../1.5.1/index.html" data-version="1.5.1">1.5.1</option>
+                                            <option value="../../../../1.5.2/index.html" data-version="1.5.2">1.5.2</option>
+                                            <option value="../../../../1.6.0/index.html" data-version="1.6.0">1.6.0</option>
+                                            <option value="../../../../1.7.0/index.html" data-version="1.7.0">1.7.0</option>
+                                            <option value="../../../../master/index.html" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">PhpSpreadsheet</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../PhpOffice.html">PhpOffice</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet.html">PhpSpreadsheet</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet/Calculation.html">Calculation</a></li><li class="backslash">\</li><li>Financial</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Financial
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Financial</strong>        (<a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>FINANCIAL_MAX_ITERATIONS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FINANCIAL_PRECISION</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ACCRINT">ACCRINT</a>(mixed $issue, mixed $firstinterest, mixed $settlement, float $rate, float $par = 1000, int $frequency = 1, int $basis = 0)
+        
+                                            <p>ACCRINT.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ACCRINTM">ACCRINTM</a>(mixed $issue, mixed $settlement, float $rate, float $par = 1000, int $basis = 0)
+        
+                                            <p>ACCRINTM.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_AMORDEGRC">AMORDEGRC</a>(float $cost, mixed $purchased, mixed $firstPeriod, mixed $salvage, float $period, float $rate, int $basis = 0)
+        
+                                            <p>AMORDEGRC.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_AMORLINC">AMORLINC</a>(float $cost, mixed $purchased, mixed $firstPeriod, mixed $salvage, float $period, float $rate, int $basis = 0)
+        
+                                            <p>AMORLINC.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_COUPDAYBS">COUPDAYBS</a>(mixed $settlement, mixed $maturity, int $frequency, int $basis = 0)
+        
+                                            <p>COUPDAYBS.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_COUPDAYS">COUPDAYS</a>(mixed $settlement, mixed $maturity, mixed $frequency, int $basis = 0)
+        
+                                            <p>COUPDAYS.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_COUPDAYSNC">COUPDAYSNC</a>(mixed $settlement, mixed $maturity, mixed $frequency, int $basis = 0)
+        
+                                            <p>COUPDAYSNC.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_COUPNCD">COUPNCD</a>(mixed $settlement, mixed $maturity, mixed $frequency, int $basis = 0)
+        
+                                            <p>COUPNCD.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_COUPNUM">COUPNUM</a>(mixed $settlement, mixed $maturity, mixed $frequency, int $basis = 0)
+        
+                                            <p>COUPNUM.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_COUPPCD">COUPPCD</a>(mixed $settlement, mixed $maturity, mixed $frequency, int $basis = 0)
+        
+                                            <p>COUPPCD.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_CUMIPMT">CUMIPMT</a>(float $rate, int $nper, float $pv, int $start, int $end, int $type = 0)
+        
+                                            <p>CUMIPMT.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_CUMPRINC">CUMPRINC</a>(float $rate, int $nper, float $pv, int $start, int $end, int $type = 0)
+        
+                                            <p>CUMPRINC.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DB">DB</a>(float $cost, float $salvage, int $life, int $period, int $month = 12)
+        
+                                            <p>DB.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DDB">DDB</a>(float $cost, float $salvage, int $life, int $period, float $factor = 2.0)
+        
+                                            <p>DDB.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DISC">DISC</a>(mixed $settlement, mixed $maturity, int $price, int $redemption, int $basis = 0)
+        
+                                            <p>DISC.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DOLLARDE">DOLLARDE</a>(float $fractional_dollar = null, int $fraction = 0)
+        
+                                            <p>DOLLARDE.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DOLLARFR">DOLLARFR</a>(float $decimal_dollar = null, int $fraction = 0)
+        
+                                            <p>DOLLARFR.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_EFFECT">EFFECT</a>(float $nominal_rate = 0, int $npery = 0)
+        
+                                            <p>EFFECT.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_FV">FV</a>(float $rate = 0, int $nper = 0, float $pmt = 0, float $pv = 0, int $type = 0)
+        
+                                            <p>FV.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_FVSCHEDULE">FVSCHEDULE</a>(float $principal, float[] $schedule)
+        
+                                            <p>FVSCHEDULE.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_INTRATE">INTRATE</a>(mixed $settlement, mixed $maturity, int $investment, int $redemption, int $basis = 0)
+        
+                                            <p>INTRATE.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_IPMT">IPMT</a>(float $rate, int $per, int $nper, float $pv, float $fv = 0, int $type = 0)
+        
+                                            <p>IPMT.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_IRR">IRR</a>(float[] $values, float $guess = 0.1)
+        
+                                            <p>IRR.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ISPMT">ISPMT</a>(...$args)
+        
+                                            <p>ISPMT.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_MIRR">MIRR</a>(float[] $values, float $finance_rate, float $reinvestment_rate)
+        
+                                            <p>MIRR.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_NOMINAL">NOMINAL</a>(float $effect_rate = 0, int $npery = 0)
+        
+                                            <p>NOMINAL.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_NPER">NPER</a>(float $rate = 0, int $pmt = 0, float $pv = 0, float $fv = 0, int $type = 0)
+        
+                                            <p>NPER.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_NPV">NPV</a>(...$args)
+        
+                                            <p>NPV.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_PDURATION">PDURATION</a>(float $rate = 0, float $pv = 0, float $fv = 0)
+        
+                                            <p>PDURATION.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_PMT">PMT</a>(float $rate = 0, int $nper = 0, float $pv = 0, float $fv = 0, int $type = 0)
+        
+                                            <p>PMT.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_PPMT">PPMT</a>(float $rate, int $per, int $nper, float $pv, float $fv = 0, int $type = 0)
+        
+                                            <p>PPMT.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_PRICE">PRICE</a>($settlement, $maturity, $rate, $yield, $redemption, $frequency, $basis = 0)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_PRICEDISC">PRICEDISC</a>(mixed $settlement, mixed $maturity, int $discount, int $redemption, int $basis = 0)
+        
+                                            <p>PRICEDISC.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_PRICEMAT">PRICEMAT</a>(mixed $settlement, mixed $maturity, mixed $issue, int $rate, int $yield, int $basis = 0)
+        
+                                            <p>PRICEMAT.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_PV">PV</a>(float $rate = 0, int $nper = 0, float $pmt = 0, float $fv = 0, int $type = 0)
+        
+                                            <p>PV.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_RATE">RATE</a>(float $nper, float $pmt, float $pv, float $fv = 0.0, int $type = 0, float $guess = 0.1)
+        
+                                            <p>RATE.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_RECEIVED">RECEIVED</a>(mixed $settlement, mixed $maturity, int $investment, int $discount, int $basis = 0)
+        
+                                            <p>RECEIVED.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_RRI">RRI</a>(float $nper = 0, float $pv = 0, float $fv = 0)
+        
+                                            <p>RRI.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_SLN">SLN</a>(mixed $cost, mixed $salvage, mixed $life)
+        
+                                            <p>SLN.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_SYD">SYD</a>(mixed $cost, mixed $salvage, mixed $life, mixed $period)
+        
+                                            <p>SYD.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_TBILLEQ">TBILLEQ</a>(mixed $settlement, mixed $maturity, int $discount)
+        
+                                            <p>TBILLEQ.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_TBILLPRICE">TBILLPRICE</a>(mixed $settlement, mixed $maturity, int $discount)
+        
+                                            <p>TBILLPRICE.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_TBILLYIELD">TBILLYIELD</a>(mixed $settlement, mixed $maturity, int $price)
+        
+                                            <p>TBILLYIELD.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_XIRR">XIRR</a>($values, $dates, $guess = 0.1)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_XNPV">XNPV</a>(float $rate, array $values, array $dates)
+        
+                                            <p>XNPV.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_YIELDDISC">YIELDDISC</a>(mixed $settlement, mixed $maturity, int $price, int $redemption, int $basis = 0)
+        
+                                            <p>YIELDDISC.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_YIELDMAT">YIELDMAT</a>(mixed $settlement, mixed $maturity, mixed $issue, int $rate, int $price, int $basis = 0)
+        
+                                            <p>YIELDMAT.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_ACCRINT">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L149">line 149</a></div>
+        <code>        static            float|string
+    <strong>ACCRINT</strong>(mixed $issue, mixed $firstinterest, mixed $settlement, float $rate, float $par = 1000, int $frequency = 1, int $basis = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>ACCRINT.</p>                    <p>Returns the accrued interest for a security that pays periodic interest.</p>
+
+<p>Excel Function:
+       ACCRINT(issue,firstinterest,settlement,rate,par,frequency[,basis])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$issue</td>
+                <td>the security's issue date</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$firstinterest</td>
+                <td>the security's first interest date</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$settlement</td>
+                <td>The security's settlement date.
+                                   The security settlement date is the date after the issue date
+                                   when the security is traded to the buyer.</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$rate</td>
+                <td>the security's annual coupon rate</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$par</td>
+                <td>The security's par value.
+                                   If you omit par, ACCRINT uses $1,000.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$frequency</td>
+                <td>the number of coupon payments per year.
+                                   Valid frequency values are:
+                                       1    Annual
+                                       2    Semi-Annual
+                                       4    Quarterly
+                                   If working in Gnumeric Mode, the following frequency options are
+                                   also available
+                                       6    Bimonthly
+                                       12    Monthly</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$basis</td>
+                <td>The type of day count to use.
+                                       0 or omitted    US (NASD) 30/360
+                                       1                Actual/actual
+                                       2                Actual/360
+                                       3                Actual/365
+                                       4                European 30/360</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ACCRINTM">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L202">line 202</a></div>
+        <code>        static            float|string
+    <strong>ACCRINTM</strong>(mixed $issue, mixed $settlement, float $rate, float $par = 1000, int $basis = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>ACCRINTM.</p>                    <p>Returns the accrued interest for a security that pays interest at maturity.</p>
+
+<p>Excel Function:
+       ACCRINTM(issue,settlement,rate[,par[,basis]])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$issue</td>
+                <td>The security's issue date</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$settlement</td>
+                <td>The security's settlement (or maturity) date</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$rate</td>
+                <td>The security's annual coupon rate</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$par</td>
+                <td>The security's par value.
+                                   If you omit par, ACCRINT uses $1,000.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$basis</td>
+                <td>The type of day count to use.
+                                       0 or omitted    US (NASD) 30/360
+                                       1                Actual/actual
+                                       2                Actual/360
+                                       3                Actual/365
+                                       4                European 30/360</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_AMORDEGRC">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L261">line 261</a></div>
+        <code>        static            float
+    <strong>AMORDEGRC</strong>(float $cost, mixed $purchased, mixed $firstPeriod, mixed $salvage, float $period, float $rate, int $basis = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>AMORDEGRC.</p>                    <p>Returns the depreciation for each accounting period.
+This function is provided for the French accounting system. If an asset is purchased in
+the middle of the accounting period, the prorated depreciation is taken into account.
+The function is similar to AMORLINC, except that a depreciation coefficient is applied in
+the calculation depending on the life of the assets.
+This function will return the depreciation until the last period of the life of the assets
+or until the cumulated value of depreciation is greater than the cost of the assets minus
+the salvage value.</p>
+
+<p>Excel Function:
+       AMORDEGRC(cost,purchased,firstPeriod,salvage,period,rate[,basis])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$cost</td>
+                <td>The cost of the asset</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$purchased</td>
+                <td>Date of the purchase of the asset</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$firstPeriod</td>
+                <td>Date of the end of the first period</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$salvage</td>
+                <td>The salvage value at the end of the life of the asset</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$period</td>
+                <td>The period</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$rate</td>
+                <td>Rate of depreciation</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$basis</td>
+                <td>The type of day count to use.
+                                       0 or omitted    US (NASD) 30/360
+                                       1                Actual/actual
+                                       2                Actual/360
+                                       3                Actual/365
+                                       4                European 30/360</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_AMORLINC">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L339">line 339</a></div>
+        <code>        static            float
+    <strong>AMORLINC</strong>(float $cost, mixed $purchased, mixed $firstPeriod, mixed $salvage, float $period, float $rate, int $basis = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>AMORLINC.</p>                    <p>Returns the depreciation for each accounting period.
+This function is provided for the French accounting system. If an asset is purchased in
+the middle of the accounting period, the prorated depreciation is taken into account.</p>
+
+<p>Excel Function:
+       AMORLINC(cost,purchased,firstPeriod,salvage,period,rate[,basis])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$cost</td>
+                <td>The cost of the asset</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$purchased</td>
+                <td>Date of the purchase of the asset</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$firstPeriod</td>
+                <td>Date of the end of the first period</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$salvage</td>
+                <td>The salvage value at the end of the life of the asset</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$period</td>
+                <td>The period</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$rate</td>
+                <td>Rate of depreciation</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$basis</td>
+                <td>The type of day count to use.
+                                       0 or omitted    US (NASD) 30/360
+                                       1                Actual/actual
+                                       2                Actual/360
+                                       3                Actual/365
+                                       4                European 30/360</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_COUPDAYBS">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L406">line 406</a></div>
+        <code>        static            float|string
+    <strong>COUPDAYBS</strong>(mixed $settlement, mixed $maturity, int $frequency, int $basis = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>COUPDAYBS.</p>                    <p>Returns the number of days from the beginning of the coupon period to the settlement date.</p>
+
+<p>Excel Function:
+       COUPDAYBS(settlement,maturity,frequency[,basis])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$settlement</td>
+                <td>The security's settlement date.
+                               The security settlement date is the date after the issue
+                               date when the security is traded to the buyer.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$maturity</td>
+                <td>The security's maturity date.
+                               The maturity date is the date when the security expires.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$frequency</td>
+                <td>the number of coupon payments per year.
+                                   Valid frequency values are:
+                                       1    Annual
+                                       2    Semi-Annual
+                                       4    Quarterly
+                                   If working in Gnumeric Mode, the following frequency options are
+                                   also available
+                                       6    Bimonthly
+                                       12    Monthly</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$basis</td>
+                <td>The type of day count to use.
+                                       0 or omitted    US (NASD) 30/360
+                                       1                Actual/actual
+                                       2                Actual/360
+                                       3                Actual/365
+                                       4                European 30/360</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_COUPDAYS">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L465">line 465</a></div>
+        <code>        static            float|string
+    <strong>COUPDAYS</strong>(mixed $settlement, mixed $maturity, mixed $frequency, int $basis = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>COUPDAYS.</p>                    <p>Returns the number of days in the coupon period that contains the settlement date.</p>
+
+<p>Excel Function:
+       COUPDAYS(settlement,maturity,frequency[,basis])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$settlement</td>
+                <td>The security's settlement date.
+                               The security settlement date is the date after the issue
+                               date when the security is traded to the buyer.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$maturity</td>
+                <td>The security's maturity date.
+                               The maturity date is the date when the security expires.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$frequency</td>
+                <td>the number of coupon payments per year.
+                                   Valid frequency values are:
+                                       1    Annual
+                                       2    Semi-Annual
+                                       4    Quarterly
+                                   If working in Gnumeric Mode, the following frequency options are
+                                   also available
+                                       6    Bimonthly
+                                       12    Monthly</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$basis</td>
+                <td>The type of day count to use.
+                                       0 or omitted    US (NASD) 30/360
+                                       1                Actual/actual
+                                       2                Actual/360
+                                       3                Actual/365
+                                       4                European 30/360</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_COUPDAYSNC">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L539">line 539</a></div>
+        <code>        static            float|string
+    <strong>COUPDAYSNC</strong>(mixed $settlement, mixed $maturity, mixed $frequency, int $basis = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>COUPDAYSNC.</p>                    <p>Returns the number of days from the settlement date to the next coupon date.</p>
+
+<p>Excel Function:
+       COUPDAYSNC(settlement,maturity,frequency[,basis])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$settlement</td>
+                <td>The security's settlement date.
+                               The security settlement date is the date after the issue
+                               date when the security is traded to the buyer.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$maturity</td>
+                <td>The security's maturity date.
+                               The maturity date is the date when the security expires.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$frequency</td>
+                <td>the number of coupon payments per year.
+                                   Valid frequency values are:
+                                       1    Annual
+                                       2    Semi-Annual
+                                       4    Quarterly
+                                   If working in Gnumeric Mode, the following frequency options are
+                                   also available
+                                       6    Bimonthly
+                                       12    Monthly</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$basis</td>
+                <td>The type of day count to use.
+                                       0 or omitted    US (NASD) 30/360
+                                       1                Actual/actual
+                                       2                Actual/360
+                                       3                Actual/365
+                                       4                European 30/360</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_COUPNCD">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L599">line 599</a></div>
+        <code>        static            mixed
+    <strong>COUPNCD</strong>(mixed $settlement, mixed $maturity, mixed $frequency, int $basis = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>COUPNCD.</p>                    <p>Returns the next coupon date after the settlement date.</p>
+
+<p>Excel Function:
+       COUPNCD(settlement,maturity,frequency[,basis])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$settlement</td>
+                <td>The security's settlement date.
+                               The security settlement date is the date after the issue
+                               date when the security is traded to the buyer.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$maturity</td>
+                <td>The security's maturity date.
+                               The maturity date is the date when the security expires.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$frequency</td>
+                <td>the number of coupon payments per year.
+                                   Valid frequency values are:
+                                       1    Annual
+                                       2    Semi-Annual
+                                       4    Quarterly
+                                   If working in Gnumeric Mode, the following frequency options are
+                                   also available
+                                       6    Bimonthly
+                                       12    Monthly</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$basis</td>
+                <td>The type of day count to use.
+                                       0 or omitted    US (NASD) 30/360
+                                       1                Actual/actual
+                                       2                Actual/360
+                                       3                Actual/365
+                                       4                European 30/360</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Excel date/time serial value, PHP date/time serial value or PHP date/time object,
+                       depending on the value of the ReturnDateType flag</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_COUPNUM">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L656">line 656</a></div>
+        <code>        static            int|string
+    <strong>COUPNUM</strong>(mixed $settlement, mixed $maturity, mixed $frequency, int $basis = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>COUPNUM.</p>                    <p>Returns the number of coupons payable between the settlement date and maturity date,
+rounded up to the nearest whole coupon.</p>
+
+<p>Excel Function:
+       COUPNUM(settlement,maturity,frequency[,basis])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$settlement</td>
+                <td>The security's settlement date.
+                               The security settlement date is the date after the issue
+                               date when the security is traded to the buyer.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$maturity</td>
+                <td>The security's maturity date.
+                               The maturity date is the date when the security expires.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$frequency</td>
+                <td>the number of coupon payments per year.
+                                   Valid frequency values are:
+                                       1    Annual
+                                       2    Semi-Annual
+                                       4    Quarterly
+                                   If working in Gnumeric Mode, the following frequency options are
+                                   also available
+                                       6    Bimonthly
+                                       12    Monthly</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$basis</td>
+                <td>The type of day count to use.
+                                       0 or omitted    US (NASD) 30/360
+                                       1                Actual/actual
+                                       2                Actual/360
+                                       3                Actual/365
+                                       4                European 30/360</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_COUPPCD">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L729">line 729</a></div>
+        <code>        static            mixed
+    <strong>COUPPCD</strong>(mixed $settlement, mixed $maturity, mixed $frequency, int $basis = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>COUPPCD.</p>                    <p>Returns the previous coupon date before the settlement date.</p>
+
+<p>Excel Function:
+       COUPPCD(settlement,maturity,frequency[,basis])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$settlement</td>
+                <td>The security's settlement date.
+                               The security settlement date is the date after the issue
+                               date when the security is traded to the buyer.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$maturity</td>
+                <td>The security's maturity date.
+                               The maturity date is the date when the security expires.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$frequency</td>
+                <td>the number of coupon payments per year.
+                                   Valid frequency values are:
+                                       1    Annual
+                                       2    Semi-Annual
+                                       4    Quarterly
+                                   If working in Gnumeric Mode, the following frequency options are
+                                   also available
+                                       6    Bimonthly
+                                       12    Monthly</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$basis</td>
+                <td>The type of day count to use.
+                                       0 or omitted    US (NASD) 30/360
+                                       1                Actual/actual
+                                       2                Actual/360
+                                       3                Actual/365
+                                       4                European 30/360</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Excel date/time serial value, PHP date/time serial value or PHP date/time object,
+                       depending on the value of the ReturnDateType flag</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_CUMIPMT">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L774">line 774</a></div>
+        <code>        static            float|string
+    <strong>CUMIPMT</strong>(float $rate, int $nper, float $pv, int $start, int $end, int $type = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>CUMIPMT.</p>                    <p>Returns the cumulative interest paid on a loan between the start and end periods.</p>
+
+<p>Excel Function:
+       CUMIPMT(rate,nper,pv,start,end[,type])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$rate</td>
+                <td>The Interest rate</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$nper</td>
+                <td>The total number of payment periods</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$pv</td>
+                <td>Present Value</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$start</td>
+                <td>The first period in the calculation.
+                           Payment periods are numbered beginning with 1.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$end</td>
+                <td>the last period in the calculation</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$type</td>
+                <td>A number 0 or 1 and indicates when payments are due:
+                               0 or omitted    At the end of the period.
+                               1                At the beginning of the period.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_CUMPRINC">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L822">line 822</a></div>
+        <code>        static            float|string
+    <strong>CUMPRINC</strong>(float $rate, int $nper, float $pv, int $start, int $end, int $type = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>CUMPRINC.</p>                    <p>Returns the cumulative principal paid on a loan between the start and end periods.</p>
+
+<p>Excel Function:
+       CUMPRINC(rate,nper,pv,start,end[,type])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$rate</td>
+                <td>The Interest rate</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$nper</td>
+                <td>The total number of payment periods</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$pv</td>
+                <td>Present Value</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$start</td>
+                <td>The first period in the calculation.
+                           Payment periods are numbered beginning with 1.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$end</td>
+                <td>the last period in the calculation</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$type</td>
+                <td>A number 0 or 1 and indicates when payments are due:
+                               0 or omitted    At the end of the period.
+                               1                At the beginning of the period.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_DB">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L875">line 875</a></div>
+        <code>        static            float|string
+    <strong>DB</strong>(float $cost, float $salvage, int $life, int $period, int $month = 12)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>DB.</p>                    <p>Returns the depreciation of an asset for a specified period using the
+fixed-declining balance method.
+This form of depreciation is used if you want to get a higher depreciation value
+at the beginning of the depreciation (as opposed to linear depreciation). The
+depreciation value is reduced with every depreciation period by the depreciation
+already deducted from the initial cost.</p>
+
+<p>Excel Function:
+       DB(cost,salvage,life,period[,month])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$cost</td>
+                <td>Initial cost of the asset</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$salvage</td>
+                <td>Value at the end of the depreciation.
+                               (Sometimes called the salvage value of the asset)</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$life</td>
+                <td>Number of periods over which the asset is depreciated.
+                               (Sometimes called the useful life of the asset)</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$period</td>
+                <td>The period for which you want to calculate the
+                               depreciation. Period must use the same units as life.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$month</td>
+                <td>Number of months in the first year. If month is omitted,
+                               it defaults to 12.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_DDB">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L945">line 945</a></div>
+        <code>        static            float|string
+    <strong>DDB</strong>(float $cost, float $salvage, int $life, int $period, float $factor = 2.0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>DDB.</p>                    <p>Returns the depreciation of an asset for a specified period using the
+double-declining balance method or some other method you specify.</p>
+
+<p>Excel Function:
+       DDB(cost,salvage,life,period[,factor])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$cost</td>
+                <td>Initial cost of the asset</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$salvage</td>
+                <td>Value at the end of the depreciation.
+                               (Sometimes called the salvage value of the asset)</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$life</td>
+                <td>Number of periods over which the asset is depreciated.
+                               (Sometimes called the useful life of the asset)</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$period</td>
+                <td>The period for which you want to calculate the
+                               depreciation. Period must use the same units as life.</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$factor</td>
+                <td>The rate at which the balance declines.
+                               If factor is omitted, it is assumed to be 2 (the
+                               double-declining balance method).</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_DISC">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L1009">line 1009</a></div>
+        <code>        static            float|string
+    <strong>DISC</strong>(mixed $settlement, mixed $maturity, int $price, int $redemption, int $basis = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>DISC.</p>                    <p>Returns the discount rate for a security.</p>
+
+<p>Excel Function:
+       DISC(settlement,maturity,price,redemption[,basis])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$settlement</td>
+                <td>The security's settlement date.
+                               The security settlement date is the date after the issue
+                               date when the security is traded to the buyer.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$maturity</td>
+                <td>The security's maturity date.
+                               The maturity date is the date when the security expires.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$price</td>
+                <td>The security's price per $100 face value</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$redemption</td>
+                <td>The security's redemption value per $100 face value</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$basis</td>
+                <td>The type of day count to use.
+                                       0 or omitted    US (NASD) 30/360
+                                       1                Actual/actual
+                                       2                Actual/360
+                                       3                Actual/365
+                                       4                European 30/360</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_DOLLARDE">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L1054">line 1054</a></div>
+        <code>        static            float|string
+    <strong>DOLLARDE</strong>(float $fractional_dollar = null, int $fraction = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>DOLLARDE.</p>                    <p>Converts a dollar price expressed as an integer part and a fraction
+       part into a dollar price expressed as a decimal number.
+Fractional dollar numbers are sometimes used for security prices.</p>
+
+<p>Excel Function:
+       DOLLARDE(fractional_dollar,fraction)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$fractional_dollar</td>
+                <td>Fractional Dollar</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$fraction</td>
+                <td>Fraction</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_DOLLARFR">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L1092">line 1092</a></div>
+        <code>        static            float|string
+    <strong>DOLLARFR</strong>(float $decimal_dollar = null, int $fraction = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>DOLLARFR.</p>                    <p>Converts a dollar price expressed as a decimal number into a dollar price
+       expressed as a fraction.
+Fractional dollar numbers are sometimes used for security prices.</p>
+
+<p>Excel Function:
+       DOLLARFR(decimal_dollar,fraction)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$decimal_dollar</td>
+                <td>Decimal Dollar</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$fraction</td>
+                <td>Fraction</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_EFFECT">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L1129">line 1129</a></div>
+        <code>        static            float|string
+    <strong>EFFECT</strong>(float $nominal_rate = 0, int $npery = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>EFFECT.</p>                    <p>Returns the effective interest rate given the nominal rate and the number of
+       compounding payments per year.</p>
+
+<p>Excel Function:
+       EFFECT(nominal_rate,npery)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$nominal_rate</td>
+                <td>Nominal interest rate</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$npery</td>
+                <td>Number of compounding payments per year</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_FV">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L1165">line 1165</a></div>
+        <code>        static            float|string
+    <strong>FV</strong>(float $rate = 0, int $nper = 0, float $pmt = 0, float $pv = 0, int $type = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>FV.</p>                    <p>Returns the Future Value of a cash flow with constant payments and interest rate (annuities).</p>
+
+<p>Excel Function:
+       FV(rate,nper,pmt[,pv[,type]])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$rate</td>
+                <td>The interest rate per period</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$nper</td>
+                <td>Total number of payment periods in an annuity</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$pmt</td>
+                <td>The payment made each period: it cannot change over the
+                           life of the annuity. Typically, pmt contains principal
+                           and interest but no other fees or taxes.</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$pv</td>
+                <td>present Value, or the lump-sum amount that a series of
+                           future payments is worth right now</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$type</td>
+                <td>A number 0 or 1 and indicates when payments are due:
+                               0 or omitted    At the end of the period.
+                               1                At the beginning of the period.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_FVSCHEDULE">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L1200">line 1200</a></div>
+        <code>        static            float
+    <strong>FVSCHEDULE</strong>(float $principal, float[] $schedule)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>FVSCHEDULE.</p>                    <p>Returns the future value of an initial principal after applying a series of compound interest rates.
+Use FVSCHEDULE to calculate the future value of an investment with a variable or adjustable rate.</p>
+
+<p>Excel Function:
+       FVSCHEDULE(principal,schedule)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$principal</td>
+                <td>the present value</td>
+            </tr>
+                    <tr>
+                <td>float[]</td>
+                <td>$schedule</td>
+                <td>an array of interest rates to apply</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_INTRATE">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L1235">line 1235</a></div>
+        <code>        static            float|string
+    <strong>INTRATE</strong>(mixed $settlement, mixed $maturity, int $investment, int $redemption, int $basis = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>INTRATE.</p>                    <p>Returns the interest rate for a fully invested security.</p>
+
+<p>Excel Function:
+       INTRATE(settlement,maturity,investment,redemption[,basis])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$settlement</td>
+                <td>The security's settlement date.
+                               The security settlement date is the date after the issue date when the security is traded to the buyer.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$maturity</td>
+                <td>The security's maturity date.
+                               The maturity date is the date when the security expires.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$investment</td>
+                <td>the amount invested in the security</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$redemption</td>
+                <td>the amount to be received at maturity</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$basis</td>
+                <td>The type of day count to use.
+                                       0 or omitted    US (NASD) 30/360
+                                       1                Actual/actual
+                                       2                Actual/360
+                                       3                Actual/365
+                                       4                European 30/360</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_IPMT">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L1280">line 1280</a></div>
+        <code>        static            float|string
+    <strong>IPMT</strong>(float $rate, int $per, int $nper, float $pv, float $fv = 0, int $type = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>IPMT.</p>                    <p>Returns the interest payment for a given period for an investment based on periodic, constant payments and a constant interest rate.</p>
+
+<p>Excel Function:
+       IPMT(rate,per,nper,pv[,fv][,type])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$rate</td>
+                <td>Interest rate per period</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$per</td>
+                <td>Period for which we want to find the interest</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$nper</td>
+                <td>Number of periods</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$pv</td>
+                <td>Present Value</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$fv</td>
+                <td>Future Value</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$type</td>
+                <td>Payment type: 0 = at the end of each period, 1 = at the beginning of each period</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_IRR">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L1323">line 1323</a></div>
+        <code>        static            float|string
+    <strong>IRR</strong>(float[] $values, float $guess = 0.1)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>IRR.</p>                    <p>Returns the internal rate of return for a series of cash flows represented by the numbers in values.
+These cash flows do not have to be even, as they would be for an annuity. However, the cash flows must occur
+at regular intervals, such as monthly or annually. The internal rate of return is the interest rate received
+for an investment consisting of payments (negative values) and income (positive values) that occur at regular
+periods.</p>
+
+<p>Excel Function:
+       IRR(values[,guess])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float[]</td>
+                <td>$values</td>
+                <td>An array or a reference to cells that contain numbers for which you want
+                                   to calculate the internal rate of return.
+                               Values must contain at least one positive value and one negative value to
+                                   calculate the internal rate of return.</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$guess</td>
+                <td>A number that you guess is close to the result of IRR</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ISPMT">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L1390">line 1390</a></div>
+        <code>        static            
+    <strong>ISPMT</strong>(...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>ISPMT.</p>                    <p>Returns the interest payment for an investment based on an interest rate and a constant payment schedule.</p>
+
+<p>Excel Function:
+    =ISPMT(interest_rate, period, number_payments, PV)</p>
+
+<p>interest_rate is the interest rate for the investment</p>
+
+<p>period is the period to calculate the interest rate.  It must be betweeen 1 and number_payments.</p>
+
+<p>number_payments is the number of payments for the annuity</p>
+
+<p>PV is the loan amount or present value of the payments</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>...$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_MIRR">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L1433">line 1433</a></div>
+        <code>        static            float|string
+    <strong>MIRR</strong>(float[] $values, float $finance_rate, float $reinvestment_rate)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>MIRR.</p>                    <p>Returns the modified internal rate of return for a series of periodic cash flows. MIRR considers both
+       the cost of the investment and the interest received on reinvestment of cash.</p>
+
+<p>Excel Function:
+       MIRR(values,finance_rate, reinvestment_rate)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float[]</td>
+                <td>$values</td>
+                <td>An array or a reference to cells that contain a series of payments and
+                                           income occurring at regular intervals.
+                                       Payments are negative value, income is positive values.</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$finance_rate</td>
+                <td>The interest rate you pay on the money used in the cash flows</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$reinvestment_rate</td>
+                <td>The interest rate you receive on the cash flows as you reinvest them</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_NOMINAL">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L1475">line 1475</a></div>
+        <code>        static            float|string
+    <strong>NOMINAL</strong>(float $effect_rate = 0, int $npery = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>NOMINAL.</p>                    <p>Returns the nominal interest rate given the effective rate and the number of compounding payments per year.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$effect_rate</td>
+                <td>Effective interest rate</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$npery</td>
+                <td>Number of compounding payments per year</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_NPER">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L1502">line 1502</a></div>
+        <code>        static            float|string
+    <strong>NPER</strong>(float $rate = 0, int $pmt = 0, float $pv = 0, float $fv = 0, int $type = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>NPER.</p>                    <p>Returns the number of periods for a cash flow with constant periodic payments (annuities), and interest rate.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$rate</td>
+                <td>Interest rate per period</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pmt</td>
+                <td>Periodic payment (annuity)</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$pv</td>
+                <td>Present Value</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$fv</td>
+                <td>Future Value</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$type</td>
+                <td>Payment type: 0 = at the end of each period, 1 = at the beginning of each period</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_NPV">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L1537">line 1537</a></div>
+        <code>        static            float
+    <strong>NPV</strong>(...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>NPV.</p>                    <p>Returns the Net Present Value of a cash flow series given a discount rate.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>...$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_PDURATION">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L1570">line 1570</a></div>
+        <code>        static            float|string
+    <strong>PDURATION</strong>(float $rate = 0, float $pv = 0, float $fv = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>PDURATION.</p>                    <p>Calculates the number of periods required for an investment to reach a specified value.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$rate</td>
+                <td>Interest rate per period</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$pv</td>
+                <td>Present Value</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$fv</td>
+                <td>Future Value</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_PMT">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L1599">line 1599</a></div>
+        <code>        static            float
+    <strong>PMT</strong>(float $rate = 0, int $nper = 0, float $pv = 0, float $fv = 0, int $type = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>PMT.</p>                    <p>Returns the constant payment (annuity) for a cash flow with a constant interest rate.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$rate</td>
+                <td>Interest rate per period</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$nper</td>
+                <td>Number of periods</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$pv</td>
+                <td>Present Value</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$fv</td>
+                <td>Future Value</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$type</td>
+                <td>Payment type: 0 = at the end of each period, 1 = at the beginning of each period</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_PPMT">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L1634">line 1634</a></div>
+        <code>        static            float
+    <strong>PPMT</strong>(float $rate, int $per, int $nper, float $pv, float $fv = 0, int $type = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>PPMT.</p>                    <p>Returns the interest payment for a given period for an investment based on periodic, constant payments and a constant interest rate.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$rate</td>
+                <td>Interest rate per period</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$per</td>
+                <td>Period for which we want to find the interest</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$nper</td>
+                <td>Number of periods</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$pv</td>
+                <td>Present Value</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$fv</td>
+                <td>Future Value</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$type</td>
+                <td>Payment type: 0 = at the end of each period, 1 = at the beginning of each period</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_PRICE">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L1657">line 1657</a></div>
+        <code>        static            
+    <strong>PRICE</strong>($settlement, $maturity, $rate, $yield, $redemption, $frequency, $basis = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$settlement</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$maturity</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$rate</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$yield</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$redemption</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$frequency</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$basis</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_PRICEDISC">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L1718">line 1718</a></div>
+        <code>        static            float
+    <strong>PRICEDISC</strong>(mixed $settlement, mixed $maturity, int $discount, int $redemption, int $basis = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>PRICEDISC.</p>                    <p>Returns the price per $100 face value of a discounted security.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$settlement</td>
+                <td>The security's settlement date.
+                               The security settlement date is the date after the issue date when the security is traded to the buyer.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$maturity</td>
+                <td>The security's maturity date.
+                               The maturity date is the date when the security expires.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$discount</td>
+                <td>The security's discount rate</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$redemption</td>
+                <td>The security's redemption value per $100 face value</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$basis</td>
+                <td>The type of day count to use.
+                                       0 or omitted    US (NASD) 30/360
+                                       1                Actual/actual
+                                       2                Actual/360
+                                       3                Actual/365
+                                       4                European 30/360</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_PRICEMAT">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L1764">line 1764</a></div>
+        <code>        static            float
+    <strong>PRICEMAT</strong>(mixed $settlement, mixed $maturity, mixed $issue, int $rate, int $yield, int $basis = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>PRICEMAT.</p>                    <p>Returns the price per $100 face value of a security that pays interest at maturity.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$settlement</td>
+                <td>The security's settlement date.
+                               The security's settlement date is the date after the issue date when the security is traded to the buyer.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$maturity</td>
+                <td>The security's maturity date.
+                               The maturity date is the date when the security expires.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$issue</td>
+                <td>The security's issue date</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$rate</td>
+                <td>The security's interest rate at date of issue</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$yield</td>
+                <td>The security's annual yield</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$basis</td>
+                <td>The type of day count to use.
+                                       0 or omitted    US (NASD) 30/360
+                                       1                Actual/actual
+                                       2                Actual/360
+                                       3                Actual/365
+                                       4                European 30/360</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_PV">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L1822">line 1822</a></div>
+        <code>        static            float
+    <strong>PV</strong>(float $rate = 0, int $nper = 0, float $pmt = 0, float $fv = 0, int $type = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>PV.</p>                    <p>Returns the Present Value of a cash flow with constant payments and interest rate (annuities).</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$rate</td>
+                <td>Interest rate per period</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$nper</td>
+                <td>Number of periods</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$pmt</td>
+                <td>Periodic payment (annuity)</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$fv</td>
+                <td>Future Value</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$type</td>
+                <td>Payment type: 0 = at the end of each period, 1 = at the beginning of each period</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_RATE">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L1874">line 1874</a></div>
+        <code>        static            float
+    <strong>RATE</strong>(float $nper, float $pmt, float $pv, float $fv = 0.0, int $type = 0, float $guess = 0.1)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>RATE.</p>                    <p>Returns the interest rate per period of an annuity.
+RATE is calculated by iteration and can have zero or more solutions.
+If the successive results of RATE do not converge to within 0.0000001 after 20 iterations,
+RATE returns the #NUM! error value.</p>
+
+<p>Excel Function:
+       RATE(nper,pmt,pv[,fv[,type[,guess]]])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$nper</td>
+                <td>The total number of payment periods in an annuity</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$pmt</td>
+                <td>The payment made each period and cannot change over the life
+                                   of the annuity.
+                               Typically, pmt includes principal and interest but no other
+                                   fees or taxes.</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$pv</td>
+                <td>The present value - the total amount that a series of future
+                                   payments is worth now</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$fv</td>
+                <td>The future value, or a cash balance you want to attain after
+                                   the last payment is made. If fv is omitted, it is assumed
+                                   to be 0 (the future value of a loan, for example, is 0).</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$type</td>
+                <td>A number 0 or 1 and indicates when payments are due:
+                                       0 or omitted    At the end of the period.
+                                       1                At the beginning of the period.</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$guess</td>
+                <td>Your guess for what the rate will be.
+                                   If you omit guess, it is assumed to be 10 percent.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_RECEIVED">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L1938">line 1938</a></div>
+        <code>        static            float
+    <strong>RECEIVED</strong>(mixed $settlement, mixed $maturity, int $investment, int $discount, int $basis = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>RECEIVED.</p>                    <p>Returns the price per $100 face value of a discounted security.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$settlement</td>
+                <td>The security's settlement date.
+                               The security settlement date is the date after the issue date when the security is traded to the buyer.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$maturity</td>
+                <td>The security's maturity date.
+                               The maturity date is the date when the security expires.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$investment</td>
+                <td>The amount invested in the security</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$discount</td>
+                <td>The security's discount rate</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$basis</td>
+                <td>The type of day count to use.
+                                       0 or omitted    US (NASD) 30/360
+                                       1                Actual/actual
+                                       2                Actual/360
+                                       3                Actual/365
+                                       4                European 30/360</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_RRI">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L1974">line 1974</a></div>
+        <code>        static            float|string
+    <strong>RRI</strong>(float $nper = 0, float $pv = 0, float $fv = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>RRI.</p>                    <p>Calculates the interest rate required for an investment to grow to a specified future value .</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$nper</td>
+                <td>The number of periods over which the investment is made</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$pv</td>
+                <td>Present Value</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$fv</td>
+                <td>Future Value</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_SLN">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L2001">line 2001</a></div>
+        <code>        static            float|string
+    <strong>SLN</strong>(mixed $cost, mixed $salvage, mixed $life)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>SLN.</p>                    <p>Returns the straight-line depreciation of an asset for one period</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$cost</td>
+                <td>Initial cost of the asset</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$salvage</td>
+                <td>Value at the end of the depreciation</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$life</td>
+                <td>Number of periods over which the asset is depreciated</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_SYD">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L2031">line 2031</a></div>
+        <code>        static            float|string
+    <strong>SYD</strong>(mixed $cost, mixed $salvage, mixed $life, mixed $period)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>SYD.</p>                    <p>Returns the sum-of-years' digits depreciation of an asset for a specified period.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$cost</td>
+                <td>Initial cost of the asset</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$salvage</td>
+                <td>Value at the end of the depreciation</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$life</td>
+                <td>Number of periods over which the asset is depreciated</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$period</td>
+                <td>Period</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_TBILLEQ">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L2063">line 2063</a></div>
+        <code>        static            float
+    <strong>TBILLEQ</strong>(mixed $settlement, mixed $maturity, int $discount)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>TBILLEQ.</p>                    <p>Returns the bond-equivalent yield for a Treasury bill.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$settlement</td>
+                <td>The Treasury bill's settlement date.
+                               The Treasury bill's settlement date is the date after the issue date when the Treasury bill is traded to the buyer.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$maturity</td>
+                <td>The Treasury bill's maturity date.
+                               The maturity date is the date when the Treasury bill expires.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$discount</td>
+                <td>The Treasury bill's discount rate</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_TBILLPRICE">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L2102">line 2102</a></div>
+        <code>        static            float
+    <strong>TBILLPRICE</strong>(mixed $settlement, mixed $maturity, int $discount)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>TBILLPRICE.</p>                    <p>Returns the yield for a Treasury bill.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$settlement</td>
+                <td>The Treasury bill's settlement date.
+                               The Treasury bill's settlement date is the date after the issue date when the Treasury bill is traded to the buyer.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$maturity</td>
+                <td>The Treasury bill's maturity date.
+                               The maturity date is the date when the Treasury bill expires.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$discount</td>
+                <td>The Treasury bill's discount rate</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_TBILLYIELD">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L2157">line 2157</a></div>
+        <code>        static            float
+    <strong>TBILLYIELD</strong>(mixed $settlement, mixed $maturity, int $price)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>TBILLYIELD.</p>                    <p>Returns the yield for a Treasury bill.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$settlement</td>
+                <td>The Treasury bill's settlement date.
+                               The Treasury bill's settlement date is the date after the issue date when the Treasury bill is traded to the buyer.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$maturity</td>
+                <td>The Treasury bill's maturity date.
+                               The maturity date is the date when the Treasury bill expires.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$price</td>
+                <td>The Treasury bill's price per $100 face value</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_XIRR">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L2190">line 2190</a></div>
+        <code>        static            
+    <strong>XIRR</strong>($values, $dates, $guess = 0.1)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$values</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$dates</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$guess</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_XNPV">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L2264">line 2264</a></div>
+        <code>        static            float
+    <strong>XNPV</strong>(float $rate, array $values, array $dates)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>XNPV.</p>                    <p>Returns the net present value for a schedule of cash flows that is not necessarily periodic.
+To calculate the net present value for a series of cash flows that is periodic, use the NPV function.</p>
+
+<p>Excel Function:
+       =XNPV(rate,values,dates)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$rate</td>
+                <td>the discount rate to apply to the cash flows</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$values</td>
+                <td>of float    $values     A series of cash flows that corresponds to a schedule of payments in dates.
+                                        The first payment is optional and corresponds to a cost or payment that occurs at the beginning of the investment.
+                                        If the first value is a cost or payment, it must be a negative value. All succeeding payments are discounted based on a 365-day year.
+                                        The series of values must contain at least one positive value and one negative value.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$dates</td>
+                <td>of mixed    $dates      A schedule of payment dates that corresponds to the cash flow payments.
+                                        The first payment date indicates the beginning of the schedule of payments.
+                                        All other dates must be later than this date, but they may occur in any order.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_YIELDDISC">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L2314">line 2314</a></div>
+        <code>        static            float
+    <strong>YIELDDISC</strong>(mixed $settlement, mixed $maturity, int $price, int $redemption, int $basis = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>YIELDDISC.</p>                    <p>Returns the annual yield of a security that pays interest at maturity.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$settlement</td>
+                <td>The security's settlement date.
+                                   The security's settlement date is the date after the issue date when the security is traded to the buyer.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$maturity</td>
+                <td>The security's maturity date.
+                                   The maturity date is the date when the security expires.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$price</td>
+                <td>The security's price per $100 face value</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$redemption</td>
+                <td>The security's redemption value per $100 face value</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$basis</td>
+                <td>The type of day count to use.
+                                       0 or omitted    US (NASD) 30/360
+                                       1                Actual/actual
+                                       2                Actual/360
+                                       3                Actual/365
+                                       4                European 30/360</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_YIELDMAT">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.0/src/PhpSpreadsheet/Calculation/Financial.php#L2365">line 2365</a></div>
+        <code>        static            float
+    <strong>YIELDMAT</strong>(mixed $settlement, mixed $maturity, mixed $issue, int $rate, int $price, int $basis = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>YIELDMAT.</p>                    <p>Returns the annual yield of a security that pays interest at maturity.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$settlement</td>
+                <td>The security's settlement date.
+                                  The security's settlement date is the date after the issue date when the security is traded to the buyer.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$maturity</td>
+                <td>The security's maturity date.
+                                  The maturity date is the date when the security expires.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$issue</td>
+                <td>The security's issue date</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$rate</td>
+                <td>The security's interest rate at date of issue</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$price</td>
+                <td>The security's price per $100 face value</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$basis</td>
+                <td>The type of day count to use.
+                                       0 or omitted    US (NASD) 30/360
+                                       1                Actual/actual
+                                       2                Actual/360
+                                       3                Actual/365
+                                       4                European 30/360</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PhpOffice\PhpSpreadsheet\Calculation\Database | PhpSpreadsheet</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PhpOffice_PhpSpreadsheet_Calculation_Database" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../1.0.0/index.html" data-version="1.0.0">1.0.0</option>
+                                            <option value="../../../../1.1.0/index.html" data-version="1.1.0">1.1.0</option>
+                                            <option value="../../../../1.2.0/index.html" data-version="1.2.0">1.2.0</option>
+                                            <option value="../../../../1.2.1/index.html" data-version="1.2.1">1.2.1</option>
+                                            <option value="../../../../1.3.0/index.html" data-version="1.3.0">1.3.0</option>
+                                            <option value="../../../../1.3.1/index.html" data-version="1.3.1">1.3.1</option>
+                                            <option value="../../../../1.4.0/index.html" data-version="1.4.0">1.4.0</option>
+                                            <option value="../../../../1.4.1/index.html" data-version="1.4.1">1.4.1</option>
+                                            <option value="../../../../1.5.0/index.html" data-version="1.5.0">1.5.0</option>
+                                            <option value="../../../../1.5.1/index.html" data-version="1.5.1">1.5.1</option>
+                                            <option value="../../../../1.5.2/index.html" data-version="1.5.2">1.5.2</option>
+                                            <option value="../../../../1.6.0/index.html" data-version="1.6.0">1.6.0</option>
+                                            <option value="../../../../1.7.0/index.html" data-version="1.7.0">1.7.0</option>
+                                            <option value="../../../../master/index.html" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">PhpSpreadsheet</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../PhpOffice.html">PhpOffice</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet.html">PhpSpreadsheet</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet/Calculation.html">Calculation</a></li><li class="backslash">\</li><li>Database</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Database
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Database</strong>        (<a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Calculation/Database.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DAVERAGE">DAVERAGE</a>(mixed[] $database, int|string $field, mixed[] $criteria)
+        
+                                            <p>DAVERAGE.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DCOUNT">DCOUNT</a>(mixed[] $database, int|string $field, mixed[] $criteria)
+        
+                                            <p>DCOUNT.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DCOUNTA">DCOUNTA</a>(mixed[] $database, int|string $field, mixed[] $criteria)
+        
+                                            <p>DCOUNTA.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DGET">DGET</a>(mixed[] $database, int|string $field, mixed[] $criteria)
+        
+                                            <p>DGET.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DMAX">DMAX</a>(mixed[] $database, int|string $field, mixed[] $criteria)
+        
+                                            <p>DMAX.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DMIN">DMIN</a>(mixed[] $database, int|string $field, mixed[] $criteria)
+        
+                                            <p>DMIN.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DPRODUCT">DPRODUCT</a>(mixed[] $database, int|string $field, mixed[] $criteria)
+        
+                                            <p>DPRODUCT.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DSTDEV">DSTDEV</a>(mixed[] $database, int|string $field, mixed[] $criteria)
+        
+                                            <p>DSTDEV.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DSTDEVP">DSTDEVP</a>(mixed[] $database, int|string $field, mixed[] $criteria)
+        
+                                            <p>DSTDEVP.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DSUM">DSUM</a>(mixed[] $database, int|string $field, mixed[] $criteria)
+        
+                                            <p>DSUM.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DVAR">DVAR</a>(mixed[] $database, int|string $field, mixed[] $criteria)
+        
+                                            <p>DVAR.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DVARP">DVARP</a>(mixed[] $database, int|string $field, mixed[] $criteria)
+        
+                                            <p>DVARP.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_DAVERAGE">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Calculation/Database.php#L152">line 152</a></div>
+        <code>        static            float
+    <strong>DAVERAGE</strong>(mixed[] $database, int|string $field, mixed[] $criteria)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>DAVERAGE.</p>                    <p>Averages the values in a column of a list or database that match conditions you specify.</p>
+
+<p>Excel Function:
+       DAVERAGE(database,field,criteria)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed[]</td>
+                <td>$database</td>
+                <td>The range of cells that makes up the list or database.
+                                       A database is a list of related data in which rows of related
+                                       information are records, and columns of data are fields. The
+                                       first row of the list contains labels for each column.</td>
+            </tr>
+                    <tr>
+                <td>int|string</td>
+                <td>$field</td>
+                <td>Indicates which column is used in the function. Enter the
+                                       column label enclosed between double quotation marks, such as
+                                       "Age" or "Yield," or a number (without quotation marks) that
+                                       represents the position of the column within the list: 1 for
+                                       the first column, 2 for the second column, and so on.</td>
+            </tr>
+                    <tr>
+                <td>mixed[]</td>
+                <td>$criteria</td>
+                <td>The range of cells that contains the conditions you specify.
+                                       You can use any range for the criteria argument, as long as it
+                                       includes at least one column label and at least one cell below
+                                       the column label in which you specify a condition for the
+                                       column.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_DCOUNT">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Calculation/Database.php#L199">line 199</a></div>
+        <code>        static            int
+    <strong>DCOUNT</strong>(mixed[] $database, int|string $field, mixed[] $criteria)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>DCOUNT.</p>                    <p>Counts the cells that contain numbers in a column of a list or database that match conditions
+that you specify.</p>
+
+<p>Excel Function:
+       DCOUNT(database,[field],criteria)</p>
+
+<p>Excel Function:
+       DAVERAGE(database,field,criteria)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed[]</td>
+                <td>$database</td>
+                <td>The range of cells that makes up the list or database.
+                                       A database is a list of related data in which rows of related
+                                       information are records, and columns of data are fields. The
+                                       first row of the list contains labels for each column.</td>
+            </tr>
+                    <tr>
+                <td>int|string</td>
+                <td>$field</td>
+                <td>Indicates which column is used in the function. Enter the
+                                       column label enclosed between double quotation marks, such as
+                                       "Age" or "Yield," or a number (without quotation marks) that
+                                       represents the position of the column within the list: 1 for
+                                       the first column, 2 for the second column, and so on.</td>
+            </tr>
+                    <tr>
+                <td>mixed[]</td>
+                <td>$criteria</td>
+                <td>The range of cells that contains the conditions you specify.
+                                       You can use any range for the criteria argument, as long as it
+                                       includes at least one column label and at least one cell below
+                                       the column label in which you specify a condition for the
+                                       column.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_DCOUNTA">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Calculation/Database.php#L242">line 242</a></div>
+        <code>        static            int
+    <strong>DCOUNTA</strong>(mixed[] $database, int|string $field, mixed[] $criteria)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>DCOUNTA.</p>                    <p>Counts the nonblank cells in a column of a list or database that match conditions that you specify.</p>
+
+<p>Excel Function:
+       DCOUNTA(database,[field],criteria)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed[]</td>
+                <td>$database</td>
+                <td>The range of cells that makes up the list or database.
+                                       A database is a list of related data in which rows of related
+                                       information are records, and columns of data are fields. The
+                                       first row of the list contains labels for each column.</td>
+            </tr>
+                    <tr>
+                <td>int|string</td>
+                <td>$field</td>
+                <td>Indicates which column is used in the function. Enter the
+                                       column label enclosed between double quotation marks, such as
+                                       "Age" or "Yield," or a number (without quotation marks) that
+                                       represents the position of the column within the list: 1 for
+                                       the first column, 2 for the second column, and so on.</td>
+            </tr>
+                    <tr>
+                <td>mixed[]</td>
+                <td>$criteria</td>
+                <td>The range of cells that contains the conditions you specify.
+                                       You can use any range for the criteria argument, as long as it
+                                       includes at least one column label and at least one cell below
+                                       the column label in which you specify a condition for the
+                                       column.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_DGET">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Calculation/Database.php#L291">line 291</a></div>
+        <code>        static            mixed
+    <strong>DGET</strong>(mixed[] $database, int|string $field, mixed[] $criteria)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>DGET.</p>                    <p>Extracts a single value from a column of a list or database that matches conditions that you
+specify.</p>
+
+<p>Excel Function:
+       DGET(database,field,criteria)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed[]</td>
+                <td>$database</td>
+                <td>The range of cells that makes up the list or database.
+                                       A database is a list of related data in which rows of related
+                                       information are records, and columns of data are fields. The
+                                       first row of the list contains labels for each column.</td>
+            </tr>
+                    <tr>
+                <td>int|string</td>
+                <td>$field</td>
+                <td>Indicates which column is used in the function. Enter the
+                                       column label enclosed between double quotation marks, such as
+                                       "Age" or "Yield," or a number (without quotation marks) that
+                                       represents the position of the column within the list: 1 for
+                                       the first column, 2 for the second column, and so on.</td>
+            </tr>
+                    <tr>
+                <td>mixed[]</td>
+                <td>$criteria</td>
+                <td>The range of cells that contains the conditions you specify.
+                                       You can use any range for the criteria argument, as long as it
+                                       includes at least one column label and at least one cell below
+                                       the column label in which you specify a condition for the
+                                       column.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_DMAX">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Calculation/Database.php#L335">line 335</a></div>
+        <code>        static            float
+    <strong>DMAX</strong>(mixed[] $database, int|string $field, mixed[] $criteria)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>DMAX.</p>                    <p>Returns the largest number in a column of a list or database that matches conditions you that
+specify.</p>
+
+<p>Excel Function:
+       DMAX(database,field,criteria)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed[]</td>
+                <td>$database</td>
+                <td>The range of cells that makes up the list or database.
+                                       A database is a list of related data in which rows of related
+                                       information are records, and columns of data are fields. The
+                                       first row of the list contains labels for each column.</td>
+            </tr>
+                    <tr>
+                <td>int|string</td>
+                <td>$field</td>
+                <td>Indicates which column is used in the function. Enter the
+                                       column label enclosed between double quotation marks, such as
+                                       "Age" or "Yield," or a number (without quotation marks) that
+                                       represents the position of the column within the list: 1 for
+                                       the first column, 2 for the second column, and so on.</td>
+            </tr>
+                    <tr>
+                <td>mixed[]</td>
+                <td>$criteria</td>
+                <td>The range of cells that contains the conditions you specify.
+                                       You can use any range for the criteria argument, as long as it
+                                       includes at least one column label and at least one cell below
+                                       the column label in which you specify a condition for the
+                                       column.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_DMIN">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Calculation/Database.php#L376">line 376</a></div>
+        <code>        static            float
+    <strong>DMIN</strong>(mixed[] $database, int|string $field, mixed[] $criteria)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>DMIN.</p>                    <p>Returns the smallest number in a column of a list or database that matches conditions you that
+specify.</p>
+
+<p>Excel Function:
+       DMIN(database,field,criteria)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed[]</td>
+                <td>$database</td>
+                <td>The range of cells that makes up the list or database.
+                                       A database is a list of related data in which rows of related
+                                       information are records, and columns of data are fields. The
+                                       first row of the list contains labels for each column.</td>
+            </tr>
+                    <tr>
+                <td>int|string</td>
+                <td>$field</td>
+                <td>Indicates which column is used in the function. Enter the
+                                       column label enclosed between double quotation marks, such as
+                                       "Age" or "Yield," or a number (without quotation marks) that
+                                       represents the position of the column within the list: 1 for
+                                       the first column, 2 for the second column, and so on.</td>
+            </tr>
+                    <tr>
+                <td>mixed[]</td>
+                <td>$criteria</td>
+                <td>The range of cells that contains the conditions you specify.
+                                       You can use any range for the criteria argument, as long as it
+                                       includes at least one column label and at least one cell below
+                                       the column label in which you specify a condition for the
+                                       column.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_DPRODUCT">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Calculation/Database.php#L416">line 416</a></div>
+        <code>        static            float
+    <strong>DPRODUCT</strong>(mixed[] $database, int|string $field, mixed[] $criteria)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>DPRODUCT.</p>                    <p>Multiplies the values in a column of a list or database that match conditions that you specify.</p>
+
+<p>Excel Function:
+       DPRODUCT(database,field,criteria)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed[]</td>
+                <td>$database</td>
+                <td>The range of cells that makes up the list or database.
+                                       A database is a list of related data in which rows of related
+                                       information are records, and columns of data are fields. The
+                                       first row of the list contains labels for each column.</td>
+            </tr>
+                    <tr>
+                <td>int|string</td>
+                <td>$field</td>
+                <td>Indicates which column is used in the function. Enter the
+                                       column label enclosed between double quotation marks, such as
+                                       "Age" or "Yield," or a number (without quotation marks) that
+                                       represents the position of the column within the list: 1 for
+                                       the first column, 2 for the second column, and so on.</td>
+            </tr>
+                    <tr>
+                <td>mixed[]</td>
+                <td>$criteria</td>
+                <td>The range of cells that contains the conditions you specify.
+                                       You can use any range for the criteria argument, as long as it
+                                       includes at least one column label and at least one cell below
+                                       the column label in which you specify a condition for the
+                                       column.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_DSTDEV">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Calculation/Database.php#L457">line 457</a></div>
+        <code>        static            float
+    <strong>DSTDEV</strong>(mixed[] $database, int|string $field, mixed[] $criteria)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>DSTDEV.</p>                    <p>Estimates the standard deviation of a population based on a sample by using the numbers in a
+column of a list or database that match conditions that you specify.</p>
+
+<p>Excel Function:
+       DSTDEV(database,field,criteria)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed[]</td>
+                <td>$database</td>
+                <td>The range of cells that makes up the list or database.
+                                       A database is a list of related data in which rows of related
+                                       information are records, and columns of data are fields. The
+                                       first row of the list contains labels for each column.</td>
+            </tr>
+                    <tr>
+                <td>int|string</td>
+                <td>$field</td>
+                <td>Indicates which column is used in the function. Enter the
+                                       column label enclosed between double quotation marks, such as
+                                       "Age" or "Yield," or a number (without quotation marks) that
+                                       represents the position of the column within the list: 1 for
+                                       the first column, 2 for the second column, and so on.</td>
+            </tr>
+                    <tr>
+                <td>mixed[]</td>
+                <td>$criteria</td>
+                <td>The range of cells that contains the conditions you specify.
+                                       You can use any range for the criteria argument, as long as it
+                                       includes at least one column label and at least one cell below
+                                       the column label in which you specify a condition for the
+                                       column.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_DSTDEVP">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Calculation/Database.php#L498">line 498</a></div>
+        <code>        static            float
+    <strong>DSTDEVP</strong>(mixed[] $database, int|string $field, mixed[] $criteria)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>DSTDEVP.</p>                    <p>Calculates the standard deviation of a population based on the entire population by using the
+numbers in a column of a list or database that match conditions that you specify.</p>
+
+<p>Excel Function:
+       DSTDEVP(database,field,criteria)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed[]</td>
+                <td>$database</td>
+                <td>The range of cells that makes up the list or database.
+                                       A database is a list of related data in which rows of related
+                                       information are records, and columns of data are fields. The
+                                       first row of the list contains labels for each column.</td>
+            </tr>
+                    <tr>
+                <td>int|string</td>
+                <td>$field</td>
+                <td>Indicates which column is used in the function. Enter the
+                                       column label enclosed between double quotation marks, such as
+                                       "Age" or "Yield," or a number (without quotation marks) that
+                                       represents the position of the column within the list: 1 for
+                                       the first column, 2 for the second column, and so on.</td>
+            </tr>
+                    <tr>
+                <td>mixed[]</td>
+                <td>$criteria</td>
+                <td>The range of cells that contains the conditions you specify.
+                                       You can use any range for the criteria argument, as long as it
+                                       includes at least one column label and at least one cell below
+                                       the column label in which you specify a condition for the
+                                       column.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_DSUM">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Calculation/Database.php#L538">line 538</a></div>
+        <code>        static            float
+    <strong>DSUM</strong>(mixed[] $database, int|string $field, mixed[] $criteria)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>DSUM.</p>                    <p>Adds the numbers in a column of a list or database that match conditions that you specify.</p>
+
+<p>Excel Function:
+       DSUM(database,field,criteria)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed[]</td>
+                <td>$database</td>
+                <td>The range of cells that makes up the list or database.
+                                       A database is a list of related data in which rows of related
+                                       information are records, and columns of data are fields. The
+                                       first row of the list contains labels for each column.</td>
+            </tr>
+                    <tr>
+                <td>int|string</td>
+                <td>$field</td>
+                <td>Indicates which column is used in the function. Enter the
+                                       column label enclosed between double quotation marks, such as
+                                       "Age" or "Yield," or a number (without quotation marks) that
+                                       represents the position of the column within the list: 1 for
+                                       the first column, 2 for the second column, and so on.</td>
+            </tr>
+                    <tr>
+                <td>mixed[]</td>
+                <td>$criteria</td>
+                <td>The range of cells that contains the conditions you specify.
+                                       You can use any range for the criteria argument, as long as it
+                                       includes at least one column label and at least one cell below
+                                       the column label in which you specify a condition for the
+                                       column.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_DVAR">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Calculation/Database.php#L579">line 579</a></div>
+        <code>        static            float
+    <strong>DVAR</strong>(mixed[] $database, int|string $field, mixed[] $criteria)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>DVAR.</p>                    <p>Estimates the variance of a population based on a sample by using the numbers in a column
+of a list or database that match conditions that you specify.</p>
+
+<p>Excel Function:
+       DVAR(database,field,criteria)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed[]</td>
+                <td>$database</td>
+                <td>The range of cells that makes up the list or database.
+                                       A database is a list of related data in which rows of related
+                                       information are records, and columns of data are fields. The
+                                       first row of the list contains labels for each column.</td>
+            </tr>
+                    <tr>
+                <td>int|string</td>
+                <td>$field</td>
+                <td>Indicates which column is used in the function. Enter the
+                                       column label enclosed between double quotation marks, such as
+                                       "Age" or "Yield," or a number (without quotation marks) that
+                                       represents the position of the column within the list: 1 for
+                                       the first column, 2 for the second column, and so on.</td>
+            </tr>
+                    <tr>
+                <td>mixed[]</td>
+                <td>$criteria</td>
+                <td>The range of cells that contains the conditions you specify.
+                                       You can use any range for the criteria argument, as long as it
+                                       includes at least one column label and at least one cell below
+                                       the column label in which you specify a condition for the
+                                       column.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_DVARP">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Calculation/Database.php#L620">line 620</a></div>
+        <code>        static            float
+    <strong>DVARP</strong>(mixed[] $database, int|string $field, mixed[] $criteria)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>DVARP.</p>                    <p>Calculates the variance of a population based on the entire population by using the numbers
+in a column of a list or database that match conditions that you specify.</p>
+
+<p>Excel Function:
+       DVARP(database,field,criteria)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed[]</td>
+                <td>$database</td>
+                <td>The range of cells that makes up the list or database.
+                                       A database is a list of related data in which rows of related
+                                       information are records, and columns of data are fields. The
+                                       first row of the list contains labels for each column.</td>
+            </tr>
+                    <tr>
+                <td>int|string</td>
+                <td>$field</td>
+                <td>Indicates which column is used in the function. Enter the
+                                       column label enclosed between double quotation marks, such as
+                                       "Age" or "Yield," or a number (without quotation marks) that
+                                       represents the position of the column within the list: 1 for
+                                       the first column, 2 for the second column, and so on.</td>
+            </tr>
+                    <tr>
+                <td>mixed[]</td>
+                <td>$criteria</td>
+                <td>The range of cells that contains the conditions you specify.
+                                       You can use any range for the criteria argument, as long as it
+                                       includes at least one column label and at least one cell below
+                                       the column label in which you specify a condition for the
+                                       column.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,2094 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PhpOffice\PhpSpreadsheet\Chart\Axis | PhpSpreadsheet</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PhpOffice_PhpSpreadsheet_Chart_Axis" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../1.0.0/index.html" data-version="1.0.0">1.0.0</option>
+                                            <option value="../../../../1.1.0/index.html" data-version="1.1.0">1.1.0</option>
+                                            <option value="../../../../1.2.0/index.html" data-version="1.2.0">1.2.0</option>
+                                            <option value="../../../../1.2.1/index.html" data-version="1.2.1">1.2.1</option>
+                                            <option value="../../../../1.3.0/index.html" data-version="1.3.0">1.3.0</option>
+                                            <option value="../../../../1.3.1/index.html" data-version="1.3.1">1.3.1</option>
+                                            <option value="../../../../1.4.0/index.html" data-version="1.4.0">1.4.0</option>
+                                            <option value="../../../../1.4.1/index.html" data-version="1.4.1">1.4.1</option>
+                                            <option value="../../../../1.5.0/index.html" data-version="1.5.0">1.5.0</option>
+                                            <option value="../../../../1.5.1/index.html" data-version="1.5.1">1.5.1</option>
+                                            <option value="../../../../1.5.2/index.html" data-version="1.5.2">1.5.2</option>
+                                            <option value="../../../../1.6.0/index.html" data-version="1.6.0">1.6.0</option>
+                                            <option value="../../../../1.7.0/index.html" data-version="1.7.0">1.7.0</option>
+                                            <option value="../../../../master/index.html" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">PhpSpreadsheet</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../PhpOffice.html">PhpOffice</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet.html">PhpSpreadsheet</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet/Chart.html">Chart</a></li><li class="backslash">\</li><li>Axis</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Axis
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Axis</strong>        extends <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Properties.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Properties">Properties</abbr></a>        (<a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.0/src/PhpSpreadsheet/Chart/Axis.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Created by PhpStorm.</p>            <p>User: Wiktor Trzonkowski
+Date: 6/17/14
+Time: 12:11 PM.</p>                    </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>EXCEL_COLOR_TYPE_STANDARD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>EXCEL_COLOR_TYPE_SCHEME</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>EXCEL_COLOR_TYPE_ARGB</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AXIS_LABELS_LOW</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AXIS_LABELS_HIGH</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AXIS_LABELS_NEXT_TO</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AXIS_LABELS_NONE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TICK_MARK_NONE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TICK_MARK_INSIDE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TICK_MARK_OUTSIDE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TICK_MARK_CROSS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HORIZONTAL_CROSSES_AUTOZERO</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HORIZONTAL_CROSSES_MAXIMUM</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_CODE_GENERAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_CODE_NUMBER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_CODE_CURRENCY</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_CODE_ACCOUNTING</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_CODE_DATE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_CODE_TIME</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_CODE_PERCENTAGE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_CODE_FRACTION</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_CODE_SCIENTIFIC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_CODE_TEXT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_CODE_SPECIAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ORIENTATION_NORMAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ORIENTATION_REVERSED</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_COMPOUND_SIMPLE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_COMPOUND_DOUBLE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_COMPOUND_THICKTHIN</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_COMPOUND_THINTHICK</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_COMPOUND_TRIPLE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_DASH_SOLID</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_DASH_ROUND_DOT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_DASH_SQUERE_DOT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYPE_DASH_DASH</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_DASH_DASH_DOT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_DASH_LONG_DASH</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_DASH_LONG_DASH_DOT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_DASH_LONG_DASH_DOT_DOT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_CAP_SQUARE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_CAP_ROUND</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_CAP_FLAT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_JOIN_ROUND</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_JOIN_MITER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_JOIN_BEVEL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_ARROW_TYPE_NOARROW</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_ARROW_TYPE_ARROW</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_ARROW_TYPE_OPEN</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_ARROW_TYPE_STEALTH</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_ARROW_TYPE_DIAMOND</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_ARROW_TYPE_OVAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_ARROW_SIZE_1</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_ARROW_SIZE_2</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_ARROW_SIZE_3</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_ARROW_SIZE_4</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_ARROW_SIZE_5</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_ARROW_SIZE_6</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_ARROW_SIZE_7</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_ARROW_SIZE_8</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LINE_STYLE_ARROW_SIZE_9</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_NOSHADOW</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_OUTER_BOTTTOM_RIGHT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_OUTER_BOTTOM</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_OUTER_BOTTOM_LEFT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_OUTER_RIGHT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_OUTER_CENTER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_OUTER_LEFT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_OUTER_TOP_RIGHT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_OUTER_TOP</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_OUTER_TOP_LEFT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_INNER_BOTTTOM_RIGHT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_INNER_BOTTOM</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_INNER_BOTTOM_LEFT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_INNER_RIGHT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_INNER_CENTER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_INNER_LEFT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_INNER_TOP_RIGHT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_INNER_TOP</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_INNER_TOP_LEFT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_PERSPECTIVE_BELOW</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_PERSPECTIVE_UPPER_RIGHT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_PERSPECTIVE_UPPER_LEFT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_PERSPECTIVE_LOWER_RIGHT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHADOW_PRESETS_PERSPECTIVE_LOWER_LEFT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getExcelPointsWidth">getExcelPointsWidth</a>(float $width)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Chart/Properties.html#method_getExcelPointsWidth"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Properties">Properties</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getExcelPointsAngle">getExcelPointsAngle</a>(float $angle)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Chart/Properties.html#method_getExcelPointsAngle"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Properties">Properties</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTrueAlpha">getTrueAlpha</a>($alpha)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Chart/Properties.html#method_getTrueAlpha"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Properties">Properties</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setColorProperties">setColorProperties</a>($color, $alpha, $type)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Chart/Properties.html#method_setColorProperties"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Properties">Properties</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLineStyleArrowSize">getLineStyleArrowSize</a>($array_selector, $array_kay_selector)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Chart/Properties.html#method_getLineStyleArrowSize"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Properties">Properties</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getShadowPresetsMap">getShadowPresetsMap</a>($shadow_presets_option)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Chart/Properties.html#method_getShadowPresetsMap"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Properties">Properties</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getArrayElementsValue">getArrayElementsValue</a>($properties, $elements)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Chart/Properties.html#method_getArrayElementsValue"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Properties">Properties</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAxisNumberProperties">setAxisNumberProperties</a>(mixed $format_code)
+        
+                                            <p>Get Series Data Type.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAxisNumberFormat">getAxisNumberFormat</a>()
+        
+                                            <p>Get Axis Number Format Data Type.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAxisNumberSourceLinked">getAxisNumberSourceLinked</a>()
+        
+                                            <p>Get Axis Number Source Linked.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAxisOptionsProperties">setAxisOptionsProperties</a>(string $axis_labels, string $horizontal_crosses_value = null, string $horizontal_crosses = null, string $axis_orientation = null, string $major_tmt = null, string $minor_tmt = null, string $minimum = null, string $maximum = null, string $major_unit = null, string $minor_unit = null)
+        
+                                            <p>Set Axis Options Properties.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAxisOptionsProperty">getAxisOptionsProperty</a>(string $property)
+        
+                                            <p>Get Axis Options Property.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAxisOrientation">setAxisOrientation</a>(string $orientation)
+        
+                                            <p>Set Axis Orientation Property.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setFillParameters">setFillParameters</a>(string $color, int $alpha = 0, string $type = self::EXCEL_COLOR_TYPE_ARGB)
+        
+                                            <p>Set Fill Property.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLineParameters">setLineParameters</a>(string $color, int $alpha = 0, string $type = self::EXCEL_COLOR_TYPE_ARGB)
+        
+                                            <p>Set Line Property.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFillProperty">getFillProperty</a>(string $property)
+        
+                                            <p>Get Fill Property.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLineProperty">getLineProperty</a>(string $property)
+        
+                                            <p>Get Line Property.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLineStyleProperties">setLineStyleProperties</a>(float $line_width = null, string $compound_type = null, string $dash_type = null, string $cap_type = null, string $join_type = null, string $head_arrow_type = null, string $head_arrow_size = null, string $end_arrow_type = null, string $end_arrow_size = null)
+        
+                                            <p>Set Line Style Properties.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLineStyleProperty">getLineStyleProperty</a>(array|string $elements)
+        
+                                            <p>Get Line Style Property.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLineStyleArrowWidth">getLineStyleArrowWidth</a>(string $arrow)
+        
+                                            <p>Get Line Style Arrow Excel Width.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLineStyleArrowLength">getLineStyleArrowLength</a>(string $arrow)
+        
+                                            <p>Get Line Style Arrow Excel Length.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setShadowProperties">setShadowProperties</a>(int $sh_presets, string $sh_color_value = null, string $sh_color_type = null, string $sh_color_alpha = null, float $sh_blur = null, int $sh_angle = null, float $sh_distance = null)
+        
+                                            <p>Set Shadow Properties.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    null|array|int|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getShadowProperty">getShadowProperty</a>(string|string[] $elements)
+        
+                                            <p>Get Shadow Property.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setGlowProperties">setGlowProperties</a>(float $size, string $color_value = null, int $color_alpha = null, string $color_type = null)
+        
+                                            <p>Set Glow Properties.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getGlowProperty">getGlowProperty</a>(array|string $property)
+        
+                                            <p>Get Glow Property.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setSoftEdges">setSoftEdges</a>(float $size)
+        
+                                            <p>Set Soft Edges Size.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSoftEdgesSize">getSoftEdgesSize</a>()
+        
+                                            <p>Get Soft Edges Size.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getExcelPointsWidth">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Properties.html#method_getExcelPointsWidth"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Properties">Properties</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.0/src/PhpSpreadsheet/Chart/Properties.php#L118">line 118</a></div>
+        <code>            protected        float
+    <strong>getExcelPointsWidth</strong>(float $width)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$width</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getExcelPointsAngle">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Properties.html#method_getExcelPointsAngle"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Properties">Properties</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.0/src/PhpSpreadsheet/Chart/Properties.php#L128">line 128</a></div>
+        <code>            protected        float
+    <strong>getExcelPointsAngle</strong>(float $angle)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$angle</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTrueAlpha">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Properties.html#method_getTrueAlpha"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Properties">Properties</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.0/src/PhpSpreadsheet/Chart/Properties.php#L133">line 133</a></div>
+        <code>            protected        
+    <strong>getTrueAlpha</strong>($alpha)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$alpha</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setColorProperties">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Properties.html#method_setColorProperties"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Properties">Properties</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.0/src/PhpSpreadsheet/Chart/Properties.php#L138">line 138</a></div>
+        <code>            protected        
+    <strong>setColorProperties</strong>($color, $alpha, $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$color</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$alpha</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLineStyleArrowSize">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Properties.html#method_getLineStyleArrowSize"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Properties">Properties</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.0/src/PhpSpreadsheet/Chart/Properties.php#L147">line 147</a></div>
+        <code>            protected        
+    <strong>getLineStyleArrowSize</strong>($array_selector, $array_kay_selector)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$array_selector</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$array_kay_selector</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getShadowPresetsMap">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Properties.html#method_getShadowPresetsMap"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Properties">Properties</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.0/src/PhpSpreadsheet/Chart/Properties.php#L164">line 164</a></div>
+        <code>            protected        
+    <strong>getShadowPresetsMap</strong>($shadow_presets_option)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$shadow_presets_option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getArrayElementsValue">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Properties.html#method_getArrayElementsValue"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Properties">Properties</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.0/src/PhpSpreadsheet/Chart/Properties.php#L356">line 356</a></div>
+        <code>            protected        
+    <strong>getArrayElementsValue</strong>($properties, $elements)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$properties</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$elements</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAxisNumberProperties">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.0/src/PhpSpreadsheet/Chart/Axis.php#L141">line 141</a></div>
+        <code>                    string
+    <strong>setAxisNumberProperties</strong>(mixed $format_code)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Series Data Type.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$format_code</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAxisNumberFormat">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.0/src/PhpSpreadsheet/Chart/Axis.php#L152">line 152</a></div>
+        <code>                    string
+    <strong>getAxisNumberFormat</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Axis Number Format Data Type.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAxisNumberSourceLinked">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.0/src/PhpSpreadsheet/Chart/Axis.php#L162">line 162</a></div>
+        <code>                    string
+    <strong>getAxisNumberSourceLinked</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Axis Number Source Linked.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAxisOptionsProperties">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.0/src/PhpSpreadsheet/Chart/Axis.php#L181">line 181</a></div>
+        <code>                    
+    <strong>setAxisOptionsProperties</strong>(string $axis_labels, string $horizontal_crosses_value = null, string $horizontal_crosses = null, string $axis_orientation = null, string $major_tmt = null, string $minor_tmt = null, string $minimum = null, string $maximum = null, string $major_unit = null, string $minor_unit = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Axis Options Properties.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$axis_labels</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$horizontal_crosses_value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$horizontal_crosses</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$axis_orientation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$major_tmt</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$minor_tmt</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$minimum</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$maximum</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$major_unit</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$minor_unit</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAxisOptionsProperty">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.0/src/PhpSpreadsheet/Chart/Axis.php#L203">line 203</a></div>
+        <code>                    string
+    <strong>getAxisOptionsProperty</strong>(string $property)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Axis Options Property.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$property</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAxisOrientation">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.0/src/PhpSpreadsheet/Chart/Axis.php#L213">line 213</a></div>
+        <code>                    
+    <strong>setAxisOrientation</strong>(string $orientation)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Axis Orientation Property.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$orientation</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFillParameters">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.0/src/PhpSpreadsheet/Chart/Axis.php#L225">line 225</a></div>
+        <code>                    
+    <strong>setFillParameters</strong>(string $color, int $alpha = 0, string $type = self::EXCEL_COLOR_TYPE_ARGB)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Fill Property.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$color</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$alpha</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLineParameters">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.0/src/PhpSpreadsheet/Chart/Axis.php#L237">line 237</a></div>
+        <code>                    
+    <strong>setLineParameters</strong>(string $color, int $alpha = 0, string $type = self::EXCEL_COLOR_TYPE_ARGB)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Line Property.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$color</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$alpha</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFillProperty">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.0/src/PhpSpreadsheet/Chart/Axis.php#L249">line 249</a></div>
+        <code>                    string
+    <strong>getFillProperty</strong>(string $property)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Fill Property.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$property</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLineProperty">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.0/src/PhpSpreadsheet/Chart/Axis.php#L261">line 261</a></div>
+        <code>                    string
+    <strong>getLineProperty</strong>(string $property)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Line Property.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$property</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLineStyleProperties">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.0/src/PhpSpreadsheet/Chart/Axis.php#L279">line 279</a></div>
+        <code>                    
+    <strong>setLineStyleProperties</strong>(float $line_width = null, string $compound_type = null, string $dash_type = null, string $cap_type = null, string $join_type = null, string $head_arrow_type = null, string $head_arrow_size = null, string $end_arrow_type = null, string $end_arrow_size = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Line Style Properties.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$line_width</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$compound_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dash_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$cap_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$join_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$head_arrow_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$head_arrow_size</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$end_arrow_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$end_arrow_size</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLineStyleProperty">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.0/src/PhpSpreadsheet/Chart/Axis.php#L299">line 299</a></div>
+        <code>                    string
+    <strong>getLineStyleProperty</strong>(array|string $elements)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Line Style Property.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$elements</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLineStyleArrowWidth">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.0/src/PhpSpreadsheet/Chart/Axis.php#L311">line 311</a></div>
+        <code>                    string
+    <strong>getLineStyleArrowWidth</strong>(string $arrow)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Line Style Arrow Excel Width.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$arrow</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLineStyleArrowLength">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.0/src/PhpSpreadsheet/Chart/Axis.php#L323">line 323</a></div>
+        <code>                    string
+    <strong>getLineStyleArrowLength</strong>(string $arrow)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Line Style Arrow Excel Length.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$arrow</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setShadowProperties">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.0/src/PhpSpreadsheet/Chart/Axis.php#L339">line 339</a></div>
+        <code>                    
+    <strong>setShadowProperties</strong>(int $sh_presets, string $sh_color_value = null, string $sh_color_type = null, string $sh_color_alpha = null, float $sh_blur = null, int $sh_angle = null, float $sh_distance = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Shadow Properties.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$sh_presets</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sh_color_value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sh_color_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sh_color_alpha</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$sh_blur</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$sh_angle</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$sh_distance</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getShadowProperty">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.0/src/PhpSpreadsheet/Chart/Axis.php#L469">line 469</a></div>
+        <code>                    null|array|int|string
+    <strong>getShadowProperty</strong>(string|string[] $elements)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Shadow Property.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|string[]</td>
+                <td>$elements</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>null|array|int|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setGlowProperties">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.0/src/PhpSpreadsheet/Chart/Axis.php#L482">line 482</a></div>
+        <code>                    
+    <strong>setGlowProperties</strong>(float $size, string $color_value = null, int $color_alpha = null, string $color_type = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Glow Properties.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$size</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$color_value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$color_alpha</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$color_type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getGlowProperty">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.0/src/PhpSpreadsheet/Chart/Axis.php#L499">line 499</a></div>
+        <code>                    string
+    <strong>getGlowProperty</strong>(array|string $property)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Glow Property.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$property</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSoftEdges">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.0/src/PhpSpreadsheet/Chart/Axis.php#L541">line 541</a></div>
+        <code>                    
+    <strong>setSoftEdges</strong>(float $size)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Soft Edges Size.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$size</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSoftEdgesSize">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.0/src/PhpSpreadsheet/Chart/Axis.php#L553">line 553</a></div>
+        <code>                    string
+    <strong>getSoftEdgesSize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Soft Edges Size.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

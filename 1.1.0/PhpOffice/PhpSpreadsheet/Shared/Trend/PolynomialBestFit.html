@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PhpOffice\PhpSpreadsheet\Shared\Trend\PolynomialBestFit | PhpSpreadsheet</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PhpOffice_PhpSpreadsheet_Shared_Trend_PolynomialBestFit" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../../1.0.0/index.html" data-version="1.0.0">1.0.0</option>
+                                            <option value="../../../../../1.1.0/index.html" data-version="1.1.0">1.1.0</option>
+                                            <option value="../../../../../1.2.0/index.html" data-version="1.2.0">1.2.0</option>
+                                            <option value="../../../../../1.2.1/index.html" data-version="1.2.1">1.2.1</option>
+                                            <option value="../../../../../1.3.0/index.html" data-version="1.3.0">1.3.0</option>
+                                            <option value="../../../../../1.3.1/index.html" data-version="1.3.1">1.3.1</option>
+                                            <option value="../../../../../1.4.0/index.html" data-version="1.4.0">1.4.0</option>
+                                            <option value="../../../../../1.4.1/index.html" data-version="1.4.1">1.4.1</option>
+                                            <option value="../../../../../1.5.0/index.html" data-version="1.5.0">1.5.0</option>
+                                            <option value="../../../../../1.5.1/index.html" data-version="1.5.1">1.5.1</option>
+                                            <option value="../../../../../1.5.2/index.html" data-version="1.5.2">1.5.2</option>
+                                            <option value="../../../../../1.6.0/index.html" data-version="1.6.0">1.6.0</option>
+                                            <option value="../../../../../1.7.0/index.html" data-version="1.7.0">1.7.0</option>
+                                            <option value="../../../../../master/index.html" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">PhpSpreadsheet</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../PhpOffice.html">PhpOffice</a></li><li class="backslash">\</li><li><a href="../../../../PhpOffice/PhpSpreadsheet.html">PhpSpreadsheet</a></li><li class="backslash">\</li><li><a href="../../../../PhpOffice/PhpSpreadsheet/Shared.html">Shared</a></li><li class="backslash">\</li><li><a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend.html">Trend</a></li><li class="backslash">\</li><li>PolynomialBestFit</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            PolynomialBestFit
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>PolynomialBestFit</strong>        extends <a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a>        (<a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.1.0/src/PhpSpreadsheet/Shared/Trend/PolynomialBestFit.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_error">
+                                        protected                                        bool
+                </td>
+                <td>$error</td>
+                <td class="last">Indicator flag for a calculation error.</td>
+                <td><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#property_error"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_bestFitType">
+                                        protected                                        string
+                </td>
+                <td>$bestFitType</td>
+                <td class="last">Algorithm type to use for best-fit
+(Name of this Trend class).</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_valueCount">
+                                        protected                                        int
+                </td>
+                <td>$valueCount</td>
+                <td class="last">Number of entries in the sets of x- and y-value arrays.</td>
+                <td><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#property_valueCount"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_xValues">
+                                        protected                                        float[]
+                </td>
+                <td>$xValues</td>
+                <td class="last">X-value dataseries of values.</td>
+                <td><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#property_xValues"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_yValues">
+                                        protected                                        float[]
+                </td>
+                <td>$yValues</td>
+                <td class="last">Y-value dataseries of values.</td>
+                <td><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#property_yValues"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_adjustToZero">
+                                        protected                                        bool
+                </td>
+                <td>$adjustToZero</td>
+                <td class="last">Flag indicating whether values should be adjusted to Y=0.</td>
+                <td><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#property_adjustToZero"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_yBestFitValues">
+                                        protected                                        float[]
+                </td>
+                <td>$yBestFitValues</td>
+                <td class="last">Y-value series of best-fit values.</td>
+                <td><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#property_yBestFitValues"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_goodnessOfFit">
+                                        protected                                        
+                </td>
+                <td>$goodnessOfFit</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#property_goodnessOfFit"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_stdevOfResiduals">
+                                        protected                                        
+                </td>
+                <td>$stdevOfResiduals</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#property_stdevOfResiduals"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_covariance">
+                                        protected                                        
+                </td>
+                <td>$covariance</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#property_covariance"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_correlation">
+                                        protected                                        
+                </td>
+                <td>$correlation</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#property_correlation"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_SSRegression">
+                                        protected                                        
+                </td>
+                <td>$SSRegression</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#property_SSRegression"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_SSResiduals">
+                                        protected                                        
+                </td>
+                <td>$SSResiduals</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#property_SSResiduals"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_DFResiduals">
+                                        protected                                        
+                </td>
+                <td>$DFResiduals</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#property_DFResiduals"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_f">
+                                        protected                                        
+                </td>
+                <td>$f</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#property_f"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_slope">
+                                        protected                                        
+                </td>
+                <td>$slope</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#property_slope"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_slopeSE">
+                                        protected                                        
+                </td>
+                <td>$slopeSE</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#property_slopeSE"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_intersect">
+                                        protected                                        
+                </td>
+                <td>$intersect</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#property_intersect"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_intersectSE">
+                                        protected                                        
+                </td>
+                <td>$intersectSE</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#property_intersectSE"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_xOffset">
+                                        protected                                        
+                </td>
+                <td>$xOffset</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#property_xOffset"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_yOffset">
+                                        protected                                        
+                </td>
+                <td>$yOffset</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#property_yOffset"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_order">
+                                        protected                                        int
+                </td>
+                <td>$order</td>
+                <td class="last">Polynomial order.</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getError">getError</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getError"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBestFitType">getBestFitType</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getBestFitType"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getValueOfYForX">getValueOfYForX</a>(float $xValue)
+        
+                                            <p>Return the Y-Value for a specified value of X.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getValueOfXForY">getValueOfXForY</a>(float $yValue)
+        
+                                            <p>Return the X-Value for a specified value of Y.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    float[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getXValues">getXValues</a>()
+        
+                                            <p>Return the original set of X-Values.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getXValues"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getEquation">getEquation</a>(int $dp = 0)
+        
+                                            <p>Return the Equation of the best-fit line.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSlope">getSlope</a>(int $dp = 0)
+        
+                                            <p>Return the Slope of the line.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSlopeSE">getSlopeSE</a>(int $dp = 0)
+        
+                                            <p>Return the standard error of the Slope.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getSlopeSE"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIntersect">getIntersect</a>(int $dp = 0)
+        
+                                            <p>Return the Value of X where it intersects Y = 0.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getIntersect"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIntersectSE">getIntersectSE</a>(int $dp = 0)
+        
+                                            <p>Return the standard error of the Intersect.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getIntersectSE"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getGoodnessOfFit">getGoodnessOfFit</a>(int $dp = 0)
+        
+                                            <p>Return the goodness of fit for this regression.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getGoodnessOfFit"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getGoodnessOfFitPercent">getGoodnessOfFitPercent</a>($dp = 0)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getGoodnessOfFitPercent"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStdevOfResiduals">getStdevOfResiduals</a>(int $dp = 0)
+        
+                                            <p>Return the standard deviation of the residuals for this regression.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getStdevOfResiduals"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSSRegression">getSSRegression</a>($dp = 0)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getSSRegression"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSSResiduals">getSSResiduals</a>($dp = 0)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getSSResiduals"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDFResiduals">getDFResiduals</a>($dp = 0)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getDFResiduals"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getF">getF</a>($dp = 0)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getF"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCovariance">getCovariance</a>($dp = 0)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getCovariance"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCorrelation">getCorrelation</a>($dp = 0)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getCorrelation"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getYBestFitValues">getYBestFitValues</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getYBestFitValues"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_calculateGoodnessOfFit">calculateGoodnessOfFit</a>($sumX, $sumY, $sumX2, $sumY2, $sumXY, $meanX, $meanY, $const)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_calculateGoodnessOfFit"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_leastSquareFit">leastSquareFit</a>(array $yValues, array $xValues, bool $const)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_leastSquareFit"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(int $order, float[] $yValues, float[] $xValues = [], bool $const = true)
+        
+                                            <p>Define the regression and calculate the goodness of fit for a set of X and Y data values.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOrder">getOrder</a>()
+        
+                                            <p>Return the order of this polynomial.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCoefficients">getCoefficients</a>($dp = 0)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getError">
+        <div class="location">in <a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getError"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.1.0/src/PhpSpreadsheet/Shared/Trend/BestFit.php#L84">line 84</a></div>
+        <code>                    
+    <strong>getError</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBestFitType">
+        <div class="location">in <a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getBestFitType"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.1.0/src/PhpSpreadsheet/Shared/Trend/BestFit.php#L89">line 89</a></div>
+        <code>                    
+    <strong>getBestFitType</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getValueOfYForX">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.1.0/src/PhpSpreadsheet/Shared/Trend/PolynomialBestFit.php#L41">line 41</a></div>
+        <code>                    bool
+    <strong>getValueOfYForX</strong>(float $xValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return the Y-Value for a specified value of X.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$xValue</td>
+                <td>X-Value</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>Y-Value</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getValueOfXForY">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.1.0/src/PhpSpreadsheet/Shared/Trend/PolynomialBestFit.php#L61">line 61</a></div>
+        <code>                    bool
+    <strong>getValueOfXForY</strong>(float $yValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return the X-Value for a specified value of Y.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$yValue</td>
+                <td>Y-Value</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>X-Value</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getXValues">
+        <div class="location">in <a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getXValues"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.1.0/src/PhpSpreadsheet/Shared/Trend/BestFit.php#L123">line 123</a></div>
+        <code>                    float[]
+    <strong>getXValues</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return the original set of X-Values.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float[]</td>
+            <td>X-Values</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEquation">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.1.0/src/PhpSpreadsheet/Shared/Trend/PolynomialBestFit.php#L73">line 73</a></div>
+        <code>                    bool
+    <strong>getEquation</strong>(int $dp = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return the Equation of the best-fit line.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$dp</td>
+                <td>Number of places of decimal precision to display</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSlope">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.1.0/src/PhpSpreadsheet/Shared/Trend/PolynomialBestFit.php#L98">line 98</a></div>
+        <code>                    string
+    <strong>getSlope</strong>(int $dp = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return the Slope of the line.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$dp</td>
+                <td>Number of places of decimal precision to display</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSlopeSE">
+        <div class="location">in <a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getSlopeSE"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.1.0/src/PhpSpreadsheet/Shared/Trend/BestFit.php#L163">line 163</a></div>
+        <code>                    string
+    <strong>getSlopeSE</strong>(int $dp = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return the standard error of the Slope.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$dp</td>
+                <td>Number of places of decimal precision to display</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIntersect">
+        <div class="location">in <a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getIntersect"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.1.0/src/PhpSpreadsheet/Shared/Trend/BestFit.php#L179">line 179</a></div>
+        <code>                    string
+    <strong>getIntersect</strong>(int $dp = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return the Value of X where it intersects Y = 0.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$dp</td>
+                <td>Number of places of decimal precision to display</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIntersectSE">
+        <div class="location">in <a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getIntersectSE"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.1.0/src/PhpSpreadsheet/Shared/Trend/BestFit.php#L195">line 195</a></div>
+        <code>                    string
+    <strong>getIntersectSE</strong>(int $dp = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return the standard error of the Intersect.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$dp</td>
+                <td>Number of places of decimal precision to display</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getGoodnessOfFit">
+        <div class="location">in <a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getGoodnessOfFit"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.1.0/src/PhpSpreadsheet/Shared/Trend/BestFit.php#L211">line 211</a></div>
+        <code>                    float
+    <strong>getGoodnessOfFit</strong>(int $dp = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return the goodness of fit for this regression.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$dp</td>
+                <td>Number of places of decimal precision to return</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getGoodnessOfFitPercent">
+        <div class="location">in <a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getGoodnessOfFitPercent"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.1.0/src/PhpSpreadsheet/Shared/Trend/BestFit.php#L220">line 220</a></div>
+        <code>                    
+    <strong>getGoodnessOfFitPercent</strong>($dp = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$dp</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStdevOfResiduals">
+        <div class="location">in <a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getStdevOfResiduals"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.1.0/src/PhpSpreadsheet/Shared/Trend/BestFit.php#L236">line 236</a></div>
+        <code>                    float
+    <strong>getStdevOfResiduals</strong>(int $dp = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return the standard deviation of the residuals for this regression.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$dp</td>
+                <td>Number of places of decimal precision to return</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSSRegression">
+        <div class="location">in <a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getSSRegression"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.1.0/src/PhpSpreadsheet/Shared/Trend/BestFit.php#L245">line 245</a></div>
+        <code>                    
+    <strong>getSSRegression</strong>($dp = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$dp</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSSResiduals">
+        <div class="location">in <a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getSSResiduals"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.1.0/src/PhpSpreadsheet/Shared/Trend/BestFit.php#L254">line 254</a></div>
+        <code>                    
+    <strong>getSSResiduals</strong>($dp = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$dp</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDFResiduals">
+        <div class="location">in <a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getDFResiduals"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.1.0/src/PhpSpreadsheet/Shared/Trend/BestFit.php#L263">line 263</a></div>
+        <code>                    
+    <strong>getDFResiduals</strong>($dp = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$dp</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getF">
+        <div class="location">in <a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getF"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.1.0/src/PhpSpreadsheet/Shared/Trend/BestFit.php#L272">line 272</a></div>
+        <code>                    
+    <strong>getF</strong>($dp = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$dp</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCovariance">
+        <div class="location">in <a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getCovariance"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.1.0/src/PhpSpreadsheet/Shared/Trend/BestFit.php#L281">line 281</a></div>
+        <code>                    
+    <strong>getCovariance</strong>($dp = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$dp</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCorrelation">
+        <div class="location">in <a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getCorrelation"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.1.0/src/PhpSpreadsheet/Shared/Trend/BestFit.php#L290">line 290</a></div>
+        <code>                    
+    <strong>getCorrelation</strong>($dp = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$dp</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getYBestFitValues">
+        <div class="location">in <a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_getYBestFitValues"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.1.0/src/PhpSpreadsheet/Shared/Trend/BestFit.php#L299">line 299</a></div>
+        <code>                    
+    <strong>getYBestFitValues</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_calculateGoodnessOfFit">
+        <div class="location">in <a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_calculateGoodnessOfFit"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.1.0/src/PhpSpreadsheet/Shared/Trend/BestFit.php#L304">line 304</a></div>
+        <code>            protected        
+    <strong>calculateGoodnessOfFit</strong>($sumX, $sumY, $sumX2, $sumY2, $sumXY, $meanX, $meanY, $const)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$sumX</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$sumY</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$sumX2</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$sumY2</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$sumXY</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meanX</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$meanY</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$const</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_leastSquareFit">
+        <div class="location">in <a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Trend/BestFit.html#method_leastSquareFit"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Trend\BestFit">BestFit</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.1.0/src/PhpSpreadsheet/Shared/Trend/BestFit.php#L363">line 363</a></div>
+        <code>            protected        
+    <strong>leastSquareFit</strong>(array $yValues, array $xValues, bool $const)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$yValues</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$xValues</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$const</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.1.0/src/PhpSpreadsheet/Shared/Trend/PolynomialBestFit.php#L181">line 181</a></div>
+        <code>                    
+    <strong>__construct</strong>(int $order, float[] $yValues, float[] $xValues = [], bool $const = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Define the regression and calculate the goodness of fit for a set of X and Y data values.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$order</td>
+                <td>Order of Polynomial for this regression</td>
+            </tr>
+                    <tr>
+                <td>float[]</td>
+                <td>$yValues</td>
+                <td>The set of Y-values for this regression</td>
+            </tr>
+                    <tr>
+                <td>float[]</td>
+                <td>$xValues</td>
+                <td>The set of X-values for this regression</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$const</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOrder">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.1.0/src/PhpSpreadsheet/Shared/Trend/PolynomialBestFit.php#L29">line 29</a></div>
+        <code>                    int
+    <strong>getOrder</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return the order of this polynomial.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCoefficients">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.1.0/src/PhpSpreadsheet/Shared/Trend/PolynomialBestFit.php#L112">line 112</a></div>
+        <code>                    
+    <strong>getCoefficients</strong>($dp = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$dp</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

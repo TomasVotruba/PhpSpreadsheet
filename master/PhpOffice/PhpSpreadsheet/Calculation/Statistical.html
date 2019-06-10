@@ -1,0 +1,4484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PhpOffice\PhpSpreadsheet\Calculation\Statistical | PhpSpreadsheet</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PhpOffice_PhpSpreadsheet_Calculation_Statistical" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../1.0.0/index.html" data-version="1.0.0">1.0.0</option>
+                                            <option value="../../../../1.1.0/index.html" data-version="1.1.0">1.1.0</option>
+                                            <option value="../../../../1.2.0/index.html" data-version="1.2.0">1.2.0</option>
+                                            <option value="../../../../1.2.1/index.html" data-version="1.2.1">1.2.1</option>
+                                            <option value="../../../../1.3.0/index.html" data-version="1.3.0">1.3.0</option>
+                                            <option value="../../../../1.3.1/index.html" data-version="1.3.1">1.3.1</option>
+                                            <option value="../../../../1.4.0/index.html" data-version="1.4.0">1.4.0</option>
+                                            <option value="../../../../1.4.1/index.html" data-version="1.4.1">1.4.1</option>
+                                            <option value="../../../../1.5.0/index.html" data-version="1.5.0">1.5.0</option>
+                                            <option value="../../../../1.5.1/index.html" data-version="1.5.1">1.5.1</option>
+                                            <option value="../../../../1.5.2/index.html" data-version="1.5.2">1.5.2</option>
+                                            <option value="../../../../1.6.0/index.html" data-version="1.6.0">1.6.0</option>
+                                            <option value="../../../../1.7.0/index.html" data-version="1.7.0">1.7.0</option>
+                                            <option value="../../../../master/index.html" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">PhpSpreadsheet</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../PhpOffice.html">PhpOffice</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet.html">PhpSpreadsheet</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet/Calculation.html">Calculation</a></li><li class="backslash">\</li><li>Statistical</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Statistical
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Statistical</strong>        (<a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>LOG_GAMMA_X_MAX_VALUE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>XMININ</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>EPS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>MAX_VALUE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>MAX_ITERATIONS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SQRT2PI</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_AVEDEV">AVEDEV</a>(mixed ...$args)
+        
+                                            <p>AVEDEV.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_AVERAGE">AVERAGE</a>(mixed ...$args)
+        
+                                            <p>AVERAGE.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_AVERAGEA">AVERAGEA</a>(mixed ...$args)
+        
+                                            <p>AVERAGEA.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_AVERAGEIF">AVERAGEIF</a>(mixed $aArgs, string $condition, mixed[] $averageArgs = [])
+        
+                                            <p>AVERAGEIF.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_BETADIST">BETADIST</a>(float $value, float $alpha, float $beta, mixed $rMin = 0, mixed $rMax = 1)
+        
+                                            <p>BETADIST.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_BETAINV">BETAINV</a>(float $probability, float $alpha, float $beta, float $rMin = 0, float $rMax = 1)
+        
+                                            <p>BETAINV.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_BINOMDIST">BINOMDIST</a>(float $value, float $trials, float $probability, bool $cumulative)
+        
+                                            <p>BINOMDIST.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_CHIDIST">CHIDIST</a>(float $value, float $degrees)
+        
+                                            <p>CHIDIST.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_CHIINV">CHIINV</a>(float $probability, float $degrees)
+        
+                                            <p>CHIINV.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_CONFIDENCE">CONFIDENCE</a>(float $alpha, float $stdDev, float $size)
+        
+                                            <p>CONFIDENCE.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_CORREL">CORREL</a>(mixed $yValues, null|mixed $xValues = null)
+        
+                                            <p>CORREL.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_COUNT">COUNT</a>(mixed ...$args)
+        
+                                            <p>COUNT.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_COUNTA">COUNTA</a>(mixed ...$args)
+        
+                                            <p>COUNTA.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_COUNTBLANK">COUNTBLANK</a>(mixed ...$args)
+        
+                                            <p>COUNTBLANK.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_COUNTIF">COUNTIF</a>(mixed $aArgs, string $condition)
+        
+                                            <p>COUNTIF.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_COVAR">COVAR</a>(mixed $yValues, mixed $xValues)
+        
+                                            <p>COVAR.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_CRITBINOM">CRITBINOM</a>(float $trials, float $probability, float $alpha)
+        
+                                            <p>CRITBINOM.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DEVSQ">DEVSQ</a>(mixed ...$args)
+        
+                                            <p>DEVSQ.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_EXPONDIST">EXPONDIST</a>(float $value, float $lambda, bool $cumulative)
+        
+                                            <p>EXPONDIST.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_FISHER">FISHER</a>(float $value)
+        
+                                            <p>FISHER.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_FISHERINV">FISHERINV</a>(float $value)
+        
+                                            <p>FISHERINV.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_FORECAST">FORECAST</a>(float $xValue, mixed $yValues, mixed $xValues)
+        
+                                            <p>FORECAST.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_GAMMADIST">GAMMADIST</a>(float $value, float $a, float $b, bool $cumulative)
+        
+                                            <p>GAMMADIST.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_GAMMAINV">GAMMAINV</a>(float $probability, float $alpha, float $beta)
+        
+                                            <p>GAMMAINV.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_GAMMALN">GAMMALN</a>(float $value)
+        
+                                            <p>GAMMALN.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_GEOMEAN">GEOMEAN</a>(mixed ...$args)
+        
+                                            <p>GEOMEAN.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_GROWTH">GROWTH</a>(mixed[] $yValues, mixed[] $xValues = [], mixed[] $newValues = [], bool $const = true)
+        
+                                            <p>GROWTH.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_HARMEAN">HARMEAN</a>(mixed ...$args)
+        
+                                            <p>HARMEAN.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_HYPGEOMDIST">HYPGEOMDIST</a>(float $sampleSuccesses, float $sampleNumber, float $populationSuccesses, float $populationNumber)
+        
+                                            <p>HYPGEOMDIST.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_INTERCEPT">INTERCEPT</a>(mixed[] $yValues, mixed[] $xValues)
+        
+                                            <p>INTERCEPT.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_KURT">KURT</a>(array ...$args)
+        
+                                            <p>KURT.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_LARGE">LARGE</a>(...$args)
+        
+                                            <p>LARGE.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_LINEST">LINEST</a>(mixed[] $yValues, null|mixed[] $xValues = null, bool $const = true, bool $stats = false)
+        
+                                            <p>LINEST.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_LOGEST">LOGEST</a>(mixed[] $yValues, null|mixed[] $xValues = null, bool $const = true, bool $stats = false)
+        
+                                            <p>LOGEST.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_LOGINV">LOGINV</a>(float $probability, float $mean, float $stdDev)
+        
+                                            <p>LOGINV.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_LOGNORMDIST">LOGNORMDIST</a>(float $value, float $mean, float $stdDev)
+        
+                                            <p>LOGNORMDIST.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_MAX">MAX</a>(mixed ...$args)
+        
+                                            <p>MAX.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_MAXA">MAXA</a>(mixed ...$args)
+        
+                                            <p>MAXA.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_MAXIF">MAXIF</a>(mixed $aArgs, string $condition, mixed $sumArgs = [])
+        
+                                            <p>MAXIF.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_MEDIAN">MEDIAN</a>(mixed ...$args)
+        
+                                            <p>MEDIAN.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_MIN">MIN</a>(mixed ...$args)
+        
+                                            <p>MIN.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_MINA">MINA</a>(mixed ...$args)
+        
+                                            <p>MINA.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_MINIF">MINIF</a>(mixed $aArgs, string $condition, mixed $sumArgs = [])
+        
+                                            <p>MINIF.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_MODE">MODE</a>(mixed ...$args)
+        
+                                            <p>MODE.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_NEGBINOMDIST">NEGBINOMDIST</a>(float $failures, float $successes, float $probability)
+        
+                                            <p>NEGBINOMDIST.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_NORMDIST">NORMDIST</a>(float $value, float $mean, float $stdDev, bool $cumulative)
+        
+                                            <p>NORMDIST.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_NORMINV">NORMINV</a>(float $probability, float $mean, float $stdDev)
+        
+                                            <p>NORMINV.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_NORMSDIST">NORMSDIST</a>(float $value)
+        
+                                            <p>NORMSDIST.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_NORMSINV">NORMSINV</a>(float $value)
+        
+                                            <p>NORMSINV.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_PERCENTILE">PERCENTILE</a>(...$args)
+        
+                                            <p>PERCENTILE.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_PERCENTRANK">PERCENTRANK</a>(float[] $valueSet, int $value, int $significance = 3)
+        
+                                            <p>PERCENTRANK.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_PERMUT">PERMUT</a>(int $numObjs, int $numInSet)
+        
+                                            <p>PERMUT.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_POISSON">POISSON</a>(float $value, float $mean, bool $cumulative)
+        
+                                            <p>POISSON.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_QUARTILE">QUARTILE</a>(...$args)
+        
+                                            <p>QUARTILE.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_RANK">RANK</a>(int $value, float[] $valueSet, int $order = 0)
+        
+                                            <p>RANK.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_RSQ">RSQ</a>(mixed[] $yValues, mixed[] $xValues)
+        
+                                            <p>RSQ.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_SKEW">SKEW</a>(array ...$args)
+        
+                                            <p>SKEW.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_SLOPE">SLOPE</a>(mixed[] $yValues, mixed[] $xValues)
+        
+                                            <p>SLOPE.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_SMALL">SMALL</a>(...$args)
+        
+                                            <p>SMALL.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_STANDARDIZE">STANDARDIZE</a>(float $value, float $mean, float $stdDev)
+        
+                                            <p>STANDARDIZE.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_STDEV">STDEV</a>(mixed ...$args)
+        
+                                            <p>STDEV.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_STDEVA">STDEVA</a>(mixed ...$args)
+        
+                                            <p>STDEVA.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_STDEVP">STDEVP</a>(mixed ...$args)
+        
+                                            <p>STDEVP.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_STDEVPA">STDEVPA</a>(mixed ...$args)
+        
+                                            <p>STDEVPA.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_STEYX">STEYX</a>(mixed[] $yValues, mixed[] $xValues)
+        
+                                            <p>STEYX.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_TDIST">TDIST</a>(float $value, float $degrees, float $tails)
+        
+                                            <p>TDIST.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_TINV">TINV</a>(float $probability, float $degrees)
+        
+                                            <p>TINV.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_TREND">TREND</a>(mixed[] $yValues, mixed[] $xValues = [], mixed[] $newValues = [], bool $const = true)
+        
+                                            <p>TREND.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_TRIMMEAN">TRIMMEAN</a>(...$args)
+        
+                                            <p>TRIMMEAN.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_VARFunc">VARFunc</a>(mixed ...$args)
+        
+                                            <p>VARFunc.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_VARA">VARA</a>(mixed ...$args)
+        
+                                            <p>VARA.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_VARP">VARP</a>(mixed ...$args)
+        
+                                            <p>VARP.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_VARPA">VARPA</a>(mixed ...$args)
+        
+                                            <p>VARPA.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_WEIBULL">WEIBULL</a>(float $value, float $alpha, float $beta, bool $cumulative)
+        
+                                            <p>WEIBULL.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ZTEST">ZTEST</a>(float $dataSet, float $m0, float $sigma = null)
+        
+                                            <p>ZTEST.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_AVEDEV">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L536">line 536</a></div>
+        <code>        static            float
+    <strong>AVEDEV</strong>(mixed ...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>AVEDEV.</p>                    <p>Returns the average of the absolute deviations of data points from their mean.
+AVEDEV is a measure of the variability in a data set.</p>
+
+<p>Excel Function:
+       AVEDEV(value1[,value2[, ...]])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>...$args</td>
+                <td>Data values</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_AVERAGE">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L587">line 587</a></div>
+        <code>        static            float
+    <strong>AVERAGE</strong>(mixed ...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>AVERAGE.</p>                    <p>Returns the average (arithmetic mean) of the arguments</p>
+
+<p>Excel Function:
+       AVERAGE(value1[,value2[, ...]])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>...$args</td>
+                <td>Data values</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_AVERAGEA">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L630">line 630</a></div>
+        <code>        static            float
+    <strong>AVERAGEA</strong>(mixed ...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>AVERAGEA.</p>                    <p>Returns the average of its arguments, including numbers, text, and logical values</p>
+
+<p>Excel Function:
+       AVERAGEA(value1[,value2[, ...]])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>...$args</td>
+                <td>Data values</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_AVERAGEIF">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L679">line 679</a></div>
+        <code>        static            float
+    <strong>AVERAGEIF</strong>(mixed $aArgs, string $condition, mixed[] $averageArgs = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>AVERAGEIF.</p>                    <p>Returns the average value from a range of cells that contain numbers within the list of arguments</p>
+
+<p>Excel Function:
+       AVERAGEIF(value1[,value2[, ...]],condition)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$aArgs</td>
+                <td>Data values</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$condition</td>
+                <td>the criteria that defines which cells will be checked</td>
+            </tr>
+                    <tr>
+                <td>mixed[]</td>
+                <td>$averageArgs</td>
+                <td>Data values</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_BETADIST">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L724">line 724</a></div>
+        <code>        static            float
+    <strong>BETADIST</strong>(float $value, float $alpha, float $beta, mixed $rMin = 0, mixed $rMax = 1)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>BETADIST.</p>                    <p>Returns the beta distribution.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$value</td>
+                <td>Value at which you want to evaluate the distribution</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$alpha</td>
+                <td>Parameter to the distribution</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$beta</td>
+                <td>Parameter to the distribution</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$rMin</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$rMax</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_BETAINV">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L763">line 763</a></div>
+        <code>        static            float
+    <strong>BETAINV</strong>(float $probability, float $alpha, float $beta, float $rMin = 0, float $rMax = 1)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>BETAINV.</p>                    <p>Returns the inverse of the beta distribution.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$probability</td>
+                <td>Probability at which you want to evaluate the distribution</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$alpha</td>
+                <td>Parameter to the distribution</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$beta</td>
+                <td>Parameter to the distribution</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$rMin</td>
+                <td>Minimum value</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$rMax</td>
+                <td>Maximum value</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_BINOMDIST">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L823">line 823</a></div>
+        <code>        static            float
+    <strong>BINOMDIST</strong>(float $value, float $trials, float $probability, bool $cumulative)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>BINOMDIST.</p>                    <p>Returns the individual term binomial distribution probability. Use BINOMDIST in problems with
+       a fixed number of tests or trials, when the outcomes of any trial are only success or failure,
+       when trials are independent, and when the probability of success is constant throughout the
+       experiment. For example, BINOMDIST can calculate the probability that two of the next three
+       babies born are male.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$value</td>
+                <td>Number of successes in trials</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$trials</td>
+                <td>Number of trials</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$probability</td>
+                <td>Probability of success on each trial</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$cumulative</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_CHIDIST">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L863">line 863</a></div>
+        <code>        static            float
+    <strong>CHIDIST</strong>(float $value, float $degrees)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>CHIDIST.</p>                    <p>Returns the one-tailed probability of the chi-squared distribution.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$value</td>
+                <td>Value for the function</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$degrees</td>
+                <td>degrees of freedom</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_CHIINV">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L896">line 896</a></div>
+        <code>        static            float
+    <strong>CHIINV</strong>(float $probability, float $degrees)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>CHIINV.</p>                    <p>Returns the one-tailed probability of the chi-squared distribution.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$probability</td>
+                <td>Probability for the function</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$degrees</td>
+                <td>degrees of freedom</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_CONFIDENCE">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L955">line 955</a></div>
+        <code>        static            float
+    <strong>CONFIDENCE</strong>(float $alpha, float $stdDev, float $size)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>CONFIDENCE.</p>                    <p>Returns the confidence interval for a population mean</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$alpha</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$stdDev</td>
+                <td>Standard Deviation</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$size</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_CORREL">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L985">line 985</a></div>
+        <code>        static            float
+    <strong>CORREL</strong>(mixed $yValues, null|mixed $xValues = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>CORREL.</p>                    <p>Returns covariance, the average of the products of deviations for each data point pair.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$yValues</td>
+                <td>array of mixed Data Series Y</td>
+            </tr>
+                    <tr>
+                <td>null|mixed</td>
+                <td>$xValues</td>
+                <td>array of mixed Data Series X</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_COUNT">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L1021">line 1021</a></div>
+        <code>        static            int
+    <strong>COUNT</strong>(mixed ...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>COUNT.</p>                    <p>Counts the number of cells that contain numbers within the list of arguments</p>
+
+<p>Excel Function:
+       COUNT(value1[,value2[, ...]])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>...$args</td>
+                <td>Data values</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_COUNTA">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L1055">line 1055</a></div>
+        <code>        static            int
+    <strong>COUNTA</strong>(mixed ...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>COUNTA.</p>                    <p>Counts the number of cells that are not empty within the list of arguments</p>
+
+<p>Excel Function:
+       COUNTA(value1[,value2[, ...]])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>...$args</td>
+                <td>Data values</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_COUNTBLANK">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L1085">line 1085</a></div>
+        <code>        static            int
+    <strong>COUNTBLANK</strong>(mixed ...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>COUNTBLANK.</p>                    <p>Counts the number of empty cells within the list of arguments</p>
+
+<p>Excel Function:
+       COUNTBLANK(value1[,value2[, ...]])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>...$args</td>
+                <td>Data values</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_COUNTIF">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L1116">line 1116</a></div>
+        <code>        static            int
+    <strong>COUNTIF</strong>(mixed $aArgs, string $condition)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>COUNTIF.</p>                    <p>Counts the number of cells that contain numbers within the list of arguments</p>
+
+<p>Excel Function:
+       COUNTIF(value1[,value2[, ...]],condition)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$aArgs</td>
+                <td>Data values</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$condition</td>
+                <td>the criteria that defines which cells will be counted</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_COVAR">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L1147">line 1147</a></div>
+        <code>        static            float
+    <strong>COVAR</strong>(mixed $yValues, mixed $xValues)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>COVAR.</p>                    <p>Returns covariance, the average of the products of deviations for each data point pair.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$yValues</td>
+                <td>array of mixed Data Series Y</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$xValues</td>
+                <td>array of mixed Data Series X</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_CRITBINOM">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L1185">line 1185</a></div>
+        <code>        static            int
+    <strong>CRITBINOM</strong>(float $trials, float $probability, float $alpha)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>CRITBINOM.</p>                    <p>Returns the smallest value for which the cumulative binomial distribution is greater
+       than or equal to a criterion value</p>
+
+<p>See https://support.microsoft.com/en-us/help/828117/ for details of the algorithm used</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$trials</td>
+                <td>number of Bernoulli trials</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$probability</td>
+                <td>probability of a success on each trial</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$alpha</td>
+                <td>criterion value</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_DEVSQ">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L1303">line 1303</a></div>
+        <code>        static            float
+    <strong>DEVSQ</strong>(mixed ...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>DEVSQ.</p>                    <p>Returns the sum of squares of deviations of data points from their sample mean.</p>
+
+<p>Excel Function:
+       DEVSQ(value1[,value2[, ...]])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>...$args</td>
+                <td>Data values</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_EXPONDIST">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L1354">line 1354</a></div>
+        <code>        static            float
+    <strong>EXPONDIST</strong>(float $value, float $lambda, bool $cumulative)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>EXPONDIST.</p>                    <p>Returns the exponential distribution. Use EXPONDIST to model the time between events,
+       such as how long an automated bank teller takes to deliver cash. For example, you can
+       use EXPONDIST to determine the probability that the process takes at most 1 minute.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$value</td>
+                <td>Value of the function</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$lambda</td>
+                <td>The parameter value</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$cumulative</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_FISHER">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L1387">line 1387</a></div>
+        <code>        static            float
+    <strong>FISHER</strong>(float $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>FISHER.</p>                    <p>Returns the Fisher transformation at x. This transformation produces a function that
+       is normally distributed rather than skewed. Use this function to perform hypothesis
+       testing on the correlation coefficient.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_FISHERINV">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L1413">line 1413</a></div>
+        <code>        static            float
+    <strong>FISHERINV</strong>(float $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>FISHERINV.</p>                    <p>Returns the inverse of the Fisher transformation. Use this transformation when
+       analyzing correlations between ranges or arrays of data. If y = FISHER(x), then
+       FISHERINV(y) = x.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_FORECAST">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L1435">line 1435</a></div>
+        <code>        static            float
+    <strong>FORECAST</strong>(float $xValue, mixed $yValues, mixed $xValues)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>FORECAST.</p>                    <p>Calculates, or predicts, a future value by using existing values. The predicted value is a y-value for a given x-value.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$xValue</td>
+                <td>Value of X for which we want to find Y</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$yValues</td>
+                <td>array of mixed Data Series Y</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$xValues</td>
+                <td>of mixed Data Series X</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_GAMMADIST">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L1469">line 1469</a></div>
+        <code>        static            float
+    <strong>GAMMADIST</strong>(float $value, float $a, float $b, bool $cumulative)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>GAMMADIST.</p>                    <p>Returns the gamma distribution.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$value</td>
+                <td>Value at which you want to evaluate the distribution</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$a</td>
+                <td>Parameter to the distribution</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$b</td>
+                <td>Parameter to the distribution</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$cumulative</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_GAMMAINV">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L1502">line 1502</a></div>
+        <code>        static            float
+    <strong>GAMMAINV</strong>(float $probability, float $alpha, float $beta)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>GAMMAINV.</p>                    <p>Returns the inverse of the beta distribution.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$probability</td>
+                <td>Probability at which you want to evaluate the distribution</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$alpha</td>
+                <td>Parameter to the distribution</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$beta</td>
+                <td>Parameter to the distribution</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_GAMMALN">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L1563">line 1563</a></div>
+        <code>        static            float
+    <strong>GAMMALN</strong>(float $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>GAMMALN.</p>                    <p>Returns the natural logarithm of the gamma function.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_GEOMEAN">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L1594">line 1594</a></div>
+        <code>        static            float
+    <strong>GEOMEAN</strong>(mixed ...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>GEOMEAN.</p>                    <p>Returns the geometric mean of an array or range of positive data. For example, you
+       can use GEOMEAN to calculate average growth rate given compound interest with
+       variable rates.</p>
+
+<p>Excel Function:
+       GEOMEAN(value1[,value2[, ...]])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>...$args</td>
+                <td>Data values</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_GROWTH">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L1621">line 1621</a></div>
+        <code>        static            array
+    <strong>GROWTH</strong>(mixed[] $yValues, mixed[] $xValues = [], mixed[] $newValues = [], bool $const = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>GROWTH.</p>                    <p>Returns values along a predicted emponential Trend</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed[]</td>
+                <td>$yValues</td>
+                <td>Data Series Y</td>
+            </tr>
+                    <tr>
+                <td>mixed[]</td>
+                <td>$xValues</td>
+                <td>Data Series X</td>
+            </tr>
+                    <tr>
+                <td>mixed[]</td>
+                <td>$newValues</td>
+                <td>Values of X for which we want to find Y</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$const</td>
+                <td>a logical value specifying whether to force the intersect to equal 0</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>of float</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_HARMEAN">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L1656">line 1656</a></div>
+        <code>        static            float
+    <strong>HARMEAN</strong>(mixed ...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>HARMEAN.</p>                    <p>Returns the harmonic mean of a data set. The harmonic mean is the reciprocal of the
+       arithmetic mean of reciprocals.</p>
+
+<p>Excel Function:
+       HARMEAN(value1[,value2[, ...]])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>...$args</td>
+                <td>Data values</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_HYPGEOMDIST">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L1703">line 1703</a></div>
+        <code>        static            float
+    <strong>HYPGEOMDIST</strong>(float $sampleSuccesses, float $sampleNumber, float $populationSuccesses, float $populationNumber)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>HYPGEOMDIST.</p>                    <p>Returns the hypergeometric distribution. HYPGEOMDIST returns the probability of a given number of
+sample successes, given the sample size, population successes, and population size.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$sampleSuccesses</td>
+                <td>Number of successes in the sample</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$sampleNumber</td>
+                <td>Size of the sample</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$populationSuccesses</td>
+                <td>Number of successes in the population</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$populationNumber</td>
+                <td>Population size</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_INTERCEPT">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L1739">line 1739</a></div>
+        <code>        static            float
+    <strong>INTERCEPT</strong>(mixed[] $yValues, mixed[] $xValues)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>INTERCEPT.</p>                    <p>Calculates the point at which a line will intersect the y-axis by using existing x-values and y-values.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed[]</td>
+                <td>$yValues</td>
+                <td>Data Series Y</td>
+            </tr>
+                    <tr>
+                <td>mixed[]</td>
+                <td>$xValues</td>
+                <td>Data Series X</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_KURT">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L1770">line 1770</a></div>
+        <code>        static            float
+    <strong>KURT</strong>(array ...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>KURT.</p>                    <p>Returns the kurtosis of a data set. Kurtosis characterizes the relative peakedness
+or flatness of a distribution compared with the normal distribution. Positive
+kurtosis indicates a relatively peaked distribution. Negative kurtosis indicates a
+relatively flat distribution.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>...$args</td>
+                <td>Data Series</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_LARGE">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L1816">line 1816</a></div>
+        <code>        static            float
+    <strong>LARGE</strong>(...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>LARGE.</p>                    <p>Returns the nth largest value in a data set. You can use this function to
+       select a value based on its relative standing.</p>
+
+<p>Excel Function:
+       LARGE(value1[,value2[, ...]],entry)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>...$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_LINEST">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L1857">line 1857</a></div>
+        <code>        static            array
+    <strong>LINEST</strong>(mixed[] $yValues, null|mixed[] $xValues = null, bool $const = true, bool $stats = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>LINEST.</p>                    <p>Calculates the statistics for a line by using the "least squares" method to calculate a straight line that best fits your data,
+       and then returns an array that describes the line.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed[]</td>
+                <td>$yValues</td>
+                <td>Data Series Y</td>
+            </tr>
+                    <tr>
+                <td>null|mixed[]</td>
+                <td>$xValues</td>
+                <td>Data Series X</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$const</td>
+                <td>a logical value specifying whether to force the intersect to equal 0</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$stats</td>
+                <td>a logical value specifying whether to return additional regression statistics</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_LOGEST">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L1916">line 1916</a></div>
+        <code>        static            array
+    <strong>LOGEST</strong>(mixed[] $yValues, null|mixed[] $xValues = null, bool $const = true, bool $stats = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>LOGEST.</p>                    <p>Calculates an exponential curve that best fits the X and Y data series,
+       and then returns an array that describes the line.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed[]</td>
+                <td>$yValues</td>
+                <td>Data Series Y</td>
+            </tr>
+                    <tr>
+                <td>null|mixed[]</td>
+                <td>$xValues</td>
+                <td>Data Series X</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$const</td>
+                <td>a logical value specifying whether to force the intersect to equal 0</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$stats</td>
+                <td>a logical value specifying whether to return additional regression statistics</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_LOGINV">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L1983">line 1983</a></div>
+        <code>        static            float
+    <strong>LOGINV</strong>(float $probability, float $mean, float $stdDev)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>LOGINV.</p>                    <p>Returns the inverse of the normal cumulative distribution</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$probability</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$mean</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$stdDev</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_LOGNORMDIST">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L2012">line 2012</a></div>
+        <code>        static            float
+    <strong>LOGNORMDIST</strong>(float $value, float $mean, float $stdDev)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>LOGNORMDIST.</p>                    <p>Returns the cumulative lognormal distribution of x, where ln(x) is normally distributed
+with parameters mean and standard_dev.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$mean</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$stdDev</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_MAX">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L2044">line 2044</a></div>
+        <code>        static            float
+    <strong>MAX</strong>(mixed ...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>MAX.</p>                    <p>MAX returns the value of the element of the values passed that has the highest value,
+       with negative numbers considered smaller than positive numbers.</p>
+
+<p>Excel Function:
+       MAX(value1[,value2[, ...]])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>...$args</td>
+                <td>Data values</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_MAXA">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L2080">line 2080</a></div>
+        <code>        static            float
+    <strong>MAXA</strong>(mixed ...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>MAXA.</p>                    <p>Returns the greatest value in a list of arguments, including numbers, text, and logical values</p>
+
+<p>Excel Function:
+       MAXA(value1[,value2[, ...]])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>...$args</td>
+                <td>Data values</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_MAXIF">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L2123">line 2123</a></div>
+        <code>        static            float
+    <strong>MAXIF</strong>(mixed $aArgs, string $condition, mixed $sumArgs = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>MAXIF.</p>                    <p>Counts the maximum value within a range of cells that contain numbers within the list of arguments</p>
+
+<p>Excel Function:
+       MAXIF(value1[,value2[, ...]],condition)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$aArgs</td>
+                <td>Data values</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$condition</td>
+                <td>the criteria that defines which cells will be checked</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$sumArgs</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_MEDIAN">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L2163">line 2163</a></div>
+        <code>        static            float
+    <strong>MEDIAN</strong>(mixed ...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>MEDIAN.</p>                    <p>Returns the median of the given numbers. The median is the number in the middle of a set of numbers.</p>
+
+<p>Excel Function:
+       MEDIAN(value1[,value2[, ...]])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>...$args</td>
+                <td>Data values</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_MIN">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L2207">line 2207</a></div>
+        <code>        static            float
+    <strong>MIN</strong>(mixed ...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>MIN.</p>                    <p>MIN returns the value of the element of the values passed that has the smallest value,
+       with negative numbers considered smaller than positive numbers.</p>
+
+<p>Excel Function:
+       MIN(value1[,value2[, ...]])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>...$args</td>
+                <td>Data values</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_MINA">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L2243">line 2243</a></div>
+        <code>        static            float
+    <strong>MINA</strong>(mixed ...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>MINA.</p>                    <p>Returns the smallest value in a list of arguments, including numbers, text, and logical values</p>
+
+<p>Excel Function:
+       MINA(value1[,value2[, ...]])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>...$args</td>
+                <td>Data values</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_MINIF">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L2286">line 2286</a></div>
+        <code>        static            float
+    <strong>MINIF</strong>(mixed $aArgs, string $condition, mixed $sumArgs = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>MINIF.</p>                    <p>Returns the minimum value within a range of cells that contain numbers within the list of arguments</p>
+
+<p>Excel Function:
+       MINIF(value1[,value2[, ...]],condition)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$aArgs</td>
+                <td>Data values</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$condition</td>
+                <td>the criteria that defines which cells will be checked</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$sumArgs</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_MODE">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L2364">line 2364</a></div>
+        <code>        static            float
+    <strong>MODE</strong>(mixed ...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>MODE.</p>                    <p>Returns the most frequently occurring, or repetitive, value in an array or range of data</p>
+
+<p>Excel Function:
+       MODE(value1[,value2[, ...]])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>...$args</td>
+                <td>Data values</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_NEGBINOMDIST">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L2401">line 2401</a></div>
+        <code>        static            float
+    <strong>NEGBINOMDIST</strong>(float $failures, float $successes, float $probability)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>NEGBINOMDIST.</p>                    <p>Returns the negative binomial distribution. NEGBINOMDIST returns the probability that
+       there will be number_f failures before the number_s-th success, when the constant
+       probability of a success is probability_s. This function is similar to the binomial
+       distribution, except that the number of successes is fixed, and the number of trials is
+       variable. Like the binomial, trials are assumed to be independent.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$failures</td>
+                <td>Number of Failures</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$successes</td>
+                <td>Threshold number of Successes</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$probability</td>
+                <td>Probability of success on each trial</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_NORMDIST">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L2439">line 2439</a></div>
+        <code>        static            float
+    <strong>NORMDIST</strong>(float $value, float $mean, float $stdDev, bool $cumulative)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>NORMDIST.</p>                    <p>Returns the normal distribution for the specified mean and standard deviation. This
+function has a very wide range of applications in statistics, including hypothesis
+testing.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$mean</td>
+                <td>Mean Value</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$stdDev</td>
+                <td>Standard Deviation</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$cumulative</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_NORMINV">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L2472">line 2472</a></div>
+        <code>        static            float
+    <strong>NORMINV</strong>(float $probability, float $mean, float $stdDev)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>NORMINV.</p>                    <p>Returns the inverse of the normal cumulative distribution for the specified mean and standard deviation.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$probability</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$mean</td>
+                <td>Mean Value</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$stdDev</td>
+                <td>Standard Deviation</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_NORMSDIST">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L2503">line 2503</a></div>
+        <code>        static            float
+    <strong>NORMSDIST</strong>(float $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>NORMSDIST.</p>                    <p>Returns the standard normal cumulative distribution function. The distribution has
+a mean of 0 (zero) and a standard deviation of one. Use this function in place of a
+table of standard normal curve areas.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_NORMSINV">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L2519">line 2519</a></div>
+        <code>        static            float
+    <strong>NORMSINV</strong>(float $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>NORMSINV.</p>                    <p>Returns the inverse of the standard normal cumulative distribution</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_PERCENTILE">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L2539">line 2539</a></div>
+        <code>        static            float
+    <strong>PERCENTILE</strong>(...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>PERCENTILE.</p>                    <p>Returns the nth percentile of values in a range..</p>
+
+<p>Excel Function:
+       PERCENTILE(value1[,value2[, ...]],entry)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>...$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_PERCENTRANK">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L2587">line 2587</a></div>
+        <code>        static            float
+    <strong>PERCENTRANK</strong>(float[] $valueSet, int $value, int $significance = 3)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>PERCENTRANK.</p>                    <p>Returns the rank of a value in a data set as a percentage of the data set.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float[]</td>
+                <td>$valueSet</td>
+                <td>An array of, or a reference to, a list of numbers</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$value</td>
+                <td>the number whose rank you want to find</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$significance</td>
+                <td>the number of significant digits for the returned percentage value</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_PERMUT">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L2637">line 2637</a></div>
+        <code>        static            int
+    <strong>PERMUT</strong>(int $numObjs, int $numInSet)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>PERMUT.</p>                    <p>Returns the number of permutations for a given number of objects that can be
+       selected from number objects. A permutation is any set or subset of objects or
+       events where internal order is significant. Permutations are different from
+       combinations, for which the internal order is not significant. Use this function
+       for lottery-style probability calculations.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$numObjs</td>
+                <td>Number of different objects</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$numInSet</td>
+                <td>Number of objects in each permutation</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>Number of permutations</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_POISSON">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L2667">line 2667</a></div>
+        <code>        static            float
+    <strong>POISSON</strong>(float $value, float $mean, bool $cumulative)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>POISSON.</p>                    <p>Returns the Poisson distribution. A common application of the Poisson distribution
+is predicting the number of events over a specific time, such as the number of
+cars arriving at a toll plaza in 1 minute.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$mean</td>
+                <td>Mean Value</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$cumulative</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_QUARTILE">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L2709">line 2709</a></div>
+        <code>        static            float
+    <strong>QUARTILE</strong>(...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>QUARTILE.</p>                    <p>Returns the quartile of a data set.</p>
+
+<p>Excel Function:
+       QUARTILE(value1[,value2[, ...]],entry)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>...$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_RANK">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L2739">line 2739</a></div>
+        <code>        static            float
+    <strong>RANK</strong>(int $value, float[] $valueSet, int $order = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>RANK.</p>                    <p>Returns the rank of a number in a list of numbers.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$value</td>
+                <td>the number whose rank you want to find</td>
+            </tr>
+                    <tr>
+                <td>float[]</td>
+                <td>$valueSet</td>
+                <td>An array of, or a reference to, a list of numbers</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$order</td>
+                <td>Order to sort the values in the value set</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_RSQ">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L2774">line 2774</a></div>
+        <code>        static            float
+    <strong>RSQ</strong>(mixed[] $yValues, mixed[] $xValues)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>RSQ.</p>                    <p>Returns the square of the Pearson product moment correlation coefficient through data points in known_y's and known_x's.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed[]</td>
+                <td>$yValues</td>
+                <td>Data Series Y</td>
+            </tr>
+                    <tr>
+                <td>mixed[]</td>
+                <td>$xValues</td>
+                <td>Data Series X</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_SKEW">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L2805">line 2805</a></div>
+        <code>        static            float
+    <strong>SKEW</strong>(array ...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>SKEW.</p>                    <p>Returns the skewness of a distribution. Skewness characterizes the degree of asymmetry
+of a distribution around its mean. Positive skewness indicates a distribution with an
+asymmetric tail extending toward more positive values. Negative skewness indicates a
+distribution with an asymmetric tail extending toward more negative values.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>...$args</td>
+                <td>Data Series</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_SLOPE">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L2842">line 2842</a></div>
+        <code>        static            float
+    <strong>SLOPE</strong>(mixed[] $yValues, mixed[] $xValues)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>SLOPE.</p>                    <p>Returns the slope of the linear regression line through data points in known_y's and known_x's.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed[]</td>
+                <td>$yValues</td>
+                <td>Data Series Y</td>
+            </tr>
+                    <tr>
+                <td>mixed[]</td>
+                <td>$xValues</td>
+                <td>Data Series X</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_SMALL">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L2877">line 2877</a></div>
+        <code>        static            float
+    <strong>SMALL</strong>(...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>SMALL.</p>                    <p>Returns the nth smallest value in a data set. You can use this function to
+       select a value based on its relative standing.</p>
+
+<p>Excel Function:
+       SMALL(value1[,value2[, ...]],entry)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>...$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_STANDARDIZE">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L2916">line 2916</a></div>
+        <code>        static            float
+    <strong>STANDARDIZE</strong>(float $value, float $mean, float $stdDev)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>STANDARDIZE.</p>                    <p>Returns a normalized value from a distribution characterized by mean and standard_dev.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$value</td>
+                <td>Value to normalize</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$mean</td>
+                <td>Mean Value</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$stdDev</td>
+                <td>Standard Deviation</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td>Standardized value</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_STDEV">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L2948">line 2948</a></div>
+        <code>        static            float
+    <strong>STDEV</strong>(mixed ...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>STDEV.</p>                    <p>Estimates standard deviation based on a sample. The standard deviation is a measure of how
+       widely values are dispersed from the average value (the mean).</p>
+
+<p>Excel Function:
+       STDEV(value1[,value2[, ...]])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>...$args</td>
+                <td>Data values</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_STDEVA">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L2997">line 2997</a></div>
+        <code>        static            float
+    <strong>STDEVA</strong>(mixed ...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>STDEVA.</p>                    <p>Estimates standard deviation based on a sample, including numbers, text, and logical values</p>
+
+<p>Excel Function:
+       STDEVA(value1[,value2[, ...]])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>...$args</td>
+                <td>Data values</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_STDEVP">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L3049">line 3049</a></div>
+        <code>        static            float
+    <strong>STDEVP</strong>(mixed ...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>STDEVP.</p>                    <p>Calculates standard deviation based on the entire population</p>
+
+<p>Excel Function:
+       STDEVP(value1[,value2[, ...]])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>...$args</td>
+                <td>Data values</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_STDEVPA">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L3096">line 3096</a></div>
+        <code>        static            float
+    <strong>STDEVPA</strong>(mixed ...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>STDEVPA.</p>                    <p>Calculates standard deviation based on the entire population, including numbers, text, and logical values</p>
+
+<p>Excel Function:
+       STDEVPA(value1[,value2[, ...]])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>...$args</td>
+                <td>Data values</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_STEYX">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L3144">line 3144</a></div>
+        <code>        static            float
+    <strong>STEYX</strong>(mixed[] $yValues, mixed[] $xValues)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>STEYX.</p>                    <p>Returns the standard error of the predicted y-value for each x in the regression.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed[]</td>
+                <td>$yValues</td>
+                <td>Data Series Y</td>
+            </tr>
+                    <tr>
+                <td>mixed[]</td>
+                <td>$xValues</td>
+                <td>Data Series X</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_TDIST">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L3174">line 3174</a></div>
+        <code>        static            float
+    <strong>TDIST</strong>(float $value, float $degrees, float $tails)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>TDIST.</p>                    <p>Returns the probability of Student's T distribution.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$value</td>
+                <td>Value for the function</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$degrees</td>
+                <td>degrees of freedom</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$tails</td>
+                <td>number of tails (1 or 2)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_TINV">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L3238">line 3238</a></div>
+        <code>        static            float
+    <strong>TINV</strong>(float $probability, float $degrees)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>TINV.</p>                    <p>Returns the one-tailed probability of the chi-squared distribution.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$probability</td>
+                <td>Probability for the function</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$degrees</td>
+                <td>degrees of freedom</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_TREND">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L3298">line 3298</a></div>
+        <code>        static            array
+    <strong>TREND</strong>(mixed[] $yValues, mixed[] $xValues = [], mixed[] $newValues = [], bool $const = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>TREND.</p>                    <p>Returns values along a linear Trend</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed[]</td>
+                <td>$yValues</td>
+                <td>Data Series Y</td>
+            </tr>
+                    <tr>
+                <td>mixed[]</td>
+                <td>$xValues</td>
+                <td>Data Series X</td>
+            </tr>
+                    <tr>
+                <td>mixed[]</td>
+                <td>$newValues</td>
+                <td>Values of X for which we want to find Y</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$const</td>
+                <td>a logical value specifying whether to force the intersect to equal 0</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>of float</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_TRIMMEAN">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L3335">line 3335</a></div>
+        <code>        static            float
+    <strong>TRIMMEAN</strong>(...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>TRIMMEAN.</p>                    <p>Returns the mean of the interior of a data set. TRIMMEAN calculates the mean
+       taken by excluding a percentage of data points from the top and bottom tails
+       of a data set.</p>
+
+<p>Excel Function:
+       TRIMEAN(value1[,value2[, ...]], $discard)</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>...$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_VARFunc">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L3380">line 3380</a></div>
+        <code>        static            float
+    <strong>VARFunc</strong>(mixed ...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>VARFunc.</p>                    <p>Estimates variance based on a sample.</p>
+
+<p>Excel Function:
+       VAR(value1[,value2[, ...]])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>...$args</td>
+                <td>Data values</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_VARA">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L3424">line 3424</a></div>
+        <code>        static            float
+    <strong>VARA</strong>(mixed ...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>VARA.</p>                    <p>Estimates variance based on a sample, including numbers, text, and logical values</p>
+
+<p>Excel Function:
+       VARA(value1[,value2[, ...]])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>...$args</td>
+                <td>Data values</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_VARP">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L3477">line 3477</a></div>
+        <code>        static            float
+    <strong>VARP</strong>(mixed ...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>VARP.</p>                    <p>Calculates variance based on the entire population</p>
+
+<p>Excel Function:
+       VARP(value1[,value2[, ...]])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>...$args</td>
+                <td>Data values</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_VARPA">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L3522">line 3522</a></div>
+        <code>        static            float
+    <strong>VARPA</strong>(mixed ...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>VARPA.</p>                    <p>Calculates variance based on the entire population, including numbers, text, and logical values</p>
+
+<p>Excel Function:
+       VARPA(value1[,value2[, ...]])</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>...$args</td>
+                <td>Data values</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_WEIBULL">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L3574">line 3574</a></div>
+        <code>        static            float
+    <strong>WEIBULL</strong>(float $value, float $alpha, float $beta, bool $cumulative)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>WEIBULL.</p>                    <p>Returns the Weibull distribution. Use this distribution in reliability
+analysis, such as calculating a device's mean time to failure.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$alpha</td>
+                <td>Alpha Parameter</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$beta</td>
+                <td>Beta Parameter</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$cumulative</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ZTEST">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Calculation/Statistical.php#L3608">line 3608</a></div>
+        <code>        static            float
+    <strong>ZTEST</strong>(float $dataSet, float $m0, float $sigma = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>ZTEST.</p>                    <p>Returns the Weibull distribution. Use this distribution in reliability
+analysis, such as calculating a device's mean time to failure.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$dataSet</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$m0</td>
+                <td>Alpha Parameter</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$sigma</td>
+                <td>Beta Parameter</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

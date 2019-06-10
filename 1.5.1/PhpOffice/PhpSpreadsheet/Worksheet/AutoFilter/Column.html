@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column | PhpSpreadsheet</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PhpOffice_PhpSpreadsheet_Worksheet_AutoFilter_Column" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../../1.0.0/index.html" data-version="1.0.0">1.0.0</option>
+                                            <option value="../../../../../1.1.0/index.html" data-version="1.1.0">1.1.0</option>
+                                            <option value="../../../../../1.2.0/index.html" data-version="1.2.0">1.2.0</option>
+                                            <option value="../../../../../1.2.1/index.html" data-version="1.2.1">1.2.1</option>
+                                            <option value="../../../../../1.3.0/index.html" data-version="1.3.0">1.3.0</option>
+                                            <option value="../../../../../1.3.1/index.html" data-version="1.3.1">1.3.1</option>
+                                            <option value="../../../../../1.4.0/index.html" data-version="1.4.0">1.4.0</option>
+                                            <option value="../../../../../1.4.1/index.html" data-version="1.4.1">1.4.1</option>
+                                            <option value="../../../../../1.5.0/index.html" data-version="1.5.0">1.5.0</option>
+                                            <option value="../../../../../1.5.1/index.html" data-version="1.5.1">1.5.1</option>
+                                            <option value="../../../../../1.5.2/index.html" data-version="1.5.2">1.5.2</option>
+                                            <option value="../../../../../1.6.0/index.html" data-version="1.6.0">1.6.0</option>
+                                            <option value="../../../../../1.7.0/index.html" data-version="1.7.0">1.7.0</option>
+                                            <option value="../../../../../master/index.html" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">PhpSpreadsheet</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../PhpOffice.html">PhpOffice</a></li><li class="backslash">\</li><li><a href="../../../../PhpOffice/PhpSpreadsheet.html">PhpSpreadsheet</a></li><li class="backslash">\</li><li><a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet.html">Worksheet</a></li><li class="backslash">\</li><li><a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter.html">AutoFilter</a></li><li class="backslash">\</li><li>Column</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Column
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Column</strong>        (<a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.1/src/PhpSpreadsheet/Worksheet/AutoFilter/Column.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>AUTOFILTER_FILTERTYPE_FILTER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_FILTERTYPE_CUSTOMFILTER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_FILTERTYPE_DYNAMICFILTER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_FILTERTYPE_TOPTENFILTER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_COLUMN_JOIN_AND</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTOFILTER_COLUMN_JOIN_OR</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $pColumn, <a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter">AutoFilter</abbr></a> $pParent = null)
+        
+                                            <p>Create a new Column.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getColumnIndex">getColumnIndex</a>()
+        
+                                            <p>Get AutoFilter Column Index.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setColumnIndex">setColumnIndex</a>(string $pColumn)
+        
+                                            <p>Set AutoFilter Column Index.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter">AutoFilter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getParent">getParent</a>()
+        
+                                            <p>Get this Column's AutoFilter Parent.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setParent">setParent</a>(<a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter">AutoFilter</abbr></a> $pParent = null)
+        
+                                            <p>Set this Column's AutoFilter Parent.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFilterType">getFilterType</a>()
+        
+                                            <p>Get AutoFilter Type.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setFilterType">setFilterType</a>(string $pFilterType)
+        
+                                            <p>Set AutoFilter Type.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getJoin">getJoin</a>()
+        
+                                            <p>Get AutoFilter Multiple Rules And/Or Join.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setJoin">setJoin</a>(string $pJoin)
+        
+                                            <p>Set AutoFilter Multiple Rules And/Or.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAttributes">setAttributes</a>(array $attributes)
+        
+                                            <p>Set AutoFilter Attributes.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAttribute">setAttribute</a>(string $pName, string $pValue)
+        
+                                            <p>Set An AutoFilter Attribute.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAttributes">getAttributes</a>()
+        
+                                            <p>Get AutoFilter Column Attributes.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAttribute">getAttribute</a>(string $pName)
+        
+                                            <p>Get specific AutoFilter Column Attribute.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule">Rule</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRules">getRules</a>()
+        
+                                            <p>Get all AutoFilter Column Rules.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule">Rule</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRule">getRule</a>(int $pIndex)
+        
+                                            <p>Get a specified AutoFilter Column Rule.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule">Rule</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createRule">createRule</a>()
+        
+                                            <p>Create a new AutoFilter Column Rule in the ruleset.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addRule">addRule</a>(<a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule">Rule</abbr></a> $pRule)
+        
+                                            <p>Add a new AutoFilter Column Rule to the ruleset.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_deleteRule">deleteRule</a>(int $pIndex)
+        
+                                            <p>Delete a specified AutoFilter Column Rule
+If the number of rules is reduced to 1, then we reset And/Or logic to Or.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearRules">clearRules</a>()
+        
+                                            <p>Delete all AutoFilter Column Rules.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___clone">__clone</a>()
+        
+                                            <p>Implement PHP __clone to create a deep clone, not just a shallow copy.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.1/src/PhpSpreadsheet/Worksheet/AutoFilter/Column.php#L97">line 97</a></div>
+        <code>                    
+    <strong>__construct</strong>(string $pColumn, <a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter">AutoFilter</abbr></a> $pParent = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a new Column.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pColumn</td>
+                <td>Column (e.g. A)</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter">AutoFilter</abbr></a></td>
+                <td>$pParent</td>
+                <td>Autofilter for this column</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getColumnIndex">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.1/src/PhpSpreadsheet/Worksheet/AutoFilter/Column.php#L108">line 108</a></div>
+        <code>                    string
+    <strong>getColumnIndex</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get AutoFilter Column Index.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setColumnIndex">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.1/src/PhpSpreadsheet/Worksheet/AutoFilter/Column.php#L122">line 122</a></div>
+        <code>                    <a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a>
+    <strong>setColumnIndex</strong>(string $pColumn)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set AutoFilter Column Index.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pColumn</td>
+                <td>Column (e.g. A)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getParent">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.1/src/PhpSpreadsheet/Worksheet/AutoFilter/Column.php#L140">line 140</a></div>
+        <code>                    <a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter">AutoFilter</abbr></a>
+    <strong>getParent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get this Column's AutoFilter Parent.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter">AutoFilter</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setParent">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.1/src/PhpSpreadsheet/Worksheet/AutoFilter/Column.php#L152">line 152</a></div>
+        <code>                    <a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a>
+    <strong>setParent</strong>(<a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter">AutoFilter</abbr></a> $pParent = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set this Column's AutoFilter Parent.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter">AutoFilter</abbr></a></td>
+                <td>$pParent</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFilterType">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.1/src/PhpSpreadsheet/Worksheet/AutoFilter/Column.php#L164">line 164</a></div>
+        <code>                    string
+    <strong>getFilterType</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get AutoFilter Type.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFilterType">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.1/src/PhpSpreadsheet/Worksheet/AutoFilter/Column.php#L178">line 178</a></div>
+        <code>                    <a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a>
+    <strong>setFilterType</strong>(string $pFilterType)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set AutoFilter Type.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pFilterType</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getJoin">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.1/src/PhpSpreadsheet/Worksheet/AutoFilter/Column.php#L194">line 194</a></div>
+        <code>                    string
+    <strong>getJoin</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get AutoFilter Multiple Rules And/Or Join.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setJoin">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.1/src/PhpSpreadsheet/Worksheet/AutoFilter/Column.php#L208">line 208</a></div>
+        <code>                    <a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a>
+    <strong>setJoin</strong>(string $pJoin)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set AutoFilter Multiple Rules And/Or.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pJoin</td>
+                <td>And/Or</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAttributes">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.1/src/PhpSpreadsheet/Worksheet/AutoFilter/Column.php#L228">line 228</a></div>
+        <code>                    <a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a>
+    <strong>setAttributes</strong>(array $attributes)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set AutoFilter Attributes.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$attributes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAttribute">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.1/src/PhpSpreadsheet/Worksheet/AutoFilter/Column.php#L243">line 243</a></div>
+        <code>                    <a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a>
+    <strong>setAttribute</strong>(string $pName, string $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set An AutoFilter Attribute.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pName</td>
+                <td>Attribute Name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$pValue</td>
+                <td>Attribute Value</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAttributes">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.1/src/PhpSpreadsheet/Worksheet/AutoFilter/Column.php#L255">line 255</a></div>
+        <code>                    string[]
+    <strong>getAttributes</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get AutoFilter Column Attributes.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAttribute">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.1/src/PhpSpreadsheet/Worksheet/AutoFilter/Column.php#L267">line 267</a></div>
+        <code>                    string
+    <strong>getAttribute</strong>(string $pName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get specific AutoFilter Column Attribute.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pName</td>
+                <td>Attribute Name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRules">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.1/src/PhpSpreadsheet/Worksheet/AutoFilter/Column.php#L281">line 281</a></div>
+        <code>                    <a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule">Rule</abbr></a>[]
+    <strong>getRules</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get all AutoFilter Column Rules.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule">Rule</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRule">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.1/src/PhpSpreadsheet/Worksheet/AutoFilter/Column.php#L293">line 293</a></div>
+        <code>                    <a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule">Rule</abbr></a>
+    <strong>getRule</strong>(int $pIndex)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get a specified AutoFilter Column Rule.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$pIndex</td>
+                <td>Rule index in the ruleset array</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule">Rule</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createRule">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.1/src/PhpSpreadsheet/Worksheet/AutoFilter/Column.php#L307">line 307</a></div>
+        <code>                    <a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule">Rule</abbr></a>
+    <strong>createRule</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a new AutoFilter Column Rule in the ruleset.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule">Rule</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addRule">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.1/src/PhpSpreadsheet/Worksheet/AutoFilter/Column.php#L321">line 321</a></div>
+        <code>                    <a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a>
+    <strong>addRule</strong>(<a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule">Rule</abbr></a> $pRule)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a new AutoFilter Column Rule to the ruleset.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column/Rule.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule">Rule</abbr></a></td>
+                <td>$pRule</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteRule">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.1/src/PhpSpreadsheet/Worksheet/AutoFilter/Column.php#L337">line 337</a></div>
+        <code>                    <a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a>
+    <strong>deleteRule</strong>(int $pIndex)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Delete a specified AutoFilter Column Rule
+If the number of rules is reduced to 1, then we reset And/Or logic to Or.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$pIndex</td>
+                <td>Rule index in the ruleset array</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearRules">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.1/src/PhpSpreadsheet/Worksheet/AutoFilter/Column.php#L355">line 355</a></div>
+        <code>                    <a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a>
+    <strong>clearRules</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Delete all AutoFilter Column Rules.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/AutoFilter/Column.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column">Column</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___clone">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.1/src/PhpSpreadsheet/Worksheet/AutoFilter/Column.php#L366">line 366</a></div>
+        <code>                    
+    <strong>__clone</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Implement PHP __clone to create a deep clone, not just a shallow copy.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

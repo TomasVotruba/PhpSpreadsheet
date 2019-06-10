@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PhpOffice\PhpSpreadsheet\Style\Alignment | PhpSpreadsheet</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PhpOffice_PhpSpreadsheet_Style_Alignment" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../1.0.0/index.html" data-version="1.0.0">1.0.0</option>
+                                            <option value="../../../../1.1.0/index.html" data-version="1.1.0">1.1.0</option>
+                                            <option value="../../../../1.2.0/index.html" data-version="1.2.0">1.2.0</option>
+                                            <option value="../../../../1.2.1/index.html" data-version="1.2.1">1.2.1</option>
+                                            <option value="../../../../1.3.0/index.html" data-version="1.3.0">1.3.0</option>
+                                            <option value="../../../../1.3.1/index.html" data-version="1.3.1">1.3.1</option>
+                                            <option value="../../../../1.4.0/index.html" data-version="1.4.0">1.4.0</option>
+                                            <option value="../../../../1.4.1/index.html" data-version="1.4.1">1.4.1</option>
+                                            <option value="../../../../1.5.0/index.html" data-version="1.5.0">1.5.0</option>
+                                            <option value="../../../../1.5.1/index.html" data-version="1.5.1">1.5.1</option>
+                                            <option value="../../../../1.5.2/index.html" data-version="1.5.2">1.5.2</option>
+                                            <option value="../../../../1.6.0/index.html" data-version="1.6.0">1.6.0</option>
+                                            <option value="../../../../1.7.0/index.html" data-version="1.7.0">1.7.0</option>
+                                            <option value="../../../../master/index.html" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">PhpSpreadsheet</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../PhpOffice.html">PhpOffice</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet.html">PhpSpreadsheet</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet/Style.html">Style</a></li><li class="backslash">\</li><li>Alignment</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Alignment
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Alignment</strong>        extends <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a>        (<a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Alignment.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>HORIZONTAL_GENERAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HORIZONTAL_LEFT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HORIZONTAL_RIGHT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HORIZONTAL_CENTER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HORIZONTAL_CENTER_CONTINUOUS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HORIZONTAL_JUSTIFY</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HORIZONTAL_FILL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HORIZONTAL_DISTRIBUTED</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>VERTICAL_BOTTOM</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>VERTICAL_TOP</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>VERTICAL_CENTER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>VERTICAL_JUSTIFY</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>VERTICAL_DISTRIBUTED</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>READORDER_CONTEXT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>READORDER_LTR</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>READORDER_RTL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_isSupervisor">
+                                        protected                                        bool
+                </td>
+                <td>$isSupervisor</td>
+                <td class="last">Supervisor?</td>
+                <td><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#property_isSupervisor"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_parent">
+                                        protected                                        <a href="../../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a>|<a href="../../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a>
+                </td>
+                <td>$parent</td>
+                <td class="last">Parent. Only used for supervisor.</td>
+                <td><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#property_parent"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_parentPropertyName">
+                                        protected                                        null|string
+                </td>
+                <td>$parentPropertyName</td>
+                <td class="last">Parent property name.</td>
+                <td><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#property_parentPropertyName"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_horizontal">
+                                        protected                                        string
+                </td>
+                <td>$horizontal</td>
+                <td class="last">Horizontal alignment.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_vertical">
+                                        protected                                        string
+                </td>
+                <td>$vertical</td>
+                <td class="last">Vertical alignment.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_textRotation">
+                                        protected                                        int
+                </td>
+                <td>$textRotation</td>
+                <td class="last">Text rotation.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_wrapText">
+                                        protected                                        bool
+                </td>
+                <td>$wrapText</td>
+                <td class="last">Wrap text.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_shrinkToFit">
+                                        protected                                        bool
+                </td>
+                <td>$shrinkToFit</td>
+                <td class="last">Shrink to fit.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_indent">
+                                        protected                                        int
+                </td>
+                <td>$indent</td>
+                <td class="last">Indent - only possible with horizontal alignment left and right.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_readOrder">
+                                        protected                                        int
+                </td>
+                <td>$readOrder</td>
+                <td class="last">Read order.</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(bool $isSupervisor = false, bool $isConditional = false)
+        
+                                            <p>Create a new Alignment.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bindParent">bindParent</a>(<a href="../../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a>|<a href="../../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a> $parent, null|string $parentPropertyName = null)
+        
+                                            <p>Bind parent. Only used for supervisor.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_bindParent"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIsSupervisor">getIsSupervisor</a>()
+        
+                                            <p>Is this a supervisor or a cell style component?</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getIsSupervisor"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getActiveSheet">getActiveSheet</a>()
+        
+                                            <p>Get the currently active sheet. Only used for supervisor.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getActiveSheet"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSelectedCells">getSelectedCells</a>()
+        
+                                            <p>Get the currently active cell coordinate in currently active sheet.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getSelectedCells"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getActiveCell">getActiveCell</a>()
+        
+                                            <p>Get the currently active cell coordinate in currently active sheet.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getActiveCell"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___clone">__clone</a>()
+        
+                                            <p>Implement PHP __clone to create a deep clone, not just a shallow copy.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method___clone"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Alignment.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Alignment">Alignment</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSharedComponent">getSharedComponent</a>()
+        
+                                            <p>Get the shared style component for the currently active cell in currently active sheet.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStyleArray">getStyleArray</a>(array $array)
+        
+                                            <p>Build style array from subcomponents.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Alignment.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Alignment">Alignment</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_applyFromArray">applyFromArray</a>(array $pStyles)
+        
+                                            <p>Apply styles from array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHorizontal">getHorizontal</a>()
+        
+                                            <p>Get Horizontal.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Alignment.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Alignment">Alignment</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setHorizontal">setHorizontal</a>(string $pValue)
+        
+                                            <p>Set Horizontal.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getVertical">getVertical</a>()
+        
+                                            <p>Get Vertical.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Alignment.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Alignment">Alignment</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setVertical">setVertical</a>(string $pValue)
+        
+                                            <p>Set Vertical.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTextRotation">getTextRotation</a>()
+        
+                                            <p>Get TextRotation.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Alignment.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Alignment">Alignment</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTextRotation">setTextRotation</a>(int $pValue)
+        
+                                            <p>Set TextRotation.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getWrapText">getWrapText</a>()
+        
+                                            <p>Get Wrap Text.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Alignment.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Alignment">Alignment</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setWrapText">setWrapText</a>(bool $pValue)
+        
+                                            <p>Set Wrap Text.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getShrinkToFit">getShrinkToFit</a>()
+        
+                                            <p>Get Shrink to fit.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Alignment.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Alignment">Alignment</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setShrinkToFit">setShrinkToFit</a>(bool $pValue)
+        
+                                            <p>Set Shrink to fit.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIndent">getIndent</a>()
+        
+                                            <p>Get indent.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Alignment.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Alignment">Alignment</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setIndent">setIndent</a>(int $pValue)
+        
+                                            <p>Set indent.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getReadOrder">getReadOrder</a>()
+        
+                                            <p>Get read order.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Alignment.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Alignment">Alignment</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setReadOrder">setReadOrder</a>(int $pValue)
+        
+                                            <p>Set read order.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHashCode">getHashCode</a>()
+        
+                                            <p>Get hash code.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Alignment.php#L90">line 90</a></div>
+        <code>                    
+    <strong>__construct</strong>(bool $isSupervisor = false, bool $isConditional = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a new Alignment.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$isSupervisor</td>
+                <td>Flag indicating if this is a supervisor or not
+                                   Leave this value at default unless you understand exactly what
+                                       its ramifications are</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$isConditional</td>
+                <td>Flag indicating if this is a conditional style or not
+                                      Leave this value at default unless you understand exactly what
+                                         its ramifications are</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bindParent">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_bindParent"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Supervisor.php#L53">line 53</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a>
+    <strong>bindParent</strong>(<a href="../../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a>|<a href="../../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a> $parent, null|string $parentPropertyName = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Bind parent. Only used for supervisor.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a>|<a href="../../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a></td>
+                <td>$parent</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>null|string</td>
+                <td>$parentPropertyName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIsSupervisor">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getIsSupervisor"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Supervisor.php#L66">line 66</a></div>
+        <code>                    bool
+    <strong>getIsSupervisor</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Is this a supervisor or a cell style component?</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getActiveSheet">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getActiveSheet"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Supervisor.php#L76">line 76</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>
+    <strong>getActiveSheet</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the currently active sheet. Only used for supervisor.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSelectedCells">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getSelectedCells"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Supervisor.php#L87">line 87</a></div>
+        <code>                    string
+    <strong>getSelectedCells</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the currently active cell coordinate in currently active sheet.</p>                    <p>Only used for supervisor.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>E.g. 'A1'</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getActiveCell">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getActiveCell"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Supervisor.php#L98">line 98</a></div>
+        <code>                    string
+    <strong>getActiveCell</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the currently active cell coordinate in currently active sheet.</p>                    <p>Only used for supervisor.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>E.g. 'A1'</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___clone">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method___clone"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Supervisor.php#L106">line 106</a></div>
+        <code>                    
+    <strong>__clone</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Implement PHP __clone to create a deep clone, not just a shallow copy.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSharedComponent">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Alignment.php#L108">line 108</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Alignment.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Alignment">Alignment</abbr></a>
+    <strong>getSharedComponent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the shared style component for the currently active cell in currently active sheet.</p>                    <p>Only used for style supervisor.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Alignment.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Alignment">Alignment</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStyleArray">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Alignment.php#L120">line 120</a></div>
+        <code>                    array
+    <strong>getStyleArray</strong>(array $array)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Build style array from subcomponents.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$array</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_applyFromArray">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Alignment.php#L145">line 145</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Alignment.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Alignment">Alignment</abbr></a>
+    <strong>applyFromArray</strong>(array $pStyles)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Apply styles from array.</p>                    <p><code>
+$spreadsheet->getActiveSheet()->getStyle('B2')->getAlignment()->applyFromArray(
+       [
+           'horizontal'   => \PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER,
+           'vertical'     => \PhpOffice\PhpSpreadsheet\Style\Alignment::VERTICAL_CENTER,
+           'textRotation' => 0,
+           'wrapText'     => TRUE
+       ]
+);
+</code></p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$pStyles</td>
+                <td>Array containing style information</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Alignment.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Alignment">Alignment</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHorizontal">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Alignment.php#L182">line 182</a></div>
+        <code>                    string
+    <strong>getHorizontal</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Horizontal.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setHorizontal">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Alignment.php#L198">line 198</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Alignment.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Alignment">Alignment</abbr></a>
+    <strong>setHorizontal</strong>(string $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Horizontal.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pValue</td>
+                <td>see self::HORIZONTAL_*</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Alignment.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Alignment">Alignment</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getVertical">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Alignment.php#L219">line 219</a></div>
+        <code>                    string
+    <strong>getVertical</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Vertical.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setVertical">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Alignment.php#L235">line 235</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Alignment.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Alignment">Alignment</abbr></a>
+    <strong>setVertical</strong>(string $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Vertical.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pValue</td>
+                <td>see self::VERTICAL_*</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Alignment.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Alignment">Alignment</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTextRotation">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Alignment.php#L256">line 256</a></div>
+        <code>                    int
+    <strong>getTextRotation</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get TextRotation.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTextRotation">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Alignment.php#L274">line 274</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Alignment.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Alignment">Alignment</abbr></a>
+    <strong>setTextRotation</strong>(int $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set TextRotation.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Alignment.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Alignment">Alignment</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getWrapText">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Alignment.php#L301">line 301</a></div>
+        <code>                    bool
+    <strong>getWrapText</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Wrap Text.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setWrapText">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Alignment.php#L317">line 317</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Alignment.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Alignment">Alignment</abbr></a>
+    <strong>setWrapText</strong>(bool $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Wrap Text.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Alignment.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Alignment">Alignment</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getShrinkToFit">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Alignment.php#L337">line 337</a></div>
+        <code>                    bool
+    <strong>getShrinkToFit</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Shrink to fit.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setShrinkToFit">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Alignment.php#L353">line 353</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Alignment.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Alignment">Alignment</abbr></a>
+    <strong>setShrinkToFit</strong>(bool $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Shrink to fit.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Alignment.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Alignment">Alignment</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIndent">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Alignment.php#L373">line 373</a></div>
+        <code>                    int
+    <strong>getIndent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get indent.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIndent">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Alignment.php#L389">line 389</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Alignment.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Alignment">Alignment</abbr></a>
+    <strong>setIndent</strong>(int $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set indent.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Alignment.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Alignment">Alignment</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getReadOrder">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Alignment.php#L413">line 413</a></div>
+        <code>                    int
+    <strong>getReadOrder</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get read order.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setReadOrder">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Alignment.php#L429">line 429</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Alignment.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Alignment">Alignment</abbr></a>
+    <strong>setReadOrder</strong>(int $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set read order.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Alignment.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Alignment">Alignment</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHashCode">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Alignment.php#L449">line 449</a></div>
+        <code>                    string
+    <strong>getHashCode</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get hash code.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Hash code</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

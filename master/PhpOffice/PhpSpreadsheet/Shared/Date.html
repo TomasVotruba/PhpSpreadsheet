@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PhpOffice\PhpSpreadsheet\Shared\Date | PhpSpreadsheet</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PhpOffice_PhpSpreadsheet_Shared_Date" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../1.0.0/index.html" data-version="1.0.0">1.0.0</option>
+                                            <option value="../../../../1.1.0/index.html" data-version="1.1.0">1.1.0</option>
+                                            <option value="../../../../1.2.0/index.html" data-version="1.2.0">1.2.0</option>
+                                            <option value="../../../../1.2.1/index.html" data-version="1.2.1">1.2.1</option>
+                                            <option value="../../../../1.3.0/index.html" data-version="1.3.0">1.3.0</option>
+                                            <option value="../../../../1.3.1/index.html" data-version="1.3.1">1.3.1</option>
+                                            <option value="../../../../1.4.0/index.html" data-version="1.4.0">1.4.0</option>
+                                            <option value="../../../../1.4.1/index.html" data-version="1.4.1">1.4.1</option>
+                                            <option value="../../../../1.5.0/index.html" data-version="1.5.0">1.5.0</option>
+                                            <option value="../../../../1.5.1/index.html" data-version="1.5.1">1.5.1</option>
+                                            <option value="../../../../1.5.2/index.html" data-version="1.5.2">1.5.2</option>
+                                            <option value="../../../../1.6.0/index.html" data-version="1.6.0">1.6.0</option>
+                                            <option value="../../../../1.7.0/index.html" data-version="1.7.0">1.7.0</option>
+                                            <option value="../../../../master/index.html" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">PhpSpreadsheet</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../PhpOffice.html">PhpOffice</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet.html">PhpSpreadsheet</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet/Shared.html">Shared</a></li><li class="backslash">\</li><li>Date</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Date
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Date</strong>        (<a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Shared/Date.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>CALENDAR_WINDOWS_1900</td>
+                <td class="last">
+                    <p><em>constants</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CALENDAR_MAC_1904</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_monthNames">
+                    static                                                            string[]
+                </td>
+                <td>$monthNames</td>
+                <td class="last">Names of the months of the year, indexed by shortname
+Planned usage for locale settings.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_numberSuffixes">
+                    static                                                            string[]
+                </td>
+                <td>$numberSuffixes</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_excelCalendar">
+                    static                    protected                                        int
+                </td>
+                <td>$excelCalendar</td>
+                <td class="last">Base calendar year to use for calculations
+Value is either CALENDAR_WINDOWS_1900 (1900) or CALENDAR_MAC_1904 (1904).</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_defaultTimeZone">
+                    static                    protected                                        null|<a target="_blank" href="http://php.net/DateTimeZone">DateTimeZone</a>
+                </td>
+                <td>$defaultTimeZone</td>
+                <td class="last">Default timezone to use for DateTime objects.</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setExcelCalendar">setExcelCalendar</a>(int $baseDate)
+        
+                                            <p>Set the Excel calendar (Windows 1900 or Mac 1904).</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getExcelCalendar">getExcelCalendar</a>()
+        
+                                            <p>Return the Excel calendar (Windows 1900 or Mac 1904).</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDefaultTimezone">setDefaultTimezone</a>(<a target="_blank" href="http://php.net/DateTimeZone">DateTimeZone</a>|string $timeZone)
+        
+                                            <p>Set the Default timezone to use for dates.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a target="_blank" href="http://php.net/DateTimeZone">DateTimeZone</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDefaultTimezone">getDefaultTimezone</a>()
+        
+                                            <p>Return the Default timezone being used for dates.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a target="_blank" href="http://php.net/DateTimeZone">DateTimeZone</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validateTimeZone">validateTimeZone</a>(<a target="_blank" href="http://php.net/DateTimeZone">DateTimeZone</a>|string $timeZone)
+        
+                                            <p>Validate a timezone.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a target="_blank" href="http://php.net/DateTime">DateTime</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_excelToDateTimeObject">excelToDateTimeObject</a>(float|int $excelTimestamp, null|<a target="_blank" href="http://php.net/DateTimeZone">DateTimeZone</a>|string $timeZone = null)
+        
+                                            <p>Convert a MS serialized datetime value from Excel to a PHP Date/Time object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_excelToTimestamp">excelToTimestamp</a>(float|int $excelTimestamp, null|<a target="_blank" href="http://php.net/DateTimeZone">DateTimeZone</a>|string $timeZone = null)
+        
+                                            <p>Convert a MS serialized datetime value from Excel to a unix timestamp.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool|float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_PHPToExcel">PHPToExcel</a>(mixed $dateValue)
+        
+                                            <p>Convert a date from PHP to an MS Excel serialized date/time value.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dateTimeToExcel">dateTimeToExcel</a>(<a target="_blank" href="http://php.net/DateTimeInterface">DateTimeInterface</a> $dateValue)
+        
+                                            <p>Convert a PHP DateTime object to an MS Excel serialized date/time value.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_timestampToExcel">timestampToExcel</a>(int $dateValue)
+        
+                                            <p>Convert a Unix timestamp to an MS Excel serialized date/time value.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_formattedPHPToExcel">formattedPHPToExcel</a>(int $year, int $month, int $day, int $hours = 0, int $minutes = 0, int $seconds = 0)
+        
+                                            <p>formattedPHPToExcel.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isDateTime">isDateTime</a>(<a href="../../../PhpOffice/PhpSpreadsheet/Cell/Cell.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\Cell">Cell</abbr></a> $pCell)
+        
+                                            <p>Is a given cell a date/time?</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isDateTimeFormat">isDateTimeFormat</a>(<a href="../../../PhpOffice/PhpSpreadsheet/Style/NumberFormat.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\NumberFormat">NumberFormat</abbr></a> $pFormat)
+        
+                                            <p>Is a given number format a date/time?</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isDateTimeFormatCode">isDateTimeFormatCode</a>(string $pFormatCode)
+        
+                                            <p>Is a given number format code a date/time?</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;false|float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_stringToExcel">stringToExcel</a>(string $dateValue)
+        
+                                            <p>Convert a date/time string to Excel time.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_monthStringToNumber">monthStringToNumber</a>(string $month)
+        
+                                            <p>Converts a month name (either a long or a short name) to a month number.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dayStringToNumber">dayStringToNumber</a>(string $day)
+        
+                                            <p>Strips an ordinal from a numeric value.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_setExcelCalendar">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Shared/Date.php#L71">line 71</a></div>
+        <code>        static            bool
+    <strong>setExcelCalendar</strong>(int $baseDate)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the Excel calendar (Windows 1900 or Mac 1904).</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$baseDate</td>
+                <td>Excel base date (1900 or 1904)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>Success or failure</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getExcelCalendar">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Shared/Date.php#L88">line 88</a></div>
+        <code>        static            int
+    <strong>getExcelCalendar</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return the Excel calendar (Windows 1900 or Mac 1904).</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>Excel base date (1900 or 1904)</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDefaultTimezone">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Shared/Date.php#L103">line 103</a></div>
+        <code>        static            bool
+    <strong>setDefaultTimezone</strong>(<a target="_blank" href="http://php.net/DateTimeZone">DateTimeZone</a>|string $timeZone)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the Default timezone to use for dates.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/DateTimeZone">DateTimeZone</a>|string</td>
+                <td>$timeZone</td>
+                <td>The timezone to set for all Excel datetimestamp to PHP DateTime Object conversions</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>Success or failure</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDefaultTimezone">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Shared/Date.php#L119">line 119</a></div>
+        <code>        static            <a target="_blank" href="http://php.net/DateTimeZone">DateTimeZone</a>
+    <strong>getDefaultTimezone</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return the Default timezone being used for dates.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/DateTimeZone">DateTimeZone</a></td>
+            <td>The timezone being used as default for Excel timestamp to PHP DateTime object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validateTimeZone">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Shared/Date.php#L138">line 138</a></div>
+        <code>        static    protected        <a target="_blank" href="http://php.net/DateTimeZone">DateTimeZone</a>
+    <strong>validateTimeZone</strong>(<a target="_blank" href="http://php.net/DateTimeZone">DateTimeZone</a>|string $timeZone)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Validate a timezone.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/DateTimeZone">DateTimeZone</a>|string</td>
+                <td>$timeZone</td>
+                <td>The timezone to validate, either as a timezone string or object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/DateTimeZone">DateTimeZone</a></td>
+            <td>The timezone as a timezone object</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_excelToDateTimeObject">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Shared/Date.php#L161">line 161</a></div>
+        <code>        static            <a target="_blank" href="http://php.net/DateTime">DateTime</a>
+    <strong>excelToDateTimeObject</strong>(float|int $excelTimestamp, null|<a target="_blank" href="http://php.net/DateTimeZone">DateTimeZone</a>|string $timeZone = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convert a MS serialized datetime value from Excel to a PHP Date/Time object.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float|int</td>
+                <td>$excelTimestamp</td>
+                <td>MS Excel serialized date/time value</td>
+            </tr>
+                    <tr>
+                <td>null|<a target="_blank" href="http://php.net/DateTimeZone">DateTimeZone</a>|string</td>
+                <td>$timeZone</td>
+                <td>The timezone to assume for the Excel timestamp,
+                                                                       if you don't want to treat it as a UTC value
+                                                                   Use the default (UST) unless you absolutely need a conversion</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/DateTime">DateTime</a></td>
+            <td>PHP date/time object</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_excelToTimestamp">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Shared/Date.php#L210">line 210</a></div>
+        <code>        static            int
+    <strong>excelToTimestamp</strong>(float|int $excelTimestamp, null|<a target="_blank" href="http://php.net/DateTimeZone">DateTimeZone</a>|string $timeZone = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convert a MS serialized datetime value from Excel to a unix timestamp.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float|int</td>
+                <td>$excelTimestamp</td>
+                <td>MS Excel serialized date/time value</td>
+            </tr>
+                    <tr>
+                <td>null|<a target="_blank" href="http://php.net/DateTimeZone">DateTimeZone</a>|string</td>
+                <td>$timeZone</td>
+                <td>The timezone to assume for the Excel timestamp,
+                                                                       if you don't want to treat it as a UTC value
+                                                                   Use the default (UST) unless you absolutely need a conversion</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>Unix timetamp for this date/time</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_PHPToExcel">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Shared/Date.php#L224">line 224</a></div>
+        <code>        static            bool|float
+    <strong>PHPToExcel</strong>(mixed $dateValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convert a date from PHP to an MS Excel serialized date/time value.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$dateValue</td>
+                <td>Unix Timestamp or PHP DateTime object or a string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|float</td>
+            <td>Excel date/time value
+                                 or boolean FALSE on failure</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dateTimeToExcel">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Shared/Date.php#L244">line 244</a></div>
+        <code>        static            float
+    <strong>dateTimeToExcel</strong>(<a target="_blank" href="http://php.net/DateTimeInterface">DateTimeInterface</a> $dateValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convert a PHP DateTime object to an MS Excel serialized date/time value.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/DateTimeInterface">DateTimeInterface</a></td>
+                <td>$dateValue</td>
+                <td>PHP DateTime object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td>MS Excel serialized date/time value</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_timestampToExcel">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Shared/Date.php#L263">line 263</a></div>
+        <code>        static            float
+    <strong>timestampToExcel</strong>(int $dateValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convert a Unix timestamp to an MS Excel serialized date/time value.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$dateValue</td>
+                <td>Unix Timestamp</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td>MS Excel serialized date/time value</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_formattedPHPToExcel">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Shared/Date.php#L284">line 284</a></div>
+        <code>        static            float
+    <strong>formattedPHPToExcel</strong>(int $year, int $month, int $day, int $hours = 0, int $minutes = 0, int $seconds = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>formattedPHPToExcel.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$year</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$month</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$day</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$hours</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$minutes</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$seconds</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td>Excel date/time value</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isDateTime">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Shared/Date.php#L326">line 326</a></div>
+        <code>        static            bool
+    <strong>isDateTime</strong>(<a href="../../../PhpOffice/PhpSpreadsheet/Cell/Cell.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\Cell">Cell</abbr></a> $pCell)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Is a given cell a date/time?</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Cell/Cell.html"><abbr title="PhpOffice\PhpSpreadsheet\Cell\Cell">Cell</abbr></a></td>
+                <td>$pCell</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isDateTimeFormat">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Shared/Date.php#L343">line 343</a></div>
+        <code>        static            bool
+    <strong>isDateTimeFormat</strong>(<a href="../../../PhpOffice/PhpSpreadsheet/Style/NumberFormat.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\NumberFormat">NumberFormat</abbr></a> $pFormat)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Is a given number format a date/time?</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/NumberFormat.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\NumberFormat">NumberFormat</abbr></a></td>
+                <td>$pFormat</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isDateTimeFormatCode">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Shared/Date.php#L357">line 357</a></div>
+        <code>        static            bool
+    <strong>isDateTimeFormatCode</strong>(string $pFormatCode)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Is a given number format code a date/time?</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pFormatCode</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stringToExcel">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Shared/Date.php#L431">line 431</a></div>
+        <code>        static            false|float
+    <strong>stringToExcel</strong>(string $dateValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convert a date/time string to Excel time.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$dateValue</td>
+                <td>Examples: '2009-12-31', '2009-12-31 15:59', '2009-12-31 15:59:10'</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>false|float</td>
+            <td>Excel date/time serial value</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_monthStringToNumber">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Shared/Date.php#L464">line 464</a></div>
+        <code>        static            int|string
+    <strong>monthStringToNumber</strong>(string $month)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Converts a month name (either a long or a short name) to a month number.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$month</td>
+                <td>Month name or abbreviation</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|string</td>
+            <td>Month number (1 - 12), or the original string argument if it isn't a valid month name</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dayStringToNumber">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/master/src/PhpSpreadsheet/Shared/Date.php#L484">line 484</a></div>
+        <code>        static            int|string
+    <strong>dayStringToNumber</strong>(string $day)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Strips an ordinal from a numeric value.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$day</td>
+                <td>Day number with an ordinal</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|string</td>
+            <td>The integer value with any ordinal stripped, or the original string argument if it isn't a valid numeric</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

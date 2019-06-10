@@ -1,0 +1,3742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PhpOffice\PhpSpreadsheet\Spreadsheet | PhpSpreadsheet</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PhpOffice_PhpSpreadsheet_Spreadsheet" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../1.0.0/index.html" data-version="1.0.0">1.0.0</option>
+                                            <option value="../../../1.1.0/index.html" data-version="1.1.0">1.1.0</option>
+                                            <option value="../../../1.2.0/index.html" data-version="1.2.0">1.2.0</option>
+                                            <option value="../../../1.2.1/index.html" data-version="1.2.1">1.2.1</option>
+                                            <option value="../../../1.3.0/index.html" data-version="1.3.0">1.3.0</option>
+                                            <option value="../../../1.3.1/index.html" data-version="1.3.1">1.3.1</option>
+                                            <option value="../../../1.4.0/index.html" data-version="1.4.0">1.4.0</option>
+                                            <option value="../../../1.4.1/index.html" data-version="1.4.1">1.4.1</option>
+                                            <option value="../../../1.5.0/index.html" data-version="1.5.0">1.5.0</option>
+                                            <option value="../../../1.5.1/index.html" data-version="1.5.1">1.5.1</option>
+                                            <option value="../../../1.5.2/index.html" data-version="1.5.2">1.5.2</option>
+                                            <option value="../../../1.6.0/index.html" data-version="1.6.0">1.6.0</option>
+                                            <option value="../../../1.7.0/index.html" data-version="1.7.0">1.7.0</option>
+                                            <option value="../../../master/index.html" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">PhpSpreadsheet</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../PhpOffice.html">PhpOffice</a></li><li class="backslash">\</li><li><a href="../../PhpOffice/PhpSpreadsheet.html">PhpSpreadsheet</a></li><li class="backslash">\</li><li>Spreadsheet</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Spreadsheet
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Spreadsheet</strong>        (<a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>VISIBILITY_VISIBLE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>VISIBILITY_HIDDEN</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>VISIBILITY_VERY_HIDDEN</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasMacros">hasMacros</a>()
+        
+                                            <p>The workbook has macros ?</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setHasMacros">setHasMacros</a>(bool $hasMacros)
+        
+                                            <p>Define if a workbook has macros.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMacrosCode">setMacrosCode</a>(string $macroCode)
+        
+                                            <p>Set the macros code.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    null|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMacrosCode">getMacrosCode</a>()
+        
+                                            <p>Return the macros code.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMacrosCertificate">setMacrosCertificate</a>(null|string $certificate)
+        
+                                            <p>Set the macros certificate.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasMacrosCertificate">hasMacrosCertificate</a>()
+        
+                                            <p>Is the project signed ?</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    null|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMacrosCertificate">getMacrosCertificate</a>()
+        
+                                            <p>Return the macros certificate.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_discardMacros">discardMacros</a>()
+        
+                                            <p>Remove all macros, certificate from spreadsheet.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRibbonXMLData">setRibbonXMLData</a>(null|mixed $target, null|mixed $xmlData)
+        
+                                            <p>set ribbon XML data.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRibbonXMLData">getRibbonXMLData</a>(string $what = &#039;all&#039;)
+        
+                                            <p>retrieve ribbon XML Data.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRibbonBinObjects">setRibbonBinObjects</a>(null|mixed $BinObjectsNames, null|mixed $BinObjectsData)
+        
+                                            <p>store binaries ribbon objects (pictures).</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUnparsedLoadedData">getUnparsedLoadedData</a>()
+        
+                                            <p>List of unparsed loaded data for export to same format with better compatibility.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setUnparsedLoadedData">setUnparsedLoadedData</a>(array $unparsedLoadedData)
+        
+                                            <p>List of unparsed loaded data for export to same format with better compatibility.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    null|array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRibbonBinObjects">getRibbonBinObjects</a>(string $what = &#039;all&#039;)
+        
+                                            <p>retrieve Binaries Ribbon Objects.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasRibbon">hasRibbon</a>()
+        
+                                            <p>This workbook have a custom UI ?</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasRibbonBinObjects">hasRibbonBinObjects</a>()
+        
+                                            <p>This workbook have additionnal object for the ribbon ?</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sheetCodeNameExists">sheetCodeNameExists</a>(string $pSheetCodeName)
+        
+                                            <p>Check if a sheet with a specified code name already exists.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSheetByCodeName">getSheetByCodeName</a>(string $pName)
+        
+                                            <p>Get sheet by code name. Warning : sheet don't have always a code name !</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>()
+        
+                                            <p>Create a new PhpSpreadsheet with one Worksheet.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___destruct">__destruct</a>()
+        
+                                            <p>Code to execute when this worksheet is unset().</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_disconnectWorksheets">disconnectWorksheets</a>()
+        
+                                            <p>Disconnect all worksheets from this PhpSpreadsheet workbook object,
+typically so that the PhpSpreadsheet object can be unset.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../PhpOffice/PhpSpreadsheet/Calculation/Calculation.html"><abbr title="PhpOffice\PhpSpreadsheet\Calculation\Calculation">Calculation</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCalculationEngine">getCalculationEngine</a>()
+        
+                                            <p>Return the calculation engine for this worksheet.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../PhpOffice/PhpSpreadsheet/Document/Properties.html"><abbr title="PhpOffice\PhpSpreadsheet\Document\Properties">Properties</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getProperties">getProperties</a>()
+        
+                                            <p>Get properties.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setProperties">setProperties</a>(<a href="../../PhpOffice/PhpSpreadsheet/Document/Properties.html"><abbr title="PhpOffice\PhpSpreadsheet\Document\Properties">Properties</abbr></a> $pValue)
+        
+                                            <p>Set properties.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../PhpOffice/PhpSpreadsheet/Document/Security.html"><abbr title="PhpOffice\PhpSpreadsheet\Document\Security">Security</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSecurity">getSecurity</a>()
+        
+                                            <p>Get security.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setSecurity">setSecurity</a>(<a href="../../PhpOffice/PhpSpreadsheet/Document/Security.html"><abbr title="PhpOffice\PhpSpreadsheet\Document\Security">Security</abbr></a> $pValue)
+        
+                                            <p>Set security.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getActiveSheet">getActiveSheet</a>()
+        
+                                            <p>Get active sheet.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createSheet">createSheet</a>(null|int $sheetIndex = null)
+        
+                                            <p>Create sheet and add it to this workbook.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sheetNameExists">sheetNameExists</a>(string $pSheetName)
+        
+                                            <p>Check if a sheet with a specified name already exists.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addSheet">addSheet</a>(<a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $pSheet, null|int $iSheetIndex = null)
+        
+                                            <p>Add sheet.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeSheetByIndex">removeSheetByIndex</a>(int $pIndex)
+        
+                                            <p>Remove sheet by index.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSheet">getSheet</a>(int $pIndex)
+        
+                                            <p>Get sheet by index.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAllSheets">getAllSheets</a>()
+        
+                                            <p>Get all sheets.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSheetByName">getSheetByName</a>(string $pName)
+        
+                                            <p>Get sheet by name.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIndex">getIndex</a>(<a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $pSheet)
+        
+                                            <p>Get index for sheet.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setIndexByName">setIndexByName</a>(string $sheetName, int $newIndex)
+        
+                                            <p>Set index for sheet by sheet name.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSheetCount">getSheetCount</a>()
+        
+                                            <p>Get sheet count.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getActiveSheetIndex">getActiveSheetIndex</a>()
+        
+                                            <p>Get active sheet index.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setActiveSheetIndex">setActiveSheetIndex</a>(int $pIndex)
+        
+                                            <p>Set active sheet index.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setActiveSheetIndexByName">setActiveSheetIndexByName</a>(string $pValue)
+        
+                                            <p>Set active sheet index by name.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSheetNames">getSheetNames</a>()
+        
+                                            <p>Get sheet names.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addExternalSheet">addExternalSheet</a>(<a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $pSheet, null|int $iSheetIndex = null)
+        
+                                            <p>Add external sheet.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../PhpOffice/PhpSpreadsheet/NamedRange.html"><abbr title="PhpOffice\PhpSpreadsheet\NamedRange">NamedRange</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getNamedRanges">getNamedRanges</a>()
+        
+                                            <p>Get named ranges.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addNamedRange">addNamedRange</a>(<a href="../../PhpOffice/PhpSpreadsheet/NamedRange.html"><abbr title="PhpOffice\PhpSpreadsheet\NamedRange">NamedRange</abbr></a> $namedRange)
+        
+                                            <p>Add named range.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    null|<a href="../../PhpOffice/PhpSpreadsheet/NamedRange.html"><abbr title="PhpOffice\PhpSpreadsheet\NamedRange">NamedRange</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getNamedRange">getNamedRange</a>(string $namedRange, <a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $pSheet = null)
+        
+                                            <p>Get named range.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeNamedRange">removeNamedRange</a>(string $namedRange, <a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $pSheet = null)
+        
+                                            <p>Remove named range.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Iterator.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Iterator">Iterator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getWorksheetIterator">getWorksheetIterator</a>()
+        
+                                            <p>Get worksheet iterator.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_copy">copy</a>()
+        
+                                            <p>Copy workbook (!= clone!).</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___clone">__clone</a>()
+        
+                                            <p>Implement PHP __clone to create a deep clone, not just a shallow copy.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCellXfCollection">getCellXfCollection</a>()
+        
+                                            <p>Get the workbook collection of cellXfs.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCellXfByIndex">getCellXfByIndex</a>(int $pIndex)
+        
+                                            <p>Get cellXf by index.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    false|<a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCellXfByHashCode">getCellXfByHashCode</a>(string $pValue)
+        
+                                            <p>Get cellXf by hash code.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_cellXfExists">cellXfExists</a>(<a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a> $pCellStyle)
+        
+                                            <p>Check if style exists in style collection.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDefaultStyle">getDefaultStyle</a>()
+        
+                                            <p>Get default style.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addCellXf">addCellXf</a>(<a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a> $style)
+        
+                                            <p>Add a cellXf to the workbook.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeCellXfByIndex">removeCellXfByIndex</a>(int $pIndex)
+        
+                                            <p>Remove cellXf by index. It is ensured that all cells get their xf index updated.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCellXfSupervisor">getCellXfSupervisor</a>()
+        
+                                            <p>Get the cellXf supervisor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCellStyleXfCollection">getCellStyleXfCollection</a>()
+        
+                                            <p>Get the workbook collection of cellStyleXfs.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCellStyleXfByIndex">getCellStyleXfByIndex</a>(int $pIndex)
+        
+                                            <p>Get cellStyleXf by index.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    false|<a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCellStyleXfByHashCode">getCellStyleXfByHashCode</a>(string $pValue)
+        
+                                            <p>Get cellStyleXf by hash code.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addCellStyleXf">addCellStyleXf</a>(<a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a> $pStyle)
+        
+                                            <p>Add a cellStyleXf to the workbook.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeCellStyleXfByIndex">removeCellStyleXfByIndex</a>(int $pIndex)
+        
+                                            <p>Remove cellStyleXf by index.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_garbageCollect">garbageCollect</a>()
+        
+                                            <p>Eliminate all unneeded cellXf and afterwards update the xfIndex for all cells
+and columns in the workbook.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getID">getID</a>()
+        
+                                            <p>Return the unique ID value assigned to this spreadsheet workbook.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getShowHorizontalScroll">getShowHorizontalScroll</a>()
+        
+                                            <p>Get the visibility of the horizonal scroll bar in the application.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setShowHorizontalScroll">setShowHorizontalScroll</a>(bool $showHorizontalScroll)
+        
+                                            <p>Set the visibility of the horizonal scroll bar in the application.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getShowVerticalScroll">getShowVerticalScroll</a>()
+        
+                                            <p>Get the visibility of the vertical scroll bar in the application.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setShowVerticalScroll">setShowVerticalScroll</a>(bool $showVerticalScroll)
+        
+                                            <p>Set the visibility of the vertical scroll bar in the application.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getShowSheetTabs">getShowSheetTabs</a>()
+        
+                                            <p>Get the visibility of the sheet tabs in the application.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setShowSheetTabs">setShowSheetTabs</a>(bool $showSheetTabs)
+        
+                                            <p>Set the visibility of the sheet tabs  in the application.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMinimized">getMinimized</a>()
+        
+                                            <p>Return whether the workbook window is minimized.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMinimized">setMinimized</a>(bool $minimized)
+        
+                                            <p>Set whether the workbook window is minimized.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAutoFilterDateGrouping">getAutoFilterDateGrouping</a>()
+        
+                                            <p>Return whether to group dates when presenting the user with
+filtering optiomd in the user interface.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAutoFilterDateGrouping">setAutoFilterDateGrouping</a>(bool $autoFilterDateGrouping)
+        
+                                            <p>Set whether to group dates when presenting the user with
+filtering optiomd in the user interface.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFirstSheetIndex">getFirstSheetIndex</a>()
+        
+                                            <p>Return the first sheet in the book view.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setFirstSheetIndex">setFirstSheetIndex</a>(int $firstSheetIndex)
+        
+                                            <p>Set the first sheet in the book view.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getVisibility">getVisibility</a>()
+        
+                                            <p>Return the visibility status of the workbook.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setVisibility">setVisibility</a>(string $visibility)
+        
+                                            <p>Set the visibility status of the workbook.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTabRatio">getTabRatio</a>()
+        
+                                            <p>Get the ratio between the workbook tabs bar and the horizontal scroll bar.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTabRatio">setTabRatio</a>(int $tabRatio)
+        
+                                            <p>Set the ratio between the workbook tabs bar and the horizontal scroll bar
+TabRatio is assumed to be out of 1000 of the horizontal window width.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_hasMacros">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L203">line 203</a></div>
+        <code>                    bool
+    <strong>hasMacros</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>The workbook has macros ?</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setHasMacros">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L213">line 213</a></div>
+        <code>                    
+    <strong>setHasMacros</strong>(bool $hasMacros)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Define if a workbook has macros.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$hasMacros</td>
+                <td>true|false</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMacrosCode">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L223">line 223</a></div>
+        <code>                    
+    <strong>setMacrosCode</strong>(string $macroCode)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the macros code.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$macroCode</td>
+                <td>string|null</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMacrosCode">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L234">line 234</a></div>
+        <code>                    null|string
+    <strong>getMacrosCode</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return the macros code.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>null|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMacrosCertificate">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L244">line 244</a></div>
+        <code>                    
+    <strong>setMacrosCertificate</strong>(null|string $certificate)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the macros certificate.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>null|string</td>
+                <td>$certificate</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasMacrosCertificate">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L254">line 254</a></div>
+        <code>                    bool
+    <strong>hasMacrosCertificate</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Is the project signed ?</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true|false</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMacrosCertificate">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L264">line 264</a></div>
+        <code>                    null|string
+    <strong>getMacrosCertificate</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return the macros certificate.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>null|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_discardMacros">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L272">line 272</a></div>
+        <code>                    
+    <strong>discardMacros</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Remove all macros, certificate from spreadsheet.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRibbonXMLData">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L285">line 285</a></div>
+        <code>                    
+    <strong>setRibbonXMLData</strong>(null|mixed $target, null|mixed $xmlData)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>set ribbon XML data.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>null|mixed</td>
+                <td>$target</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>null|mixed</td>
+                <td>$xmlData</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRibbonXMLData">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L303">line 303</a></div>
+        <code>                    string
+    <strong>getRibbonXMLData</strong>(string $what = &#039;all&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>retrieve ribbon XML Data.</p>                    <p>return string|null|array</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$what</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRibbonBinObjects">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L330">line 330</a></div>
+        <code>                    
+    <strong>setRibbonBinObjects</strong>(null|mixed $BinObjectsNames, null|mixed $BinObjectsData)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>store binaries ribbon objects (pictures).</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>null|mixed</td>
+                <td>$BinObjectsNames</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>null|mixed</td>
+                <td>$BinObjectsData</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUnparsedLoadedData">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L347">line 347</a></div>
+        <code>                    array
+    <strong>getUnparsedLoadedData</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>List of unparsed loaded data for export to same format with better compatibility.</p>                    <p>It has to be minimized when the library start to support currently unparsed data.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUnparsedLoadedData">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L360">line 360</a></div>
+        <code>                    
+    <strong>setUnparsedLoadedData</strong>(array $unparsedLoadedData)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>List of unparsed loaded data for export to same format with better compatibility.</p>                    <p>It has to be minimized when the library start to support currently unparsed data.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$unparsedLoadedData</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRibbonBinObjects">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L384">line 384</a></div>
+        <code>                    null|array
+    <strong>getRibbonBinObjects</strong>(string $what = &#039;all&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>retrieve Binaries Ribbon Objects.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$what</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>null|array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasRibbon">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L420">line 420</a></div>
+        <code>                    bool
+    <strong>hasRibbon</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>This workbook have a custom UI ?</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasRibbonBinObjects">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L430">line 430</a></div>
+        <code>                    bool
+    <strong>hasRibbonBinObjects</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>This workbook have additionnal object for the ribbon ?</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sheetCodeNameExists">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L442">line 442</a></div>
+        <code>                    bool
+    <strong>sheetCodeNameExists</strong>(string $pSheetCodeName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if a sheet with a specified code name already exists.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pSheetCodeName</td>
+                <td>Name of the worksheet to check</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSheetByCodeName">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L454">line 454</a></div>
+        <code>                    <a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>
+    <strong>getSheetByCodeName</strong>(string $pName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get sheet by code name. Warning : sheet don't have always a code name !</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pName</td>
+                <td>Sheet name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L469">line 469</a></div>
+        <code>                    
+    <strong>__construct</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a new PhpSpreadsheet with one Worksheet.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___destruct">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L500">line 500</a></div>
+        <code>                    
+    <strong>__destruct</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Code to execute when this worksheet is unset().</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disconnectWorksheets">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L510">line 510</a></div>
+        <code>                    
+    <strong>disconnectWorksheets</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Disconnect all worksheets from this PhpSpreadsheet workbook object,
+typically so that the PhpSpreadsheet object can be unset.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCalculationEngine">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L526">line 526</a></div>
+        <code>                    <a href="../../PhpOffice/PhpSpreadsheet/Calculation/Calculation.html"><abbr title="PhpOffice\PhpSpreadsheet\Calculation\Calculation">Calculation</abbr></a>
+    <strong>getCalculationEngine</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return the calculation engine for this worksheet.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PhpOffice/PhpSpreadsheet/Calculation/Calculation.html"><abbr title="PhpOffice\PhpSpreadsheet\Calculation\Calculation">Calculation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getProperties">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L536">line 536</a></div>
+        <code>                    <a href="../../PhpOffice/PhpSpreadsheet/Document/Properties.html"><abbr title="PhpOffice\PhpSpreadsheet\Document\Properties">Properties</abbr></a>
+    <strong>getProperties</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get properties.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PhpOffice/PhpSpreadsheet/Document/Properties.html"><abbr title="PhpOffice\PhpSpreadsheet\Document\Properties">Properties</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setProperties">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L546">line 546</a></div>
+        <code>                    
+    <strong>setProperties</strong>(<a href="../../PhpOffice/PhpSpreadsheet/Document/Properties.html"><abbr title="PhpOffice\PhpSpreadsheet\Document\Properties">Properties</abbr></a> $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set properties.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Document/Properties.html"><abbr title="PhpOffice\PhpSpreadsheet\Document\Properties">Properties</abbr></a></td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSecurity">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L556">line 556</a></div>
+        <code>                    <a href="../../PhpOffice/PhpSpreadsheet/Document/Security.html"><abbr title="PhpOffice\PhpSpreadsheet\Document\Security">Security</abbr></a>
+    <strong>getSecurity</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get security.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PhpOffice/PhpSpreadsheet/Document/Security.html"><abbr title="PhpOffice\PhpSpreadsheet\Document\Security">Security</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSecurity">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L566">line 566</a></div>
+        <code>                    
+    <strong>setSecurity</strong>(<a href="../../PhpOffice/PhpSpreadsheet/Document/Security.html"><abbr title="PhpOffice\PhpSpreadsheet\Document\Security">Security</abbr></a> $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set security.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Document/Security.html"><abbr title="PhpOffice\PhpSpreadsheet\Document\Security">Security</abbr></a></td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getActiveSheet">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L578">line 578</a></div>
+        <code>                    <a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>
+    <strong>getActiveSheet</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get active sheet.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createSheet">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L592">line 592</a></div>
+        <code>                    <a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>
+    <strong>createSheet</strong>(null|int $sheetIndex = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create sheet and add it to this workbook.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>null|int</td>
+                <td>$sheetIndex</td>
+                <td>Index where sheet should go (0,1,..., or null for last)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sheetNameExists">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L607">line 607</a></div>
+        <code>                    bool
+    <strong>sheetNameExists</strong>(string $pSheetName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if a sheet with a specified name already exists.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pSheetName</td>
+                <td>Name of the worksheet to check</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addSheet">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L622">line 622</a></div>
+        <code>                    <a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>
+    <strong>addSheet</strong>(<a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $pSheet, null|int $iSheetIndex = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add sheet.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+                <td>$pSheet</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>null|int</td>
+                <td>$iSheetIndex</td>
+                <td>Index where sheet should go (0,1,..., or null for last)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeSheetByIndex">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L664">line 664</a></div>
+        <code>                    
+    <strong>removeSheetByIndex</strong>(int $pIndex)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Remove sheet by index.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$pIndex</td>
+                <td>Active sheet index</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSheet">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L690">line 690</a></div>
+        <code>                    <a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>
+    <strong>getSheet</strong>(int $pIndex)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get sheet by index.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$pIndex</td>
+                <td>Sheet index</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAllSheets">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L708">line 708</a></div>
+        <code>                    <a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>[]
+    <strong>getAllSheets</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get all sheets.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSheetByName">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L720">line 720</a></div>
+        <code>                    <a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>
+    <strong>getSheetByName</strong>(string $pName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get sheet by name.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pName</td>
+                <td>Sheet name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIndex">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L741">line 741</a></div>
+        <code>                    int
+    <strong>getIndex</strong>(<a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $pSheet)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get index for sheet.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+                <td>$pSheet</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>index</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIndexByName">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L762">line 762</a></div>
+        <code>                    int
+    <strong>setIndexByName</strong>(string $sheetName, int $newIndex)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set index for sheet by sheet name.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sheetName</td>
+                <td>Sheet name to modify index for</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$newIndex</td>
+                <td>New index for the sheet</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>New sheet index</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSheetCount">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L785">line 785</a></div>
+        <code>                    int
+    <strong>getSheetCount</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get sheet count.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getActiveSheetIndex">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L795">line 795</a></div>
+        <code>                    int
+    <strong>getActiveSheetIndex</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get active sheet index.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>Active sheet index</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setActiveSheetIndex">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L809">line 809</a></div>
+        <code>                    <a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>
+    <strong>setActiveSheetIndex</strong>(int $pIndex)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set active sheet index.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$pIndex</td>
+                <td>Active sheet index</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setActiveSheetIndexByName">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L832">line 832</a></div>
+        <code>                    <a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>
+    <strong>setActiveSheetIndexByName</strong>(string $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set active sheet index by name.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pValue</td>
+                <td>Sheet title</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSheetNames">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L848">line 848</a></div>
+        <code>                    string[]
+    <strong>getSheetNames</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get sheet names.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addExternalSheet">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L869">line 869</a></div>
+        <code>                    <a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>
+    <strong>addExternalSheet</strong>(<a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $pSheet, null|int $iSheetIndex = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add external sheet.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+                <td>$pSheet</td>
+                <td>External sheet to add</td>
+            </tr>
+                    <tr>
+                <td>null|int</td>
+                <td>$iSheetIndex</td>
+                <td>Index where sheet should go (0,1,..., or null for last)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getNamedRanges">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L900">line 900</a></div>
+        <code>                    <a href="../../PhpOffice/PhpSpreadsheet/NamedRange.html"><abbr title="PhpOffice\PhpSpreadsheet\NamedRange">NamedRange</abbr></a>[]
+    <strong>getNamedRanges</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get named ranges.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PhpOffice/PhpSpreadsheet/NamedRange.html"><abbr title="PhpOffice\PhpSpreadsheet\NamedRange">NamedRange</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addNamedRange">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L912">line 912</a></div>
+        <code>                    bool
+    <strong>addNamedRange</strong>(<a href="../../PhpOffice/PhpSpreadsheet/NamedRange.html"><abbr title="PhpOffice\PhpSpreadsheet\NamedRange">NamedRange</abbr></a> $namedRange)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add named range.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/NamedRange.html"><abbr title="PhpOffice\PhpSpreadsheet\NamedRange">NamedRange</abbr></a></td>
+                <td>$namedRange</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getNamedRange">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L933">line 933</a></div>
+        <code>                    null|<a href="../../PhpOffice/PhpSpreadsheet/NamedRange.html"><abbr title="PhpOffice\PhpSpreadsheet\NamedRange">NamedRange</abbr></a>
+    <strong>getNamedRange</strong>(string $namedRange, <a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $pSheet = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get named range.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$namedRange</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+                <td>$pSheet</td>
+                <td>Scope. Use null for global scope</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>null|<a href="../../PhpOffice/PhpSpreadsheet/NamedRange.html"><abbr title="PhpOffice\PhpSpreadsheet\NamedRange">NamedRange</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeNamedRange">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L960">line 960</a></div>
+        <code>                    <a href="../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a>
+    <strong>removeNamedRange</strong>(string $namedRange, <a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $pSheet = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Remove named range.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$namedRange</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+                <td>$pSheet</td>
+                <td>scope: use null for global scope</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getWorksheetIterator">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L980">line 980</a></div>
+        <code>                    <a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Iterator.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Iterator">Iterator</abbr></a>
+    <strong>getWorksheetIterator</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get worksheet iterator.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Iterator.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Iterator">Iterator</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_copy">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L990">line 990</a></div>
+        <code>                    <a href="../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a>
+    <strong>copy</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Copy workbook (!= clone!).</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___clone">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1006">line 1006</a></div>
+        <code>                    
+    <strong>__clone</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Implement PHP __clone to create a deep clone, not just a shallow copy.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCellXfCollection">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1020">line 1020</a></div>
+        <code>                    <a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a>[]
+    <strong>getCellXfCollection</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the workbook collection of cellXfs.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCellXfByIndex">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1032">line 1032</a></div>
+        <code>                    <a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a>
+    <strong>getCellXfByIndex</strong>(int $pIndex)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get cellXf by index.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$pIndex</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCellXfByHashCode">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1044">line 1044</a></div>
+        <code>                    false|<a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a>
+    <strong>getCellXfByHashCode</strong>(string $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get cellXf by hash code.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>false|<a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cellXfExists">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1062">line 1062</a></div>
+        <code>                    bool
+    <strong>cellXfExists</strong>(<a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a> $pCellStyle)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if style exists in style collection.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a></td>
+                <td>$pCellStyle</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDefaultStyle">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1074">line 1074</a></div>
+        <code>                    <a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a>
+    <strong>getDefaultStyle</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get default style.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addCellXf">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1088">line 1088</a></div>
+        <code>                    
+    <strong>addCellXf</strong>(<a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a> $style)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a cellXf to the workbook.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a></td>
+                <td>$style</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeCellXfByIndex">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1101">line 1101</a></div>
+        <code>                    
+    <strong>removeCellXfByIndex</strong>(int $pIndex)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Remove cellXf by index. It is ensured that all cells get their xf index updated.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$pIndex</td>
+                <td>Index to cellXf</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCellXfSupervisor">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1131">line 1131</a></div>
+        <code>                    <a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a>
+    <strong>getCellXfSupervisor</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the cellXf supervisor.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCellStyleXfCollection">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1141">line 1141</a></div>
+        <code>                    <a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a>[]
+    <strong>getCellStyleXfCollection</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the workbook collection of cellStyleXfs.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCellStyleXfByIndex">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1153">line 1153</a></div>
+        <code>                    <a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a>
+    <strong>getCellStyleXfByIndex</strong>(int $pIndex)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get cellStyleXf by index.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$pIndex</td>
+                <td>Index to cellXf</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCellStyleXfByHashCode">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1165">line 1165</a></div>
+        <code>                    false|<a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a>
+    <strong>getCellStyleXfByHashCode</strong>(string $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get cellStyleXf by hash code.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>false|<a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addCellStyleXf">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1181">line 1181</a></div>
+        <code>                    
+    <strong>addCellStyleXf</strong>(<a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a> $pStyle)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a cellStyleXf to the workbook.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a></td>
+                <td>$pStyle</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeCellStyleXfByIndex">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1194">line 1194</a></div>
+        <code>                    
+    <strong>removeCellStyleXfByIndex</strong>(int $pIndex)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Remove cellStyleXf by index.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$pIndex</td>
+                <td>Index to cellXf</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_garbageCollect">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1206">line 1206</a></div>
+        <code>                    
+    <strong>garbageCollect</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Eliminate all unneeded cellXf and afterwards update the xfIndex for all cells
+and columns in the workbook.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getID">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1287">line 1287</a></div>
+        <code>                    string
+    <strong>getID</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return the unique ID value assigned to this spreadsheet workbook.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getShowHorizontalScroll">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1297">line 1297</a></div>
+        <code>                    bool
+    <strong>getShowHorizontalScroll</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the visibility of the horizonal scroll bar in the application.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>True if horizonal scroll bar is visible</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setShowHorizontalScroll">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1307">line 1307</a></div>
+        <code>                    
+    <strong>setShowHorizontalScroll</strong>(bool $showHorizontalScroll)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the visibility of the horizonal scroll bar in the application.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$showHorizontalScroll</td>
+                <td>True if horizonal scroll bar is visible</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getShowVerticalScroll">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1317">line 1317</a></div>
+        <code>                    bool
+    <strong>getShowVerticalScroll</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the visibility of the vertical scroll bar in the application.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>True if vertical scroll bar is visible</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setShowVerticalScroll">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1327">line 1327</a></div>
+        <code>                    
+    <strong>setShowVerticalScroll</strong>(bool $showVerticalScroll)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the visibility of the vertical scroll bar in the application.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$showVerticalScroll</td>
+                <td>True if vertical scroll bar is visible</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getShowSheetTabs">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1337">line 1337</a></div>
+        <code>                    bool
+    <strong>getShowSheetTabs</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the visibility of the sheet tabs in the application.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>True if the sheet tabs are visible</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setShowSheetTabs">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1347">line 1347</a></div>
+        <code>                    
+    <strong>setShowSheetTabs</strong>(bool $showSheetTabs)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the visibility of the sheet tabs  in the application.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$showSheetTabs</td>
+                <td>True if sheet tabs are visible</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMinimized">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1357">line 1357</a></div>
+        <code>                    bool
+    <strong>getMinimized</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return whether the workbook window is minimized.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true if workbook window is minimized</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMinimized">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1367">line 1367</a></div>
+        <code>                    
+    <strong>setMinimized</strong>(bool $minimized)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set whether the workbook window is minimized.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$minimized</td>
+                <td>true if workbook window is minimized</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAutoFilterDateGrouping">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1378">line 1378</a></div>
+        <code>                    bool
+    <strong>getAutoFilterDateGrouping</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return whether to group dates when presenting the user with
+filtering optiomd in the user interface.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true if workbook window is minimized</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAutoFilterDateGrouping">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1389">line 1389</a></div>
+        <code>                    
+    <strong>setAutoFilterDateGrouping</strong>(bool $autoFilterDateGrouping)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set whether to group dates when presenting the user with
+filtering optiomd in the user interface.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$autoFilterDateGrouping</td>
+                <td>true if workbook window is minimized</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFirstSheetIndex">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1399">line 1399</a></div>
+        <code>                    int
+    <strong>getFirstSheetIndex</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return the first sheet in the book view.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>First sheet in book view</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFirstSheetIndex">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1411">line 1411</a></div>
+        <code>                    
+    <strong>setFirstSheetIndex</strong>(int $firstSheetIndex)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the first sheet in the book view.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$firstSheetIndex</td>
+                <td>First sheet in book view</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td>if the given value is invalid</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getVisibility">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1428">line 1428</a></div>
+        <code>                    string
+    <strong>getVisibility</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return the visibility status of the workbook.</p>                    <p>This may be one of the following three values:
+- visibile</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Visible status</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setVisibility">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1450">line 1450</a></div>
+        <code>                    
+    <strong>setVisibility</strong>(string $visibility)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the visibility status of the workbook.</p>                    <p>Valid values are:
+ - 'visible' (self::VISIBILITY_VISIBLE):
+      Workbook window is visible
+ - 'hidden' (self::VISIBILITY_HIDDEN):
+      Workbook window is hidden, but can be shown by the user
+      via the user interface
+ - 'veryHidden' (self::VISIBILITY_VERY_HIDDEN):
+      Workbook window is hidden and cannot be shown in the
+      user interface.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$visibility</td>
+                <td>visibility status of the workbook</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td>if the given value is invalid</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTabRatio">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1469">line 1469</a></div>
+        <code>                    int
+    <strong>getTabRatio</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the ratio between the workbook tabs bar and the horizontal scroll bar.</p>                    <p>TabRatio is assumed to be out of 1000 of the horizontal window width.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>Ratio between the workbook tabs bar and the horizontal scroll bar</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTabRatio">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.4.1/src/PhpSpreadsheet/Spreadsheet.php#L1482">line 1482</a></div>
+        <code>                    
+    <strong>setTabRatio</strong>(int $tabRatio)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the ratio between the workbook tabs bar and the horizontal scroll bar
+TabRatio is assumed to be out of 1000 of the horizontal window width.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$tabRatio</td>
+                <td>Ratio between the tabs bar and the horizontal scroll bar</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td>if the given value is invalid</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

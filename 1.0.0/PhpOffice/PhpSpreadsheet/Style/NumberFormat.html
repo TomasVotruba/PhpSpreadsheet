@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PhpOffice\PhpSpreadsheet\Style\NumberFormat | PhpSpreadsheet</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PhpOffice_PhpSpreadsheet_Style_NumberFormat" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../1.0.0/index.html" data-version="1.0.0">1.0.0</option>
+                                            <option value="../../../../1.1.0/index.html" data-version="1.1.0">1.1.0</option>
+                                            <option value="../../../../1.2.0/index.html" data-version="1.2.0">1.2.0</option>
+                                            <option value="../../../../1.2.1/index.html" data-version="1.2.1">1.2.1</option>
+                                            <option value="../../../../1.3.0/index.html" data-version="1.3.0">1.3.0</option>
+                                            <option value="../../../../1.3.1/index.html" data-version="1.3.1">1.3.1</option>
+                                            <option value="../../../../1.4.0/index.html" data-version="1.4.0">1.4.0</option>
+                                            <option value="../../../../1.4.1/index.html" data-version="1.4.1">1.4.1</option>
+                                            <option value="../../../../1.5.0/index.html" data-version="1.5.0">1.5.0</option>
+                                            <option value="../../../../1.5.1/index.html" data-version="1.5.1">1.5.1</option>
+                                            <option value="../../../../1.5.2/index.html" data-version="1.5.2">1.5.2</option>
+                                            <option value="../../../../1.6.0/index.html" data-version="1.6.0">1.6.0</option>
+                                            <option value="../../../../1.7.0/index.html" data-version="1.7.0">1.7.0</option>
+                                            <option value="../../../../master/index.html" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">PhpSpreadsheet</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../PhpOffice.html">PhpOffice</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet.html">PhpSpreadsheet</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet/Style.html">Style</a></li><li class="backslash">\</li><li>NumberFormat</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            NumberFormat
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>NumberFormat</strong>        extends <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a>        (<a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Style/NumberFormat.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>FORMAT_GENERAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_TEXT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_NUMBER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_NUMBER_00</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_NUMBER_COMMA_SEPARATED1</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_NUMBER_COMMA_SEPARATED2</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_PERCENTAGE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_PERCENTAGE_00</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_DATE_YYYYMMDD2</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_DATE_YYYYMMDD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_DATE_DDMMYYYY</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_DATE_DMYSLASH</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_DATE_DMYMINUS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_DATE_DMMINUS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_DATE_MYMINUS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_DATE_XLSX14</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_DATE_XLSX15</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_DATE_XLSX16</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_DATE_XLSX17</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_DATE_XLSX22</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_DATE_DATETIME</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_DATE_TIME1</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_DATE_TIME2</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_DATE_TIME3</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_DATE_TIME4</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_DATE_TIME5</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_DATE_TIME6</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_DATE_TIME7</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_DATE_TIME8</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_DATE_YYYYMMDDSLASH</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_CURRENCY_USD_SIMPLE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_CURRENCY_USD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORMAT_CURRENCY_EUR_SIMPLE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_isSupervisor">
+                                        protected                                        bool
+                </td>
+                <td>$isSupervisor</td>
+                <td class="last">Supervisor?</td>
+                <td><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#property_isSupervisor"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_parent">
+                                        protected                                        <a href="../../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a>
+                </td>
+                <td>$parent</td>
+                <td class="last">Parent. Only used for supervisor.</td>
+                <td><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#property_parent"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_parentPropertyName">
+                                        protected                                        null|string
+                </td>
+                <td>$parentPropertyName</td>
+                <td class="last">Parent property name.</td>
+                <td><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#property_parentPropertyName"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_builtInFormats">
+                    static                    protected                                        array
+                </td>
+                <td>$builtInFormats</td>
+                <td class="last">Excel built-in number formats.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_flippedBuiltInFormats">
+                    static                    protected                                        array
+                </td>
+                <td>$flippedBuiltInFormats</td>
+                <td class="last">Excel built-in number formats (flipped, for faster lookups).</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_formatCode">
+                                        protected                                        string
+                </td>
+                <td>$formatCode</td>
+                <td class="last">Format Code.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_builtInFormatCode">
+                                        protected                                        string
+                </td>
+                <td>$builtInFormatCode</td>
+                <td class="last">Built-in format Code.</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(bool $isSupervisor = false, bool $isConditional = false)
+        
+                                            <p>Create a new NumberFormat.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bindParent">bindParent</a>(<a href="../../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a> $parent, null|string $parentPropertyName = null)
+        
+                                            <p>Bind parent. Only used for supervisor.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_bindParent"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIsSupervisor">getIsSupervisor</a>()
+        
+                                            <p>Is this a supervisor or a cell style component?</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getIsSupervisor"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getActiveSheet">getActiveSheet</a>()
+        
+                                            <p>Get the currently active sheet. Only used for supervisor.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getActiveSheet"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSelectedCells">getSelectedCells</a>()
+        
+                                            <p>Get the currently active cell coordinate in currently active sheet.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getSelectedCells"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getActiveCell">getActiveCell</a>()
+        
+                                            <p>Get the currently active cell coordinate in currently active sheet.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getActiveCell"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___clone">__clone</a>()
+        
+                                            <p>Implement PHP __clone to create a deep clone, not just a shallow copy.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method___clone"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/NumberFormat.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\NumberFormat">NumberFormat</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSharedComponent">getSharedComponent</a>()
+        
+                                            <p>Get the shared style component for the currently active cell in currently active sheet.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStyleArray">getStyleArray</a>(array $array)
+        
+                                            <p>Build style array from subcomponents.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/NumberFormat.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\NumberFormat">NumberFormat</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_applyFromArray">applyFromArray</a>(array $pStyles)
+        
+                                            <p>Apply styles from array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFormatCode">getFormatCode</a>()
+        
+                                            <p>Get Format Code.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/NumberFormat.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\NumberFormat">NumberFormat</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setFormatCode">setFormatCode</a>(string $pValue)
+        
+                                            <p>Set Format Code.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBuiltInFormatCode">getBuiltInFormatCode</a>()
+        
+                                            <p>Get Built-In Format Code.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/NumberFormat.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\NumberFormat">NumberFormat</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setBuiltInFormatCode">setBuiltInFormatCode</a>(int $pValue)
+        
+                                            <p>Set Built-In Format Code.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_builtInFormatCode">builtInFormatCode</a>(int $pIndex)
+        
+                                            <p>Get built-in format code.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool|int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_builtInFormatCodeIndex">builtInFormatCodeIndex</a>(string $formatCode)
+        
+                                            <p>Get built-in format code index.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHashCode">getHashCode</a>()
+        
+                                            <p>Get hash code.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toFormattedString">toFormattedString</a>(mixed $value, string $format, array $callBack = null)
+        
+                                            <p>Convert a value in a pre-defined format to a PHP string.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Style/NumberFormat.php#L90">line 90</a></div>
+        <code>                    
+    <strong>__construct</strong>(bool $isSupervisor = false, bool $isConditional = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a new NumberFormat.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$isSupervisor</td>
+                <td>Flag indicating if this is a supervisor or not
+                                   Leave this value at default unless you understand exactly what
+                                       its ramifications are</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$isConditional</td>
+                <td>Flag indicating if this is a conditional style or not
+                                   Leave this value at default unless you understand exactly what
+                                       its ramifications are</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bindParent">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_bindParent"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Style/Supervisor.php#L52">line 52</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a>
+    <strong>bindParent</strong>(<a href="../../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a> $parent, null|string $parentPropertyName = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Bind parent. Only used for supervisor.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a></td>
+                <td>$parent</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>null|string</td>
+                <td>$parentPropertyName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIsSupervisor">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getIsSupervisor"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Style/Supervisor.php#L65">line 65</a></div>
+        <code>                    bool
+    <strong>getIsSupervisor</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Is this a supervisor or a cell style component?</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getActiveSheet">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getActiveSheet"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Style/Supervisor.php#L75">line 75</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>
+    <strong>getActiveSheet</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the currently active sheet. Only used for supervisor.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSelectedCells">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getSelectedCells"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Style/Supervisor.php#L86">line 86</a></div>
+        <code>                    string
+    <strong>getSelectedCells</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the currently active cell coordinate in currently active sheet.</p>                    <p>Only used for supervisor.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>E.g. 'A1'</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getActiveCell">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getActiveCell"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Style/Supervisor.php#L97">line 97</a></div>
+        <code>                    string
+    <strong>getActiveCell</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the currently active cell coordinate in currently active sheet.</p>                    <p>Only used for supervisor.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>E.g. 'A1'</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___clone">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method___clone"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Style/Supervisor.php#L105">line 105</a></div>
+        <code>                    
+    <strong>__clone</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Implement PHP __clone to create a deep clone, not just a shallow copy.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSharedComponent">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Style/NumberFormat.php#L107">line 107</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/NumberFormat.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\NumberFormat">NumberFormat</abbr></a>
+    <strong>getSharedComponent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the shared style component for the currently active cell in currently active sheet.</p>                    <p>Only used for style supervisor.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/NumberFormat.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\NumberFormat">NumberFormat</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStyleArray">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Style/NumberFormat.php#L119">line 119</a></div>
+        <code>                    array
+    <strong>getStyleArray</strong>(array $array)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Build style array from subcomponents.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$array</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_applyFromArray">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Style/NumberFormat.php#L140">line 140</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/NumberFormat.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\NumberFormat">NumberFormat</abbr></a>
+    <strong>applyFromArray</strong>(array $pStyles)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Apply styles from array.</p>                    <p><code>
+$spreadsheet->getActiveSheet()->getStyle('B2')->getNumberFormat()->applyFromArray(
+       array(
+           'formatCode' => NumberFormat::FORMAT_CURRENCY_EUR_SIMPLE
+       )
+);
+</code>.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$pStyles</td>
+                <td>Array containing style information</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/NumberFormat.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\NumberFormat">NumberFormat</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFormatCode">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Style/NumberFormat.php#L158">line 158</a></div>
+        <code>                    string
+    <strong>getFormatCode</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Format Code.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFormatCode">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Style/NumberFormat.php#L177">line 177</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/NumberFormat.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\NumberFormat">NumberFormat</abbr></a>
+    <strong>setFormatCode</strong>(string $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Format Code.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pValue</td>
+                <td>see self::FORMAT_*</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/NumberFormat.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\NumberFormat">NumberFormat</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBuiltInFormatCode">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Style/NumberFormat.php#L198">line 198</a></div>
+        <code>                    int
+    <strong>getBuiltInFormatCode</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Built-In Format Code.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setBuiltInFormatCode">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Style/NumberFormat.php#L214">line 214</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/NumberFormat.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\NumberFormat">NumberFormat</abbr></a>
+    <strong>setBuiltInFormatCode</strong>(int $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Built-In Format Code.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/NumberFormat.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\NumberFormat">NumberFormat</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_builtInFormatCode">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Style/NumberFormat.php#L321">line 321</a></div>
+        <code>        static            string
+    <strong>builtInFormatCode</strong>(int $pIndex)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get built-in format code.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$pIndex</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_builtInFormatCodeIndex">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Style/NumberFormat.php#L344">line 344</a></div>
+        <code>        static            bool|int
+    <strong>builtInFormatCodeIndex</strong>(string $formatCode)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get built-in format code index.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$formatCode</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHashCode">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Style/NumberFormat.php#L362">line 362</a></div>
+        <code>                    string
+    <strong>getHashCode</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get hash code.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Hash code</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toFormattedString">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Style/NumberFormat.php#L574">line 574</a></div>
+        <code>        static            string
+    <strong>toFormattedString</strong>(mixed $value, string $format, array $callBack = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convert a value in a pre-defined format to a PHP string.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>Value to format</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$format</td>
+                <td>Format code, see = self::FORMAT_*</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$callBack</td>
+                <td>Callback function for additional formatting of string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Formatted string</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

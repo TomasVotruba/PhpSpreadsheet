@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PhpOffice\PhpSpreadsheet\Style\Fill | PhpSpreadsheet</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PhpOffice_PhpSpreadsheet_Style_Fill" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../1.0.0/index.html" data-version="1.0.0">1.0.0</option>
+                                            <option value="../../../../1.1.0/index.html" data-version="1.1.0">1.1.0</option>
+                                            <option value="../../../../1.2.0/index.html" data-version="1.2.0">1.2.0</option>
+                                            <option value="../../../../1.2.1/index.html" data-version="1.2.1">1.2.1</option>
+                                            <option value="../../../../1.3.0/index.html" data-version="1.3.0">1.3.0</option>
+                                            <option value="../../../../1.3.1/index.html" data-version="1.3.1">1.3.1</option>
+                                            <option value="../../../../1.4.0/index.html" data-version="1.4.0">1.4.0</option>
+                                            <option value="../../../../1.4.1/index.html" data-version="1.4.1">1.4.1</option>
+                                            <option value="../../../../1.5.0/index.html" data-version="1.5.0">1.5.0</option>
+                                            <option value="../../../../1.5.1/index.html" data-version="1.5.1">1.5.1</option>
+                                            <option value="../../../../1.5.2/index.html" data-version="1.5.2">1.5.2</option>
+                                            <option value="../../../../1.6.0/index.html" data-version="1.6.0">1.6.0</option>
+                                            <option value="../../../../1.7.0/index.html" data-version="1.7.0">1.7.0</option>
+                                            <option value="../../../../master/index.html" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">PhpSpreadsheet</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../PhpOffice.html">PhpOffice</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet.html">PhpSpreadsheet</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet/Style.html">Style</a></li><li class="backslash">\</li><li>Fill</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Fill
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Fill</strong>        extends <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a>        (<a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Style/Fill.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>FILL_NONE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FILL_SOLID</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FILL_GRADIENT_LINEAR</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FILL_GRADIENT_PATH</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FILL_PATTERN_DARKDOWN</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FILL_PATTERN_DARKGRAY</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FILL_PATTERN_DARKGRID</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FILL_PATTERN_DARKHORIZONTAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FILL_PATTERN_DARKTRELLIS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FILL_PATTERN_DARKUP</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FILL_PATTERN_DARKVERTICAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FILL_PATTERN_GRAY0625</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FILL_PATTERN_GRAY125</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FILL_PATTERN_LIGHTDOWN</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FILL_PATTERN_LIGHTGRAY</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FILL_PATTERN_LIGHTGRID</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FILL_PATTERN_LIGHTHORIZONTAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FILL_PATTERN_LIGHTTRELLIS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FILL_PATTERN_LIGHTUP</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FILL_PATTERN_LIGHTVERTICAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FILL_PATTERN_MEDIUMGRAY</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_isSupervisor">
+                                        protected                                        bool
+                </td>
+                <td>$isSupervisor</td>
+                <td class="last">Supervisor?</td>
+                <td><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#property_isSupervisor"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_parent">
+                                        protected                                        <a href="../../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a>|<a href="../../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a>
+                </td>
+                <td>$parent</td>
+                <td class="last">Parent. Only used for supervisor.</td>
+                <td><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#property_parent"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_parentPropertyName">
+                                        protected                                        null|string
+                </td>
+                <td>$parentPropertyName</td>
+                <td class="last">Parent property name.</td>
+                <td><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#property_parentPropertyName"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_startcolorIndex">
+                                                                                int
+                </td>
+                <td>$startcolorIndex</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_endcolorIndex">
+                                                                                int
+                </td>
+                <td>$endcolorIndex</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_fillType">
+                                        protected                                        string
+                </td>
+                <td>$fillType</td>
+                <td class="last">Fill type.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_rotation">
+                                        protected                                        float
+                </td>
+                <td>$rotation</td>
+                <td class="last">Rotation.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_startColor">
+                                        protected                                        <a href="../../../PhpOffice/PhpSpreadsheet/Style/Color.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Color">Color</abbr></a>
+                </td>
+                <td>$startColor</td>
+                <td class="last">Start color.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_endColor">
+                                        protected                                        <a href="../../../PhpOffice/PhpSpreadsheet/Style/Color.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Color">Color</abbr></a>
+                </td>
+                <td>$endColor</td>
+                <td class="last">End color.</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(bool $isSupervisor = false, bool $isConditional = false)
+        
+                                            <p>Create a new Fill.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bindParent">bindParent</a>(<a href="../../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a>|<a href="../../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a> $parent, null|string $parentPropertyName = null)
+        
+                                            <p>Bind parent. Only used for supervisor.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_bindParent"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIsSupervisor">getIsSupervisor</a>()
+        
+                                            <p>Is this a supervisor or a cell style component?</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getIsSupervisor"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getActiveSheet">getActiveSheet</a>()
+        
+                                            <p>Get the currently active sheet. Only used for supervisor.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getActiveSheet"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSelectedCells">getSelectedCells</a>()
+        
+                                            <p>Get the currently active cell coordinate in currently active sheet.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getSelectedCells"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getActiveCell">getActiveCell</a>()
+        
+                                            <p>Get the currently active cell coordinate in currently active sheet.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getActiveCell"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___clone">__clone</a>()
+        
+                                            <p>Implement PHP __clone to create a deep clone, not just a shallow copy.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method___clone"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Fill.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSharedComponent">getSharedComponent</a>()
+        
+                                            <p>Get the shared style component for the currently active cell in currently active sheet.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStyleArray">getStyleArray</a>(array $array)
+        
+                                            <p>Build style array from subcomponents.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Fill.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_applyFromArray">applyFromArray</a>(array $pStyles)
+        
+                                            <p>Apply styles from array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFillType">getFillType</a>()
+        
+                                            <p>Get Fill Type.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Fill.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setFillType">setFillType</a>(string $pValue)
+        
+                                            <p>Set Fill Type.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRotation">getRotation</a>()
+        
+                                            <p>Get Rotation.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Fill.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRotation">setRotation</a>(float $pValue)
+        
+                                            <p>Set Rotation.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Color.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Color">Color</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStartColor">getStartColor</a>()
+        
+                                            <p>Get Start Color.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Fill.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setStartColor">setStartColor</a>(<a href="../../../PhpOffice/PhpSpreadsheet/Style/Color.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Color">Color</abbr></a> $pValue)
+        
+                                            <p>Set Start Color.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Color.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Color">Color</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getEndColor">getEndColor</a>()
+        
+                                            <p>Get End Color.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Fill.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setEndColor">setEndColor</a>(<a href="../../../PhpOffice/PhpSpreadsheet/Style/Color.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Color">Color</abbr></a> $pValue)
+        
+                                            <p>Set End Color.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHashCode">getHashCode</a>()
+        
+                                            <p>Get hash code.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Style/Fill.php#L80">line 80</a></div>
+        <code>                    
+    <strong>__construct</strong>(bool $isSupervisor = false, bool $isConditional = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a new Fill.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$isSupervisor</td>
+                <td>Flag indicating if this is a supervisor or not
+                                   Leave this value at default unless you understand exactly what
+                                       its ramifications are</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$isConditional</td>
+                <td>Flag indicating if this is a conditional style or not
+                                   Leave this value at default unless you understand exactly what
+                                       its ramifications are</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bindParent">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_bindParent"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Style/Supervisor.php#L53">line 53</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a>
+    <strong>bindParent</strong>(<a href="../../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a>|<a href="../../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a> $parent, null|string $parentPropertyName = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Bind parent. Only used for supervisor.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a>|<a href="../../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a></td>
+                <td>$parent</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>null|string</td>
+                <td>$parentPropertyName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIsSupervisor">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getIsSupervisor"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Style/Supervisor.php#L66">line 66</a></div>
+        <code>                    bool
+    <strong>getIsSupervisor</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Is this a supervisor or a cell style component?</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getActiveSheet">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getActiveSheet"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Style/Supervisor.php#L76">line 76</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>
+    <strong>getActiveSheet</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the currently active sheet. Only used for supervisor.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSelectedCells">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getSelectedCells"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Style/Supervisor.php#L87">line 87</a></div>
+        <code>                    string
+    <strong>getSelectedCells</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the currently active cell coordinate in currently active sheet.</p>                    <p>Only used for supervisor.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>E.g. 'A1'</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getActiveCell">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getActiveCell"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Style/Supervisor.php#L98">line 98</a></div>
+        <code>                    string
+    <strong>getActiveCell</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the currently active cell coordinate in currently active sheet.</p>                    <p>Only used for supervisor.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>E.g. 'A1'</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___clone">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method___clone"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Style/Supervisor.php#L106">line 106</a></div>
+        <code>                    
+    <strong>__clone</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Implement PHP __clone to create a deep clone, not just a shallow copy.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSharedComponent">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Style/Fill.php#L105">line 105</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Fill.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a>
+    <strong>getSharedComponent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the shared style component for the currently active cell in currently active sheet.</p>                    <p>Only used for style supervisor.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Fill.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStyleArray">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Style/Fill.php#L117">line 117</a></div>
+        <code>                    array
+    <strong>getStyleArray</strong>(array $array)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Build style array from subcomponents.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$array</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_applyFromArray">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Style/Fill.php#L146">line 146</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Fill.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a>
+    <strong>applyFromArray</strong>(array $pStyles)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Apply styles from array.</p>                    <p><code>
+$spreadsheet->getActiveSheet()->getStyle('B2')->getFill()->applyFromArray(
+    [
+        'fillType' => Fill::FILL_GRADIENT_LINEAR,
+        'rotation' => 0,
+        'startColor' => [
+            'rgb' => '000000'
+        ],
+        'endColor' => [
+            'argb' => 'FFFFFFFF'
+        ]
+    ]
+);
+</code></p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$pStyles</td>
+                <td>Array containing style information</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Fill.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFillType">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Style/Fill.php#L177">line 177</a></div>
+        <code>                    string
+    <strong>getFillType</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Fill Type.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFillType">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Style/Fill.php#L193">line 193</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Fill.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a>
+    <strong>setFillType</strong>(string $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Fill Type.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pValue</td>
+                <td>Fill type, see self::FILL_*</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Fill.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRotation">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Style/Fill.php#L210">line 210</a></div>
+        <code>                    float
+    <strong>getRotation</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Rotation.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRotation">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Style/Fill.php#L226">line 226</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Fill.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a>
+    <strong>setRotation</strong>(float $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Rotation.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Fill.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStartColor">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Style/Fill.php#L243">line 243</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Color.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Color">Color</abbr></a>
+    <strong>getStartColor</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Start Color.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Color.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Color">Color</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setStartColor">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Style/Fill.php#L257">line 257</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Fill.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a>
+    <strong>setStartColor</strong>(<a href="../../../PhpOffice/PhpSpreadsheet/Style/Color.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Color">Color</abbr></a> $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Start Color.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Color.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Color">Color</abbr></a></td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Fill.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEndColor">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Style/Fill.php#L277">line 277</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Color.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Color">Color</abbr></a>
+    <strong>getEndColor</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get End Color.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Color.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Color">Color</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEndColor">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Style/Fill.php#L291">line 291</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Fill.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a>
+    <strong>setEndColor</strong>(<a href="../../../PhpOffice/PhpSpreadsheet/Style/Color.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Color">Color</abbr></a> $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set End Color.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Color.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Color">Color</abbr></a></td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Fill.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHashCode">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.6.0/src/PhpSpreadsheet/Style/Fill.php#L311">line 311</a></div>
+        <code>                    string
+    <strong>getHashCode</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get hash code.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Hash code</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

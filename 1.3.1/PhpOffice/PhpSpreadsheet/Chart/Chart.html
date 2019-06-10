@@ -1,0 +1,2017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PhpOffice\PhpSpreadsheet\Chart\Chart | PhpSpreadsheet</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PhpOffice_PhpSpreadsheet_Chart_Chart" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../1.0.0/index.html" data-version="1.0.0">1.0.0</option>
+                                            <option value="../../../../1.1.0/index.html" data-version="1.1.0">1.1.0</option>
+                                            <option value="../../../../1.2.0/index.html" data-version="1.2.0">1.2.0</option>
+                                            <option value="../../../../1.2.1/index.html" data-version="1.2.1">1.2.1</option>
+                                            <option value="../../../../1.3.0/index.html" data-version="1.3.0">1.3.0</option>
+                                            <option value="../../../../1.3.1/index.html" data-version="1.3.1">1.3.1</option>
+                                            <option value="../../../../1.4.0/index.html" data-version="1.4.0">1.4.0</option>
+                                            <option value="../../../../1.4.1/index.html" data-version="1.4.1">1.4.1</option>
+                                            <option value="../../../../1.5.0/index.html" data-version="1.5.0">1.5.0</option>
+                                            <option value="../../../../1.5.1/index.html" data-version="1.5.1">1.5.1</option>
+                                            <option value="../../../../1.5.2/index.html" data-version="1.5.2">1.5.2</option>
+                                            <option value="../../../../1.6.0/index.html" data-version="1.6.0">1.6.0</option>
+                                            <option value="../../../../1.7.0/index.html" data-version="1.7.0">1.7.0</option>
+                                            <option value="../../../../master/index.html" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">PhpSpreadsheet</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../PhpOffice.html">PhpOffice</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet.html">PhpSpreadsheet</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet/Chart.html">Chart</a></li><li class="backslash">\</li><li>Chart</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Chart
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Chart</strong>        (<a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(mixed $name, <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Title.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Title">Title</abbr></a> $title = null, <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Legend.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Legend">Legend</abbr></a> $legend = null, <a href="../../../PhpOffice/PhpSpreadsheet/Chart/PlotArea.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\PlotArea">PlotArea</abbr></a> $plotArea = null, mixed $plotVisibleOnly = true, mixed $displayBlanksAs = &#039;0&#039;, <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Title.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Title">Title</abbr></a> $xAxisLabel = null, <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Title.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Title">Title</abbr></a> $yAxisLabel = null, <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Axis.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Axis">Axis</abbr></a> $xAxis = null, <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Axis.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Axis">Axis</abbr></a> $yAxis = null, <a href="../../../PhpOffice/PhpSpreadsheet/Chart/GridLines.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\GridLines">GridLines</abbr></a> $majorGridlines = null, <a href="../../../PhpOffice/PhpSpreadsheet/Chart/GridLines.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\GridLines">GridLines</abbr></a> $minorGridlines = null)
+        
+                                            <p>Create a new Chart.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getName">getName</a>()
+        
+                                            <p>Get Name.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getWorksheet">getWorksheet</a>()
+        
+                                            <p>Get Worksheet.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setWorksheet">setWorksheet</a>(<a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $pValue = null)
+        
+                                            <p>Set Worksheet.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Title.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Title">Title</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTitle">getTitle</a>()
+        
+                                            <p>Get Title.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTitle">setTitle</a>(<a href="../../../PhpOffice/PhpSpreadsheet/Chart/Title.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Title">Title</abbr></a> $title)
+        
+                                            <p>Set Title.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Legend.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Legend">Legend</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLegend">getLegend</a>()
+        
+                                            <p>Get Legend.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLegend">setLegend</a>(<a href="../../../PhpOffice/PhpSpreadsheet/Chart/Legend.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Legend">Legend</abbr></a> $legend)
+        
+                                            <p>Set Legend.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Title.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Title">Title</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getXAxisLabel">getXAxisLabel</a>()
+        
+                                            <p>Get X-Axis Label.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setXAxisLabel">setXAxisLabel</a>(<a href="../../../PhpOffice/PhpSpreadsheet/Chart/Title.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Title">Title</abbr></a> $label)
+        
+                                            <p>Set X-Axis Label.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Title.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Title">Title</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getYAxisLabel">getYAxisLabel</a>()
+        
+                                            <p>Get Y-Axis Label.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setYAxisLabel">setYAxisLabel</a>(<a href="../../../PhpOffice/PhpSpreadsheet/Chart/Title.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Title">Title</abbr></a> $label)
+        
+                                            <p>Set Y-Axis Label.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/PlotArea.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\PlotArea">PlotArea</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPlotArea">getPlotArea</a>()
+        
+                                            <p>Get Plot Area.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPlotVisibleOnly">getPlotVisibleOnly</a>()
+        
+                                            <p>Get Plot Visible Only.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPlotVisibleOnly">setPlotVisibleOnly</a>(bool $plotVisibleOnly)
+        
+                                            <p>Set Plot Visible Only.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDisplayBlanksAs">getDisplayBlanksAs</a>()
+        
+                                            <p>Get Display Blanks as.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDisplayBlanksAs">setDisplayBlanksAs</a>(string $displayBlanksAs)
+        
+                                            <p>Set Display Blanks as.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Axis.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Axis">Axis</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getChartAxisY">getChartAxisY</a>()
+        
+                                            <p>Get yAxis.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Axis.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Axis">Axis</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getChartAxisX">getChartAxisX</a>()
+        
+                                            <p>Get xAxis.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/GridLines.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\GridLines">GridLines</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMajorGridlines">getMajorGridlines</a>()
+        
+                                            <p>Get Major Gridlines.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/GridLines.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\GridLines">GridLines</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMinorGridlines">getMinorGridlines</a>()
+        
+                                            <p>Get Minor Gridlines.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTopLeftPosition">setTopLeftPosition</a>(string $cell, int $xOffset = null, int $yOffset = null)
+        
+                                            <p>Set the Top Left position for the chart.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTopLeftPosition">getTopLeftPosition</a>()
+        
+                                            <p>Get the top left position of the chart.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTopLeftCell">getTopLeftCell</a>()
+        
+                                            <p>Get the cell address where the top left of the chart is fixed.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTopLeftCell">setTopLeftCell</a>(string $cell)
+        
+                                            <p>Set the Top Left cell position for the chart.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTopLeftOffset">setTopLeftOffset</a>(int $xOffset, int $yOffset)
+        
+                                            <p>Set the offset position within the Top Left cell for the chart.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTopLeftOffset">getTopLeftOffset</a>()
+        
+                                            <p>Get the offset position within the Top Left cell for the chart.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTopLeftXOffset">setTopLeftXOffset</a>($xOffset)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTopLeftXOffset">getTopLeftXOffset</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTopLeftYOffset">setTopLeftYOffset</a>($yOffset)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTopLeftYOffset">getTopLeftYOffset</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setBottomRightPosition">setBottomRightPosition</a>(string $cell, int $xOffset = null, int $yOffset = null)
+        
+                                            <p>Set the Bottom Right position of the chart.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBottomRightPosition">getBottomRightPosition</a>()
+        
+                                            <p>Get the bottom right position of the chart.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setBottomRightCell">setBottomRightCell</a>($cell)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBottomRightCell">getBottomRightCell</a>()
+        
+                                            <p>Get the cell address where the bottom right of the chart is fixed.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setBottomRightOffset">setBottomRightOffset</a>(int $xOffset, int $yOffset)
+        
+                                            <p>Set the offset position within the Bottom Right cell for the chart.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBottomRightOffset">getBottomRightOffset</a>()
+        
+                                            <p>Get the offset position within the Bottom Right cell for the chart.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setBottomRightXOffset">setBottomRightXOffset</a>($xOffset)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBottomRightXOffset">getBottomRightXOffset</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setBottomRightYOffset">setBottomRightYOffset</a>($yOffset)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBottomRightYOffset">getBottomRightYOffset</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_refresh">refresh</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_render">render</a>(string $outputDestination = null)
+        
+                                            <p>Render the chart to given file (or stream).</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L159">line 159</a></div>
+        <code>                    
+    <strong>__construct</strong>(mixed $name, <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Title.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Title">Title</abbr></a> $title = null, <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Legend.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Legend">Legend</abbr></a> $legend = null, <a href="../../../PhpOffice/PhpSpreadsheet/Chart/PlotArea.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\PlotArea">PlotArea</abbr></a> $plotArea = null, mixed $plotVisibleOnly = true, mixed $displayBlanksAs = &#039;0&#039;, <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Title.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Title">Title</abbr></a> $xAxisLabel = null, <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Title.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Title">Title</abbr></a> $yAxisLabel = null, <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Axis.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Axis">Axis</abbr></a> $xAxis = null, <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Axis.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Axis">Axis</abbr></a> $yAxis = null, <a href="../../../PhpOffice/PhpSpreadsheet/Chart/GridLines.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\GridLines">GridLines</abbr></a> $majorGridlines = null, <a href="../../../PhpOffice/PhpSpreadsheet/Chart/GridLines.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\GridLines">GridLines</abbr></a> $minorGridlines = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a new Chart.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/Title.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Title">Title</abbr></a></td>
+                <td>$title</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/Legend.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Legend">Legend</abbr></a></td>
+                <td>$legend</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/PlotArea.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\PlotArea">PlotArea</abbr></a></td>
+                <td>$plotArea</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$plotVisibleOnly</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$displayBlanksAs</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/Title.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Title">Title</abbr></a></td>
+                <td>$xAxisLabel</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/Title.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Title">Title</abbr></a></td>
+                <td>$yAxisLabel</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/Axis.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Axis">Axis</abbr></a></td>
+                <td>$xAxis</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/Axis.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Axis">Axis</abbr></a></td>
+                <td>$yAxis</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/GridLines.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\GridLines">GridLines</abbr></a></td>
+                <td>$majorGridlines</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/GridLines.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\GridLines">GridLines</abbr></a></td>
+                <td>$minorGridlines</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getName">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L180">line 180</a></div>
+        <code>                    string
+    <strong>getName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Name.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getWorksheet">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L190">line 190</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>
+    <strong>getWorksheet</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Worksheet.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setWorksheet">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L202">line 202</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a>
+    <strong>setWorksheet</strong>(<a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $pValue = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Worksheet.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTitle">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L214">line 214</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Title.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Title">Title</abbr></a>
+    <strong>getTitle</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Title.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/Title.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Title">Title</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTitle">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L226">line 226</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a>
+    <strong>setTitle</strong>(<a href="../../../PhpOffice/PhpSpreadsheet/Chart/Title.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Title">Title</abbr></a> $title)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Title.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/Title.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Title">Title</abbr></a></td>
+                <td>$title</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLegend">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L238">line 238</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Legend.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Legend">Legend</abbr></a>
+    <strong>getLegend</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Legend.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/Legend.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Legend">Legend</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLegend">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L250">line 250</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a>
+    <strong>setLegend</strong>(<a href="../../../PhpOffice/PhpSpreadsheet/Chart/Legend.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Legend">Legend</abbr></a> $legend)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Legend.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/Legend.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Legend">Legend</abbr></a></td>
+                <td>$legend</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getXAxisLabel">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L262">line 262</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Title.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Title">Title</abbr></a>
+    <strong>getXAxisLabel</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get X-Axis Label.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/Title.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Title">Title</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setXAxisLabel">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L274">line 274</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a>
+    <strong>setXAxisLabel</strong>(<a href="../../../PhpOffice/PhpSpreadsheet/Chart/Title.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Title">Title</abbr></a> $label)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set X-Axis Label.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/Title.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Title">Title</abbr></a></td>
+                <td>$label</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getYAxisLabel">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L286">line 286</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Title.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Title">Title</abbr></a>
+    <strong>getYAxisLabel</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Y-Axis Label.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/Title.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Title">Title</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setYAxisLabel">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L298">line 298</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a>
+    <strong>setYAxisLabel</strong>(<a href="../../../PhpOffice/PhpSpreadsheet/Chart/Title.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Title">Title</abbr></a> $label)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Y-Axis Label.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/Title.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Title">Title</abbr></a></td>
+                <td>$label</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPlotArea">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L310">line 310</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/PlotArea.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\PlotArea">PlotArea</abbr></a>
+    <strong>getPlotArea</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Plot Area.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/PlotArea.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\PlotArea">PlotArea</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPlotVisibleOnly">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L320">line 320</a></div>
+        <code>                    bool
+    <strong>getPlotVisibleOnly</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Plot Visible Only.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPlotVisibleOnly">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L332">line 332</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a>
+    <strong>setPlotVisibleOnly</strong>(bool $plotVisibleOnly)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Plot Visible Only.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$plotVisibleOnly</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDisplayBlanksAs">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L344">line 344</a></div>
+        <code>                    string
+    <strong>getDisplayBlanksAs</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Display Blanks as.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDisplayBlanksAs">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L356">line 356</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a>
+    <strong>setDisplayBlanksAs</strong>(string $displayBlanksAs)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Display Blanks as.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$displayBlanksAs</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getChartAxisY">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L368">line 368</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Axis.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Axis">Axis</abbr></a>
+    <strong>getChartAxisY</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get yAxis.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/Axis.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Axis">Axis</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getChartAxisX">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L382">line 382</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Axis.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Axis">Axis</abbr></a>
+    <strong>getChartAxisX</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get xAxis.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/Axis.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Axis">Axis</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMajorGridlines">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L396">line 396</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/GridLines.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\GridLines">GridLines</abbr></a>
+    <strong>getMajorGridlines</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Major Gridlines.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/GridLines.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\GridLines">GridLines</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMinorGridlines">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L410">line 410</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/GridLines.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\GridLines">GridLines</abbr></a>
+    <strong>getMinorGridlines</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Minor Gridlines.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/GridLines.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\GridLines">GridLines</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTopLeftPosition">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L428">line 428</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a>
+    <strong>setTopLeftPosition</strong>(string $cell, int $xOffset = null, int $yOffset = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the Top Left position for the chart.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$cell</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$xOffset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$yOffset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTopLeftPosition">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L446">line 446</a></div>
+        <code>                    array
+    <strong>getTopLeftPosition</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the top left position of the chart.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>an associative array containing the cell address, X-Offset and Y-Offset from the top left of that cell</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTopLeftCell">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L460">line 460</a></div>
+        <code>                    string
+    <strong>getTopLeftCell</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the cell address where the top left of the chart is fixed.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTopLeftCell">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L472">line 472</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a>
+    <strong>setTopLeftCell</strong>(string $cell)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the Top Left cell position for the chart.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$cell</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTopLeftOffset">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L487">line 487</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a>
+    <strong>setTopLeftOffset</strong>(int $xOffset, int $yOffset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the offset position within the Top Left cell for the chart.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$xOffset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$yOffset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTopLeftOffset">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L505">line 505</a></div>
+        <code>                    int[]
+    <strong>getTopLeftOffset</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the offset position within the Top Left cell for the chart.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTopLeftXOffset">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L513">line 513</a></div>
+        <code>                    
+    <strong>setTopLeftXOffset</strong>($xOffset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$xOffset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTopLeftXOffset">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L520">line 520</a></div>
+        <code>                    
+    <strong>getTopLeftXOffset</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTopLeftYOffset">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L525">line 525</a></div>
+        <code>                    
+    <strong>setTopLeftYOffset</strong>($yOffset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$yOffset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTopLeftYOffset">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L532">line 532</a></div>
+        <code>                    
+    <strong>getTopLeftYOffset</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setBottomRightPosition">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L546">line 546</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a>
+    <strong>setBottomRightPosition</strong>(string $cell, int $xOffset = null, int $yOffset = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the Bottom Right position of the chart.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$cell</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$xOffset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$yOffset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBottomRightPosition">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L564">line 564</a></div>
+        <code>                    array
+    <strong>getBottomRightPosition</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the bottom right position of the chart.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>an associative array containing the cell address, X-Offset and Y-Offset from the top left of that cell</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setBottomRightCell">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L573">line 573</a></div>
+        <code>                    
+    <strong>setBottomRightCell</strong>($cell)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$cell</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBottomRightCell">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L585">line 585</a></div>
+        <code>                    string
+    <strong>getBottomRightCell</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the cell address where the bottom right of the chart is fixed.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setBottomRightOffset">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L598">line 598</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a>
+    <strong>setBottomRightOffset</strong>(int $xOffset, int $yOffset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the offset position within the Bottom Right cell for the chart.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$xOffset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$yOffset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Chart/Chart.html"><abbr title="PhpOffice\PhpSpreadsheet\Chart\Chart">Chart</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBottomRightOffset">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L616">line 616</a></div>
+        <code>                    int[]
+    <strong>getBottomRightOffset</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the offset position within the Bottom Right cell for the chart.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setBottomRightXOffset">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L624">line 624</a></div>
+        <code>                    
+    <strong>setBottomRightXOffset</strong>($xOffset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$xOffset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBottomRightXOffset">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L631">line 631</a></div>
+        <code>                    
+    <strong>getBottomRightXOffset</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setBottomRightYOffset">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L636">line 636</a></div>
+        <code>                    
+    <strong>setBottomRightYOffset</strong>($yOffset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$yOffset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBottomRightYOffset">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L643">line 643</a></div>
+        <code>                    
+    <strong>getBottomRightYOffset</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_refresh">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L648">line 648</a></div>
+        <code>                    
+    <strong>refresh</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_render">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.3.1/src/PhpSpreadsheet/Chart/Chart.php#L662">line 662</a></div>
+        <code>                    bool
+    <strong>render</strong>(string $outputDestination = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Render the chart to given file (or stream).</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$outputDestination</td>
+                <td>Name of the file render to</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true on success</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PhpOffice\PhpSpreadsheet\ReferenceHelper | PhpSpreadsheet</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PhpOffice_PhpSpreadsheet_ReferenceHelper" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../1.0.0/index.html" data-version="1.0.0">1.0.0</option>
+                                            <option value="../../../1.1.0/index.html" data-version="1.1.0">1.1.0</option>
+                                            <option value="../../../1.2.0/index.html" data-version="1.2.0">1.2.0</option>
+                                            <option value="../../../1.2.1/index.html" data-version="1.2.1">1.2.1</option>
+                                            <option value="../../../1.3.0/index.html" data-version="1.3.0">1.3.0</option>
+                                            <option value="../../../1.3.1/index.html" data-version="1.3.1">1.3.1</option>
+                                            <option value="../../../1.4.0/index.html" data-version="1.4.0">1.4.0</option>
+                                            <option value="../../../1.4.1/index.html" data-version="1.4.1">1.4.1</option>
+                                            <option value="../../../1.5.0/index.html" data-version="1.5.0">1.5.0</option>
+                                            <option value="../../../1.5.1/index.html" data-version="1.5.1">1.5.1</option>
+                                            <option value="../../../1.5.2/index.html" data-version="1.5.2">1.5.2</option>
+                                            <option value="../../../1.6.0/index.html" data-version="1.6.0">1.6.0</option>
+                                            <option value="../../../1.7.0/index.html" data-version="1.7.0">1.7.0</option>
+                                            <option value="../../../master/index.html" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">PhpSpreadsheet</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../PhpOffice.html">PhpOffice</a></li><li class="backslash">\</li><li><a href="../../PhpOffice/PhpSpreadsheet.html">PhpSpreadsheet</a></li><li class="backslash">\</li><li>ReferenceHelper</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            ReferenceHelper
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>ReferenceHelper</strong>        (<a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/ReferenceHelper.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>REFHELPER_REGEXP_CELLREF</td>
+                <td class="last">
+                    <p><em>Regular Expressions</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>REFHELPER_REGEXP_CELLRANGE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>REFHELPER_REGEXP_ROWRANGE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>REFHELPER_REGEXP_COLRANGE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../PhpOffice/PhpSpreadsheet/ReferenceHelper.html"><abbr title="PhpOffice\PhpSpreadsheet\ReferenceHelper">ReferenceHelper</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getInstance">getInstance</a>()
+        
+                                            <p>Get an instance of this class.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>()
+        
+                                            <p>Create a new ReferenceHelper.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_columnSort">columnSort</a>(string $a, string $b)
+        
+                                            <p>Compare two column addresses
+Intended for use as a Callback function for sorting column addresses by column.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_columnReverseSort">columnReverseSort</a>(string $a, string $b)
+        
+                                            <p>Compare two column addresses
+Intended for use as a Callback function for reverse sorting column addresses by column.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_cellSort">cellSort</a>(string $a, string $b)
+        
+                                            <p>Compare two cell addresses
+Intended for use as a Callback function for sorting cell addresses by column and row.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_cellReverseSort">cellReverseSort</a>(string $a, string $b)
+        
+                                            <p>Compare two cell addresses
+Intended for use as a Callback function for sorting cell addresses by column and row.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_adjustPageBreaks">adjustPageBreaks</a>(<a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $pSheet, string $pBefore, int $beforeColumnIndex, int $pNumCols, int $beforeRow, int $pNumRows)
+        
+                                            <p>Update page breaks when inserting/deleting rows/columns.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_adjustComments">adjustComments</a>(<a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $pSheet, string $pBefore, int $beforeColumnIndex, int $pNumCols, int $beforeRow, int $pNumRows)
+        
+                                            <p>Update cell comments when inserting/deleting rows/columns.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_adjustHyperlinks">adjustHyperlinks</a>(<a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $pSheet, string $pBefore, int $beforeColumnIndex, int $pNumCols, int $beforeRow, int $pNumRows)
+        
+                                            <p>Update hyperlinks when inserting/deleting rows/columns.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_adjustDataValidations">adjustDataValidations</a>(<a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $pSheet, string $pBefore, int $beforeColumnIndex, int $pNumCols, int $beforeRow, int $pNumRows)
+        
+                                            <p>Update data validations when inserting/deleting rows/columns.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_adjustMergeCells">adjustMergeCells</a>(<a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $pSheet, string $pBefore, int $beforeColumnIndex, int $pNumCols, int $beforeRow, int $pNumRows)
+        
+                                            <p>Update merged cells when inserting/deleting rows/columns.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_adjustProtectedCells">adjustProtectedCells</a>(<a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $pSheet, string $pBefore, int $beforeColumnIndex, int $pNumCols, int $beforeRow, int $pNumRows)
+        
+                                            <p>Update protected cells when inserting/deleting rows/columns.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_adjustColumnDimensions">adjustColumnDimensions</a>(<a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $pSheet, string $pBefore, int $beforeColumnIndex, int $pNumCols, int $beforeRow, int $pNumRows)
+        
+                                            <p>Update column dimensions when inserting/deleting rows/columns.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_adjustRowDimensions">adjustRowDimensions</a>(<a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $pSheet, string $pBefore, int $beforeColumnIndex, int $pNumCols, int $beforeRow, int $pNumRows)
+        
+                                            <p>Update row dimensions when inserting/deleting rows/columns.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_insertNewBefore">insertNewBefore</a>(string $pBefore, int $pNumCols, int $pNumRows, <a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $pSheet)
+        
+                                            <p>Insert a new column or row, updating all possible related data.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_updateFormulaReferences">updateFormulaReferences</a>(string $pFormula = &#039;&#039;, int $pBefore = &#039;A1&#039;, int $pNumCols = 0, int $pNumRows = 0, string $sheetName = &#039;&#039;)
+        
+                                            <p>Update references within formulas.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_updateCellReference">updateCellReference</a>(string $pCellRange = &#039;A1&#039;, string $pBefore = &#039;A1&#039;, int $pNumCols = 0, int $pNumRows = 0)
+        
+                                            <p>Update cell reference.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_updateNamedFormulas">updateNamedFormulas</a>(<a href="../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a> $spreadsheet, string $oldName = &#039;&#039;, string $newName = &#039;&#039;)
+        
+                                            <p>Update named formulas (i.e. containing worksheet references / named ranges).</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___clone">__clone</a>()
+        
+                                            <p>__clone implementation. Cloning should not be allowed in a Singleton!</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getInstance">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/ReferenceHelper.php#L30">line 30</a></div>
+        <code>        static            <a href="../../PhpOffice/PhpSpreadsheet/ReferenceHelper.html"><abbr title="PhpOffice\PhpSpreadsheet\ReferenceHelper">ReferenceHelper</abbr></a>
+    <strong>getInstance</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get an instance of this class.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../PhpOffice/PhpSpreadsheet/ReferenceHelper.html"><abbr title="PhpOffice\PhpSpreadsheet\ReferenceHelper">ReferenceHelper</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/ReferenceHelper.php#L42">line 42</a></div>
+        <code>            protected        
+    <strong>__construct</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a new ReferenceHelper.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_columnSort">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/ReferenceHelper.php#L55">line 55</a></div>
+        <code>        static            int
+    <strong>columnSort</strong>(string $a, string $b)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Compare two column addresses
+Intended for use as a Callback function for sorting column addresses by column.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$a</td>
+                <td>First column to test (e.g. 'AA')</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$b</td>
+                <td>Second column to test (e.g. 'Z')</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_columnReverseSort">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/ReferenceHelper.php#L69">line 69</a></div>
+        <code>        static            int
+    <strong>columnReverseSort</strong>(string $a, string $b)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Compare two column addresses
+Intended for use as a Callback function for reverse sorting column addresses by column.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$a</td>
+                <td>First column to test (e.g. 'AA')</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$b</td>
+                <td>Second column to test (e.g. 'Z')</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cellSort">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/ReferenceHelper.php#L83">line 83</a></div>
+        <code>        static            int
+    <strong>cellSort</strong>(string $a, string $b)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Compare two cell addresses
+Intended for use as a Callback function for sorting cell addresses by column and row.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$a</td>
+                <td>First cell to test (e.g. 'AA1')</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$b</td>
+                <td>Second cell to test (e.g. 'Z1')</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cellReverseSort">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/ReferenceHelper.php#L104">line 104</a></div>
+        <code>        static            int
+    <strong>cellReverseSort</strong>(string $a, string $b)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Compare two cell addresses
+Intended for use as a Callback function for sorting cell addresses by column and row.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$a</td>
+                <td>First cell to test (e.g. 'AA1')</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$b</td>
+                <td>Second cell to test (e.g. 'Z1')</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_adjustPageBreaks">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/ReferenceHelper.php#L155">line 155</a></div>
+        <code>            protected        
+    <strong>adjustPageBreaks</strong>(<a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $pSheet, string $pBefore, int $beforeColumnIndex, int $pNumCols, int $beforeRow, int $pNumRows)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Update page breaks when inserting/deleting rows/columns.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+                <td>$pSheet</td>
+                <td>The worksheet that we're editing</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$pBefore</td>
+                <td>Insert/Delete before this cell address (e.g. 'A1')</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$beforeColumnIndex</td>
+                <td>Index number of the column we're inserting/deleting before</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pNumCols</td>
+                <td>Number of columns to insert/delete (negative values indicate deletion)</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$beforeRow</td>
+                <td>Number of the row we're inserting/deleting before</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pNumRows</td>
+                <td>Number of rows to insert/delete (negative values indicate deletion)</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_adjustComments">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/ReferenceHelper.php#L188">line 188</a></div>
+        <code>            protected        
+    <strong>adjustComments</strong>(<a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $pSheet, string $pBefore, int $beforeColumnIndex, int $pNumCols, int $beforeRow, int $pNumRows)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Update cell comments when inserting/deleting rows/columns.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+                <td>$pSheet</td>
+                <td>The worksheet that we're editing</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$pBefore</td>
+                <td>Insert/Delete before this cell address (e.g. 'A1')</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$beforeColumnIndex</td>
+                <td>Index number of the column we're inserting/deleting before</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pNumCols</td>
+                <td>Number of columns to insert/delete (negative values indicate deletion)</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$beforeRow</td>
+                <td>Number of the row we're inserting/deleting before</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pNumRows</td>
+                <td>Number of rows to insert/delete (negative values indicate deletion)</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_adjustHyperlinks">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/ReferenceHelper.php#L215">line 215</a></div>
+        <code>            protected        
+    <strong>adjustHyperlinks</strong>(<a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $pSheet, string $pBefore, int $beforeColumnIndex, int $pNumCols, int $beforeRow, int $pNumRows)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Update hyperlinks when inserting/deleting rows/columns.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+                <td>$pSheet</td>
+                <td>The worksheet that we're editing</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$pBefore</td>
+                <td>Insert/Delete before this cell address (e.g. 'A1')</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$beforeColumnIndex</td>
+                <td>Index number of the column we're inserting/deleting before</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pNumCols</td>
+                <td>Number of columns to insert/delete (negative values indicate deletion)</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$beforeRow</td>
+                <td>Number of the row we're inserting/deleting before</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pNumRows</td>
+                <td>Number of rows to insert/delete (negative values indicate deletion)</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_adjustDataValidations">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/ReferenceHelper.php#L240">line 240</a></div>
+        <code>            protected        
+    <strong>adjustDataValidations</strong>(<a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $pSheet, string $pBefore, int $beforeColumnIndex, int $pNumCols, int $beforeRow, int $pNumRows)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Update data validations when inserting/deleting rows/columns.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+                <td>$pSheet</td>
+                <td>The worksheet that we're editing</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$pBefore</td>
+                <td>Insert/Delete before this cell address (e.g. 'A1')</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$beforeColumnIndex</td>
+                <td>Index number of the column we're inserting/deleting before</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pNumCols</td>
+                <td>Number of columns to insert/delete (negative values indicate deletion)</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$beforeRow</td>
+                <td>Number of the row we're inserting/deleting before</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pNumRows</td>
+                <td>Number of rows to insert/delete (negative values indicate deletion)</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_adjustMergeCells">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/ReferenceHelper.php#L265">line 265</a></div>
+        <code>            protected        
+    <strong>adjustMergeCells</strong>(<a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $pSheet, string $pBefore, int $beforeColumnIndex, int $pNumCols, int $beforeRow, int $pNumRows)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Update merged cells when inserting/deleting rows/columns.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+                <td>$pSheet</td>
+                <td>The worksheet that we're editing</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$pBefore</td>
+                <td>Insert/Delete before this cell address (e.g. 'A1')</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$beforeColumnIndex</td>
+                <td>Index number of the column we're inserting/deleting before</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pNumCols</td>
+                <td>Number of columns to insert/delete (negative values indicate deletion)</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$beforeRow</td>
+                <td>Number of the row we're inserting/deleting before</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pNumRows</td>
+                <td>Number of rows to insert/delete (negative values indicate deletion)</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_adjustProtectedCells">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/ReferenceHelper.php#L286">line 286</a></div>
+        <code>            protected        
+    <strong>adjustProtectedCells</strong>(<a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $pSheet, string $pBefore, int $beforeColumnIndex, int $pNumCols, int $beforeRow, int $pNumRows)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Update protected cells when inserting/deleting rows/columns.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+                <td>$pSheet</td>
+                <td>The worksheet that we're editing</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$pBefore</td>
+                <td>Insert/Delete before this cell address (e.g. 'A1')</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$beforeColumnIndex</td>
+                <td>Index number of the column we're inserting/deleting before</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pNumCols</td>
+                <td>Number of columns to insert/delete (negative values indicate deletion)</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$beforeRow</td>
+                <td>Number of the row we're inserting/deleting before</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pNumRows</td>
+                <td>Number of rows to insert/delete (negative values indicate deletion)</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_adjustColumnDimensions">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/ReferenceHelper.php#L310">line 310</a></div>
+        <code>            protected        
+    <strong>adjustColumnDimensions</strong>(<a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $pSheet, string $pBefore, int $beforeColumnIndex, int $pNumCols, int $beforeRow, int $pNumRows)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Update column dimensions when inserting/deleting rows/columns.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+                <td>$pSheet</td>
+                <td>The worksheet that we're editing</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$pBefore</td>
+                <td>Insert/Delete before this cell address (e.g. 'A1')</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$beforeColumnIndex</td>
+                <td>Index number of the column we're inserting/deleting before</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pNumCols</td>
+                <td>Number of columns to insert/delete (negative values indicate deletion)</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$beforeRow</td>
+                <td>Number of the row we're inserting/deleting before</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pNumRows</td>
+                <td>Number of rows to insert/delete (negative values indicate deletion)</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_adjustRowDimensions">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/ReferenceHelper.php#L335">line 335</a></div>
+        <code>            protected        
+    <strong>adjustRowDimensions</strong>(<a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $pSheet, string $pBefore, int $beforeColumnIndex, int $pNumCols, int $beforeRow, int $pNumRows)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Update row dimensions when inserting/deleting rows/columns.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+                <td>$pSheet</td>
+                <td>The worksheet that we're editing</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$pBefore</td>
+                <td>Insert/Delete before this cell address (e.g. 'A1')</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$beforeColumnIndex</td>
+                <td>Index number of the column we're inserting/deleting before</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pNumCols</td>
+                <td>Number of columns to insert/delete (negative values indicate deletion)</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$beforeRow</td>
+                <td>Number of the row we're inserting/deleting before</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pNumRows</td>
+                <td>Number of rows to insert/delete (negative values indicate deletion)</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_insertNewBefore">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/ReferenceHelper.php#L369">line 369</a></div>
+        <code>                    
+    <strong>insertNewBefore</strong>(string $pBefore, int $pNumCols, int $pNumRows, <a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $pSheet)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Insert a new column or row, updating all possible related data.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pBefore</td>
+                <td>Insert before this cell address (e.g. 'A1')</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pNumCols</td>
+                <td>Number of columns to insert/delete (negative values indicate deletion)</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pNumRows</td>
+                <td>Number of rows to insert/delete (negative values indicate deletion)</td>
+            </tr>
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+                <td>$pSheet</td>
+                <td>The worksheet that we're editing</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateFormulaReferences">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/ReferenceHelper.php#L629">line 629</a></div>
+        <code>                    string
+    <strong>updateFormulaReferences</strong>(string $pFormula = &#039;&#039;, int $pBefore = &#039;A1&#039;, int $pNumCols = 0, int $pNumRows = 0, string $sheetName = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Update references within formulas.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pFormula</td>
+                <td>Formula to update</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pBefore</td>
+                <td>Insert before this one</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pNumCols</td>
+                <td>Number of columns to insert</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pNumRows</td>
+                <td>Number of rows to insert</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sheetName</td>
+                <td>Worksheet name/title</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Updated formula</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateCellReference">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/ReferenceHelper.php#L771">line 771</a></div>
+        <code>                    string
+    <strong>updateCellReference</strong>(string $pCellRange = &#039;A1&#039;, string $pBefore = &#039;A1&#039;, int $pNumCols = 0, int $pNumRows = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Update cell reference.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pCellRange</td>
+                <td>Cell range</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$pBefore</td>
+                <td>Insert before this one</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pNumCols</td>
+                <td>Number of columns to increment</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pNumRows</td>
+                <td>Number of rows to increment</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Updated cell range</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateNamedFormulas">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/ReferenceHelper.php#L796">line 796</a></div>
+        <code>                    
+    <strong>updateNamedFormulas</strong>(<a href="../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a> $spreadsheet, string $oldName = &#039;&#039;, string $newName = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Update named formulas (i.e. containing worksheet references / named ranges).</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a></td>
+                <td>$spreadsheet</td>
+                <td>Object to update</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$oldName</td>
+                <td>Old name (name to replace)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$newName</td>
+                <td>New name</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___clone">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/ReferenceHelper.php#L904">line 904</a></div>
+        <code>final                    
+    <strong>__clone</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>__clone implementation. Cloning should not be allowed in a Singleton!</p>                                                </div>
+                <div class="tags">
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PhpOffice\PhpSpreadsheet\Writer\Xls\Worksheet | PhpSpreadsheet</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PhpOffice_PhpSpreadsheet_Writer_Xls_Worksheet" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../../1.0.0/index.html" data-version="1.0.0">1.0.0</option>
+                                            <option value="../../../../../1.1.0/index.html" data-version="1.1.0">1.1.0</option>
+                                            <option value="../../../../../1.2.0/index.html" data-version="1.2.0">1.2.0</option>
+                                            <option value="../../../../../1.2.1/index.html" data-version="1.2.1">1.2.1</option>
+                                            <option value="../../../../../1.3.0/index.html" data-version="1.3.0">1.3.0</option>
+                                            <option value="../../../../../1.3.1/index.html" data-version="1.3.1">1.3.1</option>
+                                            <option value="../../../../../1.4.0/index.html" data-version="1.4.0">1.4.0</option>
+                                            <option value="../../../../../1.4.1/index.html" data-version="1.4.1">1.4.1</option>
+                                            <option value="../../../../../1.5.0/index.html" data-version="1.5.0">1.5.0</option>
+                                            <option value="../../../../../1.5.1/index.html" data-version="1.5.1">1.5.1</option>
+                                            <option value="../../../../../1.5.2/index.html" data-version="1.5.2">1.5.2</option>
+                                            <option value="../../../../../1.6.0/index.html" data-version="1.6.0">1.6.0</option>
+                                            <option value="../../../../../1.7.0/index.html" data-version="1.7.0">1.7.0</option>
+                                            <option value="../../../../../master/index.html" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">PhpSpreadsheet</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../PhpOffice.html">PhpOffice</a></li><li class="backslash">\</li><li><a href="../../../../PhpOffice/PhpSpreadsheet.html">PhpSpreadsheet</a></li><li class="backslash">\</li><li><a href="../../../../PhpOffice/PhpSpreadsheet/Writer.html">Writer</a></li><li class="backslash">\</li><li><a href="../../../../PhpOffice/PhpSpreadsheet/Writer/Xls.html">Xls</a></li><li class="backslash">\</li><li>Worksheet</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Worksheet
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Worksheet</strong>        extends <a href="../../../../PhpOffice/PhpSpreadsheet/Writer/Xls/BIFFwriter.html"><abbr title="PhpOffice\PhpSpreadsheet\Writer\Xls\BIFFwriter">BIFFwriter</abbr></a>        (<a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Xls/Worksheet.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property__data">
+                                                                                string
+                </td>
+                <td>$_data</td>
+                <td class="last">The string containing the data of the BIFF stream.</td>
+                <td><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Writer/Xls/BIFFwriter.html#property__data"><abbr title="PhpOffice\PhpSpreadsheet\Writer\Xls\BIFFwriter">BIFFwriter</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__datasize">
+                                                                                int
+                </td>
+                <td>$_datasize</td>
+                <td class="last">The size of the data in bytes. Should be the same as strlen($this->_data).</td>
+                <td><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Writer/Xls/BIFFwriter.html#property__datasize"><abbr title="PhpOffice\PhpSpreadsheet\Writer\Xls\BIFFwriter">BIFFwriter</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_phpSheet">
+                                                                                <a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>
+                </td>
+                <td>$phpSheet</td>
+                <td class="last">Sheet object.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_fontHashIndex">
+                                                                                array
+                </td>
+                <td>$fontHashIndex</td>
+                <td class="last">Array of font hashes associated to FONT records index.</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(int $str_total, int $str_unique, array $str_table, array $colors, <a href="../../../../PhpOffice/PhpSpreadsheet/Writer/Xls/Parser.html"><abbr title="PhpOffice\PhpSpreadsheet\Writer\Xls\Parser">Parser</abbr></a> $parser, bool $preCalculateFormulas, <a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $phpSheet)
+        
+                                            <p>Constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getByteOrder">getByteOrder</a>()
+        
+                                            <p>Determine the byte order and store it as class data to avoid
+recalculating it for each call to new().</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Writer/Xls/BIFFwriter.html#method_getByteOrder"><abbr title="PhpOffice\PhpSpreadsheet\Writer\Xls\BIFFwriter">BIFFwriter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_append">append</a>(string $data)
+        
+                                            <p>General storage function.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Writer/Xls/BIFFwriter.html#method_append"><abbr title="PhpOffice\PhpSpreadsheet\Writer\Xls\BIFFwriter">BIFFwriter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_writeData">writeData</a>(string $data)
+        
+                                            <p>General storage function like append, but returns string instead of modifying $this->_data.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Writer/Xls/BIFFwriter.html#method_writeData"><abbr title="PhpOffice\PhpSpreadsheet\Writer\Xls\BIFFwriter">BIFFwriter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_storeBof">storeBof</a>(int $type)
+        
+                                            <p>Writes Excel BOF record to indicate the beginning of a stream or
+sub-stream in the BIFF file.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Writer/Xls/BIFFwriter.html#method_storeBof"><abbr title="PhpOffice\PhpSpreadsheet\Writer\Xls\BIFFwriter">BIFFwriter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_storeEof">storeEof</a>()
+        
+                                            <p>Writes Excel EOF record to indicate the end of a BIFF stream.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Writer/Xls/BIFFwriter.html#method_storeEof"><abbr title="PhpOffice\PhpSpreadsheet\Writer\Xls\BIFFwriter">BIFFwriter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_writeEof">writeEof</a>()
+        
+                                            <p>Writes Excel EOF record to indicate the end of a BIFF stream.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../PhpOffice/PhpSpreadsheet/Writer/Xls/BIFFwriter.html#method_writeEof"><abbr title="PhpOffice\PhpSpreadsheet\Writer\Xls\BIFFwriter">BIFFwriter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_close">close</a>()
+        
+                                            <p>Add data to the beginning of the workbook (note the reverse order)
+and to the end of the workbook.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getData">getData</a>()
+        
+                                            <p>Retrieves data from memory in one chunk, or from disk in $buffer
+sized chunks.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_printRowColHeaders">printRowColHeaders</a>(int $print = 1)
+        
+                                            <p>Set the option to print the row and column headers on the printed page.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOutline">setOutline</a>(bool $visible = true, bool $symbols_below = true, bool $symbols_right = true, bool $auto_style = false)
+        
+                                            <p>This method sets the properties for outlining and grouping. The defaults
+correspond to Excel's defaults.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_writeBlank">writeBlank</a>(int $row, int $col, mixed $xfIndex)
+        
+                                            <p>Write a blank cell to the specified row and column (zero indexed).</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_writeUrlRange">writeUrlRange</a>(int $row1, int $col1, int $row2, int $col2, string $url)
+        
+                                            <p>This is the more general form of writeUrl(). It allows a hyperlink to be
+written to a range of cells. This function also decides the type of hyperlink
+to be written. These are either, Web (http, ftp, mailto), Internal
+(Sheet1!A1) or external ('c:\temp\foo.xls#Sheet1!A1').</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_writeUrlWeb">writeUrlWeb</a>(int $row1, int $col1, int $row2, int $col2, string $url)
+        
+                                            <p>Used to write http, ftp and mailto hyperlinks.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_writeUrlInternal">writeUrlInternal</a>(int $row1, int $col1, int $row2, int $col2, string $url)
+        
+                                            <p>Used to write internal reference hyperlinks such as "Sheet1!A1".</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_writeUrlExternal">writeUrlExternal</a>(int $row1, int $col1, int $row2, int $col2, string $url)
+        
+                                            <p>Write links to external directory names such as 'c:\foo.xls',
+c:\foo.xls#Sheet1!A1', '.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_insertBitmap">insertBitmap</a>(int $row, int $col, mixed $bitmap, int $x = 0, int $y = 0, float $scale_x = 1, float $scale_y = 1)
+        
+                                            <p>Insert a 24bit bitmap image in a worksheet.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_positionImage">positionImage</a>(int $col_start, int $row_start, int $x1, int $y1, int $width, int $height)
+        
+                                            <p>Calculate the vertices that define the position of the image as required by
+the OBJ record.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_processBitmapGd">processBitmapGd</a>(resource $image)
+        
+                                            <p>Convert a GD-image into the internal format.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_processBitmap">processBitmap</a>(string $bitmap)
+        
+                                            <p>Convert a 24 bit bitmap into the modified internal format used by Windows.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Escher.html"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Escher">Escher</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getEscher">getEscher</a>()
+        
+                                            <p>Get Escher object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setEscher">setEscher</a>(<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Escher.html"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Escher">Escher</abbr></a> $pValue = null)
+        
+                                            <p>Set Escher object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Xls/Worksheet.php#L225">line 225</a></div>
+        <code>                    
+    <strong>__construct</strong>(int $str_total, int $str_unique, array $str_table, array $colors, <a href="../../../../PhpOffice/PhpSpreadsheet/Writer/Xls/Parser.html"><abbr title="PhpOffice\PhpSpreadsheet\Writer\Xls\Parser">Parser</abbr></a> $parser, bool $preCalculateFormulas, <a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a> $phpSheet)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$str_total</td>
+                <td>Total number of strings</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$str_unique</td>
+                <td>Total number of unique strings</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$str_table</td>
+                <td>&amp;$str_table String Table</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$colors</td>
+                <td>&amp;$colors Colour Table</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../PhpOffice/PhpSpreadsheet/Writer/Xls/Parser.html"><abbr title="PhpOffice\PhpSpreadsheet\Writer\Xls\Parser">Parser</abbr></a></td>
+                <td>$parser</td>
+                <td>The formula parser created for the Workbook</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$preCalculateFormulas</td>
+                <td>Flag indicating whether formulas should be calculated or just written</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+                <td>$phpSheet</td>
+                <td>The worksheet to write</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getByteOrder">
+        <div class="location">in <a href="../../../../PhpOffice/PhpSpreadsheet/Writer/Xls/BIFFwriter.html#method_getByteOrder"><abbr title="PhpOffice\PhpSpreadsheet\Writer\Xls\BIFFwriter">BIFFwriter</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Xls/BIFFwriter.php#L87">line 87</a></div>
+        <code>        static            int
+    <strong>getByteOrder</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determine the byte order and store it as class data to avoid
+recalculating it for each call to new().</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_append">
+        <div class="location">in <a href="../../../../PhpOffice/PhpSpreadsheet/Writer/Xls/BIFFwriter.html#method_append"><abbr title="PhpOffice\PhpSpreadsheet\Writer\Xls\BIFFwriter">BIFFwriter</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Xls/BIFFwriter.php#L112">line 112</a></div>
+        <code>            protected        
+    <strong>append</strong>(string $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>General storage function.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$data</td>
+                <td>binary data to append</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_writeData">
+        <div class="location">in <a href="../../../../PhpOffice/PhpSpreadsheet/Writer/Xls/BIFFwriter.html#method_writeData"><abbr title="PhpOffice\PhpSpreadsheet\Writer\Xls\BIFFwriter">BIFFwriter</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Xls/BIFFwriter.php#L128">line 128</a></div>
+        <code>                    string
+    <strong>writeData</strong>(string $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>General storage function like append, but returns string instead of modifying $this->_data.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$data</td>
+                <td>binary data to write</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_storeBof">
+        <div class="location">in <a href="../../../../PhpOffice/PhpSpreadsheet/Writer/Xls/BIFFwriter.html#method_storeBof"><abbr title="PhpOffice\PhpSpreadsheet\Writer\Xls\BIFFwriter">BIFFwriter</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Xls/BIFFwriter.php#L145">line 145</a></div>
+        <code>            protected        
+    <strong>storeBof</strong>(int $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Writes Excel BOF record to indicate the beginning of a stream or
+sub-stream in the BIFF file.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$type</td>
+                <td>type of BIFF file to write: 0x0005 Workbook,
+                      0x0010 Worksheet</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_storeEof">
+        <div class="location">in <a href="../../../../PhpOffice/PhpSpreadsheet/Writer/Xls/BIFFwriter.html#method_storeEof"><abbr title="PhpOffice\PhpSpreadsheet\Writer\Xls\BIFFwriter">BIFFwriter</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Xls/BIFFwriter.php#L166">line 166</a></div>
+        <code>            protected        
+    <strong>storeEof</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Writes Excel EOF record to indicate the end of a BIFF stream.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_writeEof">
+        <div class="location">in <a href="../../../../PhpOffice/PhpSpreadsheet/Writer/Xls/BIFFwriter.html#method_writeEof"><abbr title="PhpOffice\PhpSpreadsheet\Writer\Xls\BIFFwriter">BIFFwriter</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Xls/BIFFwriter.php#L178">line 178</a></div>
+        <code>                    
+    <strong>writeEof</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Writes Excel EOF record to indicate the end of a BIFF stream.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_close">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Xls/Worksheet.php#L280">line 280</a></div>
+        <code>                    
+    <strong>close</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add data to the beginning of the workbook (note the reverse order)
+and to the end of the workbook.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getData">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Xls/Worksheet.php#L567">line 567</a></div>
+        <code>                    string
+    <strong>getData</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves data from memory in one chunk, or from disk in $buffer
+sized chunks.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The data</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_printRowColHeaders">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Xls/Worksheet.php#L587">line 587</a></div>
+        <code>                    
+    <strong>printRowColHeaders</strong>(int $print = 1)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the option to print the row and column headers on the printed page.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$print</td>
+                <td>Whether to print the headers or not. Defaults to 1 (print).</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOutline">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Xls/Worksheet.php#L601">line 601</a></div>
+        <code>                    
+    <strong>setOutline</strong>(bool $visible = true, bool $symbols_below = true, bool $symbols_right = true, bool $auto_style = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>This method sets the properties for outlining and grouping. The defaults
+correspond to Excel's defaults.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$visible</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$symbols_below</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$symbols_right</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$auto_style</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_writeBlank">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Xls/Worksheet.php#L735">line 735</a></div>
+        <code>                    
+    <strong>writeBlank</strong>(int $row, int $col, mixed $xfIndex)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Write a blank cell to the specified row and column (zero indexed).</p>                    <p>A blank cell is used to specify formatting without adding a string
+or a number.</p>
+
+<p>A blank cell without a format serves no purpose. Therefore, we don't write
+a BLANK record unless a format is specified.</p>
+
+<p>Returns  0 : normal termination (including no format)
+        -1 : insufficient number of arguments
+        -2 : row or column out of range</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$row</td>
+                <td>Zero indexed row</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$col</td>
+                <td>Zero indexed column</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$xfIndex</td>
+                <td>The XF format index</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_writeUrlRange">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Xls/Worksheet.php#L921">line 921</a></div>
+        <code>                    int
+    <strong>writeUrlRange</strong>(int $row1, int $col1, int $row2, int $col2, string $url)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>This is the more general form of writeUrl(). It allows a hyperlink to be
+written to a range of cells. This function also decides the type of hyperlink
+to be written. These are either, Web (http, ftp, mailto), Internal
+(Sheet1!A1) or external ('c:\temp\foo.xls#Sheet1!A1').</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$row1</td>
+                <td>Start row</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$col1</td>
+                <td>Start column</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$row2</td>
+                <td>End row</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$col2</td>
+                <td>End column</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td>URL string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_writeUrlWeb">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Xls/Worksheet.php#L949">line 949</a></div>
+        <code>                    int
+    <strong>writeUrlWeb</strong>(int $row1, int $col1, int $row2, int $col2, string $url)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Used to write http, ftp and mailto hyperlinks.</p>                    <p>The link type ($options) is 0x03 is the same as absolute dir ref without
+sheet. However it is differentiated by the $unknown2 data stream.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$row1</td>
+                <td>Start row</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$col1</td>
+                <td>Start column</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$row2</td>
+                <td>End row</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$col2</td>
+                <td>End column</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td>URL string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_writeUrlInternal">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Xls/Worksheet.php#L994">line 994</a></div>
+        <code>                    int
+    <strong>writeUrlInternal</strong>(int $row1, int $col1, int $row2, int $col2, string $url)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Used to write internal reference hyperlinks such as "Sheet1!A1".</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$row1</td>
+                <td>Start row</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$col1</td>
+                <td>Start column</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$row2</td>
+                <td>End row</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$col2</td>
+                <td>End column</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td>URL string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_writeUrlExternal">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Xls/Worksheet.php#L1047">line 1047</a></div>
+        <code>                    int
+    <strong>writeUrlExternal</strong>(int $row1, int $col1, int $row2, int $col2, string $url)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Write links to external directory names such as 'c:\foo.xls',
+c:\foo.xls#Sheet1!A1', '.</p>                    <p>./../foo.xls'. and '../../foo.xls#Sheet1!A1'.</p>
+
+<p>Note: Excel writes some relative links with the $dir_long string. We ignore
+these cases for the sake of simpler code.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$row1</td>
+                <td>Start row</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$col1</td>
+                <td>Start column</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$row2</td>
+                <td>End row</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$col2</td>
+                <td>End column</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td>URL string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_insertBitmap">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Xls/Worksheet.php#L2216">line 2216</a></div>
+        <code>                    
+    <strong>insertBitmap</strong>(int $row, int $col, mixed $bitmap, int $x = 0, int $y = 0, float $scale_x = 1, float $scale_y = 1)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Insert a 24bit bitmap image in a worksheet.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$row</td>
+                <td>The row we are going to insert the bitmap into</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$col</td>
+                <td>The column we are going to insert the bitmap into</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$bitmap</td>
+                <td>The bitmap filename or GD-image resource</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$x</td>
+                <td>the horizontal position (offset) of the image inside the cell</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$y</td>
+                <td>the vertical position (offset) of the image inside the cell</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$scale_x</td>
+                <td>The horizontal scale</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$scale_y</td>
+                <td>The vertical scale</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_positionImage">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Xls/Worksheet.php#L2289">line 2289</a></div>
+        <code>                    
+    <strong>positionImage</strong>(int $col_start, int $row_start, int $x1, int $y1, int $width, int $height)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Calculate the vertices that define the position of the image as required by
+the OBJ record.</p>                    <p>+------------+------------+
+        |     A      |      B     |
+  +-----+------------+------------+
+  |     |(x1,y1)     |            |
+  |  1  |(A1)._______|______      |
+  |     |    |              |     |
+  |     |    |              |     |
+  +-----+----|    BITMAP    |-----+
+  |     |    |              |     |
+  |  2  |    |______________.     |
+  |     |            |        (B2)|
+  |     |            |     (x2,y2)|
+  +---- +------------+------------+</p>
+
+<p>Example of a bitmap that covers some of the area from cell A1 to cell B2.</p>
+
+<p>Based on the width and height of the bitmap we need to calculate 8 vars:
+    $col_start, $row_start, $col_end, $row_end, $x1, $y1, $x2, $y2.
+The width and height of the cells are also variable and have to be taken into
+account.
+The values of $col_start and $row_start are passed in from the calling
+function. The values of $col_end and $row_end are calculated by subtracting
+the width and height of the bitmap from the width and height of the
+underlying cells.
+The vertices are expressed as a percentage of the underlying cell width as
+follows (rhs values are in pixels):</p>
+
+<pre><code>  x1 = X / W *1024
+  y1 = Y / H *256
+  x2 = (X-1) / W *1024
+  y2 = (Y-1) / H *256
+
+  Where:  X is distance from the left side of the underlying cell
+          Y is distance from the top of the underlying cell
+          W is the width of the cell
+          H is the height of the cell
+</code></pre>
+
+<p>The SDK incorrectly states that the height should be expressed as a
+       percentage of 1024.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$col_start</td>
+                <td>Col containing upper left corner of object</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$row_start</td>
+                <td>Row containing top left corner of object</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$x1</td>
+                <td>Distance to left side of object</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$y1</td>
+                <td>Distance to top of object</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$width</td>
+                <td>Width of image frame</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$height</td>
+                <td>Height of image frame</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_processBitmapGd">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Xls/Worksheet.php#L2428">line 2428</a></div>
+        <code>                    array
+    <strong>processBitmapGd</strong>(resource $image)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convert a GD-image into the internal format.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>resource</td>
+                <td>$image</td>
+                <td>The image to process</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>Array with data and properties of the bitmap</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_processBitmap">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Xls/Worksheet.php#L2459">line 2459</a></div>
+        <code>                    array
+    <strong>processBitmap</strong>(string $bitmap)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convert a 24 bit bitmap into the modified internal format used by Windows.</p>                    <p>This is described in BITMAPCOREHEADER and BITMAPCOREINFO structures in the
+MSDN library.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$bitmap</td>
+                <td>The bitmap to process</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>Array with data and properties of the bitmap</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEscher">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Xls/Worksheet.php#L2560">line 2560</a></div>
+        <code>                    <a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Escher.html"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Escher">Escher</abbr></a>
+    <strong>getEscher</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Escher object.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Escher.html"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Escher">Escher</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEscher">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.0.0/src/PhpSpreadsheet/Writer/Xls/Worksheet.php#L2570">line 2570</a></div>
+        <code>                    
+    <strong>setEscher</strong>(<a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Escher.html"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Escher">Escher</abbr></a> $pValue = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Escher object.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../PhpOffice/PhpSpreadsheet/Shared/Escher.html"><abbr title="PhpOffice\PhpSpreadsheet\Shared\Escher">Escher</abbr></a></td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

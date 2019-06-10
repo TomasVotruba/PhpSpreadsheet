@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PhpOffice\PhpSpreadsheet\Style\Font | PhpSpreadsheet</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PhpOffice_PhpSpreadsheet_Style_Font" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../1.0.0/index.html" data-version="1.0.0">1.0.0</option>
+                                            <option value="../../../../1.1.0/index.html" data-version="1.1.0">1.1.0</option>
+                                            <option value="../../../../1.2.0/index.html" data-version="1.2.0">1.2.0</option>
+                                            <option value="../../../../1.2.1/index.html" data-version="1.2.1">1.2.1</option>
+                                            <option value="../../../../1.3.0/index.html" data-version="1.3.0">1.3.0</option>
+                                            <option value="../../../../1.3.1/index.html" data-version="1.3.1">1.3.1</option>
+                                            <option value="../../../../1.4.0/index.html" data-version="1.4.0">1.4.0</option>
+                                            <option value="../../../../1.4.1/index.html" data-version="1.4.1">1.4.1</option>
+                                            <option value="../../../../1.5.0/index.html" data-version="1.5.0">1.5.0</option>
+                                            <option value="../../../../1.5.1/index.html" data-version="1.5.1">1.5.1</option>
+                                            <option value="../../../../1.5.2/index.html" data-version="1.5.2">1.5.2</option>
+                                            <option value="../../../../1.6.0/index.html" data-version="1.6.0">1.6.0</option>
+                                            <option value="../../../../1.7.0/index.html" data-version="1.7.0">1.7.0</option>
+                                            <option value="../../../../master/index.html" data-version="master">master</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">PhpSpreadsheet</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../PhpOffice.html">PhpOffice</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet.html">PhpSpreadsheet</a></li><li class="backslash">\</li><li><a href="../../../PhpOffice/PhpSpreadsheet/Style.html">Style</a></li><li class="backslash">\</li><li>Font</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Font
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Font</strong>        extends <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a>        (<a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Font.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>UNDERLINE_NONE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>UNDERLINE_DOUBLE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>UNDERLINE_DOUBLEACCOUNTING</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>UNDERLINE_SINGLE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>UNDERLINE_SINGLEACCOUNTING</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_isSupervisor">
+                                        protected                                        bool
+                </td>
+                <td>$isSupervisor</td>
+                <td class="last">Supervisor?</td>
+                <td><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#property_isSupervisor"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_parent">
+                                        protected                                        <a href="../../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a>|<a href="../../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a>
+                </td>
+                <td>$parent</td>
+                <td class="last">Parent. Only used for supervisor.</td>
+                <td><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#property_parent"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_parentPropertyName">
+                                        protected                                        null|string
+                </td>
+                <td>$parentPropertyName</td>
+                <td class="last">Parent property name.</td>
+                <td><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#property_parentPropertyName"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_name">
+                                        protected                                        string
+                </td>
+                <td>$name</td>
+                <td class="last">Font Name.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_size">
+                                        protected                                        float
+                </td>
+                <td>$size</td>
+                <td class="last">Font Size.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_bold">
+                                        protected                                        bool
+                </td>
+                <td>$bold</td>
+                <td class="last">Bold.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_italic">
+                                        protected                                        bool
+                </td>
+                <td>$italic</td>
+                <td class="last">Italic.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_superscript">
+                                        protected                                        bool
+                </td>
+                <td>$superscript</td>
+                <td class="last">Superscript.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_subscript">
+                                        protected                                        bool
+                </td>
+                <td>$subscript</td>
+                <td class="last">Subscript.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_underline">
+                                        protected                                        string
+                </td>
+                <td>$underline</td>
+                <td class="last">Underline.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_strikethrough">
+                                        protected                                        bool
+                </td>
+                <td>$strikethrough</td>
+                <td class="last">Strikethrough.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_color">
+                                        protected                                        <a href="../../../PhpOffice/PhpSpreadsheet/Style/Color.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Color">Color</abbr></a>
+                </td>
+                <td>$color</td>
+                <td class="last">Foreground color.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_colorIndex">
+                                                                                int
+                </td>
+                <td>$colorIndex</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(bool $isSupervisor = false, bool $isConditional = false)
+        
+                                            <p>Create a new Font.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bindParent">bindParent</a>(<a href="../../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a>|<a href="../../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a> $parent, null|string $parentPropertyName = null)
+        
+                                            <p>Bind parent. Only used for supervisor.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_bindParent"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIsSupervisor">getIsSupervisor</a>()
+        
+                                            <p>Is this a supervisor or a cell style component?</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getIsSupervisor"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getActiveSheet">getActiveSheet</a>()
+        
+                                            <p>Get the currently active sheet. Only used for supervisor.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getActiveSheet"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSelectedCells">getSelectedCells</a>()
+        
+                                            <p>Get the currently active cell coordinate in currently active sheet.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getSelectedCells"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getActiveCell">getActiveCell</a>()
+        
+                                            <p>Get the currently active cell coordinate in currently active sheet.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getActiveCell"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___clone">__clone</a>()
+        
+                                            <p>Implement PHP __clone to create a deep clone, not just a shallow copy.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method___clone"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSharedComponent">getSharedComponent</a>()
+        
+                                            <p>Get the shared style component for the currently active cell in currently active sheet.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStyleArray">getStyleArray</a>(array $array)
+        
+                                            <p>Build style array from subcomponents.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_applyFromArray">applyFromArray</a>(array $pStyles)
+        
+                                            <p>Apply styles from array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getName">getName</a>()
+        
+                                            <p>Get Name.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setName">setName</a>(string $pValue)
+        
+                                            <p>Set Name.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSize">getSize</a>()
+        
+                                            <p>Get Size.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setSize">setSize</a>(float $pValue)
+        
+                                            <p>Set Size.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBold">getBold</a>()
+        
+                                            <p>Get Bold.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setBold">setBold</a>(bool $pValue)
+        
+                                            <p>Set Bold.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getItalic">getItalic</a>()
+        
+                                            <p>Get Italic.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setItalic">setItalic</a>(bool $pValue)
+        
+                                            <p>Set Italic.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSuperscript">getSuperscript</a>()
+        
+                                            <p>Get Superscript.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setSuperscript">setSuperscript</a>(bool $pValue)
+        
+                                            <p>Set Superscript.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSubscript">getSubscript</a>()
+        
+                                            <p>Get Subscript.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setSubscript">setSubscript</a>(bool $pValue)
+        
+                                            <p>Set Subscript.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUnderline">getUnderline</a>()
+        
+                                            <p>Get Underline.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setUnderline">setUnderline</a>(bool|string $pValue)
+        
+                                            <p>Set Underline.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStrikethrough">getStrikethrough</a>()
+        
+                                            <p>Get Strikethrough.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setStrikethrough">setStrikethrough</a>(bool $pValue)
+        
+                                            <p>Set Strikethrough.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Color.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Color">Color</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getColor">getColor</a>()
+        
+                                            <p>Get Color.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setColor">setColor</a>(<a href="../../../PhpOffice/PhpSpreadsheet/Style/Color.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Color">Color</abbr></a> $pValue)
+        
+                                            <p>Set Color.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHashCode">getHashCode</a>()
+        
+                                            <p>Get hash code.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Font.php#L94">line 94</a></div>
+        <code>                    
+    <strong>__construct</strong>(bool $isSupervisor = false, bool $isConditional = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a new Font.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$isSupervisor</td>
+                <td>Flag indicating if this is a supervisor or not
+                                   Leave this value at default unless you understand exactly what
+                                       its ramifications are</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$isConditional</td>
+                <td>Flag indicating if this is a conditional style or not
+                                   Leave this value at default unless you understand exactly what
+                                       its ramifications are</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bindParent">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_bindParent"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Supervisor.php#L53">line 53</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a>
+    <strong>bindParent</strong>(<a href="../../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a>|<a href="../../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a> $parent, null|string $parentPropertyName = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Bind parent. Only used for supervisor.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Spreadsheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a>|<a href="../../../PhpOffice/PhpSpreadsheet/Style/Style.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a></td>
+                <td>$parent</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>null|string</td>
+                <td>$parentPropertyName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIsSupervisor">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getIsSupervisor"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Supervisor.php#L66">line 66</a></div>
+        <code>                    bool
+    <strong>getIsSupervisor</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Is this a supervisor or a cell style component?</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getActiveSheet">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getActiveSheet"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Supervisor.php#L76">line 76</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>
+    <strong>getActiveSheet</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the currently active sheet. Only used for supervisor.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html"><abbr title="PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSelectedCells">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getSelectedCells"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Supervisor.php#L87">line 87</a></div>
+        <code>                    string
+    <strong>getSelectedCells</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the currently active cell coordinate in currently active sheet.</p>                    <p>Only used for supervisor.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>E.g. 'A1'</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getActiveCell">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method_getActiveCell"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Supervisor.php#L98">line 98</a></div>
+        <code>                    string
+    <strong>getActiveCell</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the currently active cell coordinate in currently active sheet.</p>                    <p>Only used for supervisor.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>E.g. 'A1'</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___clone">
+        <div class="location">in <a href="../../../PhpOffice/PhpSpreadsheet/Style/Supervisor.html#method___clone"><abbr title="PhpOffice\PhpSpreadsheet\Style\Supervisor">Supervisor</abbr></a> at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Supervisor.php#L106">line 106</a></div>
+        <code>                    
+    <strong>__clone</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Implement PHP __clone to create a deep clone, not just a shallow copy.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSharedComponent">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Font.php#L125">line 125</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a>
+    <strong>getSharedComponent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the shared style component for the currently active cell in currently active sheet.</p>                    <p>Only used for style supervisor.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStyleArray">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Font.php#L137">line 137</a></div>
+        <code>                    array
+    <strong>getStyleArray</strong>(array $array)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Build style array from subcomponents.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$array</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_applyFromArray">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Font.php#L166">line 166</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a>
+    <strong>applyFromArray</strong>(array $pStyles)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Apply styles from array.</p>                    <p><code>
+$spreadsheet->getActiveSheet()->getStyle('B2')->getFont()->applyFromArray(
+    [
+        'name' => 'Arial',
+        'bold' => TRUE,
+        'italic' => FALSE,
+        'underline' => \PhpOffice\PhpSpreadsheet\Style\Font::UNDERLINE_DOUBLE,
+        'strikethrough' => FALSE,
+        'color' => [
+            'rgb' => '808080'
+        ]
+    ]
+);
+</code></p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$pStyles</td>
+                <td>Array containing style information</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getName">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Font.php#L208">line 208</a></div>
+        <code>                    string
+    <strong>getName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Name.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setName">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Font.php#L224">line 224</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a>
+    <strong>setName</strong>(string $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Name.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSize">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Font.php#L244">line 244</a></div>
+        <code>                    float
+    <strong>getSize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Size.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSize">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Font.php#L260">line 260</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a>
+    <strong>setSize</strong>(float $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Size.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBold">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Font.php#L280">line 280</a></div>
+        <code>                    bool
+    <strong>getBold</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Bold.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setBold">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Font.php#L296">line 296</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a>
+    <strong>setBold</strong>(bool $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Bold.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getItalic">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Font.php#L316">line 316</a></div>
+        <code>                    bool
+    <strong>getItalic</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Italic.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setItalic">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Font.php#L332">line 332</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a>
+    <strong>setItalic</strong>(bool $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Italic.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSuperscript">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Font.php#L352">line 352</a></div>
+        <code>                    bool
+    <strong>getSuperscript</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Superscript.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSuperscript">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Font.php#L368">line 368</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a>
+    <strong>setSuperscript</strong>(bool $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Superscript.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSubscript">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Font.php#L389">line 389</a></div>
+        <code>                    bool
+    <strong>getSubscript</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Subscript.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSubscript">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Font.php#L405">line 405</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a>
+    <strong>setSubscript</strong>(bool $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Subscript.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUnderline">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Font.php#L426">line 426</a></div>
+        <code>                    string
+    <strong>getUnderline</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Underline.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUnderline">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Font.php#L444">line 444</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a>
+    <strong>setUnderline</strong>(bool|string $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Underline.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool|string</td>
+                <td>$pValue</td>
+                <td>\PhpOffice\PhpSpreadsheet\Style\Font underline type
+                                   If a boolean is passed, then TRUE equates to UNDERLINE_SINGLE,
+                                       false equates to UNDERLINE_NONE</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStrikethrough">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Font.php#L466">line 466</a></div>
+        <code>                    bool
+    <strong>getStrikethrough</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Strikethrough.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setStrikethrough">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Font.php#L482">line 482</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a>
+    <strong>setStrikethrough</strong>(bool $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Strikethrough.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getColor">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Font.php#L503">line 503</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Color.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Color">Color</abbr></a>
+    <strong>getColor</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Color.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Color.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Color">Color</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setColor">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Font.php#L517">line 517</a></div>
+        <code>                    <a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a>
+    <strong>setColor</strong>(<a href="../../../PhpOffice/PhpSpreadsheet/Style/Color.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Color">Color</abbr></a> $pValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Color.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Color.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Color">Color</abbr></a></td>
+                <td>$pValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../PhpOffice/PhpSpreadsheet/Style/Font.html"><abbr title="PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpOffice/PhpSpreadsheet/Exception.html"><abbr title="PhpOffice\PhpSpreadsheet\Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHashCode">
+        <div class="location">at         <a href="https://github.com/PHPOffice/PhpSpreadsheet/blob/1.5.0/src/PhpSpreadsheet/Style/Font.php#L537">line 537</a></div>
+        <code>                    string
+    <strong>getHashCode</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get hash code.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Hash code</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
